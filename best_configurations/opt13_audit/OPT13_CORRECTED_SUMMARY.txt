@@ -1,0 +1,66 @@
+=====================================================================================
+      CANDIDATE OPT-13 AUDITED & STATISTICALLY CORRECTED SUMMARY
+=====================================================================================
+
+1. AUDITED ARCHIVAL STATUS
+-------------------------------------------------------------------------------------
+Archival Location:      best_configurations/opt13/
+Audit Location:         best_configurations/opt13_audit/
+SHA-256 Manifest:       OPT13_FILE_MANIFEST.csv (30/30 files verified identical)
+Design Role:            Fully Characterized Benchmark Design (Canned YH2.0 / UN / BeO)
+
+2. MASS AND GEOMETRY SUMMARY
+-------------------------------------------------------------------------------------
+Total Assembly Mass:    565.10 kg (< 650.0 kg limit | Margin: +84.90 kg)
+Total Assembly Volume:  164.50 L (Cylinder envelope: R = 29.25 cm, H = 61.20 cm)
+Active Core Radius:     19.45 cm | Active Height: 42.20 cm (Aspect Ratio H/R = 2.170)
+Fuel Loading:           226.98 kg UN (19.75 wt% U-235, Fissile Loading: 42.33 kg U-235)
+Fuel Pin Lattice:       377 pins, square pitch = 1.700 cm (V_mod/V_fuel = 1.505)
+Coolant Channel Gap:    0.75 mm annular gap around Nb-1Zr clad (rf=0.58 cm, rc=0.63 cm)
+Axial Reflector Ducts:  r_duct = 0.820 cm penetrating BeO reflectors (ligament = 0.6 mm)
+
+3. REACTIVITY CONTROL & SHUTDOWN SAFETY
+-------------------------------------------------------------------------------------
+Operating Eigenvalue (k_out, 0°):   1.01501 +/- 0.00074  (Excess = +1478.3 pcm)
+Shutdown Eigenvalue (k_in, 180°):   0.95552 +/- 0.00072
+Total Control Drum Worth:           6133.2 pcm  (Requirement: > 4000 pcm | PASS)
+All-In Shutdown Margin (SDM):       4447.8 pcm  (Requirement: >= 2000 pcm | PASS, >2.2x)
+Single Stuck-Drum Margin (SDM_stk): 3858.8 +/- 73.1 pcm (Req: >= 1000 pcm | PASS, >3.8x)
+
+4. STATISTICALLY CORRECTED REACTIVITY FEEDBACK & VOID INTERPRETATION
+-------------------------------------------------------------------------------------
+Prompt Fuel Doppler (alpha_fuel):   -1.56 +/- 0.14 pcm/K
+  3-sigma Upper Confidence Bound:   -1.15 pcm/K < 0  (STRICTLY CONFORMING AT >11-SIGMA)
+Moderator Expansion (alpha_mod):    -0.94 +/- 0.21 pcm/K
+  3-sigma Upper Confidence Bound:   -0.32 pcm/K < 0  (STRICTLY CONFORMING AT >4.5-SIGMA)
+Coolant Feedback (alpha_cool):      -0.033 +/- 0.032 pcm/K
+  1-sigma Upper Confidence Bound:   -0.000 pcm/K <= 0 (NEGATIVE AT 1-SIGMA)
+  3-sigma Upper Confidence Bound:   +0.063 pcm/K     (STATISTICALLY INCONCLUSIVE AT 3-SIGMA)
+Total Core TMC (alpha_total):       -2.54 +/- 0.25 pcm/K
+  3-sigma Upper Confidence Bound:   -1.78 pcm/K < 0  (STRICTLY CONFORMING AT >10-SIGMA)
+
+Coolant Void Reactivity (Delta_rho_void):
+  Operating State (2.5 MPa Pure He): k_op = 1.01627 +/- 0.00024
+  Voided State (Vacuum):             k_vd = 1.01592 +/- 0.00026
+  Nominal Void Perturbation:         Delta_rho = -34.3 +/- 33.9 pcm
+  1-sigma Upper Confidence Bound:    -0.4 pcm < 0    (NOMINALLY & 1-SIGMA NEGATIVE)
+  2-sigma Upper Confidence Bound:    +33.4 pcm       (CROSSES ZERO — INCONCLUSIVE AT 2-SIGMA)
+  3-sigma Upper Confidence Bound:    +67.3 pcm       (CROSSES ZERO — INCONCLUSIVE AT 3-SIGMA)
+  Statistical Confidence (P < 0):    84.4 % probability that true void reactivity is negative
+
+5. CORRECTED AUDIT CONCLUSIONS
+-------------------------------------------------------------------------------------
+1. Candidate Opt-13 is a valid, high-performing space NEP reactor candidate that
+   fully satisfies mass (<650 kg), volume, shutdown margin (>2000 pcm), stuck-drum
+   margin (>1000 pcm), 20-year depletion life, prompt Doppler (<0 at 3-sigma), and
+   total isothermal TMC (<0 at 3-sigma).
+2. STATISTICAL CORRECTION: Coolant void reactivity must NOT be claimed as conforming
+   at 2-sigma or 3-sigma. It is conforming at 1-sigma (-0.4 pcm < 0) with 84.4% confidence,
+   but the 2-sigma (+33.4 pcm) and 3-sigma (+67.3 pcm) intervals cross zero.
+3. STATISTICAL CORRECTION: Coolant temperature coefficient alpha_cool (-0.033 pcm/K)
+   is near-zero and negative at 1-sigma, but its 3-sigma interval (+0.063 pcm/K) crosses zero.
+   It must not be characterized as robustly negative at 3-sigma.
+4. Opt-13 remains the established reference benchmark against which Opt-14 candidate
+   architectures must be evaluated.
+
+=====================================================================================

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tallies>
+  <!--radial_midplane_mesh-->
+  <mesh id="1" name="radial_midplane_mesh">
+    <dimension>70 70 1</dimension>
+    <lower_left>-27.4 -27.4 -17.4</lower_left>
+    <upper_right>27.4 27.4 17.4</upper_right>
+  </mesh>
+  <filter id="1" type="mesh">
+    <bins>1</bins>
+  </filter>
+  <tally id="1" name="integral_physics">
+    <scores>flux fission absorption heating</scores>
+  </tally>
+  <tally id="2" name="spatial_mesh_tally">
+    <filters>1</filters>
+    <scores>flux fission</scores>
+  </tally>
+</tallies>

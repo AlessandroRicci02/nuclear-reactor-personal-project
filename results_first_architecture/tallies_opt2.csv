@@ -1,0 +1,5 @@
+Tally Score,Mean [per source particle],Std Dev,Relative Error [%]
+flux,4.160457e+01,1.035932e-01,0.25
+fission,4.124420e-01,2.846005e-03,0.69
+absorption,7.636981e-01,4.449513e-03,0.58
+heating,1.680437e+07,5.806266e+04,0.35

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tallies>
+  <mesh id="1">
+    <dimension>70 70 1</dimension>
+    <lower_left>-28.4 -28.4 -20.9</lower_left>
+    <upper_right>28.4 28.4 20.9</upper_right>
+  </mesh>
+  <filter id="1" type="mesh">
+    <bins>1</bins>
+  </filter>
+  <tally id="1" name="Mesh Flux">
+    <filters>1</filters>
+    <scores>flux fission heating-local</scores>
+  </tally>
+</tallies>

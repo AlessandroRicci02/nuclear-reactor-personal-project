@@ -1,0 +1,5 @@
+Component,Temperature Range [K],Coeff [pcm/K],Uncertainty [pcm/K],Physical Significance
+Fuel Doppler,300 to 1500,-1.86,0.24,Prompt negative resonance capture
+Moderator Feedback,300 to 900,0.05,0.40,Epithermal hydrogen spectrum shift
+Coolant Feedback,900 to 1300,-0.67,0.66,He-Xe noble gas expansion
+Total Feedback,Operating range,-2.48,0.81,Strongly negative inherent stability

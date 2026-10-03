@@ -1,0 +1,56 @@
+{
+  "reactor": "Opt-17 Cand 17-Clean",
+  "power_kW": 400.0,
+  "baseline_uncoupled": {
+    "run": "RUN 0 \u2014 BASELINE",
+    "description": "Uncoupled reference: uniform 1050 K, nominal He density, perfect contact",
+    "k_eff": 1.0186920296566646,
+    "sigma_k": 0.0006076093136388066,
+    "peak_pin_power_W": 2461.288670167903,
+    "F_r": 1.3352491035660874,
+    "F_z": 1.2739574727537601,
+    "F_q": 1.7271240194061355,
+    "peak_vol_density_MW_m3": 70.96434965905252,
+    "Tfuel_max_K": 1292.5980158379375,
+    "Tclad_max_K": 1274.2829853442013,
+    "Tcoolant_max_K": 1217.0498207132175,
+    "Tout_K": 1150.0,
+    "mass_flow_kg_s": 0.38512189507807837,
+    "pressure_drop_kPa": 23.584623915948537
+  },
+  "final_coupled": {
+    "neutronics": {
+      "k_eff": 1.016514874232799,
+      "sigma_k": 0.0006699947150656,
+      "delta_k": -0.0004739463483882,
+      "reactivity_shift_pcm": -210.24844270883008,
+      "peak_pin_power_W": 2431.130393224825,
+      "F_r": 1.3188882383244678,
+      "F_z": 1.2784576466971609,
+      "F_q": 1.7216228858473386,
+      "peak_vol_density_MW_m3": 70.73831819807971
+    },
+    "thermal": {
+      "Tfuel_max_K": 1296.1572450479705,
+      "Tclad_max_K": 1270.971841662793,
+      "Tcoolant_max_K": 1213.7776476648935,
+      "Tcoolant_out_K": 1150.0,
+      "pressure_drop_kPa": 23.58912349506029,
+      "Re_min": 1604.8072105159183,
+      "Re_max": 1891.051978216166,
+      "Nu_min": 5.465320514698034,
+      "Nu_max": 5.465320514698036,
+      "h_min": 1279.1481628680049,
+      "h_max": 1509.587358890102,
+      "He_density_min": 0.9978262511677968,
+      "He_density_max": 1.261491570291154,
+      "mass_flow_kg_s": 0.38512189507807837
+    }
+  },
+  "energy_balance": {
+    "generated_power_W": 400000.0,
+    "removed_power_W": 400000.0000000001,
+    "error_abs_W": 1.1641532182693481e-10,
+    "error_rel": 2.9103830456733706e-16
+  }
+}

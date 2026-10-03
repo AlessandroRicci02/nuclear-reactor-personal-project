@@ -1,0 +1,24 @@
+{
+  "peak_pin": {
+    "pin_id": 215,
+    "power_W": 2431.130393224825,
+    "model_Tfuel_max": 1293.8558748452301,
+    "cardinal_Tfuel_max": 1293.5896189144,
+    "diff_Tfuel_max": 0.26625593083008425,
+    "model_Tclad_max": 1270.971841662793,
+    "cardinal_Tclad_max": 1277.1444913244,
+    "diff_Tclad_max": 6.172649661607011,
+    "cardinal_Q_removed": 2447.243067065
+  },
+  "average_pin": {
+    "pin_id": 112,
+    "power_W": 1850.3560185685806,
+    "model_Tfuel_max": 1213.0725118875944,
+    "cardinal_Tfuel_max": 1212.3687951823,
+    "diff_Tfuel_max": 0.7037167052944824,
+    "model_Tclad_max": 1196.1467536909543,
+    "cardinal_Tclad_max": 1199.8550904712,
+    "diff_Tclad_max": 3.708336780245645,
+    "cardinal_Q_removed": 1862.6264858693
+  }
+}

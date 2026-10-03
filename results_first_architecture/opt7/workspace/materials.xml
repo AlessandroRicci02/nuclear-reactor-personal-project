@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<materials>
+  <material id="1" name="UN Fuel (19.75 wt% U-235)" depletable="true">
+    <density value="13.5" units="g/cm3"/>
+    <nuclide name="U235" ao="0.099761"/>
+    <nuclide name="U238" ao="0.400239"/>
+    <nuclide name="N14" ao="0.49815"/>
+    <nuclide name="N15" ao="0.00185"/>
+  </material>
+  <material id="2" name="Nb-1Zr Cladding">
+    <density value="8.57" units="g/cm3"/>
+    <nuclide name="Nb93" wo="0.99"/>
+    <nuclide name="Zr90" wo="0.005070611750923317"/>
+    <nuclide name="Zr91" wo="0.0011180887453100783"/>
+    <nuclide name="Zr92" wo="0.001727810146362816"/>
+    <nuclide name="Zr94" wo="0.0017891104342343414"/>
+    <nuclide name="Zr96" wo="0.00029437892316944896"/>
+  </material>
+  <material id="3" name="He-Xe Coolant">
+    <density value="0.0023750067782084294" units="g/cm3"/>
+    <nuclide name="He4" ao="0.95"/>
+    <nuclide name="Xe124" ao="4.75e-05"/>
+    <nuclide name="Xe126" ao="4.45e-05"/>
+    <nuclide name="Xe128" ao="0.000955"/>
+    <nuclide name="Xe129" ao="0.013200500000000002"/>
+    <nuclide name="Xe130" ao="0.0020355000000000004"/>
+    <nuclide name="Xe131" ao="0.010616"/>
+    <nuclide name="Xe132" ao="0.013454500000000001"/>
+    <nuclide name="Xe134" ao="0.005218"/>
+    <nuclide name="Xe136" ao="0.0044285"/>
+  </material>
+  <material id="4" name="YH2 Moderator">
+    <density value="4.3" units="g/cm3"/>
+    <nuclide name="Y89" ao="1.0"/>
+    <nuclide name="H1" ao="2.0"/>
+    <sab name="c_H_in_ZrH"/>
+  </material>
+  <material id="5" name="BeO Reflector">
+    <density value="2.9" units="g/cm3"/>
+    <nuclide name="Be9" ao="1.0"/>
+    <nuclide name="O16" ao="1.0"/>
+    <sab name="c_Be_in_BeO"/>
+    <sab name="c_O_in_BeO"/>
+  </material>
+  <material id="6" name="B4C Absorber">
+    <density value="2.52" units="g/cm3"/>
+    <nuclide name="B10" ao="3.6"/>
+    <nuclide name="B11" ao="0.3999999999999999"/>
+    <nuclide name="C0" ao="1.0"/>
+  </material>
+</materials>

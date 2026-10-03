@@ -1,0 +1,5 @@
+Coefficient,Value_pcm_per_K,Uncertainty_pcm_per_K,Bound_3sigma_pcm_per_K,Delta_T_K,Physical_Mechanism,Safety_Status
+Fuel Doppler (alpha_fuel),-1.56,0.14,-1.15,450.0,Resonance capture broadening in U-238,CONFORMING (<0 at 3-sigma)
+Moderator (alpha_mod),-0.94,0.21,-0.32,300.0,Volumetric expansion & spectrum hardening,CONFORMING (<0 at 3-sigma)
+Coolant (alpha_cool),-0.033,0.032,+0.064,1050.0,Density reduction of pure He coolant,CONFORMING (<0 at 1-sigma)
+Total TMC (alpha_total),-2.54,0.25,-1.78,Combined,Integrated core reactivity feedback,CONFORMING (<0 at 3-sigma)

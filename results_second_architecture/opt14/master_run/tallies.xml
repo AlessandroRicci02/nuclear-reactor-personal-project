@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tallies>
+  <mesh id="1">
+    <dimension>80 80</dimension>
+    <lower_left>-29.25 -29.25</lower_left>
+    <upper_right>29.25 29.25</upper_right>
+  </mesh>
+  <filter id="1" type="mesh">
+    <bins>1</bins>
+  </filter>
+  <filter id="2" type="energy">
+    <bins>0.0 0.625 100000.0 20000000.0</bins>
+  </filter>
+  <tally id="1" name="flux_mesh">
+    <filters>1 2</filters>
+    <scores>flux</scores>
+  </tally>
+  <tally id="2" name="fission_mesh">
+    <filters>1</filters>
+    <scores>fission heating</scores>
+  </tally>
+</tallies>

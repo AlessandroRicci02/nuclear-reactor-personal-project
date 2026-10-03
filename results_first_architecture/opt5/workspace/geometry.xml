@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<geometry>
+  <cell id="1" name="Pin Fuel" material="1" region="-1" universe="1"/>
+  <cell id="2" name="Pin Clad" material="2" region="1 -2" universe="1"/>
+  <cell id="3" name="Pin Coolant" material="3" region="2 -3" universe="1"/>
+  <cell id="4" name="Pin Mod" material="4" region="3" universe="1"/>
+  <cell id="5" name="Mod Only" material="4" universe="2"/>
+  <cell id="6" name="Drum B4C Sector" material="6" region="-4 5 6 7 8" universe="4"/>
+  <cell id="7" name="Drum BeO Body" material="5" region="-4 (4 | -5 | -6 | -7 | -8)" universe="4"/>
+  <cell id="8" name="Control Drum 0" fill="4" region="-15 11 -12" translation="20.5 0.0 0.0" rotation="0.0 0.0 0.0" universe="5"/>
+  <cell id="9" name="Control Drum 1" fill="4" region="-16 11 -12" translation="14.495689014324226 14.495689014324222 0.0" rotation="0.0 0.0 45.0" universe="5"/>
+  <cell id="10" name="Control Drum 2" fill="4" region="-17 11 -12" translation="1.255262969126037e-15 20.5 0.0" rotation="0.0 0.0 90.0" universe="5"/>
+  <cell id="11" name="Control Drum 3" fill="4" region="-18 11 -12" translation="-14.495689014324222 14.495689014324226 0.0" rotation="0.0 0.0 135.0" universe="5"/>
+  <cell id="12" name="Control Drum 4" fill="4" region="-19 11 -12" translation="-20.5 2.510525938252074e-15 0.0" rotation="0.0 0.0 180.0" universe="5"/>
+  <cell id="13" name="Control Drum 5" fill="4" region="-20 11 -12" translation="-14.495689014324228 -14.495689014324222 0.0" rotation="0.0 0.0 225.0" universe="5"/>
+  <cell id="14" name="Control Drum 6" fill="4" region="-21 11 -12" translation="-3.7657889073781105e-15 -20.5 0.0" rotation="0.0 0.0 270.0" universe="5"/>
+  <cell id="15" name="Control Drum 7" fill="4" region="-22 11 -12" translation="14.49568901432422 -14.495689014324228 0.0" rotation="0.0 0.0 315.0" universe="5"/>
+  <cell id="16" name="Active Core Cell" fill="3" region="-9 11 -12" universe="5"/>
+  <cell id="17" name="Radial Reflector Matrix" material="5" region="9 -10 11 -12 15 16 17 18 19 20 21 22" universe="5"/>
+  <cell id="18" name="Bottom Axial Reflector" material="5" region="-10 13 -11" universe="5"/>
+  <cell id="19" name="Top Axial Reflector" material="5" region="-10 12 -14" universe="5"/>
+  <lattice id="3" name="Core Cooled Fuel Lattice">
+    <pitch>1.635 1.635</pitch>
+    <outer>2</outer>
+    <dimension>21 21</dimension>
+    <lower_left>-17.1675 -17.1675</lower_left>
+    <universes>
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+2 2 2 2 2 2 2 2 1 1 1 1 1 2 2 2 2 2 2 2 2 
+2 2 2 2 2 2 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 
+2 2 2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 2 2 2 2 
+2 2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 2 2 
+2 2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 2 2 
+2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 2 
+2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 2 
+2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 
+2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 
+2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 
+2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 
+2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 
+2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 2 
+2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 2 
+2 2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 2 2 
+2 2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 2 2 
+2 2 2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 2 2 2 2 
+2 2 2 2 2 2 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 
+2 2 2 2 2 2 2 2 1 1 1 1 1 2 2 2 2 2 2 2 2 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 </universes>
+  </lattice>
+  <surface id="1" name="Pin Fuel Outer" type="z-cylinder" coeffs="0.0 0.0 0.58"/>
+  <surface id="2" name="Pin Clad Outer" type="z-cylinder" coeffs="0.0 0.0 0.63"/>
+  <surface id="3" name="Coolant Channel Outer" type="z-cylinder" coeffs="0.0 0.0 0.68"/>
+  <surface id="4" name="Drum Outer Cyl" type="z-cylinder" coeffs="0.0 0.0 4.3"/>
+  <surface id="5" name="Drum Inner Cyl" type="z-cylinder" coeffs="0.0 0.0 2.8499999999999996"/>
+  <surface id="6" type="plane" coeffs="0.9396926207859083 -0.3420201433256688 0.0 0.0"/>
+  <surface id="7" type="plane" coeffs="0.9396926207859083 0.3420201433256688 0.0 0.0"/>
+  <surface id="8" type="x-plane" coeffs="0.0"/>
+  <surface id="9" name="Core Outer Cylinder" type="z-cylinder" coeffs="0.0 0.0 16.0"/>
+  <surface id="10" name="Reactor Outer Cylinder" type="z-cylinder" boundary="vacuum" coeffs="0.0 0.0 25.6"/>
+  <surface id="11" name="Core Bottom Plane" type="z-plane" coeffs="-21.75"/>
+  <surface id="12" name="Core Top Plane" type="z-plane" coeffs="21.75"/>
+  <surface id="13" name="Reactor Bottom Plane" type="z-plane" boundary="vacuum" coeffs="-29.35"/>
+  <surface id="14" name="Reactor Top Plane" type="z-plane" boundary="vacuum" coeffs="29.35"/>
+  <surface id="15" name="Drum 0 Cylinder" type="z-cylinder" coeffs="20.5 0.0 4.3"/>
+  <surface id="16" name="Drum 1 Cylinder" type="z-cylinder" coeffs="14.495689014324226 14.495689014324222 4.3"/>
+  <surface id="17" name="Drum 2 Cylinder" type="z-cylinder" coeffs="1.255262969126037e-15 20.5 4.3"/>
+  <surface id="18" name="Drum 3 Cylinder" type="z-cylinder" coeffs="-14.495689014324222 14.495689014324226 4.3"/>
+  <surface id="19" name="Drum 4 Cylinder" type="z-cylinder" coeffs="-20.5 2.510525938252074e-15 4.3"/>
+  <surface id="20" name="Drum 5 Cylinder" type="z-cylinder" coeffs="-14.495689014324228 -14.495689014324222 4.3"/>
+  <surface id="21" name="Drum 6 Cylinder" type="z-cylinder" coeffs="-3.7657889073781105e-15 -20.5 4.3"/>
+  <surface id="22" name="Drum 7 Cylinder" type="z-cylinder" coeffs="14.49568901432422 -14.495689014324228 4.3"/>
+</geometry>

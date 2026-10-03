@@ -1,0 +1,3 @@
+Configuration,keff,std_dev,SDM_pcm
+Normal All In (180 deg),0.95090,0.00108,5164
+"Single Stuck Drum Out (1 at 0 deg, 7 at 180 deg)",0.96050,0.00076,4113

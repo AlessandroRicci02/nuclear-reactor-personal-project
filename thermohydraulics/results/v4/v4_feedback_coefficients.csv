@@ -1,0 +1,9 @@
+Coefficient,Nominal_Value,Uncertainty_1sigma,Units,Perturbation_State,Physics_Mechanism,Sign
+Fuel Doppler Coefficient (alpha_D),-0.844,0.554,pcm/K,T_fuel + 150 K,Windowed Multipole U-238/U-235 resonance broadening,Negative (Self-Limiting)
+Moderator Temperature Coefficient (alpha_mod),-0.811,0.795,pcm/K,T_mod + 100 K,"S(alpha,beta) ZrH/YH2 thermal spectrum hardening",Negative (Self-Limiting)
+Coolant Density Coeff (+10% rho),17.292,8.266,pcm/(% rho),rho_He * 1.10,Helium elastic scattering / moderation,Positive wrt Density
+Coolant Density Coeff (-10% rho),-2.391,7.746,pcm/(% rho),rho_He * 0.90,Helium loss / reduced moderation,Positive wrt Density
+Total Coolant Void Reactivity,35.32,79.83,pcm,rho_He -> 1e-7 g/cm3,Complete core depressurization to vacuum,Negative (Loss of He inserts negative reactivity)
+Total Control Drum Worth,4698.1,90.5,pcm,10 Drums 0 deg -> 180 deg,B4C absorber rotation into BeO reflector,Negative (Reactivity Drop)
+All-In Shutdown Margin (SDM_all_in),3079.8,73.3,pcm,10 Drums 180 deg (All IN),Subcritical margin relative to critical,Positive Margin
+Single Stuck-Drum SDM (SDM_stuck),2763.7,65.8,pcm,Drum 0 stuck at 0 deg; Drums 1-9 at 180 deg,Single failure shutdown safety margin,Positive Margin

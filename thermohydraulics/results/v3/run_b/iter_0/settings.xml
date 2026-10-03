@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<settings>
+  <run_mode>eigenvalue</run_mode>
+  <particles>80000</particles>
+  <batches>45</batches>
+  <inactive>10</inactive>
+  <source type="file" strength="1.0" file="/home/aleri/OpenMC_projects/first_test/thermohydraulics/results/v3/run_b/iter_0/statepoint.45.h5"/>
+  <source_point>
+    <write>true</write>
+  </source_point>
+  <entropy_mesh>1</entropy_mesh>
+  <mesh id="1">
+    <dimension>10 10 10</dimension>
+    <lower_left>-19.45 -19.45 -21.225</lower_left>
+    <upper_right>19.45 19.45 21.225</upper_right>
+  </mesh>
+  <temperature_method>nearest</temperature_method>
+  <temperature_multipole>true</temperature_multipole>
+  <temperature_tolerance>1500.0</temperature_tolerance>
+</settings>

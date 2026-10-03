@@ -1,0 +1,3 @@
+State,Coolant,Density_g_cm3,keff,std_dev,Delta_rho_pcm,u_pcm,Bound_2sigma_pcm,Bound_3sigma_pcm
+Operating,Pure He (2.5 MPa),0.001146,1.02403,0.00062,0.0,0.0,0.0,0.0
+Voided (Vacuum),Void / Axial Ducts,0.000000,1.02328,0.00060,-71.7,82.2,+92.8,+175.0

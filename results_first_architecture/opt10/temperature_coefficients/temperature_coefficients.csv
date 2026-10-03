@@ -1,0 +1,5 @@
+Component,T_base_K,T_pert_K,Delta_T_K,keff_base,keff_pert,alpha_pcm_K,u_pcm_K,Bound_3sigma_pcm_K
+Fuel Doppler,1050.0,1400.0,350.0,1.00616,1.00051,-1.61,0.27,-0.79
+Moderator Expansion,800.0,1100.0,300.0,1.00616,0.99610,-3.35,0.33,-2.34
+Coolant Density,1050.0,1250.0,200.0,1.00616,1.00498,-0.59,0.52,0.97
+Total Feedback,-,-,-,1.00616,-,-5.54,0.67,-3.51

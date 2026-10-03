@@ -1,0 +1,83 @@
+================================================================================
+CANDIDATE OPT-8 SPACE NEP NUCLEAR REACTOR: CONCEPTUAL NEUTRONIC EVALUATION REPORT
+================================================================================
+Architecture: Opt-8 — Conceptual Space Reactor Model (High-Conductivity Pure He Coolant)
+Date: 2026-09-30
+Mission Profile: 400 kWth Thermal Power / 100 kWe Electrical (Closed Brayton NEP)
+Lifetime Target: Minimum 10 Years Full-Power Continuous Operation
+
+1. EXECUTIVE DESIGN SUMMARY & VERIFICATION MATRIX
+--------------------------------------------------------------------------------
+Key Parameter                         Value             Conceptual Target       Statistical / Design Status
+--------------------------------------------------------------------------------
+Thermal Power                         400.0 kWth        400.0 kWth              MATCHING
+Operating Coolant                     Pure He (2.5 MPa) Non-toxic / Zero Poison QUALIFIED
+Active Core Radius                    18.20 cm          Buckling Balanced       MATCHING
+Active Core Height                    41.80 cm          Buckling Balanced       MATCHING
+Core Height-to-Radius (H/R)           2.30              H/R in [1.9, 2.5]       MATCHING
+Core Height-to-Diameter (H/D)         1.15              H/D ~ 1.0 (Optimal)     MATCHING
+Fuel Pin Pitch                        1.615 cm          Square lattice          MATCHING
+Number of Fuel Pins                   373               373 pins                MATCHING
+Total Reactor Assembly Mass           628.49 kg        Design envelope < 650 kg MATCHING
+Total Reactor Assembly Volume         154.06 L        Envelope < 160 L        MATCHING
+
+BOL Operating Eigenvalue (HFP, 0°)    1.01695 +/- 0.00094   Excess: 1667 pcm       ADEQUATE
+Cold Shutdown Eigenvalue (CZP, 180°)  0.95090 +/- 0.00108     SDM: 5164 pcm (>3500)      ADEQUATE
+Single Stuck-Drum Eigenvalue          0.96050 +/- 0.00076       SDM_stk: 4113 pcm (>2500) ADEQUATE
+Total Control Drum System Authority   6908 pcm         Criterion > 5000 pcm    ADEQUATE
+
+Prompt Fuel Doppler Feedback (α_fuel) -2.21 +/- 0.08 pcm/K   3σ bound: -1.98 < 0   ROBUSTLY NEGATIVE
+Moderator Feedback (α_mod, with Exp)  -1.15 +/- 0.14 pcm/K   3σ bound: -0.73 < 0   ROBUSTLY NEGATIVE
+Coolant Expansion Feedback (α_cool)   +0.24 +/- 0.23 pcm/K   3σ bound: +0.92 > 0  COMPATIBLE WITH ZERO (NOT NEGATIVE)
+Total Temperature Coefficient (TMC)   -3.13 +/- 0.28 pcm/K   3σ bound: -2.30 < 0   ROBUSTLY NEGATIVE
+
+Coolant Loss Reactivity (Δρ_void)     -18.7 +/- 43.4 pcm       3σ bound: +111.5 pcm > 0  INCONCLUSIVE ON SIGN
+Full-Power Operational Lifetime       25.2 Years          Target >= 10.0 Years    EXCEEDED
+Critical Drum Angle at 10 Years       146.0°              Regulating Margin Left  ADEQUATE
+--------------------------------------------------------------------------------
+
+2. RIGOROUS RESOLUTION OF CRITERIA & STATISTICAL LIMITATIONS
+
+2.1 Coolant Void Reactivity:
+In Opt-6 and Opt-7, solid BeO axial reflector disks trapped neutrons within the coolant channels,
+while Xenon in the He-Xe mixture introduced positive capture-removal reactivity upon voiding.
+In Opt-8:
+- Coolant is Pure Helium (4He) at 2.5 MPa, having strictly ZERO neutron capture cross-section.
+- Coolant streaming ducts (radius r = 0.675 cm) penetrate through both the top and bottom BeO
+  reflectors, ensuring that upon depressurization, uncollided neutrons stream out directly into
+  space (Behrens streaming effect).
+Consequently, the coolant void reactivity is nominally negative: Delta-rho_void = -18.7 +/- 43.4 pcm.
+However, with an uncertainty of 43.4 pcm, the upper 3-sigma confidence bound is +111.5 pcm > 0.
+This Monte Carlo calculation is therefore STATISTICALLY INCONCLUSIVE on the true sign of the void coefficient,
+as the 3-sigma confidence interval includes positive values up to +111.5 pcm.
+Because the total coolant gas mass is small (15 g in total core and plenum ducts), the entire depressurization
+defect is physically bounded within +/- 0.1% Delta-k/k, but a strictly negative void coefficient at 3-sigma
+has NOT been mathematically proven in Opt-8.
+
+2.2 Moderator Temperature Reactivity Feedback:
+Physical volumetric thermal expansion of the YH2 moderator matrix (beta = 3.6e-5 K^-1)
+causes a 2.16% density reduction over Delta-T = 600 K (4.30 g/cm3 -> 4.207 g/cm3).
+In this under-moderated epithermal core (V_mod/V_fuel = 1.05), losing moderator density
+directly degrades moderation and shifts flux into the U-238 resonance band.
+Evaluated with continuous-energy WMP Doppler:
+alpha_mod = -1.15 +/- 0.14 pcm/K, with an upper 3-sigma bound of -0.73 pcm/K < 0.
+
+2.3 Prompt Doppler, Coolant Feedback, and Total TMC:
+- Prompt Fuel Doppler: alpha_fuel = -2.21 +/- 0.08 pcm/K (3σ bound: -1.98 pcm/K < 0).
+- Coolant Temperature Feedback: alpha_cool = +0.24 +/- 0.23 pcm/K (3σ bound: +0.92 pcm/K > 0).
+  With an uncertainty of 0.23 pcm/K, the coolant expansion feedback is statistically compatible with zero
+  and cannot be claimed as negative.
+- Total Temperature Coefficient: alpha_total = -3.13 +/- 0.28 pcm/K.
+  The 3-sigma upper bound on Total TMC is -2.30 pcm/K < 0,
+  demonstrating robust overall passive stability against power excursions.
+
+2.4 Defense-in-Depth Reactivity Control & Single Stuck Drum:
+The 8-drum system provides 6908 pcm (6.91% Delta-k/k) of total control authority:
+- Cold Shutdown Margin: 5164 pcm (limit > 3500 pcm)
+- Single Stuck-Drum Margin: 4113 pcm (limit > 2500 pcm)
+
+2.5 Mission Depletion & Operational Lifetime:
+At 400 kWth, the core operates for 25.2 years before drums reach fully
+withdrawn position (0°). At the 10-year mark, the core maintains k_out = 1.01289
+with a critical drum angle of 146.0° (146.0° of rotation margin remaining).
+================================================================================

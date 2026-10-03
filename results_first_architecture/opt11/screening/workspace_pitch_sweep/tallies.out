@@ -1,0 +1,14 @@
+ =======================>     TALLY 1: SPECTRUM     <=======================
+
+ Incoming Energy [0, 0.625)
+   Total Material
+     Flux                                 3.95089 +/- 0.00982048
+     Fission Rate                         0.290333 +/- 0.000759162
+ Incoming Energy [0.625, 100000)
+   Total Material
+     Flux                                 32.2455 +/- 0.0299002
+     Fission Rate                         0.279444 +/- 0.00046754
+ Incoming Energy [100000, 20000000)
+   Total Material
+     Flux                                 26.426 +/- 0.0233608
+     Fission Rate                         0.0439702 +/- 4.73704e-05

@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<materials>
+  <material id="1" name="UN Fuel" depletable="true" temperature="1050.0">
+    <density value="13.5" units="g/cm3"/>
+    <nuclide name="U235" ao="0.099761"/>
+    <nuclide name="U238" ao="0.400239"/>
+    <nuclide name="N14" ao="0.49815"/>
+    <nuclide name="N15" ao="0.00185"/>
+  </material>
+  <material id="2" name="Nb-1Zr Clad" temperature="1050.0">
+    <density value="8.57" units="g/cm3"/>
+    <nuclide name="Nb93" wo="0.99"/>
+    <nuclide name="Zr90" wo="0.005070611750923317"/>
+    <nuclide name="Zr91" wo="0.0011180887453100783"/>
+    <nuclide name="Zr92" wo="0.001727810146362816"/>
+    <nuclide name="Zr94" wo="0.0017891104342343414"/>
+    <nuclide name="Zr96" wo="0.00029437892316944896"/>
+  </material>
+  <material id="3" name="Helium Coolant" temperature="1050.0">
+    <density value="0.001146" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="4" name="BeO-YH2 Hybrid Moderator" temperature="800.0">
+    <density value="3.1799999999999997" units="g/cm3"/>
+    <nuclide name="Be9" wo="0.26286552266232965"/>
+    <nuclide name="O16" wo="0.46669422576534336"/>
+    <nuclide name="Y89" wo="0.2644438200467358"/>
+    <nuclide name="H1" wo="0.00599643152559129"/>
+    <sab name="c_Be_in_BeO"/>
+    <sab name="c_O_in_BeO"/>
+    <sab name="c_H_in_ZrH"/>
+  </material>
+</materials>

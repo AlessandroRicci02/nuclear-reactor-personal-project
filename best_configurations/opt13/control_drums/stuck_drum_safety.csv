@@ -1,0 +1,3 @@
+Case,keff,std_dev,SDM_pcm,SDM_std_dev_pcm,Requirement_pcm,Status
+All Drums In (180 deg),0.95552,0.00072,4447.8,72.1,2000.0,PASS
+"1 Stuck Out (0 deg, 9 In)",0.96141,0.00073,3858.8,73.1,1000.0,PASS

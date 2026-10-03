@@ -1,0 +1,2 @@
+status,final_iteration,delta_k_final,delta_k_ratio,delta_T_fuel_final_K,power_RMS_change_final,tolerance_k_ratio,tolerance_delta_T_K,tolerance_RMS_power,cardinal_diff_T_fuel_K,cardinal_diff_clad_K
+CONVERGED,7,0.0002382454524816,0.5916687012256616,5.473569469042104,0.0048138843045326,1.5,2.0,0.015,14.28759991451102,6.462058784099327

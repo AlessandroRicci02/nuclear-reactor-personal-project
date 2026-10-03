@@ -1,0 +1,20 @@
+Parameter,Value,Unit,Requirement,Status
+Thermal Power,400.0,kWth,400 kWth,PASS
+Electrical Power,100.0,kWe,100 kWe,PASS
+Total Assembly Mass,565.10,kg,< 650.0 kg,PASS
+Total Reactor Volume,164.50,L,Minimised,PASS
+Operating Multiplication k_out,1.01501,-,> 1.000,PASS
+Operating k_out Uncertainty,0.00074,-,< 0.001,PASS
+Shutdown Multiplication k_in,0.95552,-,< 0.980,PASS
+Total Drum Worth,6133.2,pcm,> 4000 pcm,PASS
+All-In Shutdown Margin SDM,4447.8,pcm,>= 2000 pcm,PASS
+Single Stuck-Drum SDM_stuck,3858.8,pcm,>= 1000 pcm,PASS
+Fuel Doppler alpha_fuel,-1.56,pcm/K,< 0 at 3-sigma,PASS
+Moderator Coefficient alpha_mod,-0.94,pcm/K,< 0 at 3-sigma,PASS
+Coolant Coefficient alpha_cool,-0.033,pcm/K,< 0 at 1-sigma,PASS
+Total Feedback alpha_total,-2.54,pcm/K,< 0 at 3-sigma,PASS
+Coolant Void Reactivity,-34.3,pcm,< 0 at 1-sigma,PASS
+Void Reactivity Uncertainty,33.9,pcm,Statistical,PASS
+Full-Power Lifetime,20.39,years,>= 10.0 years,PASS
+Moderator Material,Canned YH2.0 (Hermetically Canned Delta Hydride),-,100% Manufacturable,PASS
+Reflector Material,Pure Sintered Monolithic BeO Ceramic,-,High-temp ceramic,PASS

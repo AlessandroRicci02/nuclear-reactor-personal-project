@@ -1,0 +1,19 @@
+Parameter,Value,Unit,Requirement,Status
+Thermal Power,400.0,kWth,400 kWth,PASS
+Electrical Power,100.0,kWe,100 kWe,PASS
+Total Assembly Mass,576.91,kg,< 650.0 kg,PASS
+Total Reactor Volume,160.61,L,Minimised,PASS
+Operating Multiplication k_out,1.02236,-,> 1.000,PASS
+Operating k_out Uncertainty,0.00082,-,< 0.001,PASS
+Shutdown Multiplication k_in,0.97065,-,< 0.980,PASS
+Total Drum Worth,5211.3,pcm,> 4000 pcm,PASS
+All-In Shutdown Margin SDM,2935.3,pcm,>= 2000 pcm,PASS
+Single Stuck-Drum SDM_stuck,2558.3,pcm,>= 1000 pcm,PASS
+Fuel Doppler alpha_fuel,-1.53,pcm/K,< 0 at 3-sigma,PASS
+Moderator Coefficient alpha_mod,-1.21,pcm/K,< 0 at 3-sigma,PASS
+Total Feedback alpha_total,-1.91,pcm/K,< 0 at 3-sigma,PASS
+Coolant Void Reactivity,-71.7,pcm,< 0 target,PASS
+Void Reactivity Uncertainty,82.2,pcm,Statistical,INFO
+Full-Power Lifetime,18.09,years,>= 10.0 years,PASS
+Moderator Matrix Type,BeO-ZrH2 Composite (28/72 vol%),-,BeO-First Exploration,PASS
+Reflector Material,BeO (9.50 cm radial & axial),-,High-temp ceramic,PASS

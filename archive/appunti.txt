@@ -1,0 +1,3 @@
+sicuramente dobbiamo vedere prima o poi anche il depletion simulation e il lifespan di conseguenza
+successivamente, sicuramente anche lo studio delle temperature e in generale della termoidraulica sara fondamentale
+che guardi anche i limiti strutturali e se la geometria puo essere creata e non ha troppo stress meccanico cosi come è. magari isntallando anche altri software se necessario

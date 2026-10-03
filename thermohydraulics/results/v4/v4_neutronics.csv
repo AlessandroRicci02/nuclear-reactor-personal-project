@@ -1,0 +1,17 @@
+Parameter,Value,Uncertainty_1sigma,Units,Notes
+Coupled Operating k_eff,1.01645,0.00055,-,"Drums 0 deg, coupled T/rho field"
+Excess Reactivity,1618.3,53.0,pcm,Reactivity available for burnup
+Depletion Operational Lifetime,23.7,0.8,years,Assumes 68.2 pcm/year at 400 kWth
+Doppler Reactivity Coefficient,-0.844,0.554,pcm/K,Fuel temperature feedback
+Moderator Temperature Coefficient,-0.811,0.795,pcm/K,YH2.0 hydride thermal scattering
+Coolant Void Reactivity Insertion,35.32,79.83,pcm,Net reactivity on complete voiding
+Total Control Drum Worth,4698.1,90.5,pcm,10 BeO/B4C drums
+All-In Shutdown Margin,3079.8,73.3,pcm,Target > 2000 pcm
+Single Stuck-Drum Margin,2763.7,65.8,pcm,Target > 1000 pcm
+Radial Peaking Factor (F_r),1.327,0.005,-,From V3 RUN D / Cardinal qualified
+Axial Peaking Factor (F_z),1.286,0.006,-,Cosine profile peak/average
+Total Peaking Factor (F_q),1.707,0.009,-,F_r * F_z peak cell/average core
+Peak Volumetric Power Density,70.67,0.4,MW/m3,In outer ring hot pin #216
+Average Volumetric Power Density,41.4,-,MW/m3,400 kWth / 0.00966 m3 fuel
+Core Fissile U-235 Inventory,12.39,-,kg,19.30% inner / 19.75% outer
+Core Total Heavy Metal Inventory,63.38,-,kg,Total U in sintered UN

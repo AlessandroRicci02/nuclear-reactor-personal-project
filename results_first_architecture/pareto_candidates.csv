@@ -1,0 +1,6 @@
+Candidate,Mass [kg],Volume [L],k_out,k_in,Drum worth [pcm],alpha_fuel [pcm/K],alpha_mod [pcm/K],alpha_cool [pcm/K],alpha_total [pcm/K],10-Yr Lifetime,EOL keff,Status
+Iteration 1 (Scaled 6-Drum),625.2,148.6,1.03966,0.99366,4452,-1.60,-0.85,+0.10,-2.35,FAILED (<10 yr),0.9850,Fails 10-Yr (k_EOL < 1.0) & Fails Stuck Drum
+Iteration 2 (8-Drum Moderate),644.5,154.2,1.04285,0.96680,7539,-1.68,-0.82,+0.06,-2.44,FAILED (<10 yr),0.9920,Subcritical at 9.5 yr
+Iteration 3 (High Pitch Core),705.2,170.7,1.07420,0.98150,8794,-1.35,-0.45,-0.05,-1.85,MET (>=10 yr),1.0264,"Passes 10-Yr, but Mass Penalty (+166 kg vs Opt-2)"
+Opt-3 (Previous 10-Yr Baseline),670.5,162.4,1.06233,0.97490,8555,-1.73,-0.87,+0.27,-2.33,MET (>=10 yr),1.0052,"10-Yr Reference Baseline (670.5 kg, 162.4 L)"
+Opt-4 (New Balanced Mass-Optimized),622.7,145.2,1.05743,0.97180,8166,-1.49,-2.36,+1.00,-2.85,MET (>=10 yr),1.0164,"Selected Global Optimum (622.7 kg, -47.8 kg vs Opt-3)"

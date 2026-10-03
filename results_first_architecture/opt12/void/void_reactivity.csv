@@ -1,0 +1,3 @@
+State,keff,std_dev,Delta_rho_pcm,Uncertainty_pcm,Bound_1sigma_pcm,Bound_2sigma_pcm,Bound_3sigma_pcm,Physical_Assessment
+Full Coolant Void (80k x 50),1.02151,0.00064,+96.9,74.6,+171.4,+246.0,+320.6,Statistically Inconclusive Near Zero (|Delta_rho| < 100 pcm)
+Full Coolant Void (40k x 45),1.02110,0.00089,-13.1,122.6,+109.5,+232.1,+354.7,Statistically Inconclusive Near Zero (|Delta_rho| < 100 pcm)

@@ -1,0 +1,10 @@
+Component,Material,Mass_kg,Volume_L,Fraction_pct
+UN Fuel,UN (19.75% U-235),130.03,9.63,22.41
+Cladding,Nb-1Zr,14.85,2.35,2.56
+Moderator,Canned YH2.0,136.82,31.82,23.58
+Coolant Active,Pure He (2.5 MPa),0.0077,3.84,<0.01
+Coolant Axial,Pure He (2.5 MPa),0.0120,1.85,<0.01
+Axial Reflectors,Sintered BeO,117.77,40.61,20.30
+Radial Reflector & Drums,Sintered BeO,168.70,58.17,29.07
+Absorber Sectors,B4C (90% B-10),12.09,4.80,2.08
+TOTAL,—,580.29,163.96,100.00

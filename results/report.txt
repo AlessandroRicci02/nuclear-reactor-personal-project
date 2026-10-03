@@ -1,0 +1,102 @@
+========================================================================================
+                   CANDIDATE OPT-17 COMPREHENSIVE QUALIFICATION REPORT
+                 STRICT NO-REGRESSION EVALUATION OF CANDIDATE OPT-16
+========================================================================================
+
+1. EXECUTIVE SUMMARY & MANDATORY DIRECTIVE COMPLIANCE
+----------------------------------------------------------------------------------------
+Directive Mandate:           Develop Opt-17 by improving the verified Opt-16 baseline reactor.
+                             No new candidate may replace Opt-16 unless every required performance
+                             metric has been verified to be no worse than the baseline, with at least
+                             one meaningful improvement.
+Total Candidates Screened:   11 distinct architectural configurations (17-A through 17-D, FT1-FT4,
+                             17-Clean, 17-Opt1, 17-Opt2)
+Final Determination:         NO CANDIDATE SATISFIES THE STRICT NO-REGRESSION RULE.
+                             CANDIDATE OPT-16 IS FORMALLY RETAINED AS THE BINDING FLIGHT REFERENCE.
+
+2. VERIFIED BASELINE SPECIFICATIONS (CANDIDATE OPT-16)
+----------------------------------------------------------------------------------------
+Core Thermal Power:          400.0 kWth
+Net Electrical Output:       100.0 kWe (25.0% Closed Brayton Conversion Efficiency)
+Core Assembly Total Mass:    540.44 kg  (< 650.0 kg launch limit | Margin: +109.56 kg)
+Core Assembly Envelope:      163.96 L   (R_outer = 29.25 cm, Total Height H = 61.00 cm)
+Fuel Pin Configuration:      217 UN pins (19.75 wt% U-235) in 9 Hexagonal Rings (Pitch = 2.270 cm)
+Active Core Height:          42.00 cm | Cladding: Nb-1Zr (t = 0.050 cm)
+Moderator Matrix:            Canned delta-phase YH2.0 (density = 4.30 g/cm3)
+Reflectors:                  Sintered Monolithic BeO (Radial th = 9.80 cm, Axial th = 9.50 cm)
+Control System:              10 Rotating BeO Control Drums with 145.0° B4C Sectors (90 at% B-10)
+Operating Multiplication:    k_op = 1.01946 +/- 0.00060 (Excess Reactivity = +1909.1 pcm)
+Operational Lifetime:        28.0 Years at 400.0 kWth (Rundown Rate = 68.2 pcm/year)
+Total Drum Worth:            4740.9 pcm  (Mission requirement: > 4000.0 pcm)
+All-In Shutdown Margin:      2831.8 pcm  (Mission requirement: >= 2000.0 pcm)
+Single Stuck-Drum Margin:    2393.7 pcm  (Safety mandate: >= 1000.0 pcm | Margin: +1393.7 pcm)
+Prompt Fuel Doppler:         alpha_fuel = -1.11 +/- 0.17 pcm/K (3-sigma: -0.61 pcm/K < 0)
+Moderator Coefficient:       alpha_mod  = -1.60 +/- 0.19 pcm/K (3-sigma: -1.02 pcm/K < 0)
+Total Isothermal TMC:        alpha_tot  = -2.79 +/- 0.26 pcm/K (3-sigma: -2.02 pcm/K < 0)
+Coolant Void Reactivity:     Delta_rho_void = -87.1 +/- 37.2 pcm (Strictly negative at 2-sigma)
+Radial Power Peaking Factor: Fq = 3.428 (evaluated on 80x80 regular fission mesh)
+
+3. COMPARATIVE AUDIT MATRIX OF EVALUATED CANDIDATES
+----------------------------------------------------------------------------------------
+Candidate Identifier    | Mass [kg] | Life [yr] | Worth [pcm] | SDM [pcm] | SDM_stk |   Fq   | drho_vd [pcm] | Outcome
+------------------------------------------------------------------------------------------------------------------
+Opt-16 Baseline (Ref)   |   540.44  |   28.0    |   4740.9    |   2831.8  |  2393.7 |  3.428 |  -87.1+/-37.2 | REFERENCE
+Candidate 17-A (Geom)   |   538.41  |   29.0    |   4659.3    |   2682.3  |  2297.3 |  3.977 | +199.7+/-103  | REJECTED
+Candidate 17-B (Enrich) |   539.14  |   21.0    |   5147.9    |   3714.5  |  3103.1 |  3.346 | -296.1+/-113  | REJECTED
+Candidate 17-C (Control)|   538.43  |   25.3    |   4992.5    |   3263.8  |  2655.9 |  3.380 |  +15.6+/-130  | REJECTED
+Candidate 17-D (Integ)  |   538.46  |   20.5    |   5111.0    |   3716.1  |  3070.5 |  3.423 | -180.0+/-136  | REJECTED
+Cand FT1 (2-Zone 18.5%) |   540.04  |   22.3    |   4628.5    |   3107.8  |  2962.3 |  3.358 | +103.3+/-105  | REJECTED
+Cand FT2 (3-Zone 18.0%) |   539.78  |   20.5    |   4730.4    |   3331.4  |  2723.2 |  3.337 |  -68.0+/-100  | REJECTED
+Cand FT3 (2-Zone 18.8%) |   539.25  |   24.5    |   4956.4    |   3286.8  |  2738.2 |  3.334 |  -63.8+/-95   | REJECTED
+Cand FT4 (3-Zone 18.2%) |   538.98  |   21.5    |   4902.6    |   3438.8  |  2947.3 |  3.283 | -144.9+/-94   | REJECTED
+Cand 17-Clean (Synth)   |   539.64  |   25.4    |   4648.3    |   2918.3  |  2635.2 |  3.347 | -121.1+/-55   | REJECTED
+Cand 17-Opt1 (Uniform)  |   540.10  |   26.4    |   4690.7    |   2888.4  |  2433.9 |  3.344 |  -44.0+/-65   | REJECTED
+Cand 17-Opt2 (MicroZon) |   540.10  |   27.2    |   4753.8    |   2898.4  |  2428.8 |  3.349 |  +66.9+/-65   | REJECTED
+------------------------------------------------------------------------------------------------------------------
+
+4. STRICT NO-REGRESSION CHECKPOINT AUDIT
+----------------------------------------------------------------------------------------
+Candidate Identifier    | Mass  | Life  | Worth |  SDM  | Stuck |  Fq   | Void  | Final Eligibility Status
+----------------------------------------------------------------------------------------------------------
+Opt-16 Baseline (Ref)   | PASS  | PASS  | PASS  | PASS  | PASS  | PASS  | PASS  | CURRENT REFERENCE
+Candidate 17-A (Geom)   | PASS  | PASS  | FAIL  | FAIL  | FAIL  | FAIL  | FAIL  | DISQUALIFIED (5 Regressions)
+Candidate 17-B (Enrich) | PASS  | FAIL  | PASS  | PASS  | PASS  | PASS  | PASS  | DISQUALIFIED (Lifetime -7.0 yr)
+Candidate 17-C (Control)| PASS  | FAIL  | PASS  | PASS  | PASS  | PASS  | FAIL  | DISQUALIFIED (Lifetime & Void)
+Candidate 17-D (Integ)  | PASS  | FAIL  | PASS  | PASS  | PASS  | PASS  | PASS  | DISQUALIFIED (Lifetime -7.5 yr)
+Cand FT1 (2-Zone 18.5%) | PASS  | FAIL  | FAIL  | PASS  | PASS  | PASS  | FAIL  | DISQUALIFIED (Life, Worth, Void)
+Cand FT2 (3-Zone 18.0%) | PASS  | FAIL  | FAIL  | PASS  | PASS  | PASS  | FAIL  | DISQUALIFIED (Life, Worth, Void)
+Cand FT3 (2-Zone 18.8%) | PASS  | FAIL  | PASS  | PASS  | PASS  | PASS  | FAIL  | DISQUALIFIED (Lifetime & Void)
+Cand FT4 (3-Zone 18.2%) | PASS  | FAIL  | PASS  | PASS  | PASS  | PASS  | PASS  | DISQUALIFIED (Lifetime -6.5 yr)
+Cand 17-Clean (Synth)   | PASS  | FAIL  | FAIL  | PASS  | PASS  | PASS  | PASS  | DISQUALIFIED (Life & Worth)
+Cand 17-Opt1 (Uniform)  | PASS  | FAIL  | FAIL  | PASS  | PASS  | PASS  | FAIL  | DISQUALIFIED (Life, Worth, Void)
+Cand 17-Opt2 (MicroZon) | PASS  | FAIL  | PASS  | PASS  | PASS  | PASS  | FAIL  | DISQUALIFIED (Lifetime & Void)
+----------------------------------------------------------------------------------------------------------
+
+5. PHYSICAL EXPLANATION OF PARETO CONSTRAINTS
+----------------------------------------------------------------------------------------
+1. Fissile Reactivity vs. Lifetime Constraint:
+   Sustaining 28.0 years at 400.0 kWth requires an excess reactivity reserve >= +1909 pcm.
+   Radial enrichment grading successfully reduces power peaking (Fq: 3.428 -> 3.283) and
+   increases negative void reactivity (-144.9 to -296.1 pcm), but removing fissile U-235 from
+   the core center costs 150-500 pcm of excess reactivity, dropping lifetime to 20-27 years.
+
+2. Drum Absorber Sector Width vs. Reflector Albedo Coupling:
+   Widening control drum absorber sectors (145° -> 148°-152°) increases drum worth (>5100 pcm)
+   and stuck-drum margin (>3100 pcm), but decreases the outer BeO reflector albedo at 0° (OUT),
+   imposing an eigenvalue penalty of 50-100 pcm that penalizes operational lifetime.
+
+3. Axial Streaming Duct Transmission vs. Core Reactivity Coupling:
+   Enlarging axial ducts (r_duct = 0.820 -> 0.860 cm) drives void reactivity more negative
+   (-121.1 pcm), but permanently increases normal operating axial neutron leakage through the
+   axial BeO reflectors, reducing excess reactivity by 80-120 pcm.
+
+4. Assembly Mass vs. Core Height Constraint:
+   Lengthening active fuel pins beyond 42.0 cm recovers lost reactivity but increases fuel,
+   clad, and radial BeO reflector mass beyond the 540.44 kg threshold (reaching 540.86 kg at
+   H_core = 42.60 cm), violating the strict mass no-regression requirement.
+
+========================================================================================
+CONCLUSION:
+Under the strict no-regression rule, Opt-16 occupies an unbreached physical Pareto boundary.
+CANDIDATE OPT-16 IS OFFICIALLY REAFFIRMED AS THE PROGRAM FLIGHT REFERENCE ARCHITECTURE.
+========================================================================================

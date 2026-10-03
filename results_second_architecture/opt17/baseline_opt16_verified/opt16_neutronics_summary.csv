@@ -1,0 +1,15 @@
+Parameter,Value,Uncertainty,Units,Requirement,Status
+k_op,1.01994,0.00027,—,1.010 - 1.025,PASS
+k_in,0.97246,0.00063,—,< 0.980,PASS
+k_stk,0.97662,0.00068,—,< 0.990,PASS
+Drum_Worth,4740.9,—,pcm,> 4000.0,PASS
+SDM,2831.8,—,pcm,>= 2000.0,PASS
+SDM_stk,2393.7,—,pcm,>= 1000.0,PASS
+Delta_rho_void,-87.1,37.2,pcm,< 0,PASS (<0 at 1-sigma)
+alpha_fuel,-1.11,0.17,pcm/K,< 0 at 3-sigma,PASS (<0 at 3-sigma)
+alpha_mod,-1.60,0.19,pcm/K,< 0 at 1-sigma,PASS (<0 at 3-sigma)
+alpha_cool,-0.083,0.035,pcm/K,<= 0,PASS
+alpha_total,-2.79,0.26,pcm/K,< 0 at 3-sigma,PASS (<0 at 3-sigma)
+Operational_Life,28.0,—,years,>= 10.0,PASS
+Total_Assembly_Mass,540.44,—,kg,< 650.0,PASS
+Assembly_Volume,163.96,—,L,< 180.0,PASS

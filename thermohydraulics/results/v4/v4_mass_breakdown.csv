@@ -1,0 +1,21 @@
+Component,Material,Volume_L,Density_g_cm3,Mass_kg,Subassembly_Fraction_%,Category
+UN Fuel (Pellets),UN (19.3 - 19.75% U-235),9.735,13.5,131.42,24.35,Active Core
+Fissile U-235 Inventory,U-235,-,-,24.47,4.53,Fissile Subtotal
+Total Uranium Metal,U (elemental),-,-,124.12,23.0,Fissile Subtotal
+Fuel Cladding,Nb-1Zr Alloy,1.751,8.57,15.0,2.78,Active Core
+Moderator Matrix,Canned YH2.0,22.817,4.3,98.11,18.18,Active Core
+Helium Coolant (In-Core),4He (2.5 MPa),17.865,0.00115,0.021,0.004,Active Core
+BeO Axial Reflectors,Sintered BeO,38.799,2.9,112.52,20.85,Reflector System
+BeO Radial Reflector (Stationary),Sintered BeO,42.84,2.9,124.24,23.02,Reflector System
+BeO Drum Segments,Sintered BeO,15.544,2.9,45.08,8.35,Control Drums
+B4C Absorber Sectors (10 drums),B4C (90% B-10),5.263,2.52,13.26,2.46,Control Drums
+TOTAL SUBASSEMBLY (Opt-17 Verified),Modeled Components,163.96,-,539.66,100.0,Opt-17 Core Subassembly
+Reactor Vessel Shell (3 mm Nb-1Zr),Nb-1Zr Alloy,5.026,8.57,43.08,-,Reactor Structural Allowance
+Core Support Plates & Grid,Nb-1Zr Alloy,-,-,15.0,-,Reactor Structural Allowance
+Drum Actuation Drives & Bearings,Stepper Motors / MoS2,-,-,25.0,-,Reactor Control Subsystem
+TOTAL REACTOR MODULE ESTIMATE,Core + Structure + Drives,-,-,622.74,-,Complete Reactor Module
+Shadow Radiation Shield (Estimated),W / LiH / B4C,-,-,750.0,-,NEP Balance-of-Plant
+Brayton Turbomachinery & Recuperator,Superalloys / TiAl,-,-,350.0,-,NEP Balance-of-Plant
+Heat Pipe Radiator Subsystem,C-C / Titanium-Water/K,-,-,650.0,-,NEP Balance-of-Plant
+Power Management & Distribution (PMAD),SiC Electronics / Cu,-,-,400.0,-,NEP Balance-of-Plant
+TOTAL 100 kWe NEP SYSTEM ESTIMATE,Full Spacecraft Power System,-,-,2772.74,-,Full Flight System

@@ -1,0 +1,8 @@
+Perturbation_Scope,Coefficient,Value_pcm_per_K,Uncertainty_pcm_per_K,Bound_3sigma_pcm_per_K,Delta_T_K,Physical_Mechanism,Safety_Status
+Differential (Small DT),Fuel Doppler (alpha_fuel),-1.01,0.44,+0.32,200.0,Resonance capture broadening in U-238,INCONCLUSIVE AT 3-SIGMA (Nominal < 0)
+Differential (Small DT),Moderator (alpha_mod),-0.28,0.53,+1.30,150.0,Thermal expansion & spectrum hardening,INCONCLUSIVE AT 3-SIGMA (Nominal < 0)
+Differential (Small DT),Coolant (alpha_cool),+0.26,0.53,+1.84,150.0,Density decrease of pure He coolant,STATISTICALLY NEUTRAL
+Differential (Small DT),Total TMC (alpha_total),-1.03,0.87,+1.57,150.0,Integrated core reactivity feedback,INCONCLUSIVE AT 3-SIGMA (Nominal < 0)
+Integral Transient (Large DT),Fuel Doppler (alpha_fuel),-1.64,0.26,-0.85,450.0,Transient Doppler broadening (1050 to 1500 K),CONFORMING (< 0 AT 3-SIGMA)
+Integral Transient (Large DT),Moderator (alpha_mod),-1.15,0.39,+0.03,300.0,Volumetric expansion & sab hardening (800 to 1100 K),HIGH CONFIDENCE NEGATIVE (2-sigma < 0)
+Integral Transient (Large DT),Total TMC (alpha_total),-2.79,0.47,-1.38,300.0,Integrated core transient feedback,CONFORMING (< 0 AT 3-SIGMA)

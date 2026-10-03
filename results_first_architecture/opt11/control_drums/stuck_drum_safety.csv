@@ -1,0 +1,3 @@
+Configuration,keff,std_dev,SDM_pcm,u_SDM_pcm,Lower_3sigma_SDM_pcm
+All Drums In (180 deg),0.97065,0.00079,2935.3,79.2,2697.7
+"1 Drum Stuck Out (0 deg, 9 in)",0.97442,0.00079,2558.3,78.8,2321.9

@@ -1,0 +1,49 @@
+===============================================================================
+AUTONOMOUS RESEARCH QUALIFICATION REPORT: CANDIDATE OPT-10 SPACE NEP REACTOR
+===============================================================================
+Architecture Name: Candidate Opt-10 (10-Drum Decoupled Compact Space Reactor)
+Thermal Power Rating: 400 kWth | Bus Electric Rating: ~100 kWe (25% Brayton)
+Evaluation Date: October 2, 2026
+-------------------------------------------------------------------------------
+1. GEOMETRIC & MASS SPECIFICATIONS:
+  - Active Core Radius:             19.45 cm
+  - Active Core Height:             41.50 cm (H/R = 2.134)
+  - Total Reactor Outer Radius:     29.25 cm
+  - Total Reactor Assembly Height:  60.50 cm
+  - Fuel Pin Pitch (Square):        1.665 cm
+  - Active Fuel Pins:               401
+  - Coolant Annular Gap:            0.70 mm (Pure He at 2.5 MPa)
+  - Axial Streaming Duct Radius:    0.820 cm (Penetrating BeO)
+  - Control Drums:                  10 drums, R = 3.95 cm
+  - Absorber Sector:                135.0 deg B4C (90% B-10, t = 1.40 cm)
+  - Total Assembly Mass:            564.05 kg (Savings: -5.2 kg vs Opt-9, -64.7 kg vs Opt-8)
+  - Total Envelope Volume:          162.61 L (Savings: -1.8 L vs Opt-9)
+  - UN Fuel Inventory:              237.43 kg (U-235: 43.83 kg)
+-------------------------------------------------------------------------------
+2. NUCLEAR SAFETY & REACTIVITY PERFORMANCE:
+  - BOL Operating keff (0 deg):     1.00616 +/- 0.00078
+  - All-In Shutdown keff (180 deg): 0.94617 +/- 0.00083
+  - Total Drum Reactivity Worth:    6302.4 pcm (6.14% delta-k/k)
+  - All-In Shutdown Margin (SDM):   5383.4 +/- 82.9 pcm
+  - Single Stuck-Drum keff:         0.95039 +/- 0.00072
+  - Single Stuck-Drum Margin:       4960.8 +/- 72.2 pcm (> 2.7x higher than Opt-9!)
+-------------------------------------------------------------------------------
+3. REACTIVITY FEEDBACK COEFFICIENTS:
+  - Prompt Fuel Doppler (alpha_f):  -1.61 +/- 0.27 pcm/K (3-sigma bound: -0.79 pcm/K < 0)
+  - Moderator Density (alpha_m):    -3.35 +/- 0.33 pcm/K (3-sigma bound: -2.34 pcm/K < 0)
+  - Coolant Density (alpha_c):      -0.59 +/- 0.52 pcm/K (Compatible with zero, low gas mass)
+  - Total Temperature Feedback:     -5.54 +/- 0.67 pcm/K (3-sigma bound: -3.51 pcm/K < 0)
+-------------------------------------------------------------------------------
+4. COOLANT VOID REACTIVITY (PURE HELIUM):
+  - Operating keff (2.5 MPa He):    1.00627 +/- 0.00040
+  - Voided keff (Vacuum):           1.00640 +/- 0.00040
+  - Coolant Void Reactivity:        +12.8 +/- 56.2 pcm
+  - 2-Sigma Confidence Bound:       +125.2 pcm
+  - 3-Sigma Confidence Bound:       +181.4 pcm
+-------------------------------------------------------------------------------
+5. LIFETIME & DEPLETION CAPABILITY:
+  - Operating Thermal Power:        400 kWth continuous HFP
+  - Demonstrated Neutronic Life:    >= 20 Years (EOL keff > 1.000)
+  - Burnup at 20 Years:             12.31 MWd/kg
+  - 20-Year Critical Drum Angle:    0.0 deg
+===============================================================================

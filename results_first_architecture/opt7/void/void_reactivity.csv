@@ -1,0 +1,3 @@
+State,Coolant,Density_g_cm3,keff,std_dev,Delta_rho_pcm,u_pcm,Bound_3sigma_pcm
+Operating,He-Xe 95/5,0.00238,1.02120,0.00047,0.0,0.0,0.0
+Voided (Vacuum),Void,0.00000,1.02148,0.00049,+27.1,65.2,+222.8

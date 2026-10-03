@@ -1,0 +1,30 @@
+{
+  "nominal_transitional_gap": {
+    "Tfuel_max": 1293.8558748452301,
+    "Tclad_max": 1270.971841662793,
+    "h_mean": 1396.846944728589
+  },
+  "htc_plus_10_percent": {
+    "Tfuel_max": 1285.25627003721,
+    "Tclad_max": 1263.3434744509104,
+    "h_mean": 1536.5316392014483,
+    "delta_Tfuel": -8.599604808020104
+  },
+  "htc_minus_10_percent": {
+    "Tfuel_max": 1305.4811527612783,
+    "Tclad_max": 1280.295401588427,
+    "h_mean": 1257.1622502557302,
+    "delta_Tfuel": 11.625277916048162
+  },
+  "shah_london_pure_laminar": {
+    "Tfuel_max": 1293.8558748452301,
+    "Tclad_max": 1270.971841662793,
+    "h_mean": 1396.846944728589,
+    "delta_Tfuel": 0.0
+  },
+  "perfect_fuel_clad_contact": {
+    "Tfuel_max": 1287.4299594810534,
+    "Tclad_max": 1270.971841662793,
+    "delta_Tfuel": -6.425915364176717
+  }
+}

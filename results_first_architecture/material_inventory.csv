@@ -1,0 +1,9 @@
+Component,Density [g/cm3],Volume [cm3],Volume [L],Mass [kg],Mass %,Volume %
+UN Fuel (19.75 wt% U-235),13.5000,15662.2,15.662,211.440,33.96,10.78
+Nb-1Zr Fuel Cladding,8.5700,2816.8,2.817,24.140,3.88,1.94
+He-Xe Coolant (Channels),0.0092,3049.6,3.050,0.028,0.00,2.10
+YH2 Moderator,4.3000,21594.9,21.595,92.858,14.91,14.87
+BeO Radial Reflector,2.9000,59053.2,59.053,171.254,27.50,40.66
+BeO Axial Reflectors (Top+Bot),2.9000,38069.7,38.070,110.402,17.73,26.21
+B4C Absorber (Control Drums),2.5200,4982.6,4.983,12.556,2.02,3.43
+Total Modeled Reactor,-,145228.9,145.229,622.678,100.00,100.00

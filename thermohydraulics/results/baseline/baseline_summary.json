@@ -1,0 +1,17 @@
+{
+  "run": "RUN 0 \u2014 BASELINE",
+  "description": "Uncoupled reference: uniform 1050 K, nominal He density, perfect contact",
+  "k_eff": 1.0186920296566646,
+  "sigma_k": 0.0006076093136388066,
+  "peak_pin_power_W": 2461.288670167903,
+  "F_r": 1.3352491035660874,
+  "F_z": 1.2739574727537601,
+  "F_q": 1.7271240194061355,
+  "peak_vol_density_MW_m3": 70.96434965905252,
+  "Tfuel_max_K": 1292.5980158379375,
+  "Tclad_max_K": 1274.2829853442013,
+  "Tcoolant_max_K": 1217.0498207132175,
+  "Tout_K": 1150.0,
+  "mass_flow_kg_s": 0.38512189507807837,
+  "pressure_drop_kPa": 23.584623915948537
+}

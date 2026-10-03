@@ -1,0 +1,7 @@
+RUN,Improvement,k_eff,Peak Power,Fq,Tmax Fuel,Tmax Clad,Tout,ΔP,Status
+RUN 0,Baseline (Uncoupled),1.01869 +/- 0.00061,2461.3 W,1.727,1292.6 K,1274.3 K,1150.0 K,23.58 kPa,COMPUTED
+RUN 1,Basic Doppler Feedback,1.01683 +/- 0.00061,2447.3 W,1.742,1288.9 K,1271.5 K,1150.0 K,23.59 kPa,COMPUTED
+RUN 2,Doppler + He Density + Mod,1.01592 +/- 0.00080,2437.2 W,1.752,1287.3 K,1270.8 K,1150.0 K,23.58 kPa,COMPUTED
+RUN 3,Transitional Re + ΔP + Gap,1.01673 +/- 0.00056,2445.2 W,1.740,1295.8 K,1272.8 K,1150.0 K,23.59 kPa,COMPUTED
+RUN 4,Picard Fixed-Point Under-Relax,1.01651 +/- 0.00067,2431.1 W,1.722,1296.2 K,1271.0 K,1150.0 K,23.59 kPa,COMPUTED
+RUN 5,Final Converged Master State,1.01651 +/- 0.00067,2431.1 W,1.722,1296.2 K,1271.0 K,1150.0 K,23.59 kPa,CONVERGED

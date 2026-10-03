@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<materials>
+  <cross_sections>/home/aleri/wmp_data/cross_sections_wmp.xml</cross_sections>
+  <material id="1" name="UN Fuel (19.75 wt% U-235)" depletable="true" temperature="1050.0">
+    <density value="13.5" units="g/cm3"/>
+    <nuclide name="U235" ao="0.099761"/>
+    <nuclide name="U238" ao="0.400239"/>
+    <nuclide name="N14" ao="0.49815"/>
+    <nuclide name="N15" ao="0.00185"/>
+  </material>
+  <material id="2" name="Nb-1Zr Cladding" temperature="1050.0">
+    <density value="8.57" units="g/cm3"/>
+    <nuclide name="Nb93" wo="0.99"/>
+    <nuclide name="Zr90" wo="0.005070611750923317"/>
+    <nuclide name="Zr91" wo="0.0011180887453100783"/>
+    <nuclide name="Zr92" wo="0.001727810146362816"/>
+    <nuclide name="Zr94" wo="0.0017891104342343414"/>
+    <nuclide name="Zr96" wo="0.00029437892316944896"/>
+  </material>
+  <material id="3" name="Pure Helium Coolant" temperature="1050.0">
+    <density value="1e-07" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="4" name="BeO Reflector" temperature="800.0">
+    <density value="2.9" units="g/cm3"/>
+    <nuclide name="Be9" ao="1.0"/>
+    <nuclide name="O16" ao="1.0"/>
+    <sab name="c_Be_in_BeO"/>
+    <sab name="c_O_in_BeO"/>
+  </material>
+  <material id="5" name="B4C Absorber (90% B-10)" temperature="800.0">
+    <density value="2.52" units="g/cm3"/>
+    <nuclide name="B10" ao="3.6"/>
+    <nuclide name="B11" ao="0.3999999999999999"/>
+    <nuclide name="C0" ao="1.0"/>
+  </material>
+  <material id="6" name="YH2 Moderator" temperature="800.0">
+    <density value="4.3" units="g/cm3"/>
+    <nuclide name="Y89" ao="1.0"/>
+    <nuclide name="H1" ao="2.0"/>
+    <sab name="c_H_in_ZrH"/>
+  </material>
+</materials>

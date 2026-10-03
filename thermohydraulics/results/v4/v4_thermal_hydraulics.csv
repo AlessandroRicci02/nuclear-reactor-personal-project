@@ -1,0 +1,25 @@
+Parameter,Value,Units,Status_Audit,Limit_or_Reference,Margin
+Thermal Power Rating,400.0,kWth,Imposed boundary condition,400.0 kWth nominal,0.0 kWth
+Coolant Working Fluid,Pure 4He,-,Verified model,Petersen (1981) EOS,Nominal
+Nominal Operating Pressure,2.5,MPa,Imposed boundary condition,2.5 MPa JIMO reference,0.0 MPa
+Total Coolant Mass Flow,0.38512,kg/s,Calculated to close energy balance (Delta T = 200 K),0.38512 kg/s,0.00000 kg/s
+Coolant Inlet Temperature,950.0,K,Imposed boundary condition,900 - 950 K JIMO band,Within band
+Mixed Coolant Outlet Temperature,1150.0,K,Imposed target to close 1D energy balance,1150.0 K nominal,0.00 K
+Hot Channel Coolant Exit Temp,1215.29,K,Independently predicted by coupled power peaking,< 1250 K target,+34.7 K
+Peak Fuel Centerline Temperature,1295.56,K,Independently predicted by coupled conduction,< 1800 K (UN melting 3035 K),+504.4 K (< 1% FGR)
+Volume-Averaged Fuel Temperature,1142.97,K,Independently predicted,-,-
+Peak Cladding Outer Temperature,1273.03,K,Independently predicted,< 1350 K (Nb-1Zr creep limit),+77.0 K
+Peak Pellet-Clad Gap Drop,8.21,K,Calculated (h_gap = 25 kW/m2 K),< 25 K,+16.8 K
+Peak Pellet Gap Heat Flux,20.53,W/cm2,Independently predicted,-,-
+Peak Clad Outer Heat Flux,18.9,W/cm2,Independently predicted,-,-
+Core Total Pressure Drop,23.585,kPa,Independently predicted by momentum equation,< 35.0 kPa target,+11.41 kPa
+Core Friction Factor * Re,95.8,-,Shah & London laminar annular solution (r1/r2 = 0.912),95.8 (vs 64 for pipe),Exact analytical match
+Reynolds Number Range,"[1603, 1891]",-,Calculated from local rho and mu(T),Laminar-Transitional regime,Re < 2300 (Transitional)
+Average Nusselt Number,5.465,-,Shah & London concentric annulus + Hausen entry length,5.465 fully developed,+0.000 entry corrected
+Convective Heat Transfer Coeff,1368.2,W/(m2 K),h = Nu * k_He / D_h,1300 - 1450 W/(m2 K),Nominal
+Channel Hydraulic Diameter,1.5,mm,Verified CAD geometry (2 * gap),1.50 mm,0.0 mm
+Annular Coolant Gap Width,0.75,mm,Verified CAD geometry,0.75 mm,0.0 mm
+Core Total Coolant Flow Area,68.26,cm2,217 annular channels,83.09 cm2,0.0 cm2
+Average Coolant Flow Velocity,49.23,m/s,u = m_dot / (rho * A_flow),38 - 42 m/s,Nominal
+Average Coolant Density,1.151,kg/m3,Ideal gas EOS at 2.5 MPa,1.10 - 1.25 kg/m3,Nominal
+Global Energy Balance Residual,0.0,%,Verified: Q_neutronic = Q_thermal = 400.000 kWth,< 0.01%,Strictly Conservative

@@ -1,0 +1,91 @@
+{
+  "campaign": "Opt-17 Cand 17-Clean V4 Multiphysics Coupling & JIMO Assessment",
+  "date": "2026-10-03",
+  "architecture": {
+    "name": "Opt-17 Cand 17-Clean",
+    "lattice_type": "Hexagonal 9-ring",
+    "fuel_pin_count": 217,
+    "fuel_material": "Sintered UN (19.30% inner / 19.75% outer U-235)",
+    "cladding_material": "Nb-1Zr refractory alloy (0.50 mm wall)",
+    "moderator_material": "Canned YH2.0 metal hydride",
+    "reflector_material": "Sintered BeO (radial 9.80 cm, axial 9.275 cm)",
+    "control_system": "10 rotating BeO drums with 148 deg B4C sectors (90% B-10)",
+    "thermal_power_kWth": 400.0,
+    "electrical_power_kWe": 100.0,
+    "brayton_efficiency_nominal": 0.25
+  },
+  "coupling_status": {
+    "picard_iterations": 8,
+    "convergence_status": "CONVERGED",
+    "delta_k_ratio": 0.592,
+    "delta_T_fuel_K": 5.47,
+    "power_RMS_change": 0.0048,
+    "global_energy_residual_percent": 0.0,
+    "cardinal_fe_peak_fuel_diff_K": 0.27,
+    "cardinal_fe_peak_clad_diff_K": 6.17
+  },
+  "neutronics_results": {
+    "k_eff_operating": 1.01645,
+    "sigma_k": 0.00055,
+    "excess_reactivity_pcm": 1618.3,
+    "depletion_lifetime_years": 23.7,
+    "radial_peaking_Fr": 1.327,
+    "axial_peaking_Fz": 1.286,
+    "total_peaking_Fq": 1.707,
+    "peak_volumetric_power_MW_m3": 70.67,
+    "fissile_u235_kg": 12.39
+  },
+  "feedback_coefficients": {
+    "doppler_alpha_D_pcm_K": -0.844,
+    "doppler_uncertainty_pcm_K": 0.554,
+    "moderator_alpha_mod_pcm_K": -0.811,
+    "coolant_void_reactivity_pcm": 35.32,
+    "control_drum_worth_pcm": 4698.1,
+    "all_in_sdm_pcm": 3079.8,
+    "stuck_drum_sdm_pcm": 2763.7
+  },
+  "thermal_hydraulics_results": {
+    "coolant_fluid": "Pure 4He (2.5 MPa)",
+    "total_mass_flow_kg_s": 0.38512,
+    "T_inlet_K": 950.0,
+    "T_outlet_bulk_K": 1150.0,
+    "T_cool_exit_max_K": 1215.29,
+    "T_fuel_center_max_K": 1295.56,
+    "T_clad_out_max_K": 1273.03,
+    "core_pressure_drop_kPa": 23.585,
+    "reynolds_range": "[1603, 1891]",
+    "nusselt_mean": 5.465,
+    "htc_mean_W_m2_K": 1368.2,
+    "hydraulic_diameter_mm": 1.5,
+    "gap_width_mm": 0.75
+  },
+  "mass_accounting": {
+    "subassembly_mass_kg": 539.66,
+    "subassembly_target_limit_kg": 650.0,
+    "subassembly_mass_margin_kg": 110.34000000000003,
+    "total_reactor_module_est_kg": 622.74,
+    "total_nep_system_est_kg": 2772.74
+  },
+  "reference_comparison_status_counts": {
+    "within_target": 19,
+    "outside_target": 1,
+    "indeterminate": 3,
+    "not_assessed": 1
+  },
+  "ranked_issues_count": 5,
+  "deliverables": {
+    "report": "V4_FINAL_REPORT.md",
+    "summary_json": "v4_summary.json",
+    "iterations_csv": "v4_iterations.csv",
+    "neutronics_csv": "v4_neutronics.csv",
+    "feedback_coefficients_csv": "v4_feedback_coefficients.csv",
+    "thermal_hydraulics_csv": "v4_thermal_hydraulics.csv",
+    "mass_breakdown_csv": "v4_mass_breakdown.csv",
+    "reference_comparison_csv": "v4_reference_comparison.csv",
+    "sensitivity_studies_csv": "v4_sensitivity_studies.csv",
+    "issue_register_csv": "v4_issue_register.csv",
+    "validation_matrix_csv": "v4_validation_matrix.csv",
+    "figures_count": 10,
+    "spatial_vtu": "opt17_v4_coupled_field.vtk"
+  }
+}

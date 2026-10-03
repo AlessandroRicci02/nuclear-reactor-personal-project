@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temporary / logs
+*.log
+*.tmp
+*.bak
+
+# MOOSE / Cardinal compiled caches
+.jitcache/
+**/.jitcache/
+
+# Large binary simulation outputs
+*.h5
+
+# Exploratory calculations
+scratch/
+
+# Small representative HDF5 files kept for reproducibility
+!/statepoint.10.h5
+!/statepoint.15.h5
+!/statepoint.30.h5
+!/statepoint.35.h5
+!/statepoint.40.h5
+!/statepoint.45.h5
+!/statepoint.50.h5
+!/statepoint.55.h5
+!/statepoint.60.h5
+!/statepoint.70.h5
+!/statepoint.75.h5
+!/statepoint.80.h5
+!/summary.h5

@@ -1,0 +1,5 @@
+Component,T_low_K,T_high_K,alpha_pcm_K,std_dev_1sigma,std_dev_2sigma,std_dev_3sigma,UpperBound_3sigma
+Fuel Doppler,300.0,1500.0,-1.929,0.078,0.156,0.234,-1.696
+YH2 Moderator (Exp),300.0,900.0,-1.085,0.145,0.290,0.436,-0.650
+Pure He Coolant,900.0,1300.0,+0.264,0.246,0.492,0.738,+1.002
+TOTAL TMC,300.0,1500.0,-2.751,0.296,0.592,0.888,-1.863

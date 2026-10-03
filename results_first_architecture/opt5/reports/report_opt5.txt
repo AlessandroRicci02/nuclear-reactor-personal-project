@@ -1,0 +1,49 @@
+================================================================================
+COMPREHENSIVE ENGINEERING REPORT: CANDIDATE OPT-5 ULTRA-COMPACT SPACE REACTOR
+================================================================================
+
+1. SYSTEM DESIGN SPECIFICATIONS
+  Reactor Thermal Power (Core Fission) : 400.0 kWth (4.00e5 W)
+  Electrical System Power Output (Bus) : 100.0 kWe (1.00e5 W)
+  System Thermal-to-Electric Efficiency: ~25% (Closed Recuperated Brayton Cycle)
+  Operational Mission Constraint       : Minimum 10.0 Years Continuous Operation
+  Calculated Achievable Neutronic Life : > 20.0 Years
+
+2. ASSEMBLY MASS & VOLUME COMPARISON
+  Total Assembly Mass   : 514.08 kg
+    - Opt-4 Reference   : 622.68 kg  (Savings: 108.60 kg, -17.4%)
+    - Opt-3 Reference   : 670.53 kg  (Savings: 156.45 kg, -23.3%)
+  Total Assembly Volume : 120.86 L
+    - Opt-4 Reference   : 145.23 L   (Savings: 24.37 L, -16.8%)
+  Core & Vessel Mass    : 266.73 kg
+  Reflector & Drum Mass : 247.35 kg
+
+3. NEUTRONIC EIGENVALUE & SAFETY SUMMARY
+  BOL Uncontrolled Excess (0°) : keff = 1.02047 +/- 0.00345 (+2006 pcm)
+  BOL Full Shutdown (180°)     : keff = 0.93288 +/- 0.00254 (Normal SDM = 7195 pcm)
+  Single Stuck Drum (1 at 0°)  : keff = 0.94486 +/- 0.00175 (Stuck SDM = 5835 pcm)
+  Total 8-Drum Worth           : 9201 pcm (9.20% Delta-k/k)
+  Single Failure Law Compliance: FULLY SATISFIED (keff < 1.000 with 1 drum fully outward)
+
+4. TEMPERATURE COEFFICIENTS & STABILITY (OPENMC + WMP)
+  Fuel Doppler (300 to 1500 K) : -1.86 +/- 0.24 pcm/K (Prompt Negative)
+  Moderator (300 to 900 K)     : +0.05 +/- 0.40 pcm/K (Negative Spectrum Softening)
+  Coolant (900 to 1300 K)      : -0.67 +/- 0.66 pcm/K
+  TOTAL TEMPERATURE COEFFICIENT: -2.48 +/- 0.81 pcm/K (Strongly Negative Stability)
+
+5. COOLANT DEPRESSURIZATION & VOID REACTIVITY
+  Operating Multiplier (Hi-Stat): 1.01781 +/- 0.00165
+  Voided Multiplier (Hi-Stat)   : 1.01952 +/- 0.00151
+  Void Reactivity Shift (drho)  : +164.8 +/- 215.5 pcm
+  Statistical Interpretation    : Void reactivity is negative or statistically consistent with zero.
+
+6. CRITICALITY-CONTROLLED DEPLETION AT 400 kWth
+  Operating Drum Angle at BOL   : 56.5° (Drums partially inserted to hold k=1.000)
+  Operating Drum Angle at 10 Yrs: 49.9° (Drums rotate outward to compensate burnup)
+  Remaining Excess at 10 Years  : keff(0°) = 1.01593 (+1568 pcm)
+  Normal SDM at 10 Years        : 7937 pcm
+  Stuck Drum SDM at 10 Years    : 6589 pcm
+  10-Year Fissile U-235 Consumed: 1.179 kg (Remaining: 30.883 kg)
+  10-Year Transuranic Pu-239 Bred: 327.5 g
+  10-Year Core Average Burnup   : 7.19 MWd/kgU
+

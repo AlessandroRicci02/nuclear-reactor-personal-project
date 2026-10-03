@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<geometry>
+  <cell id="1" name="Pin Fuel" material="1" region="-5 1 -2" universe="1"/>
+  <cell id="2" name="Pin Clad" material="2" region="5 -6 1 -2" universe="1"/>
+  <cell id="3" name="Pin Annular Coolant" material="3" region="6 -7 1 -2" universe="1"/>
+  <cell id="4" name="Pin Aux Cool 0" material="3" region="-8 1 -2" universe="1"/>
+  <cell id="5" name="Pin Aux Cool 1" material="3" region="-9 1 -2" universe="1"/>
+  <cell id="6" name="Pin Aux Cool 2" material="3" region="-10 1 -2" universe="1"/>
+  <cell id="7" name="Pin Aux Cool 3" material="3" region="-11 1 -2" universe="1"/>
+  <cell id="8" name="Pin Aux Cool 4" material="3" region="-12 1 -2" universe="1"/>
+  <cell id="9" name="Pin Aux Cool 5" material="3" region="-13 1 -2" universe="1"/>
+  <cell id="10" name="Pin Moderator Matrix" material="4" region="7 1 -2 8 9 10 11 12 13" universe="1"/>
+  <cell id="11" name="Axial Bot Central Cool" material="3" region="-14 3 -1" universe="1"/>
+  <cell id="12" name="Axial Top Central Cool" material="3" region="-14 2 -4" universe="1"/>
+  <cell id="13" name="Axial Bot Aux Cool 0" material="3" region="-8 3 -1" universe="1"/>
+  <cell id="14" name="Axial Top Aux Cool 0" material="3" region="-8 2 -4" universe="1"/>
+  <cell id="15" name="Axial Bot Aux Cool 1" material="3" region="-9 3 -1" universe="1"/>
+  <cell id="16" name="Axial Top Aux Cool 1" material="3" region="-9 2 -4" universe="1"/>
+  <cell id="17" name="Axial Bot Aux Cool 2" material="3" region="-10 3 -1" universe="1"/>
+  <cell id="18" name="Axial Top Aux Cool 2" material="3" region="-10 2 -4" universe="1"/>
+  <cell id="19" name="Axial Bot Aux Cool 3" material="3" region="-11 3 -1" universe="1"/>
+  <cell id="20" name="Axial Top Aux Cool 3" material="3" region="-11 2 -4" universe="1"/>
+  <cell id="21" name="Axial Bot Aux Cool 4" material="3" region="-12 3 -1" universe="1"/>
+  <cell id="22" name="Axial Top Aux Cool 4" material="3" region="-12 2 -4" universe="1"/>
+  <cell id="23" name="Axial Bot Aux Cool 5" material="3" region="-13 3 -1" universe="1"/>
+  <cell id="24" name="Axial Top Aux Cool 5" material="3" region="-13 2 -4" universe="1"/>
+  <cell id="25" name="Axial Bot BeO" material="5" region="14 3 -1 8 9 10 11 12 13" universe="1"/>
+  <cell id="26" name="Axial Top BeO" material="5" region="14 2 -4 8 9 10 11 12 13" universe="1"/>
+  <cell id="27" material="4" region="1 -2" universe="2"/>
+  <cell id="28" material="5" region="3 -1" universe="2"/>
+  <cell id="29" material="5" region="2 -4" universe="2"/>
+  <cell id="30" material="6" region="-17 18 19 20 21" universe="4"/>
+  <cell id="31" material="5" region="-17 (17 | -18 | -19 | -20 | -21)" universe="4"/>
+  <cell id="32" fill="4" region="-22 1 -2" translation="23.599999999999998 0.0 0.0" rotation="0.0 0.0 0.0" universe="5"/>
+  <cell id="33" fill="4" region="-23 1 -2" translation="19.092801067248757 13.871731954102366 0.0" rotation="0.0 0.0 36.0" universe="5"/>
+  <cell id="34" fill="4" region="-24 1 -2" translation="7.292801067248759 22.44493378456562 0.0" rotation="0.0 0.0 72.0" universe="5"/>
+  <cell id="35" fill="4" region="-25 1 -2" translation="-7.292801067248757 22.444933784565624 0.0" rotation="0.0 0.0 108.0" universe="5"/>
+  <cell id="36" fill="4" region="-26 1 -2" translation="-19.092801067248754 13.871731954102367 0.0" rotation="0.0 0.0 144.0" universe="5"/>
+  <cell id="37" fill="4" region="-27 1 -2" translation="-23.599999999999998 2.8901664459877533e-15 0.0" rotation="0.0 0.0 180.0" universe="5"/>
+  <cell id="38" fill="4" region="-28 1 -2" translation="-19.09280106724876 -13.871731954102362 0.0" rotation="0.0 0.0 216.0" universe="5"/>
+  <cell id="39" fill="4" region="-29 1 -2" translation="-7.292801067248762 -22.44493378456562 0.0" rotation="0.0 0.0 252.0" universe="5"/>
+  <cell id="40" fill="4" region="-30 1 -2" translation="7.292801067248754 -22.444933784565624 0.0" rotation="0.0 0.0 288.0" universe="5"/>
+  <cell id="41" fill="4" region="-31 1 -2" translation="19.092801067248754 -13.87173195410237 0.0" rotation="0.0 0.0 324.0" universe="5"/>
+  <cell id="42" fill="3" region="-15 3 -4" universe="5"/>
+  <cell id="43" material="5" region="15 -16 1 -2 22 23 24 25 26 27 28 29 30 31" universe="5"/>
+  <cell id="44" material="5" region="15 -16 3 -1" universe="5"/>
+  <cell id="45" material="5" region="15 -16 2 -4" universe="5"/>
+  <hex_lattice id="3" name="Opt-14 Hexagonal Lattice" n_rings="9">
+    <pitch>2.27</pitch>
+    <outer>2</outer>
+    <center>0.0 0.0</center>
+    <universes>
+        1
+       1 1
+      1 1 1
+     1 1 1 1
+    1 1 1 1 1
+   1 1 1 1 1 1
+  1 1 1 1 1 1 1
+ 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1
+ 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1
+ 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1
+ 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1
+ 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1
+ 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1
+ 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1
+ 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1
+ 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1
+ 1 1 1 1 1 1 1 1
+  1 1 1 1 1 1 1
+   1 1 1 1 1 1
+    1 1 1 1 1
+     1 1 1 1
+      1 1 1
+       1 1
+        1</universes>
+  </hex_lattice>
+  <surface id="1" name="Core Bot" type="z-plane" coeffs="-21.0"/>
+  <surface id="2" name="Core Top" type="z-plane" coeffs="21.0"/>
+  <surface id="3" name="Reactor Bot" type="z-plane" boundary="vacuum" coeffs="-30.5"/>
+  <surface id="4" name="Reactor Top" type="z-plane" boundary="vacuum" coeffs="30.5"/>
+  <surface id="5" name="Fuel Outer" type="z-cylinder" coeffs="0.0 0.0 0.58"/>
+  <surface id="6" name="Clad Outer" type="z-cylinder" coeffs="0.0 0.0 0.63"/>
+  <surface id="7" name="Channel Outer" type="z-cylinder" coeffs="0.0 0.0 0.705"/>
+  <surface id="8" name="Aux Channel 0" type="z-cylinder" coeffs="0.91 0.0 0.15"/>
+  <surface id="9" name="Aux Channel 1" type="z-cylinder" coeffs="0.4550000000000001 0.7880831174438392 0.15"/>
+  <surface id="10" name="Aux Channel 2" type="z-cylinder" coeffs="-0.4549999999999998 0.7880831174438393 0.15"/>
+  <surface id="11" name="Aux Channel 3" type="z-cylinder" coeffs="-0.91 1.1144285872240914e-16 0.15"/>
+  <surface id="12" name="Aux Channel 4" type="z-cylinder" coeffs="-0.4550000000000004 -0.788083117443839 0.15"/>
+  <surface id="13" name="Aux Channel 5" type="z-cylinder" coeffs="0.4550000000000001 -0.7880831174438392 0.15"/>
+  <surface id="14" name="Axial Streaming Central Duct" type="z-cylinder" coeffs="0.0 0.0 0.82"/>
+  <surface id="15" name="Core Outer Boundary" type="z-cylinder" coeffs="0.0 0.0 19.45"/>
+  <surface id="16" name="Radial Reflector Boundary" type="z-cylinder" boundary="vacuum" coeffs="0.0 0.0 29.25"/>
+  <surface id="17" type="z-cylinder" coeffs="0.0 0.0 3.95"/>
+  <surface id="18" type="z-cylinder" coeffs="0.0 0.0 2.5"/>
+  <surface id="19" type="plane" coeffs="0.9396926207859083 -0.3420201433256688 0.0 0.0"/>
+  <surface id="20" type="plane" coeffs="0.9396926207859083 0.3420201433256688 0.0 0.0"/>
+  <surface id="21" type="x-plane" coeffs="0.0"/>
+  <surface id="22" type="z-cylinder" coeffs="23.599999999999998 0.0 3.95"/>
+  <surface id="23" type="z-cylinder" coeffs="19.092801067248757 13.871731954102366 3.95"/>
+  <surface id="24" type="z-cylinder" coeffs="7.292801067248759 22.44493378456562 3.95"/>
+  <surface id="25" type="z-cylinder" coeffs="-7.292801067248757 22.444933784565624 3.95"/>
+  <surface id="26" type="z-cylinder" coeffs="-19.092801067248754 13.871731954102367 3.95"/>
+  <surface id="27" type="z-cylinder" coeffs="-23.599999999999998 2.8901664459877533e-15 3.95"/>
+  <surface id="28" type="z-cylinder" coeffs="-19.09280106724876 -13.871731954102362 3.95"/>
+  <surface id="29" type="z-cylinder" coeffs="-7.292801067248762 -22.44493378456562 3.95"/>
+  <surface id="30" type="z-cylinder" coeffs="7.292801067248754 -22.444933784565624 3.95"/>
+  <surface id="31" type="z-cylinder" coeffs="19.092801067248754 -13.87173195410237 3.95"/>
+</geometry>

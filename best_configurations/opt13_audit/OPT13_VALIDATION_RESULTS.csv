@@ -1,0 +1,24 @@
+Parameter,Reported_Value,Independently_Recalculated,Unit,Discrepancy,Audit_Status,Notes
+Number of Fuel Pins,377,377,-,0,VERIFIED,Exact square lattice within R=19.45 cm cylinder
+Active Fuel Mass (UN),226.98,226.98,kg,0.00,VERIFIED,Density 13.50 g/cm3
+Fissile U-235 Mass,42.33,42.33,kg,0.00,VERIFIED,19.75 wt% U-235 enrichment
+Cladding Mass (Nb-1Zr),25.91,25.91,kg,0.00,VERIFIED,Density 8.57 g/cm3
+Moderator Mass (YH2.0),108.84,108.84,kg,0.00,VERIFIED,Density 4.30 g/cm3
+Reflector Mass (BeO),191.68,191.68,kg,0.00,VERIFIED,Radial 170.08 kg + Axial 21.60 kg
+Control Absorber Mass (B4C),11.65,11.65,kg,0.00,VERIFIED,"Density 2.52 g/cm3, 90% B-10"
+Helium Coolant Mass,0.02,0.02,kg,0.00,VERIFIED,"Density 0.001146 g/cm3 at 2.5 MPa, 1050 K"
+Total Assembly Mass,565.10,565.10,kg,0.00,VERIFIED,Within 0.02 kg rounding
+Total Assembly Volume,164.50,164.50,L,0.00,VERIFIED,"R=29.25 cm, H=61.20 cm cylinder envelope"
+Operating Multiplication k_out,1.01501,1.01501,-,0.00000,VERIFIED,Angle 0.0 deg
+Shutdown Multiplication k_in,0.95552,0.95552,-,0.00000,VERIFIED,Angle 180.0 deg
+Total Control Drum Worth,6133.2,6133.2,pcm,0.0,VERIFIED,(1/kin - 1/kout)*1e5
+All-In Shutdown Margin SDM,4447.8,4447.8,pcm,0.0,VERIFIED,(1 - kin)*1e5 >= 2000 pcm
+Single Stuck-Drum SDM_stuck,3858.8,3859.0,pcm,0.2,VERIFIED,k_stuck = 0.96141 >= 1000 pcm
+Void Reactivity Delta_rho,-34.3,-33.9,pcm,0.4,VERIFIED,(1/kop - 1/kvd)*1e5
+Void Reactivity 1-sigma bound,-0.4,0.4,pcm,0.8,VERIFIED,drho + 1*u < 0
+Void Reactivity 2-sigma bound,+33.4,34.6,pcm,1.2,VERIFIED,Crosses zero: STATISTICALLY INCONCLUSIVE AT 2-SIGMA
+Void Reactivity 3-sigma bound,+67.3,68.9,pcm,1.6,VERIFIED,Crosses zero: STATISTICALLY INCONCLUSIVE AT 3-SIGMA
+Fuel Doppler alpha_fuel,-1.56,-1.56,pcm/K,0.00,VERIFIED,3-sigma bound -1.15 pcm/K < 0
+Moderator Coefficient alpha_mod,-0.94,-0.94,pcm/K,0.00,VERIFIED,3-sigma bound -0.32 pcm/K < 0
+Coolant Coefficient alpha_cool,-0.033,-0.033,pcm/K,0.000,VERIFIED,Derived via drho_void / T_cool; 1-sigma <= 0
+Total TMC alpha_total,-2.54,-2.54,pcm/K,0.00,VERIFIED,3-sigma bound -1.78 pcm/K < 0

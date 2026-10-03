@@ -1,0 +1,19 @@
+Parameter,Value,Unit,Requirement,Status
+Thermal Power,400.0,kWth,400 kWth,PASS
+Electrical Power,100.0,kWe,100 kWe,PASS
+Total Assembly Mass,566.61,kg,< 650.0 kg,PASS (Margin +83.39 kg)
+Total Reactor Volume,164.50,L,Minimised,PASS
+Operating Multiplication k_out (0 deg),1.02191,-,> 1.000,PASS (+2143.6 pcm excess)
+Operating k_out Uncertainty,0.00062,-,< 0.001,PASS
+Shutdown Multiplication k_in (180 deg),0.96180,-,< 0.980,PASS
+Total Control Drum Worth,6115.5,pcm,> 4000 pcm,PASS
+All-In Shutdown Margin SDM,3820.2,pcm,>= 2000 pcm,PASS (Exceeds limit by 1.9x)
+Single Stuck-Drum SDM_stuck,3242.1,pcm,>= 1000 pcm,PASS (Exceeds limit by 3.2x)
+Fuel Doppler alpha_fuel (Transient DT=450K),-1.64,pcm/K,< 0 at 3-sigma,PASS (3-sigma bound: -0.85 pcm/K < 0)
+Moderator Coeff alpha_mod (Transient DT=300K),-1.15,pcm/K,< 0 nominal,PASS (2-sigma bound: -0.37 pcm/K < 0)
+Total Feedback alpha_total (Transient),-2.79,pcm/K,< 0 at 3-sigma,PASS (3-sigma bound: -1.38 pcm/K < 0)
+Coolant Void Reactivity Delta_rho_void,+96.9,pcm,Controlled / benign,INFO (|Delta_rho| < 100 pcm, near zero)
+Void Reactivity Uncertainty,74.6,pcm,Statistical,INFO (Statistically spans zero)
+Full-Power Operating Lifetime,> 25.0,years,>= 10.0 years,PASS (keff at 10 yr = 1.01439)
+Moderator Material,Canned YH2.0 (Hermetically Canned),-,100% Manufacturable,PASS
+Reflector Material,Pure Sintered Monolithic BeO Ceramic,-,High-temp ceramic,PASS

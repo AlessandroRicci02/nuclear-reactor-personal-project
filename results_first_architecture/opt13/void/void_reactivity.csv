@@ -1,0 +1,2 @@
+State,keff,std_dev,Delta_rho_pcm,Uncertainty_pcm,Bound_1sigma_pcm,Bound_2sigma_pcm,Bound_3sigma_pcm,Status
+Full Coolant Void,1.01592,0.00026,-34.3,33.9,-0.4,+33.4,+67.3,CONFORMING (<0 at 1-sigma)
