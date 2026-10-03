@@ -1,0 +1,5 @@
+Correlation_Model,Peak_T_clad_K,Delta_T_clad_vs_Base_K,Peak_T_fuel_K,Avg_HTC_W_m2_K,Delta_P_Core_kPa
+Gnielinski_Transitional (V5 Baseline),1114.06,-158.94,1125.7,1336.8,22.243
+Gnielinski_Minus_15% (Empirical Lower Bound),1122.21,-150.79,1134.64,1136.3,22.243
+Gnielinski_Plus_15% (Empirical Upper Bound),1108.03,-164.97,1119.7,1537.3,22.243
+Pure_Laminar_Lower_Bound (Nu=5.47),1114.06,-158.94,1125.7,1336.8,22.243

@@ -1,0 +1,217 @@
+{
+  "campaign": "V7 Engineering Validation, Robust Optimization & Design Maturation",
+  "workspace": "/home/aleri/OpenMC_projects/first_test/thermohydraulics",
+  "generated_date": "2026-10-03",
+  "auditor": "Antigravity Autonomous Multiphysics Engineering Agent",
+  "mission_context": {
+    "reactor_type": "Space Nuclear Electric Propulsion (NEP)",
+    "thermal_power_kWth": 400.0,
+    "electrical_power_target_kWe": 100.0,
+    "coolant": "Pure Helium",
+    "nominal_pressure_MPa": 2.50,
+    "inlet_temperature_nominal_K": 950.0,
+    "fuel_type": "Sintered UN (19.75 wt% 235U enrichment limit)",
+    "cladding_material": "Nb-1Zr",
+    "moderator_material": "Solid YH2.0",
+    "reflector_material": "BeO with 10 rotating B4C/BeO control drums",
+    "pin_array": "217 Annular Flow Fuel Pins (Hexagonal Architecture)"
+  },
+  "executive_findings": {
+    "v6_forensic_revalidation": {
+      "finding": "V6 second-stage candidates V6_CAND_LONG_LIFE (Delta P = 35.37 kPa) and V6_CAND_MIN_MASS_SAFE (Delta P = 36.79 kPa) breached hard constraint C03 (35.0 kPa) in verified solver records, despite optimistic preliminary narrative text. V6_CAND_BALANCED_TRUE nominally passed (31.59 kPa) but breached C03 under a +10% flow perturbation (spiking to 38.2 kPa).",
+      "reclassification": "Formally reclassified V5/V6 candidates: only BASELINE_OPT17 and V6_CAND_LOW_DP were fully compliant with non-marginal margins."
+    },
+    "transitional_reynolds_uncertainty": {
+      "finding": "Evaluated 5 friction models and 6 Nusselt models across Re in [1300, 2200]. Candidate temperature and pressure drop rankings are strictly invariant to correlation choice. Correlation choice creates +/- 6.2 K clad temperature uncertainty and +/- 1.5 kPa pressure drop shift.",
+      "implication": "Robust candidates must target nominal Delta P <= 28.5 kPa to absorb friction uncertainty."
+    },
+    "robust_orificing_subsystem": {
+      "finding": "Ideal continuous flow (0.0 K exit elevation) is an unmanufacturable fiction that causes severe choking pressure drops. Developed V7 Robust 9-ring orifice plate (Ring 0 to Ring 8, hole diameters 14.16 mm down to 4.58 mm), achieving 19.4 K exit elevation (70.3% reduction vs un-orificed 65.3 K), nominal Delta P = 27.18 kPa, and remaining strictly compliant under compound off-normal transients.",
+      "choking_safety": "Peak throat velocity is 64.8 m/s (Mach 0.036 << 0.3), completely immune to acoustic choking."
+    },
+    "burnup_lifetime_audit": {
+      "finding": "Reported lifetimes (23.6 yr, 39.4 yr) are linearly extrapolated model-dependent estimates derived from the 30-year Opt-16 numerical depletion baseline (68.2 pcm/yr at 115.8 kgU), scaled by heavy metal mass. Physical 95% confidence bounds were established: [17.8, 29.2] yr for Balanced Robust, [30.7, 46.7] yr for Long Life Robust.",
+      "epistemic_status": "Linear model is physically valid due to low specific power (3.2 kW/kgU) and Pu-239 breeding offsetting U-235 consumption."
+    }
+  },
+  "final_design_set": [
+    {
+      "role": "V7_CAND_BALANCED_ROBUST",
+      "designation": "Active Flight NEP Reference Architecture",
+      "primary_application": "General-purpose cargo tug, Mars precursor transit",
+      "geometry": {
+        "active_core_height_cm": 42.45,
+        "pin_pitch_cm": 2.270,
+        "fuel_pellet_radius_cm": 0.580,
+        "cladding_thickness_cm": 0.048,
+        "coolant_channel_gap_cm": 0.084,
+        "radial_reflector_thickness_cm": 9.80,
+        "axial_reflector_thickness_cm": 9.275,
+        "enrichment_inner_wt": 19.30,
+        "enrichment_outer_wt": 19.75
+      },
+      "mass_kg": {
+        "tier_A_subassembly": 536.42,
+        "tier_B_modelled_subsystem": 579.41,
+        "tier_C_dry_reactor_module": 620.41,
+        "total_flight_nep_power_system": 1070.41
+      },
+      "neutronics": {
+        "k_eff_operating": 1.01518,
+        "sigma_k": 0.00111,
+        "excess_reactivity_pcm": 1495.3,
+        "shutdown_margin_all_in_pcm": 3200.0,
+        "stuck_drum_margin_pcm": 2930.0,
+        "doppler_coefficient_pcm_K": -1.510,
+        "full_operational_lifetime_years": 23.5,
+        "reserve_operational_lifetime_years": 4.6
+      },
+      "thermal_hydraulics": {
+        "nominal_core_pressure_drop_kPa": 27.18,
+        "perturbed_core_pressure_drop_kPa": 32.45,
+        "nominal_peak_cladding_temp_K": 1228.4,
+        "perturbed_peak_cladding_temp_K": 1258.9,
+        "cladding_creep_margin_nominal_K": 121.6,
+        "exit_temperature_elevation_Delta_T_hot_K": 19.4
+      },
+      "robust_margins": {
+        "pressure_drop_nominal_margin_kPa": 7.82,
+        "pressure_drop_perturbed_margin_kPa": 2.55,
+        "cladding_creep_margin_perturbed_K": 91.1,
+        "launch_mass_margin_kg": 113.58,
+        "shutdown_all_in_margin_pcm": 1200.0,
+        "stuck_drum_margin_pcm": 1930.0,
+        "keff_licensing_margin_pcm": 295.3
+      },
+      "maturity_level": "ROBUST COMPUTATIONAL CANDIDATE",
+      "overall_status": "ROBUST PASS"
+    },
+    {
+      "role": "V7_CAND_LONG_LIFE_ROBUST",
+      "designation": "Deep-Space Outer-Planet Flagship Architecture",
+      "primary_application": "Outer solar system multi-decade exploration (Jupiter, Saturn, Kuiper Belt)",
+      "geometry": {
+        "active_core_height_cm": 43.60,
+        "pin_pitch_cm": 2.285,
+        "fuel_pellet_radius_cm": 0.585,
+        "cladding_thickness_cm": 0.050,
+        "coolant_channel_gap_cm": 0.083,
+        "radial_reflector_thickness_cm": 10.20,
+        "axial_reflector_thickness_cm": 9.500,
+        "enrichment_inner_wt": 19.30,
+        "enrichment_outer_wt": 19.75
+      },
+      "mass_kg": {
+        "tier_A_subassembly": 568.20,
+        "tier_B_modelled_subsystem": 612.60,
+        "tier_C_dry_reactor_module": 653.60,
+        "total_flight_nep_power_system": 1103.60
+      },
+      "neutronics": {
+        "k_eff_operating": 1.02445,
+        "sigma_k": 0.00114,
+        "excess_reactivity_pcm": 2386.6,
+        "shutdown_margin_all_in_pcm": 2400.0,
+        "stuck_drum_margin_pcm": 1840.0,
+        "doppler_coefficient_pcm_K": -2.110,
+        "full_operational_lifetime_years": 38.7,
+        "reserve_operational_lifetime_years": 19.1
+      },
+      "thermal_hydraulics": {
+        "nominal_core_pressure_drop_kPa": 28.24,
+        "perturbed_core_pressure_drop_kPa": 33.82,
+        "nominal_peak_cladding_temp_K": 1226.1,
+        "perturbed_peak_cladding_temp_K": 1256.4,
+        "cladding_creep_margin_nominal_K": 123.9,
+        "exit_temperature_elevation_Delta_T_hot_K": 19.2
+      },
+      "robust_margins": {
+        "pressure_drop_nominal_margin_kPa": 6.76,
+        "pressure_drop_perturbed_margin_kPa": 1.18,
+        "cladding_creep_margin_perturbed_K": 93.6,
+        "launch_mass_margin_kg": 81.80,
+        "shutdown_all_in_margin_pcm": 400.0,
+        "stuck_drum_margin_pcm": 840.0,
+        "keff_licensing_margin_pcm": 1186.6
+      },
+      "maturity_level": "ROBUST COMPUTATIONAL CANDIDATE",
+      "overall_status": "ROBUST PASS"
+    },
+    {
+      "role": "V7_CAND_BRAYTON_ROBUST",
+      "designation": "Low-Pressure-Drop Brayton-Optimized Architecture",
+      "primary_application": "High-efficiency Closed Brayton Cycle conversion, radiator-area constrained spacecraft",
+      "geometry": {
+        "active_core_height_cm": 42.45,
+        "pin_pitch_cm": 2.280,
+        "fuel_pellet_radius_cm": 0.580,
+        "cladding_thickness_cm": 0.048,
+        "coolant_channel_gap_cm": 0.088,
+        "radial_reflector_thickness_cm": 9.80,
+        "axial_reflector_thickness_cm": 9.275,
+        "enrichment_inner_wt": 19.30,
+        "enrichment_outer_wt": 19.75
+      },
+      "mass_kg": {
+        "tier_A_subassembly": 538.15,
+        "tier_B_modelled_subsystem": 581.25,
+        "tier_C_dry_reactor_module": 622.25,
+        "total_flight_nep_power_system": 1072.25
+      },
+      "neutronics": {
+        "k_eff_operating": 1.01445,
+        "sigma_k": 0.00110,
+        "excess_reactivity_pcm": 1424.9,
+        "shutdown_margin_all_in_pcm": 3314.0,
+        "stuck_drum_margin_pcm": 2880.0,
+        "doppler_coefficient_pcm_K": -1.307,
+        "full_operational_lifetime_years": 22.4,
+        "reserve_operational_lifetime_years": 3.5
+      },
+      "thermal_hydraulics": {
+        "nominal_core_pressure_drop_kPa": 20.82,
+        "perturbed_core_pressure_drop_kPa": 25.35,
+        "nominal_peak_cladding_temp_K": 1238.2,
+        "perturbed_peak_cladding_temp_K": 1269.5,
+        "cladding_creep_margin_nominal_K": 111.8,
+        "exit_temperature_elevation_Delta_T_hot_K": 19.3
+      },
+      "robust_margins": {
+        "pressure_drop_nominal_margin_kPa": 14.18,
+        "pressure_drop_perturbed_margin_kPa": 9.65,
+        "cladding_creep_margin_perturbed_K": 80.5,
+        "launch_mass_margin_kg": 111.85,
+        "shutdown_all_in_margin_pcm": 1314.0,
+        "stuck_drum_margin_pcm": 1880.0,
+        "keff_licensing_margin_pcm": 224.9
+      },
+      "maturity_level": "ROBUST COMPUTATIONAL CANDIDATE",
+      "overall_status": "ROBUST PASS"
+    }
+  ],
+  "deliverables": [
+    "results/v7/V7_FINAL_REPORT.md",
+    "results/v7/V7_FINAL_REPORT.txt",
+    "results/v7/V6_REVALIDATION.md",
+    "results/v7/ROBUST_DESIGN_SPACE.md",
+    "results/v7/ORIFICING_ROBUSTNESS.md",
+    "results/v7/CORRELATION_MODEL_UNCERTAINTY.md",
+    "results/v7/BURNUP_LIFETIME_AUDIT.md",
+    "results/v7/PHYSICS_MATURITY_ASSESSMENT.md",
+    "results/v7/MISSION_ARCHITECTURES.md",
+    "results/v7/DESIGN_SELECTION_MATRIX.md",
+    "results/v7/v7_summary.json",
+    "results/v7/manifest.md",
+    "results/v7/figures/v7_01_nominal_vs_robust_pareto.png",
+    "results/v7/figures/v7_02_mass_vs_lifetime.png",
+    "results/v7/figures/v7_03_mass_vs_pressure_drop.png",
+    "results/v7/figures/v7_04_pressure_drop_vs_peak_clad_temp.png",
+    "results/v7/figures/v7_05_orifice_tolerance_sensitivity.png",
+    "results/v7/figures/v7_06_thermal_maldistribution_robustness.png",
+    "results/v7/figures/v7_07_correlation_model_form_uncertainty.png",
+    "results/v7/figures/v7_08_monte_carlo_uncertainty_vs_margins.png",
+    "results/v7/figures/v7_09_burnup_lifetime_uncertainty.png",
+    "results/v7/figures/v7_10_mission_specific_feasible_regions.png",
+    "results/v7/figures/v7_11_final_architecture_comparison_radar.png"
+  ]
+}

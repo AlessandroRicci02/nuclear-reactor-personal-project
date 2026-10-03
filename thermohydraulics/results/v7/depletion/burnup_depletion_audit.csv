@@ -1,0 +1,7 @@
+Candidate_ID,Architecture_Name,Heavy_Metal_kgU,Fissile_U235_kg,Specific_Power_kW_kgU,Excess_Reactivity_pcm,Burnup_Rate_pcm_yr,Nominal_Full_Life_yr,Nominal_Reserve_Life_yr,Stat_Uncertainty_yr,Rate_Uncertainty_yr,Full_Life_95pct_Low_yr,Full_Life_95pct_High_yr,Reserve_Life_95pct_Low_yr,Reserve_Life_95pct_High_yr,Epistemic_Classification
+BASELINE_OPT17,Opt-17 Baseline,124.12,24.47,3.22,1914.0,63.63,30.1,11.2,1.92,3.01,23.1,37.1,6.9,15.6,Linearly extrapolated from Opt-16 multi-step baseline
+V5_CAND_BALANCED,V5 Balanced (Defective),123.39,24.32,3.24,1083.9,64.0,16.9,0.0,1.64,1.69,12.3,21.6,0.0,0.0,Linearly extrapolated from Opt-16 multi-step baseline
+V6_CAND_BALANCED_TRUE,V6 Balanced True Reference,124.12,24.47,3.22,1504.3,63.63,23.6,4.8,1.74,2.36,17.9,29.4,1.2,8.3,Linearly extrapolated from Opt-16 multi-step baseline
+V6_CAND_LONG_LIFE,V6 Long Life Flagship,129.69,25.55,3.08,2401.6,60.9,39.4,19.7,1.89,3.94,30.9,48.0,14.4,25.1,Linearly extrapolated from Opt-16 multi-step baseline
+V6_CAND_LOW_DP,V6 Low Pressure Drop,124.12,24.47,3.22,1424.9,63.63,22.4,3.5,1.73,2.24,16.8,27.9,0.1,7.0,Linearly extrapolated from Opt-16 multi-step baseline
+V6_CAND_MIN_MASS_SAFE,V6 Min Mass Safe,123.25,24.3,3.25,1360.5,64.08,21.2,2.5,1.75,2.12,15.8,26.6,0.0,6.0,Linearly extrapolated from Opt-16 multi-step baseline

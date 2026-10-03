@@ -45,7 +45,11 @@ def solve_axial_flow_channel(q_vol_slices,
                              h_gap=H_GAP_NOMINAL,
                              htc_model="gnielinski_trans",
                              T_inlet=None,
-                             htc_mult=1.0):
+                             htc_mult=1.0,
+                             r_fuel=None,
+                             r_clad_out=None,
+                             r_chan_out=None,
+                             h_core=None):
     """
     Solves 1D axial compressible flow conservation (mass, momentum, energy)
     for an annular helium coolant channel coupled to the fuel pin.
@@ -57,12 +61,20 @@ def solve_axial_flow_channel(q_vol_slices,
     - Equation of state: rho(z) = p(z) * M_He / (R * T_b(z))
     - Convective HTC: h(z) = Nu(z) * k_He(z) / D_h
     """
+    rf = R_FUEL if r_fuel is None else r_fuel
+    rco = R_CLAD_OUT if r_clad_out is None else r_clad_out
+    rcho = R_CHAN_OUT if r_chan_out is None else r_chan_out
+    hc = H_CORE if h_core is None else h_core
+    
+    a_flow = math.pi * (rcho**2 - rco**2)
+    d_h = 2.0 * (rcho - rco)
+
     n_slices = len(q_vol_slices)
-    dz = H_CORE / n_slices
-    v_slice = math.pi * (R_FUEL**2) * dz
-    a_clad_slice = 2.0 * math.pi * R_CLAD_OUT * dz
+    dz = hc / n_slices
+    v_slice = math.pi * (rf**2) * dz
+    a_clad_slice = 2.0 * math.pi * rco * dz
     cp = cp_helium()
-    G = m_dot_pin / A_FLOW_PIN  # Mass flux [kg / (m2 s)]
+    G = m_dot_pin / a_flow  # Mass flux [kg / (m2 s)]
     
     # 1. Thermal fields allocation
     T_bulk = np.zeros(n_slices)
@@ -97,9 +109,9 @@ def solve_axial_flow_channel(q_vol_slices,
         # Local fluid properties at slice midpoint
         rho_s = rho_helium(T_bulk_mid, p_outlet)
         rho_cool[s] = rho_s
-        vel_cool[s] = m_dot_pin / (rho_s * A_FLOW_PIN)
+        vel_cool[s] = m_dot_pin / (rho_s * a_flow)
         
-        Re_s = reynolds_helium(m_dot_pin, T_bulk_mid, p_outlet)
+        Re_s = reynolds_helium(m_dot_pin, T_bulk_mid, p_outlet, a_flow=a_flow, d_h=d_h)
         Re_arr[s] = Re_s
         Pr_s = prandtl_helium(T_bulk_mid, p_outlet)
         Pr_arr[s] = Pr_s
@@ -107,12 +119,12 @@ def solve_axial_flow_channel(q_vol_slices,
         Nu_arr[s] = Nu_s
         
         k_he_s = k_helium(T_bulk_mid, p_outlet)
-        h_s = (Nu_s * k_he_s / D_H) * htc_mult
+        h_s = (Nu_s * k_he_s / d_h) * htc_mult
         h_conv[s] = h_s
         
         # Friction factor & pressure drop
         f_s = friction_factor_annulus(Re_s)
-        dp_fric_slice[s] = f_s * (dz / D_H) * (G**2) / (2.0 * rho_s)
+        dp_fric_slice[s] = f_s * (dz / d_h) * (G**2) / (2.0 * rho_s)
         
         rho_in_s = rho_helium(T_current, p_outlet)
         rho_out_s = rho_helium(T_bulk_exit, p_outlet)
@@ -127,15 +139,15 @@ def solve_axial_flow_channel(q_vol_slices,
         
         # Cladding conduction with k_c(T)
         k_c_guess = k_clad_nb1zr(T_co)
-        delta_T_c = (p_slice / (2.0 * math.pi * dz)) * math.log(R_CLAD_OUT / R_FUEL) / k_c_guess
+        delta_T_c = (p_slice / (2.0 * math.pi * dz)) * math.log(rco / rf) / k_c_guess
         k_c = k_clad_nb1zr(T_co + 0.5 * delta_T_c)
-        delta_T_c = (p_slice / (2.0 * math.pi * dz)) * math.log(R_CLAD_OUT / R_FUEL) / k_c
+        delta_T_c = (p_slice / (2.0 * math.pi * dz)) * math.log(rco / rf) / k_c
         T_ci = T_co + delta_T_c
         T_clad_in[s] = T_ci
         
         # Pellet-cladding interface gap
         if h_gap is not None and h_gap > 0.0:
-            delta_T_gap = (p_slice / (2.0 * math.pi * R_FUEL * dz)) / h_gap
+            delta_T_gap = (p_slice / (2.0 * math.pi * rf * dz)) / h_gap
         else:
             delta_T_gap = 0.0
         T_fs = T_ci + delta_T_gap
@@ -147,9 +159,9 @@ def solve_axial_flow_channel(q_vol_slices,
         T_fuel_center[s] = T0_val
         
         # Exact volume-averaged fuel temperature across pellet radius
-        r_arr = np.linspace(0.0, R_FUEL, 61)
+        r_arr = np.linspace(0.0, rf, 61)
         T_r = (T0_val**1.41 - (1.41 / 1.37) * (q_vol * (r_arr**2) / 4.0))**(1.0 / 1.41)
-        T_vol = np.trapezoid(2.0 * r_arr * T_r, r_arr) / (R_FUEL**2)
+        T_vol = np.trapezoid(2.0 * r_arr * T_r, r_arr) / (rf**2)
         T_fuel_vol[s] = T_vol
         
     # Step B: Backward integration for axial pressure profile p(z)
@@ -160,9 +172,9 @@ def solve_axial_flow_channel(q_vol_slices,
         
     # Form losses at inlet contraction and outlet expansion
     rho_inlet = rho_helium(T_INLET, p_cool[0])
-    u_inlet = m_dot_pin / (rho_inlet * A_FLOW_PIN)
+    u_inlet = m_dot_pin / (rho_inlet * a_flow)
     rho_outlet = rho_helium(T_current, p_outlet)
-    u_outlet = m_dot_pin / (rho_outlet * A_FLOW_PIN)
+    u_outlet = m_dot_pin / (rho_outlet * a_flow)
     dp_form = 0.5 * rho_inlet * (u_inlet**2) / 2.0 + 1.0 * rho_outlet * (u_outlet**2) / 2.0
     
     dp_fric_total = float(np.sum(dp_fric_slice))

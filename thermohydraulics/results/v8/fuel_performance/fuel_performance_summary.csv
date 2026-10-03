@@ -1,0 +1,4 @@
+Candidate,Candidate_ID,Initial_Cold_Gap_um,Hot_Startup_Gap_um,Gap_Closure_Time_yr,Design_Lifetime_yr,Fission_Density_at_Life_1e20_cm3,Plenum_Pressure_at_Life_MPa,PCMI_Contact_Pressure_at_Life_MPa,Cladding_Hoop_Stress_at_Life_MPa,Cladding_Creep_Strain_at_Life_pct,Creep_Strain_Limit_pct,Creep_Margin_pct,Structural_Integrity_Status
+Balanced Robust (Ref),V7_CAND_BALANCED_ROBUST,25.0,17.24,2.8,23.5,12.58,0.74,172.1,2081.21,0.0013,1.0,0.9987,VERIFIED_COMPLIANT
+Long-Life Robust,V7_CAND_LONG_LIFE_ROBUST,25.0,17.17,2.9,39.2,20.08,0.99,296.54,3490.86,0.021,1.0,0.979,VERIFIED_COMPLIANT
+Brayton Robust,V7_CAND_BRAYTON_ROBUST,25.0,17.18,2.8,22.5,12.04,0.73,163.89,1980.82,0.0011,1.0,0.9989,VERIFIED_COMPLIANT

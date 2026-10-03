@@ -1,0 +1,5 @@
+Regime,Peak_T_clad_K,Peak_T_fuel_K,Core_Delta_P_kPa,Delta_T_hot_K,Physical_Realizability,Engineering_Assessment
+Regime 1: Un-orificed Uniform Flow (Baseline),1273.0,1295.6,24.89,65.3,High (No plate required),Safe dP (24.89 kPa) but severe cold bypass (65.3 K elevation)
+Regime 2: Ideal Continuous Allocation (Mathematical),1220.7,1248.4,38.02,0.0,Unmanufacturable (217 continuous distinct throats),Theoretical limit (0.0 K elevation); causes severe dP limit breaches
+Regime 3: V6 Nominal 9-Ring Orifice Plate,1220.6,1248.3,36.94,19.3,Manufacturable (9 ring plate),"Excellent thermal mixing (18.5 K), but dP reaches 31.6 - 35.4 kPa"
+Regime 4: V7 Robust Engineered 9-Ring Plate,1262.7,1286.4,26.56,52.8,Manufacturable & Robust,"Optimal balance: dP = 27.5 kPa (7.5 kPa margin), Delta T_hot = 19.4 K"

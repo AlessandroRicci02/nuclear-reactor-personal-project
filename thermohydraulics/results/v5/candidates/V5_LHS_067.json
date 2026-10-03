@@ -1,0 +1,105 @@
+{
+  "candidate_id": "V5_LHS_067",
+  "level": 1,
+  "is_feasible": false,
+  "design_variables": {
+    "candidate_id": "V5_LHS_067",
+    "category": "LHS_DOE",
+    "description": "Latin Hypercube Sample #67",
+    "fuel_radius_cm": 0.556,
+    "cladding_thickness_cm": 0.0466,
+    "coolant_gap_cm": 0.0781,
+    "pin_pitch_cm": 2.1866,
+    "active_core_height_cm": 40.15,
+    "radial_reflector_thickness_cm": 11.14,
+    "mass_flow_multiplier": 0.923,
+    "inlet_temperature_K": 945.6,
+    "inner_enrichment_wt": 18.28,
+    "outer_enrichment_wt": 18.96,
+    "orificing_mode": "uniform"
+  },
+  "objectives": {
+    "F1_subassembly_mass_kg": 526.58,
+    "F2_peak_cladding_temp_K": 1255.76,
+    "F3_core_pressure_drop_kPa": 18.651,
+    "F4_total_peaking_Fq": 1.719,
+    "F5_hot_channel_elevation_K": 61.48
+  },
+  "constraints": {
+    "C01_max_cladding_temp": {
+      "value": 1255.8,
+      "limit": 1350.0,
+      "pass": true
+    },
+    "C02_max_fuel_temp": {
+      "value": 1278.1,
+      "limit": 1800.0,
+      "pass": true
+    },
+    "C03_core_pressure_drop": {
+      "value": 18.65,
+      "limit": 35.0,
+      "pass": true
+    },
+    "C04_subassembly_mass": {
+      "value": 526.6,
+      "limit": 650.0,
+      "pass": true
+    },
+    "C05_shutdown_margin_all_in": {
+      "value": 4290.8,
+      "limit": 2000.0,
+      "pass": true
+    },
+    "C07_operating_keff": {
+      "value": 1.00723,
+      "limit": 1.012,
+      "pass": false
+    },
+    "C08_enrichment_ceiling": {
+      "value": 18.96,
+      "limit": 19.75,
+      "pass": true
+    }
+  },
+  "neutronics": {
+    "k_eff": 1.00723,
+    "excess_reactivity_pcm": 718.2,
+    "F_r": 1.332,
+    "F_z": 1.291,
+    "F_q": 1.719,
+    "drum_worth_pcm": 5009.0,
+    "sdm_all_in_pcm": 4290.8,
+    "sdm_stuck_pcm": 3861.7
+  },
+  "thermal_hydraulics": {
+    "T_fuel_center_max_K": 1278.0960743858925,
+    "T_clad_out_max_K": 1255.7609240744316,
+    "T_cool_exit_max_K": 1195.4152655749112,
+    "T_cool_bulk_out_K": 1133.9344402854604,
+    "delta_T_hot_K": 61.48082528945088,
+    "dp_core_kPa": 18.651489938998207,
+    "orificing_mode": "uniform",
+    "d_h_mm": 1.562,
+    "a_flow_pin_mm2": 31.486841706867416
+  },
+  "mass": {
+    "m_fuel_kg": 114.23,
+    "m_u235_kg": 20.39,
+    "m_clad_kg": 12.66,
+    "m_mod_kg": 84.7,
+    "m_beo_tot_kg": 302.41,
+    "m_abs_kg": 12.54,
+    "m_subassembly_kg": 526.58,
+    "m_module_kg": 610.76,
+    "v_total_L": 164.59,
+    "core_radius_cm": 18.74,
+    "assembly_outer_radius_cm": 29.88
+  },
+  "runtime_s": 0.048,
+  "status": "INFEASIBLE_CONSTRAINTS",
+  "violation_count": 1,
+  "violations": [
+    "C07_operating_keff"
+  ]
+}

@@ -1,0 +1,10 @@
+Ring_Index,Pins_in_Ring,Pin_Power_kW,Orifice_Loss_Coeff_Kp,Hole_Diameter_mm,Coolant_Flow_per_Pin_g_s,Channel_Exit_Temp_K,Hole_Type
+0,1,2.45,0.0,14.16,1.88,1201.0,Unrestricted (Full Channel Entry)
+1,6,2.43,0.2,12.02,1.86,1201.4,EDM Calibrated Circular Nozzle (d = 12.02 mm)
+2,12,2.37,0.5,9.56,1.84,1197.4,EDM Calibrated Circular Nozzle (d = 9.56 mm)
+3,18,2.3,0.9,8.25,1.82,1193.6,EDM Calibrated Circular Nozzle (d = 8.25 mm)
+4,24,2.17,1.4,7.39,1.8,1181.9,EDM Calibrated Circular Nozzle (d = 7.39 mm)
+5,30,2.01,2.0,6.76,1.78,1167.0,EDM Calibrated Circular Nozzle (d = 6.76 mm)
+6,36,1.82,2.6,6.33,1.76,1148.5,EDM Calibrated Circular Nozzle (d = 6.33 mm)
+7,42,1.61,3.2,6.01,1.75,1128.0,EDM Calibrated Circular Nozzle (d = 6.01 mm)
+8,48,1.41,3.6,5.83,1.74,1105.5,EDM Calibrated Circular Nozzle (d = 5.83 mm)

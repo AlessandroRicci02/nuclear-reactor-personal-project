@@ -1,0 +1,19 @@
+State,Component,P_MPa,T_K,Candidate
+1,Compressor Inlet,1.022842105263158,400.0,Balanced Robust (Ref)
+2,Compressor Outlet,2.5571052631578945,605.9807045634903,Balanced Robust (Ref)
+3,Reactor Inlet / Recup HP,2.52642,950.0,Balanced Robust (Ref)
+4,Reactor Outlet / Turb Inlet,2.5,1150.0,Balanced Robust (Ref)
+5,Turbine Outlet,1.066137968149718,850.9449067745588,Balanced Robust (Ref)
+6,Cooler Inlet / Recup LP,1.0469474847230231,506.9256113380492,Balanced Robust (Ref)
+1,Compressor Inlet,1.0235101214574898,400.0,Long-Life Robust
+2,Compressor Outlet,2.5587753036437246,605.9807045634903,Long-Life Robust
+3,Reactor Inlet / Recup HP,2.52807,948.0,Long-Life Robust
+4,Reactor Outlet / Turb Inlet,2.5,1154.9,Long-Life Robust
+5,Turbine Outlet,1.0668342607880945,854.763768982089,Long-Life Robust
+6,Cooler Inlet / Recup LP,1.0476312440939088,512.7444735455794,Long-Life Robust
+1,Compressor Inlet,1.0214493927125505,400.0,Brayton Robust
+2,Compressor Outlet,2.5536234817813765,605.9807045634903,Brayton Robust
+3,Reactor Inlet / Recup HP,2.52298,950.0,Brayton Robust
+4,Reactor Outlet / Turb Inlet,2.5,1150.0,Brayton Robust
+5,Turbine Outlet,1.0646863034975875,850.5437945581989,Brayton Robust
+6,Cooler Inlet / Recup LP,1.0455219500346309,506.52449912168925,Brayton Robust

@@ -1,0 +1,144 @@
+{
+  "campaign": "V8_Independent_Verification_Fuel_Performance_System_Engineering",
+  "active_reference_design": "V7_CAND_BALANCED_ROBUST",
+  "mission_profile": "400 kWth / ~100 kWe Space Nuclear Electric Propulsion (NEP)",
+  "verification_architectures": {
+    "V7_CAND_BALANCED_ROBUST": {
+      "role": "Active Flight Reference Design",
+      "active_height_cm": 42.45,
+      "pin_pitch_cm": 2.27,
+      "coolant_gap_mm": 0.84,
+      "fuel_outer_radius_mm": 5.8,
+      "cladding_thickness_mm": 0.48,
+      "subassembly_mass_kg": 537.8,
+      "module_mass_kg": 621.88,
+      "heavy_metal_mass_kg": 124.12,
+      "k_eff_operating": 1.01518,
+      "sigma_k": 0.00111,
+      "excess_reactivity_pcm": 1495.3,
+      "shutdown_margin_stuck_drum_pcm": 2580.0,
+      "prompt_doppler_feedback_pcm_K": -1.51,
+      "structural_expansion_feedback_pcm_K": -1.2,
+      "total_temperature_feedback_pcm_K": -2.42,
+      "full_burnup_lifetime_yr": 23.5,
+      "reserve_lifetime_yr": 4.6,
+      "nominal_core_delta_p_kPa": 26.42,
+      "perturbed_core_delta_p_kPa": 39.17,
+      "nominal_delta_p_margin_kPa": 8.58,
+      "perturbed_delta_p_margin_kPa": -4.17,
+      "mean_friction_delta_p_kPa": 17.41,
+      "max_orifice_delta_p_kPa": 11.49,
+      "mean_orifice_fraction_pct": 29.8,
+      "reynolds_range": [
+        1337,
+        2336
+      ],
+      "htc_range_W_m2K": [
+        965.3,
+        1623.8
+      ],
+      "nominal_peak_clad_temp_K": 1234.2,
+      "perturbed_peak_clad_temp_K": 1244.4,
+      "nominal_peak_fuel_temp_K": 1262.1,
+      "perturbed_peak_fuel_temp_K": 1271.3,
+      "bulk_outlet_temp_K": 1150.0,
+      "delta_T_hot_elevation_K": 19.3,
+      "fuel_performance": {
+        "initial_cold_gap_um": 25.0,
+        "hot_operating_gap_um": 17.24,
+        "gap_closure_time_yr": 2.8,
+        "end_of_life_fission_density_1e20_f_cm3": 12.58,
+        "plenum_gas_pressure_MPa": 0.74,
+        "pcmi_contact_pressure_MPa": 172.1,
+        "cladding_hoop_stress_MPa": 2081.21,
+        "cumulative_creep_strain_pct": 0.0013,
+        "allowable_creep_limit_pct": 1.0,
+        "creep_safety_margin_pct": 0.9987
+      },
+      "brayton_power_conversion": {
+        "turbine_inlet_temp_K": 1150.0,
+        "compressor_inlet_temp_K": 400.0,
+        "optimal_pressure_ratio": 1.92,
+        "turbine_work_kW": 182.4,
+        "compressor_work_kW": 72.3,
+        "net_mechanical_power_kW": 110.1,
+        "net_electric_power_kWe": 104.6,
+        "cycle_thermal_efficiency_pct": 26.15,
+        "compressor_pumping_fraction_pct": 39.6,
+        "waste_heat_rejected_kWth": 295.4
+      },
+      "heat_rejection_radiator": {
+        "effective_radiator_temp_K": 472.4,
+        "deployable_panel_area_m2": 56.9,
+        "two_sided_radiating_area_m2": 113.8,
+        "radiator_subsystem_mass_kg": 391.2,
+        "total_nep_flight_mass_kg": 2890.6,
+        "specific_mass_alpha_kg_per_kWe": 27.63
+      }
+    },
+    "V7_CAND_LONG_LIFE_ROBUST": {
+      "role": "Outer-Planet Flagship Reference",
+      "active_height_cm": 43.6,
+      "pin_pitch_cm": 2.285,
+      "coolant_gap_mm": 0.83,
+      "subassembly_mass_kg": 572.27,
+      "module_mass_kg": 658.15,
+      "heavy_metal_mass_kg": 129.69,
+      "k_eff_operating": 1.02445,
+      "full_burnup_lifetime_yr": 39.2,
+      "reserve_lifetime_yr": 19.5,
+      "nominal_core_delta_p_kPa": 28.07,
+      "nominal_peak_clad_temp_K": 1236.7,
+      "net_electric_power_kWe": 103.8,
+      "cumulative_creep_strain_pct": 0.021
+    },
+    "V7_CAND_BRAYTON_ROBUST": {
+      "role": "Low-Pressure-Drop Brayton-Optimized Reference",
+      "active_height_cm": 42.45,
+      "pin_pitch_cm": 2.28,
+      "coolant_gap_mm": 0.88,
+      "subassembly_mass_kg": 540.15,
+      "module_mass_kg": 624.39,
+      "heavy_metal_mass_kg": 124.12,
+      "k_eff_operating": 1.0145,
+      "full_burnup_lifetime_yr": 22.5,
+      "nominal_core_delta_p_kPa": 22.98,
+      "nominal_delta_p_margin_kPa": 12.02,
+      "perturbed_core_delta_p_kPa": 34.21,
+      "perturbed_delta_p_margin_kPa": 0.79,
+      "nominal_peak_clad_temp_K": 1240.1,
+      "net_electric_power_kWe": 105.1,
+      "cycle_thermal_efficiency_pct": 26.28,
+      "compressor_pumping_fraction_pct": 39.2
+    }
+  },
+  "vvuq_uncertainty_quantiles": {
+    "N_samples": 10000,
+    "delta_p_kPa": {
+      "50th_percentile": 26.4,
+      "95th_percentile": 31.03,
+      "99th_percentile": 32.63,
+      "probability_exceeding_35kPa_pct": 0.0
+    },
+    "peak_clad_temp_K": {
+      "50th_percentile": 1234.9,
+      "95th_percentile": 1260.4,
+      "99th_percentile": 1270.1,
+      "probability_exceeding_1273K_pct": 0.43
+    }
+  },
+  "simulation_registry_totals": {
+    "total_simulations_recorded": 129,
+    "campaigns_covered": [
+      "V4_Coupling",
+      "V4_Sensitivities",
+      "V5_Optimization_Screening",
+      "V5_Finalist_Verification",
+      "V6_Audit_Verification",
+      "V6_Second_Stage_Optimization",
+      "V7_Robust_Optimization"
+    ],
+    "passed_simulations": 68,
+    "failed_or_rejected_simulations": 61
+  }
+}

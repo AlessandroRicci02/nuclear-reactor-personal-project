@@ -1,0 +1,10 @@
+Variable,Units,d(Mass)/dx,d(T_clad)/dx,d(T_fuel)/dx,d(Delta_P)/dx,d(k)/dx [pcm/unit],d(F_q)/dx,Norm_Sens_Mass,Norm_Sens_T_clad,Norm_Sens_Delta_P,Norm_Sens_k_eff
+Fuel Radius,cm,302.5,936.38,976.09,-33.629,12000.0,0.0,0.325,0.427,-0.827,0.068
+Clad Thickness,cm,137.0,-136.0,-141.45,-46.5,0.0,0.0,0.013,-0.005,-0.099,0.0
+Coolant Gap,cm,-175.33,1141.33,1290.46,-962.067,0.0,0.0,-0.024,0.067,-3.059,0.0
+Pin Pitch,cm,305.37,0.0,0.0,0.0,1502.2,0.0,1.285,0.0,0.0,0.034
+Active Core Height,cm,10.06,5.31,4.93,0.586,80.1,-0.003,0.791,0.177,1.055,0.033
+Reflector Thickness,cm,32.51,0.0,0.0,0.0,120.4,0.0,0.59,0.0,0.0,0.012
+Mass Flow Multiplier,-,0.0,-227.7,-212.68,27.135,0.0,0.0,0.0,-0.179,1.151,0.0
+Inlet Temperature,K,0.0,0.95,0.93,0.032,0.0,0.0,0.0,0.708,1.284,0.0
+Outer Enrichment,wt%,0.0,0.0,0.0,0.0,450.1,0.024,0.0,0.0,0.0,0.087

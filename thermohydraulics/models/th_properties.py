@@ -104,12 +104,14 @@ def prandtl_helium(T, P=P_NOM):
     return cp_helium(T) * mu_helium(T) / k_helium(T, P)
 
 
-def reynolds_helium(m_dot_pin, T, P=P_NOM):
+def reynolds_helium(m_dot_pin, T, P=P_NOM, a_flow=None, d_h=None):
     """
     Reynolds number in the annular coolant channel:
     Re = rho * u * D_h / mu = (m_dot / A_flow) * D_h / mu
     """
-    return (m_dot_pin / A_FLOW_PIN) * D_H / mu_helium(T)
+    af = A_FLOW_PIN if a_flow is None else a_flow
+    dh = D_H if d_h is None else d_h
+    return (m_dot_pin / af) * dh / mu_helium(T)
 
 
 def friction_factor_annulus(Re, r_ratio=R_RATIO):

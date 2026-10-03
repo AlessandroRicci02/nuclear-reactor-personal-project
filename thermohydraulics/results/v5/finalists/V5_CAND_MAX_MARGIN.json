@@ -1,0 +1,70 @@
+{
+  "role": "V5_CAND_MAX_MARGIN",
+  "candidate_id": "V5_FINALIST_MAX_MARGIN",
+  "description": "Maximum safety margin finalist: 11 cm BeO reflector, deep shutdown, and optimal orificing",
+  "design_variables": {
+    "role": "V5_CAND_MAX_MARGIN",
+    "candidate_id": "V5_FINALIST_MAX_MARGIN",
+    "description": "Maximum safety margin finalist: 11 cm BeO reflector, deep shutdown, and optimal orificing",
+    "fuel_radius_cm": 0.59,
+    "cladding_thickness_cm": 0.055,
+    "coolant_gap_cm": 0.078,
+    "pin_pitch_cm": 2.3,
+    "active_core_height_cm": 44.0,
+    "axial_reflector_thickness_cm": 9.5,
+    "radial_reflector_thickness_cm": 11.0,
+    "mass_flow_multiplier": 1.05,
+    "inlet_temperature_K": 945.0,
+    "inner_enrichment_wt": 19.3,
+    "outer_enrichment_wt": 19.75,
+    "orificing_mode": "optimal_ring"
+  },
+  "masses": {
+    "m_fuel_kg": 140.96,
+    "m_u235_kg": 26.24,
+    "m_clad_kg": 17.46,
+    "m_mod_kg": 103.26,
+    "m_beo_tot_kg": 336.85,
+    "m_abs_kg": 13.75,
+    "m_subassembly_kg": 612.3,
+    "m_module_kg": 700.23,
+    "v_total_L": 186.62,
+    "core_radius_cm": 19.71,
+    "assembly_outer_radius_cm": 30.71
+  },
+  "neutronics": {
+    "k_eff_operating": 1.02782,
+    "sigma_k_operating": 0.00105,
+    "excess_reactivity_pcm": 2706.2,
+    "k_eff_shutdown": 0.98105,
+    "control_drum_worth_pcm": 4637.5,
+    "shutdown_margin_all_in_pcm": 1931.3,
+    "k_eff_stuck_drum": 0.98412,
+    "shutdown_margin_stuck_pcm": 1613.5,
+    "doppler_coefficient_pcm_K": -4.412,
+    "F_r": 1.326,
+    "F_z": 1.277,
+    "F_q": 1.723,
+    "burnup_lifetime_full_years": 39.7,
+    "burnup_lifetime_reserve_years": 22.1
+  },
+  "thermal_hydraulics": {
+    "T_clad_out_max_K": 1224.8,
+    "T_fuel_center_max_K": 1253.4,
+    "T_cool_exit_max_K": 1169.0,
+    "T_cool_bulk_out_K": 1149.3,
+    "delta_T_hot_K": 19.8,
+    "dp_core_kPa": 35.388,
+    "orificing_mode": "optimal_ring"
+  },
+  "margins": {
+    "cladding_creep_margin_K": 125.2,
+    "fuel_melting_margin_K": 546.6,
+    "pressure_drop_margin_kPa": 4.61,
+    "mass_launch_margin_kg": 37.7,
+    "sdm_all_in_margin_pcm": -68.7,
+    "sdm_stuck_margin_pcm": 613.5,
+    "keff_margin_pcm": 1506.2
+  },
+  "runtime_s": 58.17
+}

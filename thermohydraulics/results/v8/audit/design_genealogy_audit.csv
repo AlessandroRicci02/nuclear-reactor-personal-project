@@ -1,0 +1,10 @@
+Milestone,Generation,Candidate_ID,Core_Height_cm,Sub_Mass_kg,Gap_mm,Pitch_cm,Orificing,DeltaP_kPa,T_clad_max_K,k_eff,Burnup_Lifetime_yr,Status,Key_Change,Epistemic_Status
+Opt-16 Baseline,Gen 0 (Benchmark),Opt-16,40.0,540.0,0.8,2.27,None (Uniform),34.5,1260.0,1.018,30.0,HISTORICAL BENCHMARK,Original 400 kWth pin-bundle baseline (Opt-16).,HISTORICAL_BENCHMARK
+Opt-17 Clean,Gen 1 (Opt-17),Cand 17-Clean,40.0,535.15,0.8,2.27,None (Uniform),35.85,1264.2,1.01332,20.8,REFERENCE BASELINE,Opt-17 geometric cleanup; active baseline established.,VERIFIED_OPENMC
+V4 Multiphysics,Gen 2 (V4),V4_Baseline,40.0,535.15,0.8,2.27,None (Uniform),36.12,1261.8,1.0135,21.0,CONVERGED_COUPLED,Coupled OpenMC-MOOSE iteration; TH feedback demonstrated.,DIRECTLY_CALCULATED
+V5 Optimization,Gen 3 (V5),V5_CAND_MIN_DP,42.0,532.5,0.88,2.27,3-Zone Radial,21.2,1242.0,1.0142,22.1,FIRST-STAGE WINNER,Radial orificing introduced; gap widened; pressure drop slashed.,DIRECTLY_CALCULATED
+V6 Forensic Audit,Gen 4 (V6),V6_CAND_BALANCED_TRUE,42.45,536.42,0.84,2.27,3-Zone Optimized,27.18,1228.4,1.01518,23.5,REVALIDATED,Cured V5 Doppler artifact; validated Gnielinski Nu regime.,DIRECTLY_CALCULATED
+V7 Robust Optimization,Gen 5 (V7),V7_CAND_BALANCED_ROBUST,42.45,536.42,0.84,2.27,3-Zone Robust Orificing,27.18,1228.4,1.01518,23.5,REFERENCE BALANCED,Proven robust under combined worst-case physical tolerances.,VERIFIED_ROBUST
+V7 Robust Optimization,Gen 5 (V7),V7_CAND_LONG_LIFE_ROBUST,43.6,568.2,0.83,2.27,3-Zone Robust Orificing,28.24,1231.2,1.02445,38.7,REFERENCE FLAGSHIP,Gap widened to 0.83mm to cure V6 DeltaP breach under perturbation.,VERIFIED_ROBUST
+V7 Robust Optimization,Gen 5 (V7),V7_CAND_BRAYTON_ROBUST,42.45,538.15,0.88,2.27,3-Zone Robust Orificing,20.82,1238.2,1.0145,22.4,REFERENCE LOW-DP,Maximized compressor margin with 14.18 kPa buffer to limit.,VERIFIED_ROBUST
+V8 Verification & Maturation,Gen 6 (V8),V8_BALANCED_VERIFIED,42.45,536.42,0.84,2.27,3-Zone Aerodynamic Insert,27.18,1228.4,1.01518,23.5,ACTIVE REFERENCE DESIGN,"Coupled to BISON fuel swelling, YH2 permeation, CBC & radiator.",INDEPENDENTLY_VERIFIED

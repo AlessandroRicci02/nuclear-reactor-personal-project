@@ -1,0 +1,291 @@
+{
+  "baseline_design_vector": {
+    "identifier": "OPT-17_CAND_17_CLEAN_BASELINE",
+    "description": "Validated baseline configuration from V4 campaign",
+    "fuel_radius_cm": 0.58,
+    "cladding_thickness_cm": 0.05,
+    "cladding_outer_radius_cm": 0.63,
+    "coolant_gap_cm": 0.075,
+    "channel_outer_radius_cm": 0.705,
+    "pin_pitch_cm": 2.27,
+    "number_of_pins": 217,
+    "hex_rings": 9,
+    "active_core_height_cm": 42.45,
+    "active_core_radius_cm": 19.45,
+    "axial_reflector_thickness_cm": 9.275,
+    "total_assembly_height_cm": 61.0,
+    "radial_reflector_thickness_cm": 9.8,
+    "assembly_outer_radius_cm": 29.25,
+    "number_of_axial_slices": 10,
+    "aux_holes_per_pin": 6,
+    "aux_hole_radius_cm": 0.15,
+    "aux_hole_radial_pos_cm": 0.91,
+    "axial_duct_radius_cm": 0.86,
+    "drum_count": 10,
+    "drum_radius_cm": 3.95,
+    "drum_absorber_thickness_cm": 1.5,
+    "drum_absorber_angle_deg": 148.0,
+    "drum_clearance_gap_cm": 0.18,
+    "drum_center_radial_pos_cm": 23.58,
+    "baseline_operating_drum_angle_deg": 0.0,
+    "fuel_material": "Sintered UN",
+    "fuel_density_g_cm3": 13.5,
+    "inner_pins_count": 19,
+    "inner_pins_enrichment_wt_u235": 19.3,
+    "outer_pins_count": 198,
+    "outer_pins_enrichment_wt_u235": 19.75,
+    "cladding_material": "Nb-1Zr Alloy",
+    "cladding_density_g_cm3": 8.57,
+    "moderator_material": "Canned YH2.0",
+    "moderator_density_g_cm3": 4.3,
+    "reflector_material": "Sintered BeO",
+    "reflector_density_g_cm3": 2.9,
+    "absorber_material": "B4C (90% B-10 enriched)",
+    "absorber_density_g_cm3": 2.52,
+    "thermal_power_rating_kWth": 400.0,
+    "target_electrical_output_kWe": 100.0,
+    "nominal_brayton_efficiency": 0.25,
+    "coolant_fluid": "Pure 4He",
+    "system_operating_pressure_MPa": 2.5,
+    "coolant_inlet_temperature_K": 950.0,
+    "target_bulk_outlet_temperature_K": 1150.0,
+    "target_bulk_temperature_rise_K": 200.0,
+    "total_mass_flow_kg_s": 0.385122,
+    "pin_mass_flow_kg_s": 0.00177475,
+    "gap_conductance_W_m2_K": 25000.0,
+    "k_eff_operating": 1.01645,
+    "sigma_k_operating": 0.00055,
+    "excess_reactivity_pcm": 1618.3,
+    "doppler_coefficient_pcm_K": -0.844,
+    "moderator_coefficient_pcm_K": -0.811,
+    "control_drum_worth_pcm": 4698.1,
+    "shutdown_margin_all_in_pcm": 3079.8,
+    "shutdown_margin_stuck_pcm": 2763.7,
+    "peak_fuel_centerline_temp_K": 1295.56,
+    "peak_cladding_outer_temp_K": 1271.4,
+    "hot_channel_coolant_exit_temp_K": 1207.8,
+    "core_total_pressure_drop_kPa": 23.59,
+    "radial_peaking_factor_Fr": 1.327,
+    "total_3d_peaking_factor_Fq": 1.707,
+    "subassembly_mass_kg": 539.66,
+    "total_reactor_module_mass_kg": 622.74
+  },
+  "design_variables_bounds": {
+    "fuel_radius_cm": {
+      "baseline": 0.58,
+      "min": 0.52,
+      "max": 0.61,
+      "step": 0.01,
+      "type": "continuous",
+      "description": "Fuel pellet radius controlling fuel volume, power density, and clad heat flux."
+    },
+    "cladding_thickness_cm": {
+      "baseline": 0.05,
+      "min": 0.035,
+      "max": 0.065,
+      "step": 0.005,
+      "type": "continuous",
+      "description": "Nb-1Zr clad wall thickness controlling structural creep margin and thermal resistance."
+    },
+    "coolant_gap_cm": {
+      "baseline": 0.075,
+      "min": 0.055,
+      "max": 0.105,
+      "step": 0.005,
+      "type": "continuous",
+      "description": "Annular coolant gap width determining flow area, velocity, Re, and friction pressure drop."
+    },
+    "pin_pitch_cm": {
+      "baseline": 2.27,
+      "min": 2.15,
+      "max": 2.4,
+      "step": 0.02,
+      "type": "continuous",
+      "description": "Hexagonal lattice pitch controlling moderator volume fraction and core diameter."
+    },
+    "active_core_height_cm": {
+      "baseline": 42.45,
+      "min": 38.0,
+      "max": 46.0,
+      "step": 1.0,
+      "type": "continuous",
+      "description": "Active core fuel stack height affecting aspect ratio L/D and axial leakage."
+    },
+    "radial_reflector_thickness_cm": {
+      "baseline": 9.8,
+      "min": 7.5,
+      "max": 12.0,
+      "step": 0.5,
+      "type": "continuous",
+      "description": "BeO radial reflector thickness balancing neutron reflection and mass."
+    },
+    "mass_flow_multiplier": {
+      "baseline": 1.0,
+      "min": 0.8,
+      "max": 1.3,
+      "step": 0.05,
+      "type": "continuous",
+      "description": "Mass flow multiplier adjusting coolant temperature rise and heat transfer coefficient."
+    },
+    "inlet_temperature_K": {
+      "baseline": 950.0,
+      "min": 900.0,
+      "max": 980.0,
+      "step": 10.0,
+      "type": "continuous",
+      "description": "Recuperator return temperature entering the reactor lower plenum."
+    },
+    "outer_enrichment_wt": {
+      "baseline": 19.75,
+      "min": 18.5,
+      "max": 19.75,
+      "step": 0.25,
+      "type": "continuous",
+      "description": "HALEU enrichment in outer 198 pins (Rings 3-8)."
+    },
+    "inner_enrichment_wt": {
+      "baseline": 19.3,
+      "min": 17.5,
+      "max": 19.5,
+      "step": 0.25,
+      "type": "continuous",
+      "description": "HALEU enrichment in central 19 pins (Rings 0-2) for radial power flattening."
+    },
+    "orificing_mode": {
+      "baseline": "uniform",
+      "options": [
+        "uniform",
+        "power_proportional",
+        "two_zone",
+        "optimal_ring"
+      ],
+      "type": "discrete",
+      "description": "Inlet orifice loss distribution across rings 0 to 8 to equalize exit coolant temperatures."
+    }
+  },
+  "engineering_constraints": {
+    "C01_max_cladding_temp": {
+      "parameter": "Peak Outer Cladding Temperature (T_c,max)",
+      "limit_value": 1350.0,
+      "direction": "<=",
+      "units": "K",
+      "source": "Touloukian (1970), Nb-1Zr thermal creep acceleration limit (~1077 \u00b0C)",
+      "status": "HARD_ENGINEERING_LIMIT",
+      "description": "Operating above 1350 K induces rapid tertiary creep rupture over 10-20 years."
+    },
+    "C02_max_fuel_temp": {
+      "parameter": "Peak Fuel Centerline Temperature (T_f,max)",
+      "limit_value": 1800.0,
+      "direction": "<=",
+      "units": "K",
+      "source": "Hayes et al. (1990), UN melting point 3035 K; 1800 K avoids significant fission gas release",
+      "status": "HARD_ENGINEERING_LIMIT",
+      "description": "Maintains >1200 K margin to UN melting and keeps FGR below 1%."
+    },
+    "C03_core_pressure_drop": {
+      "parameter": "Core Total Coolant Pressure Drop (Delta P)",
+      "limit_value": 35.0,
+      "direction": "<=",
+      "units": "kPa",
+      "source": "Galloway et al. (2004) AIAA-2004-5977, CBC pressure ratio allocation (Delta P/P < 1.4%)",
+      "status": "HARD_ENGINEERING_LIMIT",
+      "description": "Prevents excessive compressor pumping work degradation."
+    },
+    "C04_subassembly_mass": {
+      "parameter": "Core Subassembly Total Mass (m_subassembly)",
+      "limit_value": 650.0,
+      "direction": "<=",
+      "units": "kg",
+      "source": "Opt-17 Project Specification / Launch Payload Envelope",
+      "status": "HARD_ENGINEERING_LIMIT",
+      "description": "Strict launch vehicle mass envelope ceiling for deep space electric propulsion."
+    },
+    "C05_shutdown_margin_all_in": {
+      "parameter": "All-In Shutdown Margin (SDM_all_in)",
+      "limit_value": 2000.0,
+      "direction": ">=",
+      "units": "pcm",
+      "source": "NASA / KAPL-4849 Aerospace Reactor Flight Safety Standard",
+      "status": "HARD_ENGINEERING_LIMIT",
+      "description": "Requires deep subcriticality during launch, ascent, and inadvertent water immersion."
+    },
+    "C06_shutdown_margin_stuck": {
+      "parameter": "Single Stuck-Drum Safety Margin (SDM_stuck)",
+      "limit_value": 1000.0,
+      "direction": ">=",
+      "units": "pcm",
+      "source": "Single Failure Safety Criterion (KAPL-4849, p. 42)",
+      "status": "HARD_ENGINEERING_LIMIT",
+      "description": "Ensures subcriticality even if the highest-worth drum jams fully withdrawn."
+    },
+    "C07_operating_keff": {
+      "parameter": "Coupled Operating Multiplication Factor (k_eff)",
+      "limit_value": 1.012,
+      "direction": ">=",
+      "units": "-",
+      "source": "Burnup Depletion Reserve Criterion (20+ years at 68.2 pcm/year)",
+      "status": "HARD_ENGINEERING_LIMIT",
+      "description": "Ensures excess reactivity > 1200 pcm for multi-decade NEP flight lifetime."
+    },
+    "C08_enrichment_ceiling": {
+      "parameter": "Maximum Fuel Enrichment (wt% U-235)",
+      "limit_value": 19.75,
+      "direction": "<=",
+      "units": "wt%",
+      "source": "Strict Non-Proliferation / HALEU Commercial Licensing Standard",
+      "status": "LEGAL_NON_PROLIFERATION_LIMIT",
+      "description": "Must not exceed 19.75 wt% under any optimization state."
+    },
+    "C09_geometric_feasibility": {
+      "parameter": "Geometry Constructibility & Clearances",
+      "limit_value": 0.0,
+      "direction": ">",
+      "units": "-",
+      "source": "First-Principles Solid Geometry",
+      "status": "HARD_PHYSICAL_CONSTRAINT",
+      "description": "Requires fuel_radius + clad_th + gap < pitch/sqrt(3) and positive flow areas."
+    }
+  },
+  "objective_functions": {
+    "F1_subassembly_mass": {
+      "name": "Minimize Core Subassembly Mass",
+      "symbol": "m_sub",
+      "units": "kg",
+      "direction": "minimize",
+      "baseline_val": 539.66,
+      "description": "Reduces launch mass and spacecraft inertia."
+    },
+    "F2_peak_cladding_temp": {
+      "name": "Minimize Peak Cladding Temperature",
+      "symbol": "T_c,max",
+      "units": "K",
+      "direction": "minimize",
+      "baseline_val": 1271.4,
+      "description": "Expands thermal creep margin below the 1350 K limit."
+    },
+    "F3_core_pressure_drop": {
+      "name": "Minimize Core Total Pressure Drop",
+      "symbol": "Delta_P",
+      "units": "kPa",
+      "direction": "minimize",
+      "baseline_val": 23.59,
+      "description": "Maximizes Brayton cycle efficiency and reduces compressor power."
+    },
+    "F4_radial_power_peaking": {
+      "name": "Minimize Total 3D Power Peaking",
+      "symbol": "F_q",
+      "units": "-",
+      "direction": "minimize",
+      "baseline_val": 1.707,
+      "description": "Flattens core power profile and eliminates localized thermal hotspots."
+    },
+    "F5_hot_channel_elevation": {
+      "name": "Minimize Hot-Channel Outlet Elevation",
+      "symbol": "Delta_T_hot",
+      "units": "K",
+      "direction": "minimize",
+      "baseline_val": 57.8,
+      "description": "T_cool,exit,max - T_cool,bulk,out. Eliminates thermal striping into turbine."
+    }
+  }
+}

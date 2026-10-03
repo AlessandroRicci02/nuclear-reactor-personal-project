@@ -1,0 +1,5 @@
+Regime,Physicality,Peak_T_clad_K,Peak_T_fuel_K,Core_Delta_P_kPa,Coolant_Exit_Max_K,Coolant_Bulk_Out_K,Delta_T_hot_K
+Regime 1: Uniform Flow,Physical Geometry (Un-orificed),1286.4,1308.7,23.78,1231.2,1150.0,81.2
+Regime 2: Physical 9-Ring Orifice Plate,Manufacturable Hardware (Discrete Hole Diameters),1226.7,1240.5,76.59,1197.6,1150.0,47.6
+Regime 3: Optimized Continuous Ring Model,Reduced-Order Numerical Optimization,1220.6,1248.3,36.94,1169.3,1150.0,19.3
+Regime 4: Idealized Power-Proportional Allocation,Unphysical Mathematical Limit (m_dot ~ q),1220.7,1248.4,38.02,1150.0,1150.0,0.0

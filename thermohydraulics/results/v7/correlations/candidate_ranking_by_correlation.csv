@@ -1,0 +1,29 @@
+Correlation_Model,Candidate_ID,Candidate_Name,Peak_T_clad_K,Peak_T_fuel_K,Core_Delta_P_kPa,Delta_T_hot_K,Cladding_Margin_K,Delta_P_Margin_kPa
+Gnielinski_Reference,BASELINE_OPT17,Opt-17 Baseline,1277.7,1301.8,20.52,64.9,72.3,14.48
+Gnielinski_Reference,V6_CAND_BALANCED_TRUE,V6 Balanced True,1225.8,1254.5,31.59,19.0,124.2,3.41
+Gnielinski_Reference,V6_CAND_LONG_LIFE,V6 Long Life Flagship,1224.1,1252.2,35.37,19.4,125.9,-0.37
+Gnielinski_Reference,V6_CAND_LOW_DP,V6 Low Pressure Drop,1240.1,1268.8,22.98,19.3,109.9,12.02
+Gnielinski_Minus_15pct,BASELINE_OPT17,Opt-17 Baseline,1283.9,1308.0,20.52,64.9,66.1,14.48
+Gnielinski_Minus_15pct,V6_CAND_BALANCED_TRUE,V6 Balanced True,1232.0,1260.7,31.59,19.0,118.0,3.41
+Gnielinski_Minus_15pct,V6_CAND_LONG_LIFE,V6 Long Life Flagship,1230.3,1258.4,35.37,19.4,119.7,-0.37
+Gnielinski_Minus_15pct,V6_CAND_LOW_DP,V6 Low Pressure Drop,1246.3,1275.0,22.98,19.3,103.7,12.02
+Gnielinski_Plus_15pct,BASELINE_OPT17,Opt-17 Baseline,1273.1,1297.2,20.52,64.9,76.9,14.48
+Gnielinski_Plus_15pct,V6_CAND_BALANCED_TRUE,V6 Balanced True,1221.2,1249.9,31.59,19.0,128.8,3.41
+Gnielinski_Plus_15pct,V6_CAND_LONG_LIFE,V6 Long Life Flagship,1219.5,1247.6,35.37,19.4,130.5,-0.37
+Gnielinski_Plus_15pct,V6_CAND_LOW_DP,V6 Low Pressure Drop,1235.5,1264.2,22.98,19.3,114.5,12.02
+Churchill_Unified,BASELINE_OPT17,Opt-17 Baseline,1278.4,1302.5,21.54,64.9,71.6,13.46
+Churchill_Unified,V6_CAND_BALANCED_TRUE,V6 Balanced True,1226.5,1255.2,33.16,19.0,123.5,1.84
+Churchill_Unified,V6_CAND_LONG_LIFE,V6 Long Life Flagship,1224.8,1252.9,37.14,19.4,125.2,-2.14
+Churchill_Unified,V6_CAND_LOW_DP,V6 Low Pressure Drop,1240.8,1269.5,24.13,19.3,109.2,10.87
+Petukhov_Roizen,BASELINE_OPT17,Opt-17 Baseline,1276.7,1300.8,20.52,64.9,73.3,14.48
+Petukhov_Roizen,V6_CAND_BALANCED_TRUE,V6 Balanced True,1224.8,1253.5,31.59,19.0,125.2,3.41
+Petukhov_Roizen,V6_CAND_LONG_LIFE,V6 Long Life Flagship,1223.1,1251.2,35.37,19.4,126.9,-0.37
+Petukhov_Roizen,V6_CAND_LOW_DP,V6 Low Pressure Drop,1239.1,1267.8,22.98,19.3,110.9,12.02
+Dittus_Boelter,BASELINE_OPT17,Opt-17 Baseline,1273.9,1298.0,19.7,64.9,76.1,15.3
+Dittus_Boelter,V6_CAND_BALANCED_TRUE,V6 Balanced True,1222.0,1250.7,30.32,19.0,128.0,4.68
+Dittus_Boelter,V6_CAND_LONG_LIFE,V6 Long Life Flagship,1220.3,1248.4,33.96,19.4,129.7,1.04
+Dittus_Boelter,V6_CAND_LOW_DP,V6 Low Pressure Drop,1236.3,1265.1,22.07,19.3,113.7,12.93
+Laminar_Lower_Bound,BASELINE_OPT17,Opt-17 Baseline,1277.7,1301.8,22.16,64.9,72.3,12.84
+Laminar_Lower_Bound,V6_CAND_BALANCED_TRUE,V6 Balanced True,1225.8,1254.5,34.11,19.0,124.2,0.89
+Laminar_Lower_Bound,V6_CAND_LONG_LIFE,V6 Long Life Flagship,1224.1,1252.2,38.2,19.4,125.9,-3.2
+Laminar_Lower_Bound,V6_CAND_LOW_DP,V6 Low Pressure Drop,1240.1,1268.8,24.82,19.3,109.9,10.18

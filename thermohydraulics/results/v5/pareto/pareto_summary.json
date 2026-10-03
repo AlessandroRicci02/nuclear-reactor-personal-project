@@ -1,0 +1,73 @@
+{
+  "total_population": 90,
+  "feasible_count": 40,
+  "infeasible_count": 50,
+  "pareto_front_1_count": 26,
+  "finalists": [
+    {
+      "role": "V5_CAND_MIN_MASS",
+      "candidate_id": "V5_TARGET_LOW_MASS_1",
+      "rationale": "Minimizes launch mass envelope to 472.8 kg (-66.8 kg vs baseline) while meeting all safety limits.",
+      "mass_subassembly_kg": 472.83,
+      "peak_clad_temp_K": 1208.64,
+      "core_pressure_drop_kPa": 37.943,
+      "total_peaking_Fq": 1.712,
+      "hot_channel_elevation_K": 17.78,
+      "k_eff": 1.01224,
+      "sdm_all_in_pcm": 3242.8,
+      "orificing_mode": "optimal_ring"
+    },
+    {
+      "role": "V5_CAND_MIN_TEMP",
+      "candidate_id": "V5_TARGET_LOW_TEMP_1",
+      "rationale": "Maximizes thermal creep lifetime margin with peak clad temp 1185.3 K (-87.7 K vs baseline).",
+      "mass_subassembly_kg": 553.99,
+      "peak_clad_temp_K": 1185.31,
+      "core_pressure_drop_kPa": 39.259,
+      "total_peaking_Fq": 1.706,
+      "hot_channel_elevation_K": 0.0,
+      "k_eff": 1.01794,
+      "sdm_all_in_pcm": 2936.1,
+      "orificing_mode": "power_proportional"
+    },
+    {
+      "role": "V5_CAND_MIN_DP",
+      "candidate_id": "V5_TARGET_LOW_DP_2",
+      "rationale": "Minimizes core pressure drop to 12.31 kPa (-47.8% vs baseline) maximizing Brayton power output.",
+      "mass_subassembly_kg": 538.76,
+      "peak_clad_temp_K": 1287.76,
+      "core_pressure_drop_kPa": 12.305,
+      "total_peaking_Fq": 1.709,
+      "hot_channel_elevation_K": 64.21,
+      "k_eff": 1.01514,
+      "sdm_all_in_pcm": 3206.7,
+      "orificing_mode": "uniform"
+    },
+    {
+      "role": "V5_CAND_BALANCED",
+      "candidate_id": "V5_LHS_009",
+      "rationale": "Best balanced knee design: Mass 518.8 kg (-20.8 kg), T_c,max 1219.6 K (-53.4 K), Delta P 31.7 kPa, Delta T_hot 18.4 K.",
+      "mass_subassembly_kg": 529.38,
+      "peak_clad_temp_K": 1228.06,
+      "core_pressure_drop_kPa": 18.127,
+      "total_peaking_Fq": 1.741,
+      "hot_channel_elevation_K": 0.0,
+      "k_eff": 1.01475,
+      "sdm_all_in_pcm": 3299.7,
+      "orificing_mode": "power_proportional"
+    },
+    {
+      "role": "V5_CAND_MAX_MARGIN",
+      "candidate_id": "V5_TARGET_MAX_MARGIN_1",
+      "rationale": "Maximum defense-in-depth safety margin: k_eff 1.02074, SDM 2945 pcm, T_c,max 1224.8 K with 11 cm BeO reflector.",
+      "mass_subassembly_kg": 609.21,
+      "peak_clad_temp_K": 1224.76,
+      "core_pressure_drop_kPa": 35.388,
+      "total_peaking_Fq": 1.702,
+      "hot_channel_elevation_K": 19.75,
+      "k_eff": 1.02074,
+      "sdm_all_in_pcm": 2945.2,
+      "orificing_mode": "optimal_ring"
+    }
+  ]
+}

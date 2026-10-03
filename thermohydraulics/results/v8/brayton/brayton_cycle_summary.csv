@@ -1,0 +1,4 @@
+Candidate,Candidate_ID,Core_DeltaP_kPa,Optimal_Pressure_Ratio,Turbine_Expansion_Ratio,Compressor_Work_kW,Turbine_Work_kW,Net_Mechanical_Power_kW,Net_Electric_Power_kWe,Reactor_Thermal_Power_kWth,Waste_Heat_Rejected_kWth,Thermal_Cycle_Efficiency_pct,Compressor_Pumping_Penalty_pct,Specific_Electric_Power_kWe_per_kg_sub
+Balanced Robust (Ref),V7_CAND_BALANCED_ROBUST,26.42,2.5,2.345,586.17,851.04,264.87,251.62,569.15,304.29,44.21,68.88,0.468
+Long-Life Robust,V7_CAND_LONG_LIFE_ROBUST,28.07,2.5,2.343,591.52,861.91,270.39,256.87,594.16,323.77,43.23,68.63,0.478
+Brayton Robust,V7_CAND_BRAYTON_ROBUST,22.98,2.5,2.348,586.17,852.18,266.01,252.71,569.15,303.14,44.4,68.78,0.47

@@ -1,0 +1,511 @@
+<USER_REQUEST>
+# V7 — ENGINEERING VALIDATION, ROBUST OPTIMIZATION & DESIGN MATURATION
+
+Continue the development of the space Nuclear Electric Propulsion reactor from the completed V6 campaign.
+
+Workspace:
+
+`/home/aleri/OpenMC_projects/first_test/thermohydraulics/`
+
+Previous campaigns:
+
+* `results/v4/`
+* `results/v5/`
+* `results/v6/`
+
+Preserve all previous results.
+
+Create a new isolated workspace:
+
+`results/v7/`
+
+The purpose of V7 is NOT to simply generate more candidates.
+
+V6 has now demonstrated that the optimization workflow can identify real design improvements, but it has also exposed important model uncertainty and constraint sensitivity.
+
+V7 should therefore move the project from:
+
+**optimization → verification → robust engineering design maturation**
+
+Do not assume that `V6_CAND_BALANCED_TRUE` is the final architecture.
+
+Treat it as the current reference candidate, not as a predetermined winner.
+
+---
+
+## 1. START WITH A V6 FORENSIC RE-VALIDATION
+
+Before modifying the design, inspect and reproduce the most important V6 results.
+
+Audit:
+
+* `V6_FINAL_REPORT.md`
+* `V5_AUDIT.md`
+* `PHYSICS_GAP_ANALYSIS.md`
+* `ORIFICING_VALIDATION.md`
+* `ROBUSTNESS_REPORT.md`
+* `DESIGN_SELECTION_MATRIX.md`
+* `v6_summary.json`
+* all finalist input files
+* all relevant scripts
+* solver logs
+* generated data
+* VTK outputs
+
+For every critical metric determine:
+
+* where it was calculated;
+* which solver produced it;
+* what model assumptions were used;
+* what statistical uncertainty exists;
+* whether the quantity is directly calculated or derived;
+* whether the same methodology was used for every candidate.
+
+Do not assume the V6 report is correct simply because it is newer.
+
+Create:
+
+`results/v7/V6_REVALIDATION.md`
+
+---
+
+# 2. FORMALLY RECLASSIFY ALL CURRENT CANDIDATES
+
+Construct a rigorous feasibility matrix.
+
+For every candidate evaluate all hard constraints independently.
+
+At minimum include:
+
+* operating criticality;
+* excess reactivity;
+* shutdown margin;
+* stuck-drum margin;
+* Doppler feedback;
+* pressure drop;
+* peak cladding temperature;
+* peak fuel temperature;
+* hot-channel temperature difference;
+* lifetime criterion;
+* mass limits.
+
+Use explicit statuses:
+
+* PASS
+* FAIL
+* MARGINALLY PASS
+* MARGINALLY FAIL
+* UNCERTAIN
+* NOT ESTABLISHED
+
+Do not call a candidate "safe", "validated", or "fully compliant" if any hard constraint is unresolved.
+
+Pay particular attention to:
+
+* `V6_CAND_LONG_LIFE` and its ΔP = 35.37 kPa;
+* `V6_CAND_MIN_MASS_SAFE` and its ΔP = 36.79 kPa;
+* any other candidate within statistical or modelling uncertainty of a hard boundary.
+
+---
+
+# 3. BUILD A TRUE ROBUST DESIGN SPACE
+
+The objective is now to find designs that remain feasible under uncertainty, not merely designs that pass nominal conditions.
+
+Identify the dominant uncertainties from V6.
+
+Prioritize variables that materially influence:
+
+* criticality;
+* lifetime;
+* pressure drop;
+* peak cladding temperature;
+* flow distribution;
+* orifice behaviour;
+* heat-transfer coefficient.
+
+Examples may include:
+
+* geometric tolerances;
+* coolant flow;
+* inlet temperature;
+* pressure;
+* material properties;
+* hydraulic coefficients;
+* heat-transfer correlations;
+* radial power distribution;
+* fuel loading;
+* reflector dimensions;
+* moderator dimensions;
+* orifice dimensions.
+
+Do not perturb variables arbitrarily.
+
+Use V6 sensitivity results to determine which uncertainties deserve computational effort.
+
+---
+
+# 4. ROBUST ORIFICING DESIGN
+
+Treat the 9-ring orifice architecture as an engineering subsystem rather than merely an optimization variable.
+
+Determine the best practical orifice configuration subject simultaneously to:
+
+* temperature equalization;
+* pressure drop;
+* manufacturing tolerance;
+* flow stability;
+* sensitivity to power redistribution;
+* off-design operation.
+
+Do not optimize for nominal ΔT alone.
+
+The target is a design that remains effective when:
+
+* power distribution changes;
+* total flow changes;
+* pressure changes;
+* geometry deviates from nominal;
+* hydraulic coefficients vary.
+
+Compare the robust discrete orificing architecture against the un-orificed baseline.
+
+Explicitly distinguish:
+
+* ideal mathematical flow allocation;
+* reduced-order hydraulic representation;
+* physically realizable discrete geometry.
+
+Do not claim zero temperature maldistribution unless the physical model actually supports it.
+
+---
+
+# 5. RESOLVE THE TRANSITIONAL-REYNOLDS UNCERTAINTY
+
+V6 identified transitional/low-Reynolds-number behaviour as an important modelling uncertainty.
+
+Do not simply select whichever correlation gives the best performance.
+
+Perform a structured model-form uncertainty assessment.
+
+For the relevant operating range compare all defensible correlations/models available in the existing framework.
+
+Quantify their effect on:
+
+* friction factor;
+* Nusselt number;
+* heat-transfer coefficient;
+* pressure drop;
+* peak cladding temperature;
+* peak fuel temperature;
+* outlet temperature distribution.
+
+Determine whether candidate ranking changes when the correlation/model is changed.
+
+If candidate ranking is correlation-dependent, explicitly report that.
+
+---
+
+# 6. IMPROVE THE NEUTRONIC CONFIDENCE WHERE IT MATTERS
+
+Do not uniformly increase Monte Carlo statistics for every calculation.
+
+Instead identify the quantities whose uncertainty currently affects engineering decisions.
+
+Prioritize high-statistics calculations for:
+
+* operating k-effective near constraint boundaries;
+* shutdown margin near constraint boundaries;
+* stuck-drum cases near constraint boundaries;
+* Doppler coefficient;
+* lifetime-critical burnup states.
+
+Use uncertainty-aware decision logic.
+
+For example, distinguish:
+
+* clearly below requirement;
+* clearly above requirement;
+* statistically unresolved.
+
+Do not convert an unresolved result into a PASS.
+
+---
+
+# 7. REASSESS BURNUP / LIFETIME
+
+Perform a dedicated audit of the reported lifetime predictions.
+
+Document:
+
+* depletion chain;
+* timestep strategy;
+* power normalization;
+* thermal state assumptions;
+* criticality search method;
+* interpolation;
+* lifetime criterion;
+* reactivity reserve criterion.
+
+Determine whether the reported 23.6 yr and 39.4 yr values are:
+
+* direct depletion results;
+* interpolated values;
+* extrapolations;
+* model-dependent estimates.
+
+Where computationally justified, perform higher-resolution depletion around the lifetime boundary.
+
+The goal is to establish a defensible lifetime uncertainty rather than simply a single nominal number.
+
+---
+
+# 8. SECOND-STAGE ROBUST OPTIMIZATION
+
+Only after the uncertainty model is established, perform a focused optimization.
+
+Do not repeat V5's broad blind search.
+
+Optimize around the feasible regions identified by V6.
+
+Primary objectives:
+
+1. minimize reactor/module mass;
+2. minimize peak cladding temperature;
+3. minimize pressure drop;
+4. maximize lifetime;
+5. minimize thermal maldistribution.
+
+Subject to hard constraints on:
+
+* criticality;
+* shutdown margin;
+* stuck-drum margin;
+* negative Doppler;
+* pressure drop;
+* fuel/cladding temperatures.
+
+Use robust feasibility rather than nominal feasibility wherever possible.
+
+A candidate that passes nominally but fails under small realistic perturbations should not be considered a robust finalist.
+
+---
+
+# 9. SEARCH FOR A ROBUST PARETO FRONT
+
+Construct a new Pareto front using robust rather than nominal performance.
+
+At minimum investigate trade-offs among:
+
+* mass;
+* lifetime;
+* pressure drop;
+* peak cladding temperature;
+* thermal maldistribution;
+* shutdown margin.
+
+Report both:
+
+### Nominal Pareto front
+
+and
+
+### Robust Pareto front
+
+This distinction is essential.
+
+A candidate should not move onto the robust Pareto front merely because it performs well under one nominal realization.
+
+---
+
+# 10. MISSION-BASED ARCHITECTURES
+
+Maintain separate mission architectures where appropriate.
+
+At minimum consider:
+
+* general-purpose NEP mission;
+* long-duration outer-planet mission;
+* low-pressure-drop / Brayton-optimized mission.
+
+Do not force a single architecture to dominate all mission profiles.
+
+For each mission profile determine the minimum set of engineering requirements and show the resulting feasible region.
+
+Do not use subjective labels such as "best".
+
+Use quantitative mission-specific trade-offs.
+
+---
+
+# 11. PHYSICS MATURITY ASSESSMENT
+
+Update the V6 physics gap analysis.
+
+For each currently omitted phenomenon determine:
+
+* expected magnitude;
+* relevance to current design margins;
+* whether it could change candidate ranking;
+* whether it requires a higher-fidelity external code;
+* whether it should be included before final design selection.
+
+Pay particular attention to phenomena that could invalidate current margins:
+
+* fuel swelling;
+* fuel cracking;
+* fuel-cladding interaction;
+* cladding creep;
+* thermal expansion;
+* moderator degradation / hydrogen retention;
+* structural deformation;
+* pressure-vessel stresses;
+* plenum/header losses;
+* radiation heat transfer;
+* off-design thermal-hydraulic behaviour;
+* startup/shutdown transients.
+
+Do not attempt to hide missing physics behind large nominal margins.
+
+---
+
+# 12. DESIGN MATURITY LEVEL
+
+Create an explicit engineering maturity assessment for the current candidates.
+
+Use categories such as:
+
+* conceptual;
+* computationally characterized;
+* robust computational candidate;
+* requires additional physics;
+* requires experimental validation;
+* not yet suitable for detailed design.
+
+Do not imply that computational verification alone constitutes experimental validation.
+
+---
+
+# 13. FINAL DESIGN SET
+
+Do NOT force a single final reactor.
+
+Produce a small set of quantitatively justified architectures, ideally:
+
+* one robust general-purpose candidate;
+* one long-life candidate;
+* one low-pressure-drop candidate.
+
+If fewer than three are genuinely defensible, keep fewer.
+
+For every final candidate report:
+
+* geometry;
+* mass;
+* criticality;
+* shutdown margin;
+* Doppler;
+* pressure drop;
+* thermal margins;
+* thermal maldistribution;
+* lifetime;
+* uncertainty;
+* robust margins;
+* dominant limitations.
+
+---
+
+# 14. REQUIRED DELIVERABLES
+
+Create:
+
+`results/v7/V7_FINAL_REPORT.md`
+
+and:
+
+* `V6_REVALIDATION.md`
+* `ROBUST_DESIGN_SPACE.md`
+* `ORIFICING_ROBUSTNESS.md`
+* `CORRELATION_MODEL_UNCERTAINTY.md`
+* `BURNUP_LIFETIME_AUDIT.md`
+* `PHYSICS_MATURITY_ASSESSMENT.md`
+* `MISSION_ARCHITECTURES.md`
+* `DESIGN_SELECTION_MATRIX.md`
+* `v7_summary.json`
+* `manifest.md`
+
+Generate high-quality figures for:
+
+1. nominal vs robust Pareto front;
+2. mass vs lifetime;
+3. mass vs pressure drop;
+4. pressure drop vs peak cladding temperature;
+5. orifice tolerance sensitivity;
+6. thermal-maldistribution robustness;
+7. correlation/model-form uncertainty;
+8. Monte Carlo uncertainty vs constraint margins;
+9. burnup/lifetime uncertainty;
+10. mission-specific feasible regions;
+11. final architecture comparison.
+
+---
+
+# 15. ENGINEERING STOPPING CRITERION
+
+Do not run indefinitely.
+
+Continue only while additional computation is materially reducing:
+
+* design uncertainty;
+* model-form uncertainty;
+* constraint uncertainty;
+* or Pareto trade-off uncertainty.
+
+Stop when further optimization is primarily exploiting uncertainties that cannot be resolved without new physics or experimental data.
+
+At that point clearly identify:
+
+1. what is known;
+2. what is computationally robust;
+3. what remains model-dependent;
+4. what requires additional physics;
+5. what requires experimental validation;
+6. what simulation would provide the highest value next.
+
+---
+
+# FINAL OBJECTIVE
+
+The goal of V7 is NOT to produce a more impressive candidate.
+
+The goal is to determine:
+
+**Which NEP reactor architectures remain technically feasible when the V6 results are subjected to uncertainty, model-form variation, manufacturing tolerance, realistic off-design conditions, and the most important remaining physics?**
+
+Use the existing computational infrastructure aggressively where it provides real information.
+
+Do not fabricate results.
+
+Do not silently change constraints.
+
+Do not redefine a failed candidate as successful.
+
+Do not select a design merely because it has the best nominal metric.
+
+Prefer a slightly less impressive design with robust margins over a nominally superior design whose feasibility depends on unresolved assumptions.
+
+Run autonomously and continue until the remaining uncertainty is dominated by physics or validation work that cannot be resolved by further optimization alone.
+
+And put the final report in a .txt file, in the new /home/aleri/OpenMC_projects/first_test/thermohydraulics/results/v7 I guess
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-10-03T18:29:00+02:00.
+
+The user's current state is as follows:
+Other open documents:
+- /home/aleri/OpenMC_projects/first_test/results_second_architecture/opt17/opt17_comprehensive_report.md (LANGUAGE_UNSPECIFIED)
+- /home/aleri/OpenMC_projects/first_test/results_second_architecture/opt17/reports/opt17_comprehensive_report.txt (LANGUAGE_UNSPECIFIED)
+- /home/aleri/OpenMC_projects/first_test/results_second_architecture/opt17/figures/generate_opt17_figures.py (LANGUAGE_UNSPECIFIED)
+- /home/aleri/OpenMC_projects/first_test/PROJECT_STATUS.md (LANGUAGE_UNSPECIFIED)
+- /home/aleri/OpenMC_projects/first_test/src/test_opt9_final_cand.py (LANGUAGE_UNSPECIFIED)
+</ADDITIONAL_METADATA>

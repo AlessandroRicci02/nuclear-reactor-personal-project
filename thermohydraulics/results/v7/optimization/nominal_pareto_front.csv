@@ -1,0 +1,7 @@
+Candidate_ID,Role,Mass_kg,Delta_P_nom_kPa,Delta_P_pert_kPa,T_clad_nom_K,T_clad_pert_K,Delta_T_hot_K,SDM_All_In_pcm,Lifetime_nom_yr,Lifetime_robust_yr,C03_Nominal_Pass,C03_Robust_Pass,Feasibility_Nominal,Feasibility_Robust
+BASELINE_OPT17,Opt-17 Baseline,539.66,24.89,36.8,1273.0,1308.5,65.3,2853.1,30.1,23.1,True,False,PASS,FAIL (Off-normal dP & Maldistribution)
+V6_CAND_BALANCED_TRUE,V6 Balanced True,536.98,31.59,38.2,1225.8,1255.4,19.0,3250.0,23.6,17.9,True,False,MARGINALLY PASS,FAIL (C03 Perturbed)
+V6_CAND_LOW_DP,V6 Low DP,540.15,22.98,34.21,1240.1,1250.5,19.3,3314.1,22.4,16.8,True,True,PASS,ROBUST PASS
+V7_CAND_BALANCED_ROBUST,V7 Balanced Robust,537.8,26.42,33.15,1234.2,1244.4,19.4,3200.0,23.5,17.8,True,True,PASS,ROBUST PASS
+V7_CAND_LONG_LIFE_ROBUST,V7 Long Life Robust,572.27,28.07,34.65,1236.7,1246.9,19.2,2400.0,39.2,30.7,True,True,PASS,ROBUST PASS
+V7_CAND_BRAYTON_ROBUST,V7 Brayton Robust,540.15,22.98,34.21,1240.1,1250.5,19.3,3314.1,22.4,16.8,True,True,PASS,ROBUST PASS

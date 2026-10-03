@@ -1,0 +1,4 @@
+Candidate,Waste_Heat_kWth,Net_Electric_Power_kWe,Panel_Projected_Area_m2,Two_Sided_Radiating_Area_m2,Mean_Radiative_Flux_W_m2,Effective_Radiator_Temp_K,Radiator_Subsystem_Mass_kg,Reactor_Module_Mass_kg,Total_NEP_Flight_Mass_kg,Specific_Alpha_kg_per_kWe
+Balanced Robust (Ref),304.29,251.62,61.4,122.79,2478.1,484.7,422.1,621.88,3803.7,15.12
+Long-Life Robust,323.77,256.87,65.33,130.65,2478.1,484.7,449.1,658.15,3898.5,15.18
+Brayton Robust,303.14,252.71,61.16,122.33,2478.1,484.7,420.5,624.39,3811.2,15.08

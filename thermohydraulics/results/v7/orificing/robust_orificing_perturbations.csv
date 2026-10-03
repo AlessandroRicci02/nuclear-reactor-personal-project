@@ -1,0 +1,15 @@
+Perturbation_Condition,Mass_Flow_Mult,Hole_Tol_mm,Cd_Mult,T_inlet_K,Pressure_MPa,Peak_T_clad_K,Core_Delta_P_kPa,Delta_T_hot_K,Clad_Margin_K,Delta_P_Margin_kPa,Compliance_Status
+Nominal Design State,1.0,0.0,1.0,950.0,2.5,1262.7,26.56,52.8,87.3,8.44,PASS
+EDM Hole Tolerance Tight (-0.05 mm),1.0,-0.05,1.0,950.0,2.5,1261.9,26.64,51.8,88.1,8.36,PASS
+EDM Hole Tolerance Loose (+0.05 mm),1.0,0.05,1.0,950.0,2.5,1263.3,26.47,53.5,86.7,8.53,PASS
+Discharge Coeff Cd Degraded (-10%),1.0,0.0,0.9,950.0,2.5,1258.5,27.22,47.8,91.5,7.78,PASS
+Discharge Coeff Cd Favorable (+10%),1.0,0.0,1.1,950.0,2.5,1265.9,26.05,56.5,84.1,8.95,PASS
+Primary Mass Flow +10% (Overspeed),1.1,0.0,1.0,950.0,2.5,1242.1,30.08,46.7,107.9,4.92,PASS
+Primary Mass Flow -10% (Underflow),0.9,0.0,1.0,950.0,2.5,1288.7,23.49,61.1,61.3,11.51,PASS
+Inlet Temperature +20 K (Elevated),1.0,0.0,1.0,970.0,2.5,1281.4,27.25,52.4,68.6,7.75,PASS
+Inlet Temperature -20 K (Depressed),1.0,0.0,1.0,930.0,2.5,1243.9,25.86,52.9,106.1,9.14,PASS
+Primary Pressure -10% (Depressurized),1.0,0.0,1.0,950.0,2.25,1262.7,29.5,52.8,87.3,5.5,PASS
+Primary Pressure +10% (Overpressure),1.0,0.0,1.0,950.0,2.75,1262.7,24.14,52.8,87.3,10.86,PASS
+Radial Power Flattened (Fr = 1.22),1.0,0.0,1.0,950.0,2.5,1256.0,26.54,46.8,94.0,8.46,PASS
+Radial Power Peaked (Fr = 1.42),1.0,0.0,1.0,950.0,2.5,1269.3,26.56,58.6,80.7,8.44,PASS
+Worst-Case Compounded Off-Design,1.1,-0.05,0.9,970.0,2.25,1271.1,35.57,44.3,78.9,-0.57,BREACH

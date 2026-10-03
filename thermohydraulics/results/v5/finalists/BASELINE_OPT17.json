@@ -1,0 +1,70 @@
+{
+  "role": "BASELINE_OPT17",
+  "candidate_id": "OPT-17_BASELINE",
+  "description": "Validated reference Opt-17 baseline (Cand 17-Clean, un-orificed)",
+  "design_variables": {
+    "role": "BASELINE_OPT17",
+    "candidate_id": "OPT-17_BASELINE",
+    "description": "Validated reference Opt-17 baseline (Cand 17-Clean, un-orificed)",
+    "fuel_radius_cm": 0.58,
+    "cladding_thickness_cm": 0.05,
+    "coolant_gap_cm": 0.075,
+    "pin_pitch_cm": 2.27,
+    "active_core_height_cm": 42.45,
+    "axial_reflector_thickness_cm": 9.275,
+    "radial_reflector_thickness_cm": 9.8,
+    "mass_flow_multiplier": 1.0,
+    "inlet_temperature_K": 950.0,
+    "inner_enrichment_wt": 19.3,
+    "outer_enrichment_wt": 19.75,
+    "orificing_mode": "uniform"
+  },
+  "masses": {
+    "m_fuel_kg": 131.42,
+    "m_u235_kg": 24.47,
+    "m_clad_kg": 15.0,
+    "m_mod_kg": 98.11,
+    "m_beo_tot_kg": 281.83,
+    "m_abs_kg": 13.26,
+    "m_subassembly_kg": 539.66,
+    "m_module_kg": 623.74,
+    "v_total_L": 163.96,
+    "core_radius_cm": 19.45,
+    "assembly_outer_radius_cm": 29.25
+  },
+  "neutronics": {
+    "k_eff_operating": 1.01985,
+    "sigma_k_operating": 0.00209,
+    "excess_reactivity_pcm": 1946.4,
+    "k_eff_shutdown": 0.97285,
+    "control_drum_worth_pcm": 4736.9,
+    "shutdown_margin_all_in_pcm": 2790.5,
+    "k_eff_stuck_drum": 0.97664,
+    "shutdown_margin_stuck_pcm": 2391.7,
+    "doppler_coefficient_pcm_K": -1.65,
+    "F_r": 1.326,
+    "F_z": 1.277,
+    "F_q": 1.723,
+    "burnup_lifetime_full_years": 28.5,
+    "burnup_lifetime_reserve_years": 10.9
+  },
+  "thermal_hydraulics": {
+    "T_clad_out_max_K": 1273.0,
+    "T_fuel_center_max_K": 1295.6,
+    "T_cool_exit_max_K": 1215.3,
+    "T_cool_bulk_out_K": 1150.0,
+    "delta_T_hot_K": 65.3,
+    "dp_core_kPa": 24.891,
+    "orificing_mode": "uniform"
+  },
+  "margins": {
+    "cladding_creep_margin_K": 77.0,
+    "fuel_melting_margin_K": 504.4,
+    "pressure_drop_margin_kPa": 15.11,
+    "mass_launch_margin_kg": 110.34,
+    "sdm_all_in_margin_pcm": 790.5,
+    "sdm_stuck_margin_pcm": 1391.7,
+    "keff_margin_pcm": 746.4
+  },
+  "runtime_s": 55.22
+}

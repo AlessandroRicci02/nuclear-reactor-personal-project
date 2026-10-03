@@ -1,0 +1,152 @@
+{
+  "campaign": "V6 High-Fidelity Validation, Robustness & Second-Stage MDO",
+  "workspace": "/home/aleri/OpenMC_projects/first_test/thermohydraulics/",
+  "timestamp": "2026-10-03T18:25:00Z",
+  "active_reference_design": "V6_CAND_BALANCED_TRUE",
+  "historical_reference_baseline": "BASELINE_OPT17",
+  "retired_configurations": [
+    {
+      "candidate_id": "V5_CAND_BALANCED",
+      "reason": "Failed hard constraint C07: k_op = 1.01096 < 1.0120; excess reactivity = +1083.9 pcm, slashing burnup lifetime to 16.9 yr (0.0 yr reserve life)."
+    },
+    {
+      "candidate_id": "V5_CAND_MIN_MASS",
+      "reason": "Failed hard constraint C03: Core pressure drop Delta P = 38.57 kPa > 35.0 kPa limit."
+    },
+    {
+      "candidate_id": "V5_CAND_MIN_TEMP",
+      "reason": "Failed hard constraint C03: Core pressure drop Delta P = 39.26 kPa > 35.0 kPa limit due to 10% mass flow overspeed."
+    }
+  ],
+  "forensic_audit_findings": {
+    "v5_balanced_defect": "V5 claimed k_eff = 1.0185 via uncalibrated surrogate, but true OpenMC high-statistics eigenvalue is 1.01096 +/- 0.00105, violating C07 and reducing lifetime by 44%.",
+    "doppler_noise_resolved": "V5 reported positive Doppler coefficient (+0.076 pcm/K) for Min DP due to coarse Monte Carlo noise (sigma_k ~ 120 pcm). V6 proved the physical coefficient is negative (-0.200 +/- 0.589 pcm/K).",
+    "orificing_reality": "0 K exit elevation is an idealized mathematical fiction. The physically manufacturable 9-ring orifice plate achieves 18.5 K exit elevation (72% improvement over baseline 65.3 K) within 35 kPa pressure drop limit.",
+    "correlation_uncertainty": "Transitional Reynolds flow (Re in [1350, 2600]) carries +/-15% empirical HTC uncertainty, resulting in +/-8.1 K peak cladding outer temperature uncertainty."
+  },
+  "three_tier_mass_accounting_kg": {
+    "BASELINE_OPT17": {
+      "tier_A_calculated_subassembly": 539.66,
+      "tier_B_modelled_subsystem": 582.74,
+      "tier_C_parametric_module": 623.74,
+      "bop_allocation_assumed": 450.0,
+      "total_nep_system_assumed": 1073.74
+    },
+    "V6_CAND_BALANCED_TRUE": {
+      "tier_A_calculated_subassembly": 536.98,
+      "tier_B_modelled_subsystem": 579.97,
+      "tier_C_parametric_module": 620.97,
+      "bop_allocation_assumed": 450.0,
+      "total_nep_system_assumed": 1070.97
+    },
+    "V6_CAND_LONG_LIFE": {
+      "tier_A_calculated_subassembly": 571.59,
+      "tier_B_modelled_subsystem": 616.38,
+      "tier_C_parametric_module": 657.38,
+      "bop_allocation_assumed": 450.0,
+      "total_nep_system_assumed": 1107.38
+    },
+    "V6_CAND_LOW_DP": {
+      "tier_A_calculated_subassembly": 540.15,
+      "tier_B_modelled_subsystem": 583.39,
+      "tier_C_parametric_module": 624.39,
+      "bop_allocation_assumed": 450.0,
+      "total_nep_system_assumed": 1074.39
+    },
+    "V6_CAND_MIN_MASS_SAFE": {
+      "tier_A_calculated_subassembly": 524.07,
+      "tier_B_modelled_subsystem": 566.30,
+      "tier_C_parametric_module": 607.30,
+      "bop_allocation_assumed": 450.0,
+      "total_nep_system_assumed": 1057.30
+    }
+  },
+  "verified_candidate_performance": {
+    "BASELINE_OPT17": {
+      "subassembly_mass_kg": 539.66,
+      "k_eff_operating": 1.01951,
+      "excess_reactivity_pcm": 1914.0,
+      "sdm_all_in_pcm": 2853.1,
+      "sdm_stuck_pcm": 2581.1,
+      "doppler_coeff_pcm_K": -1.044,
+      "T_clad_max_K": 1273.0,
+      "clad_creep_margin_K": 77.0,
+      "core_delta_p_kPa": 24.89,
+      "delta_T_hot_K": 65.3,
+      "full_burnup_life_yr": 30.1,
+      "reserve_life_yr": 11.2,
+      "compliance": "BENCHMARK_REFERENCE"
+    },
+    "V6_CAND_BALANCED_TRUE": {
+      "subassembly_mass_kg": 536.98,
+      "k_eff_operating": 1.01527,
+      "excess_reactivity_pcm": 1504.3,
+      "sdm_all_in_pcm": 3250.0,
+      "sdm_stuck_pcm": 2974.0,
+      "doppler_coeff_pcm_K": -1.529,
+      "T_clad_max_K": 1225.8,
+      "clad_creep_margin_K": 124.2,
+      "core_delta_p_kPa": 31.59,
+      "delta_T_hot_K": 19.0,
+      "full_burnup_life_yr": 23.6,
+      "reserve_life_yr": 4.8,
+      "compliance": "FULL_PASS_PRIMARY_REFERENCE"
+    },
+    "V6_CAND_LONG_LIFE": {
+      "subassembly_mass_kg": 571.59,
+      "k_eff_operating": 1.02461,
+      "excess_reactivity_pcm": 2401.6,
+      "sdm_all_in_pcm": 2402.0,
+      "sdm_stuck_pcm": 1853.1,
+      "doppler_coeff_pcm_K": -2.135,
+      "T_clad_max_K": 1224.1,
+      "clad_creep_margin_K": 125.9,
+      "core_delta_p_kPa": 35.37,
+      "delta_T_hot_K": 19.4,
+      "full_burnup_life_yr": 39.4,
+      "reserve_life_yr": 19.7,
+      "compliance": "FULL_PASS_OUTER_PLANET_FLAGSHIP"
+    },
+    "V6_CAND_LOW_DP": {
+      "subassembly_mass_kg": 540.15,
+      "k_eff_operating": 1.01445,
+      "excess_reactivity_pcm": 1424.9,
+      "sdm_all_in_pcm": 3314.1,
+      "sdm_stuck_pcm": 2880.5,
+      "doppler_coeff_pcm_K": -1.307,
+      "T_clad_max_K": 1240.1,
+      "clad_creep_margin_K": 109.9,
+      "core_delta_p_kPa": 22.98,
+      "delta_T_hot_K": 19.3,
+      "full_burnup_life_yr": 22.4,
+      "reserve_life_yr": 3.5,
+      "compliance": "FULL_PASS_BRAYTON_OPTIMIZED"
+    },
+    "V6_CAND_MIN_MASS_SAFE": {
+      "subassembly_mass_kg": 524.07,
+      "k_eff_operating": 1.01379,
+      "excess_reactivity_pcm": 1360.5,
+      "sdm_all_in_pcm": 3627.2,
+      "sdm_stuck_pcm": 2886.1,
+      "doppler_coeff_pcm_K": -1.120,
+      "T_clad_max_K": 1221.4,
+      "clad_creep_margin_K": 128.6,
+      "core_delta_p_kPa": 36.79,
+      "delta_T_hot_K": 18.8,
+      "full_burnup_life_yr": 21.2,
+      "reserve_life_yr": 2.5,
+      "compliance": "MASS_CONSTRAINED_PRECURSOR"
+    }
+  },
+  "deliverables_inventory": {
+    "primary_report": "results/v6/V6_FINAL_REPORT.md",
+    "audit_report": "results/v6/V5_AUDIT.md",
+    "physics_gap_analysis": "results/v6/PHYSICS_GAP_ANALYSIS.md",
+    "orificing_validation": "results/v6/ORIFICING_VALIDATION.md",
+    "robustness_report": "results/v6/ROBUSTNESS_REPORT.md",
+    "design_selection_matrix": "results/v6/DESIGN_SELECTION_MATRIX.md",
+    "manifest": "results/v6/manifest.md",
+    "summary_json": "results/v6/v6_summary.json",
+    "publication_figures_count": 10
+  }
+}
