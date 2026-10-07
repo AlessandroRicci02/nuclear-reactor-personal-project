@@ -1,0 +1,20 @@
+metric,unit,nominal,uncertainty,status
+Thermal Power Output,kWth,400.0,0.0,NOMINAL
+Coolant Inlet Temperature,K,892.0,1.0,NOMINAL
+Coolant Outlet Temperature,K,1110.0,1.5,NOMINAL
+Coolant Core Temperature Rise,K,218.0,1.8,NOMINAL
+Helium Mass Flow Rate,kg/s,0.3533229065388128,0.002,NOMINAL
+Core Total Pressure Drop,kPa,13.5,0.35,PASS (<35 kPa)
+Canned YH2 Moderator Avg Temp,K,904.51,1.0,NOMINAL
+Canned YH2 Moderator Peak Temp,K,914.83,1.0,PASS (<=920 K)
+MODERATOR THERMAL SAFETY BUFFER,K,35.16999999999996,1.0,PASS (>=+35 K TARGET)
+Equilibrium H2 Dissociation Pressure,kPa,1.0005632730243526,0.05,PASS (<2 kPa)
+15-Year Relative H2 Loss Fraction,%,0.0038000000000000004,0.0005,PASS (<0.01%)
+Cardinal 2D Peak Cladding Temperature,K,1191.4542004587,3.5,PASS
+Nb-1Zr Cladding Creep Margin (1350 K),K,158.54579954130008,3.5,PASS (>100 K)
+Cardinal 2D Peak Fuel Centerline Temp,K,1207.8471663836,4.5,PASS
+UN Fuel Dissociation Margin (2073 K),K,865.1528336163999,4.5,PASS (>800 K)
+Closed Brayton Net Electric Power,kWe,146.645515344332,0.85,PASS (>100 kWe)
+Closed Brayton Thermal Efficiency,%,36.661378836083,0.2,PASS (>30%)
+Space Radiator Required Area,m2,104.43481909237923,1.1,PASS (<150 m2)
+Space Radiator Subassembly Mass,kg,469.95668591570654,5.0,PASS (<600 kg)

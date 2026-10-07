@@ -1,0 +1,33 @@
+{
+  "theta_deg": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "cross_sections": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/campaign/data/endfb-viii.0-hdf5/cross_sections.xml",
+  "temperatures": {
+    "fuel": 1195.0,
+    "clad": 1170.0,
+    "moderator": 1004.5,
+    "reflector": 870.0,
+    "coolant": 1001.0
+  },
+  "moderator_density": 1.0,
+  "coolant_density": 1.0,
+  "particles": 20000,
+  "batches": 180,
+  "inactive": 60,
+  "seed": 43002,
+  "target_sigma": 0.0001,
+  "photons": false,
+  "legacy_data": false,
+  "slices": 10,
+  "geometry_source": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/configuration/TB35_REFERENCE/geometry.json"
+}

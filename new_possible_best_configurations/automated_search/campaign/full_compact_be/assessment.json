@@ -1,0 +1,220 @@
+{
+  "candidate": "full_compact_be",
+  "index": 6,
+  "spec": {
+    "r_fuel": 0.585,
+    "clad_th": 0.048,
+    "chan_gap": 0.084,
+    "al2o3_mod_th": 0.01,
+    "pitch": 2.16,
+    "core_h": 54,
+    "refl_ax_th": 9,
+    "refl_rad_th": 10,
+    "drum_r": 3.95,
+    "abs_th": 1.5,
+    "abs_angle": 148.0,
+    "drum_clearance": 0.18,
+    "r_add": 0.1,
+    "reflector_kind": "Be",
+    "matrix_kind": "YH2",
+    "peripheral_kind": "YH2"
+  },
+  "pilot": {
+    "pass_all": false,
+    "reason": "pilot promising: proceed to confirmation",
+    "results": {
+      "out": {
+        "candidate": "full_compact_be",
+        "stage": "pilot",
+        "case": "out",
+        "request_sha256": "9771a6d20ea2aa007206aa001288e1f5a36f118093052ec92a8805a33818c5af",
+        "k_eff": 1.0656813717593985,
+        "sigma_k": 0.001953232230419555,
+        "rho_pcm": 6163.321748878947,
+        "sigma_rho_pcm": 171.98839091369612,
+        "batches": 100,
+        "particles": 4000,
+        "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/campaign/full_compact_be/pilot/out/statepoint.100.h5"
+      },
+      "in": {
+        "candidate": "full_compact_be",
+        "stage": "pilot",
+        "case": "in",
+        "request_sha256": "78985e493d0edbd82db772b955cb81d82be72d05d4eb84e0ff115b8ce3ccccfc",
+        "k_eff": 0.9935972217715268,
+        "sigma_k": 0.0019302097344119301,
+        "rho_pcm": -644.4037974519867,
+        "sigma_rho_pcm": 195.51665772330148,
+        "batches": 100,
+        "particles": 4000,
+        "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/campaign/full_compact_be/pilot/in/statepoint.100.h5"
+      },
+      "moderator_minus": {
+        "candidate": "full_compact_be",
+        "stage": "pilot",
+        "case": "moderator_minus",
+        "request_sha256": "9a3aa60003925a72800383f7065924f50508b21479fcac1eb159dfcb3163d2ac",
+        "k_eff": 1.0638361953093192,
+        "sigma_k": 0.0018314907463129904,
+        "rho_pcm": 6000.566214120795,
+        "sigma_rho_pcm": 161.82857276015295,
+        "batches": 100,
+        "particles": 4000,
+        "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/campaign/full_compact_be/pilot/moderator_minus/statepoint.100.h5"
+      },
+      "moderator_plus": {
+        "candidate": "full_compact_be",
+        "stage": "pilot",
+        "case": "moderator_plus",
+        "request_sha256": "ced5dae3dec2ed74d75c629a952875968262950a57439921c26eacb37a3acf51",
+        "k_eff": 1.0630164287268375,
+        "sigma_k": 0.0015962954614966534,
+        "rho_pcm": 5928.076652805036,
+        "sigma_rho_pcm": 141.26459406957724,
+        "batches": 100,
+        "particles": 4000,
+        "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/campaign/full_compact_be/pilot/moderator_plus/statepoint.100.h5"
+      },
+      "total_minus": {
+        "candidate": "full_compact_be",
+        "stage": "pilot",
+        "case": "total_minus",
+        "request_sha256": "36791bb026b2dc901098b03265b636739807aa1f7d91572ba31cb6a0dc712298",
+        "k_eff": 1.0655012929446697,
+        "sigma_k": 0.0015564461972272976,
+        "rho_pcm": 6147.46254916756,
+        "sigma_rho_pcm": 137.0964314944912,
+        "batches": 100,
+        "particles": 4000,
+        "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/campaign/full_compact_be/pilot/total_minus/statepoint.100.h5"
+      },
+      "total_plus": {
+        "candidate": "full_compact_be",
+        "stage": "pilot",
+        "case": "total_plus",
+        "request_sha256": "efd6efd37096752f27ab023b91da48dbef9bc99f3c562bccb96f9c2b6cd330a1",
+        "k_eff": 1.0616086353266845,
+        "sigma_k": 0.00177666782074842,
+        "rho_pcm": 5803.328390195872,
+        "sigma_rho_pcm": 157.64396567784644,
+        "batches": 100,
+        "particles": 4000,
+        "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/campaign/full_compact_be/pilot/total_plus/statepoint.100.h5"
+      },
+      "fuel_minus": {
+        "candidate": "full_compact_be",
+        "stage": "pilot",
+        "case": "fuel_minus",
+        "request_sha256": "ead8e0e151bafa78767f648bd0846e627db2e8480f8ca26b5203b80b7bc4f5f7",
+        "k_eff": 1.0639660135957807,
+        "sigma_k": 0.0020136503813569665,
+        "rho_pcm": 6012.035420154171,
+        "sigma_rho_pcm": 177.88058857214057,
+        "batches": 100,
+        "particles": 4000,
+        "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/campaign/full_compact_be/pilot/fuel_minus/statepoint.100.h5"
+      },
+      "fuel_plus": {
+        "candidate": "full_compact_be",
+        "stage": "pilot",
+        "case": "fuel_plus",
+        "request_sha256": "12f1acb8291882f617258f4f3590e3e7ab20045ca2668c6f20dc25df60b1811d",
+        "k_eff": 1.058199273420161,
+        "sigma_k": 0.0017101189972805833,
+        "rho_pcm": 5499.840614335117,
+        "sigma_rho_pcm": 152.71841690946067,
+        "batches": 100,
+        "particles": 4000,
+        "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/campaign/full_compact_be/pilot/fuel_plus/statepoint.100.h5"
+      }
+    },
+    "coefficients": {
+      "moderator": {
+        "alpha_pcm_K": -0.24163187105252898,
+        "sigma_pcm_K": 0.7160398227537547,
+        "upper_95_pcm_K": 0.9362536373773975,
+        "lower_95_pcm_K": -1.4195173794824554
+      },
+      "total": {
+        "alpha_pcm_K": -1.1471138632389588,
+        "sigma_pcm_K": 0.6963958919015482,
+        "upper_95_pcm_K": -0.001542621060912186,
+        "lower_95_pcm_K": -2.2926851054170054
+      },
+      "fuel": {
+        "alpha_pcm_K": -1.7073160193968488,
+        "sigma_pcm_K": 0.781483053446053,
+        "upper_95_pcm_K": -0.4217763964780916,
+        "lower_95_pcm_K": -2.992855642315606
+      }
+    },
+    "promote": true
+  },
+  "confirmation": {
+    "pass_all": false,
+    "reason": "moderator clearly nonnegative",
+    "results": {
+      "out": {
+        "candidate": "full_compact_be",
+        "stage": "confirmation",
+        "case": "out",
+        "request_sha256": "f52e624d4428f242737e8c31f03d6265e7fd71d63e3395defca8b82525299096",
+        "k_eff": 1.0639510772803136,
+        "sigma_k": 0.00021923261766129738,
+        "rho_pcm": 6010.715966732816,
+        "sigma_rho_pcm": 19.366977684158613,
+        "batches": 980,
+        "particles": 20000,
+        "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/campaign/full_compact_be/confirmation/out/statepoint.0980.h5"
+      },
+      "in": {
+        "candidate": "full_compact_be",
+        "stage": "confirmation",
+        "case": "in",
+        "request_sha256": "95320a849408cc517442dadd30ed24b419992003b0da9a216027183f8bbb8c20",
+        "k_eff": 0.9901018206860945,
+        "sigma_k": 0.00021813771143727146,
+        "rho_pcm": -999.713272625491,
+        "sigma_rho_pcm": 22.252101600867764,
+        "batches": 980,
+        "particles": 20000,
+        "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/campaign/full_compact_be/confirmation/in/statepoint.0980.h5"
+      },
+      "moderator_minus": {
+        "candidate": "full_compact_be",
+        "stage": "confirmation",
+        "case": "moderator_minus",
+        "request_sha256": "c501bd1bdd6d90c6bec5c30027164034b0770b060914b69c6cf6f6857a0f9980",
+        "k_eff": 1.0633201257145999,
+        "sigma_k": 0.00021999748713214055,
+        "rho_pcm": 5954.944722977551,
+        "sigma_rho_pcm": 19.457617078623223,
+        "batches": 1060,
+        "particles": 20000,
+        "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/campaign/full_compact_be/confirmation/moderator_minus/statepoint.1060.h5"
+      },
+      "moderator_plus": {
+        "candidate": "full_compact_be",
+        "stage": "confirmation",
+        "case": "moderator_plus",
+        "request_sha256": "3eb6e5dfcfa30c8d353734ab71e5e16f0cf7e022956d3ac62eabca2388b74489",
+        "k_eff": 1.063844844116461,
+        "sigma_k": 0.00021815038298779248,
+        "rho_pcm": 6001.330407300609,
+        "sigma_rho_pcm": 19.275222214401715,
+        "batches": 1060,
+        "particles": 20000,
+        "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/campaign/full_compact_be/confirmation/moderator_plus/statepoint.1060.h5"
+      }
+    },
+    "coefficients": {
+      "moderator": {
+        "alpha_pcm_K": 0.2319284216152937,
+        "sigma_pcm_K": 0.13694278493159975,
+        "upper_95_pcm_K": 0.4571993028277753,
+        "lower_95_pcm_K": 0.006657540402812107
+      }
+    }
+  },
+  "status": "rejected"
+}

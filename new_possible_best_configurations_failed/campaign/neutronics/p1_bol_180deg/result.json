@@ -1,0 +1,22 @@
+{
+  "keff": 0.9814962589986833,
+  "sigma": 0.0001966253085394175,
+  "sigma_pcm_k": 19.66253085394175,
+  "reactivity_pcm": -1885.2584339133393,
+  "reactivity_sigma_pcm": 20.41089835189415,
+  "batches": 1180,
+  "inactive": 60,
+  "particles": 20000,
+  "wall_seconds": 724.1979947090149,
+  "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/campaign/neutronics/p1_bol_180deg/statepoint.01180.h5",
+  "request_sha256": "b0536db5c43e0651a6bc000072a6249be5b48ed7b88fb7cada300ec3d5173964",
+  "request": {
+    "sigma": 0.0002,
+    "theta": 180.0,
+    "seed": 1381
+  },
+  "target_achieved": true,
+  "entropy_inactive_last20_mean": 9.38751771260785,
+  "entropy_active_first20_mean": 9.392834179831294,
+  "requested_batches": 180
+}

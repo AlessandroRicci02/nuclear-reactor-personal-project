@@ -1,0 +1,25 @@
+{
+  "keff": 1.0486029094216325,
+  "sigma": 0.00014846916410372606,
+  "sigma_pcm_k": 14.846916410372605,
+  "reactivity_pcm": 4635.015694209732,
+  "reactivity_sigma_pcm": 13.5024987794999,
+  "batches": 2180,
+  "requested_batches": 180,
+  "inactive": 60,
+  "particles": 20000,
+  "wall_seconds": 950.4981462955475,
+  "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/campaign/neutronics/feedback/fuel_temperature_minus/statepoint.02180.h5",
+  "request_sha256": "fc98072c799ecde8ba82d840804782d8024e15415b5daeed72b6e95e49cfb8ff",
+  "request": {
+    "sigma": 0.00015,
+    "theta": 0.0,
+    "seed": 6001,
+    "temperatures": {
+      "fuel": 995.0
+    }
+  },
+  "target_achieved": true,
+  "entropy_inactive_last20_mean": 9.460818534267423,
+  "entropy_active_first20_mean": 9.456263526690565
+}

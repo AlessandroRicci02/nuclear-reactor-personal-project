@@ -1,0 +1,13 @@
+[
+  {
+    "kind": "fuel",
+    "alpha_pcm_K": -1.1537305869205283,
+    "sampling_sigma_pcm_K": 0.23507437977107343,
+    "low_95_pcm_K": -1.6144763712718322,
+    "high_95_pcm_K": -0.6929848025692245,
+    "minus": "fuel_minus",
+    "plus": "fuel_plus",
+    "delta_K": 200.0,
+    "definition": "Eigenvalue reactivity central difference; all drums 0 deg; fixed geometry and solid densities; helium fixed pressure; total all material temperatures varied."
+  }
+]

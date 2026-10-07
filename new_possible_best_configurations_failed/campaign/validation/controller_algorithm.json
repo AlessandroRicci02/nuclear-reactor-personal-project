@@ -1,0 +1,23 @@
+{
+  "validation_only": true,
+  "cases": [
+    {
+      "case": "bracketed",
+      "status": "VERIFIED_WITHIN_60_PCM_AT_95_PERCENT",
+      "calls": 6,
+      "passed": true
+    },
+    {
+      "case": "subcritical",
+      "status": "SUBCRITICAL_AT_ALL_DRUM_ANGLES",
+      "calls": 2,
+      "passed": true
+    },
+    {
+      "case": "supercritical",
+      "status": "SUPERCRITICAL_AT_ALL_DRUM_ANGLES",
+      "calls": 2,
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "keff": 1.046674457073378,
+  "sigma": 0.00014944583239997661,
+  "sigma_pcm_k": 14.94458323999766,
+  "reactivity_pcm": 4459.309841560966,
+  "reactivity_sigma_pcm": 13.641450665300026,
+  "batches": 2080,
+  "requested_batches": 180,
+  "inactive": 60,
+  "particles": 20000,
+  "wall_seconds": 837.6795012950897,
+  "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/campaign/neutronics/feedback/reflector_temperature_plus/statepoint.02080.h5",
+  "request_sha256": "a22ec9cebe7ed4d270badf2d88ac5d3858eb8ba1be30980cf0f1eeb36524c108",
+  "request": {
+    "sigma": 0.00015,
+    "theta": 0.0,
+    "seed": 6203,
+    "temperatures": {
+      "reflector": 970.0
+    }
+  },
+  "target_achieved": true,
+  "entropy_inactive_last20_mean": 9.453896095476974,
+  "entropy_active_first20_mean": 9.458632425633201
+}

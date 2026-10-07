@@ -1,0 +1,23 @@
+TB35_REFERENCE — OpenMC BOL mass and temperature-feedback campaign
+Configuration: configuration/TB35_REFERENCE (copied into this workspace).
+Nuclear data: official ENDF/B-VIII.0 HDF5, temperature interpolation, c_H_in_YH2 and c_Y_in_YH2 thermal scattering.
+Campaign status: complete
+Reported keff uncertainties are one-standard-deviation Monte Carlo sampling errors only; they exclude nuclear-data, geometry and material-property uncertainty.
+
+MASS
+Modeled solid mass: 595.128 +/- 0.278 kg (OpenMC 5,000,000-sample volume calculation).
+Analytic geometry mass: 595.154 kg; difference: 0.09 sigma.
+Helium inventory: 0.02137 kg.
+Excludes: Pressure vessel, drum drives/shrouds, end manifolds, supports, additional hydrogen encapsulation, shielding, conversion system.
+
+BOL KEFF, ALL DRUMS OUT (0 degrees)
+keff = 1.0480680 +/- 0.0000999 (9.99 pcm in k); rho = +4586.3 +/- 9.1 pcm.
+Histories: 20,000 particles/generation; 60 inactive; 4580 total batches. Target 10 pcm: achieved.
+
+THERMAL COEFFICIENTS
+fuel_temperature_fixed_density: -0.92609 +/- 0.03207 pcm/K; negative at 95%.
+moderator_temperature_fixed_density: +1.03955 +/- 0.06416 pcm/K; positive at 95%.
+total_isothermal_fixed_geometry: +0.23006 +/- 0.06416 pcm/K; positive at 95%.
+
+Definitions: fuel is a +/-200 K Doppler finite difference; moderator is a +/-100 K finite difference at fixed moderator density; total is a +/-100 K isothermal finite difference at fixed geometry, fixed material densities and fixed helium pressure.
+The total coefficient is therefore a transport-temperature coefficient, not a mechanically coupled thermal-expansion coefficient. It must not be used to claim the sign of physical moderator expansion feedback without a temperature-dependent YH2 density/geometry model.

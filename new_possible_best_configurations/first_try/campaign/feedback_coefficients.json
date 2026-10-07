@@ -1,0 +1,35 @@
+[
+  {
+    "name": "fuel_temperature_fixed_density",
+    "value_pcm_per_K": -0.9260913199382866,
+    "sigma_pcm_per_K": 0.032072072946694744,
+    "span_K": 400.0,
+    "positive_at_95pct": false,
+    "negative_at_95pct": true,
+    "definition": "Central finite difference at all-drums-out, fixed geometry and fixed nonperturbed material densities.",
+    "minus_statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/campaign/neutronics/fuel_minus/statepoint.04880.h5",
+    "plus_statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/campaign/neutronics/fuel_plus/statepoint.04730.h5"
+  },
+  {
+    "name": "moderator_temperature_fixed_density",
+    "value_pcm_per_K": 1.0395491112364925,
+    "sigma_pcm_per_K": 0.06415938500054084,
+    "span_K": 200.0,
+    "positive_at_95pct": true,
+    "negative_at_95pct": false,
+    "definition": "Central finite difference at all-drums-out, fixed geometry and fixed nonperturbed material densities.",
+    "minus_statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/campaign/neutronics/moderator_minus/statepoint.04730.h5",
+    "plus_statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/campaign/neutronics/moderator_plus/statepoint.04780.h5"
+  },
+  {
+    "name": "total_isothermal_fixed_geometry",
+    "value_pcm_per_K": 0.230062109313144,
+    "sigma_pcm_per_K": 0.06415848030790648,
+    "span_K": 200.0,
+    "positive_at_95pct": true,
+    "negative_at_95pct": false,
+    "definition": "Central finite difference at all-drums-out, fixed geometry and fixed nonperturbed material densities.",
+    "minus_statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/campaign/neutronics/total_isothermal_minus/statepoint.04730.h5",
+    "plus_statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/campaign/neutronics/total_isothermal_plus/statepoint.04680.h5"
+  }
+]

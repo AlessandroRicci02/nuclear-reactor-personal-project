@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<settings>
+  <run_mode>eigenvalue</run_mode>
+  <particles>60000</particles>
+  <batches>40</batches>
+  <inactive>10</inactive>
+  <source type="independent" strength="1.0" particle="neutron">
+    <space type="box">
+      <parameters>-11.67 -11.67 -12.735000000000001 11.67 11.67 12.735000000000001</parameters>
+    </space>
+  </source>
+  <source_point>
+    <write>true</write>
+  </source_point>
+  <seed>100</seed>
+  <entropy_mesh>1</entropy_mesh>
+  <mesh id="1">
+    <dimension>10 10 10</dimension>
+    <lower_left>-19.45 -19.45 -21.225</lower_left>
+    <upper_right>19.45 19.45 21.225</upper_right>
+  </mesh>
+  <temperature_method>nearest</temperature_method>
+  <temperature_multipole>true</temperature_multipole>
+  <temperature_tolerance>1500.0</temperature_tolerance>
+</settings>

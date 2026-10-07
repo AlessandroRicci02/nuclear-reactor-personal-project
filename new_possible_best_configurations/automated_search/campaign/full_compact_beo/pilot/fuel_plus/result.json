@@ -1,0 +1,13 @@
+{
+  "candidate": "full_compact_beo",
+  "stage": "pilot",
+  "case": "fuel_plus",
+  "request_sha256": "7c5afff9e0a072862e43d8e306386cb34a857c223dad930479e5c99c8cdf40e5",
+  "k_eff": 1.0653251763663916,
+  "sigma_k": 0.001839982882232423,
+  "rho_pcm": 6131.947110196201,
+  "sigma_rho_pcm": 162.12478061846306,
+  "batches": 100,
+  "particles": 4000,
+  "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/campaign/full_compact_beo/pilot/fuel_plus/statepoint.100.h5"
+}

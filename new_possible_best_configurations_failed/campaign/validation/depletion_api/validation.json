@@ -1,0 +1,13 @@
+{
+  "validation_only": true,
+  "purpose": "CE/CM full-chain API, 30 compositions, C API drum rotation, final-material export. Deliberately low statistics; not a critical reactor result.",
+  "timesteps_days": [
+    0.001
+  ],
+  "depletable_materials": 30,
+  "chain_nuclides": 3820,
+  "passed": true,
+  "initial_u235_kg": 26.71290505851911,
+  "final_u235_kg": 26.712904521225454,
+  "u235_consumed_kg": 5.3729365490085e-07
+}

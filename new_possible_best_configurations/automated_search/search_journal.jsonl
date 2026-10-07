@@ -1,0 +1,9 @@
+{"candidate": "matrix_compact_be", "index": 0, "status": "rejected", "reason": "IN clearly supercritical"}
+{"candidate": "matrix_compact_beo", "index": 1, "status": "rejected", "reason": "IN clearly supercritical"}
+{"candidate": "matrix_mid_be", "index": 2, "status": "rejected", "reason": "IN clearly supercritical"}
+{"candidate": "matrix_mid_beo", "index": 3, "status": "rejected", "reason": "IN clearly supercritical"}
+{"candidate": "matrix_wide_be", "index": 4, "status": "rejected", "reason": "IN clearly supercritical"}
+{"candidate": "matrix_wide_beo", "index": 5, "status": "rejected", "reason": "IN clearly supercritical"}
+{"candidate": "full_compact_be", "index": 6, "status": "rejected", "reason": "moderator clearly nonnegative"}
+{"candidate": "full_compact_beo", "index": 7, "status": "rejected", "reason": "moderator not negative at 95% confidence"}
+{"candidate": "full_mid_be", "index": 8, "status": "rejected", "reason": "moderator clearly nonnegative"}

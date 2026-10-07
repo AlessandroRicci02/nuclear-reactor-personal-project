@@ -1,0 +1,13 @@
+{
+  "candidate": "full_mid_be",
+  "stage": "pilot",
+  "case": "in",
+  "request_sha256": "1478277f70c2a796228d27f8537ae4ec66db46c8cfd2a334ba5d1db3e66ac805",
+  "k_eff": 0.9954535435249294,
+  "sigma_k": 0.0017304358429873314,
+  "rho_pcm": -456.72211472285176,
+  "sigma_rho_pcm": 174.62785053814133,
+  "batches": 100,
+  "particles": 4000,
+  "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/campaign/full_mid_be/pilot/in/statepoint.100.h5"
+}

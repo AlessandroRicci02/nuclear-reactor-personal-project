@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<settings>
+  <run_mode>eigenvalue</run_mode>
+  <particles>10000</particles>
+  <batches>180</batches>
+  <inactive>60</inactive>
+  <keff_trigger>
+    <threshold>0.00045</threshold>
+    <type>std_dev</type>
+  </keff_trigger>
+  <source type="independent" strength="1.0" particle="neutron">
+    <space type="box">
+      <parameters>-19.7 -19.7 -24.0 19.7 19.7 24.0</parameters>
+    </space>
+    <constraints>
+      <fissionable>true</fissionable>
+    </constraints>
+  </source>
+  <output>
+    <tallies>false</tallies>
+  </output>
+  <photon_transport>false</photon_transport>
+  <seed>7105</seed>
+  <entropy_mesh>1</entropy_mesh>
+  <mesh id="1">
+    <dimension>8 8 8</dimension>
+    <lower_left>-19.7 -19.7 -24.0</lower_left>
+    <upper_right>19.7 19.7 24.0</upper_right>
+  </mesh>
+  <trigger>
+    <active>true</active>
+    <max_batches>1800</max_batches>
+    <batch_interval>20</batch_interval>
+  </trigger>
+  <temperature_method>interpolation</temperature_method>
+  <temperature_tolerance>10.0</temperature_tolerance>
+</settings>

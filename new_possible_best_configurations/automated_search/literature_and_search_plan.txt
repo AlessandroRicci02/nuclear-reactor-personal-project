@@ -1,0 +1,97 @@
+RICERCA AUTOMATIZZATA DI CANDIDATE YHx PER NEP — 7 ottobre 2026
+
+OBIETTIVO DEL SOLO VAGLIO NEUTRONICO
+Per ogni candidata, tamburi OUT a 0 gradi: k_eff(BOL)>1;
+tamburi IN a 180 gradi: k_eff(BOL)<1;
+alpha_fuel, alpha_moderatore e alpha_totale tutti <0.
+La decisione usa il limite statistico unilaterale al 95%, non solo il valore
+centrale. Per il moderatore e il totale si varia temperatura e densità YHx
+insieme. Il filtro deve restare favorevole con la più piccola dilatazione
+volumetrica considerata (beta=2.4e-5/K), che è il caso più sfavorevole quando
+la perdita di densità riduce la reattività. I valori a densità fissa possono
+essere ricalcolati come diagnostica sulle finaliste. Condizione neutronica:
+He nominale 800 K in ingresso
+e 1150 K in uscita, imposta; non è una verifica termoidraulica.
+Prima di fermare la ricerca su una finalista, si ripetono anche moderatore e
+totale con beta=4.95e-5/K; entrambi gli estremi del campo devono avere limite
+superiore statistico negativo. Questo evita di assumere a priori il segno
+dell'effetto di densità in tutte le geometrie.
+Le incertezze di questo filtro sono solo statistiche Monte Carlo. Una futura
+conclusione difendibile richiede anche propagazione dell'incertezza dei dati
+nucleari e della S(alpha,beta), proprietà misurate del particolare YHx,
+dilatazione geometrica dei componenti e validazione sperimentale.
+
+BASE SCIENTIFICA E CONSEGUENZE PER LE GEOMETRIE
+NASA 2025: un concetto NEP con combustibile UN, moderatore YH e heat pipe Na
+prevede 1100 K di temperatura fornita al sistema di conversione e 10 anni
+di vita progettuale. La nostra soglia 1150 K è più severa e richiederà
+isolamento e verifica termica successiva.
+https://ntrs.nasa.gov/api/citations/20250011498/downloads/NEP%20PDI%20SciTech%20Presentation.pdf
+
+ORNL/Ade et al. 2022: il feedback spettrale del moderatore YHx può essere
+positivo ed è necessario controllare il rapporto combustibile/moderatore,
+lo spessore ottico del moderatore e la risposta isoterma. Il lavoro indica
+che il semplice cambio di combustibile non elimina automaticamente il
+problema. Questo motiva famiglie sotto-moderate, buffer periferico diverso
+e riflettori alternativi, anziché ripetere una sola cella.
+https://www.tandfonline.com/doi/full/10.1080/00295639.2022.2035157
+
+NASA 1968: l'inserzione di idruro di ittrio in sistemi a spettro veloce
+ha prodotto coefficienti del moderatore negativi nello studio pubblicato,
+ma ha aumentato dimensioni e carico sullo schermo. Motiva la famiglia con
+moderazione YH2 sparsa e nocciolo più grande; non dimostra che le nostre
+candidate avranno quel comportamento.
+https://ntrs.nasa.gov/api/citations/19680020478/downloads/19680020478.pdf
+
+ORNL Handbook 2021: per YHx misurato con x fra circa 1.60 e 1.95 si
+riportano coefficienti lineari di dilatazione 8–16.5e-6/K fra 400 e
+973 K. Il beta volumetrico 2.4–4.95e-5/K è una stima isotropa per il
+vaglio, non una proprietà qualificata di un componente YH2 esatto.
+https://info.ornl.gov/sites/publications/Files/Pub160401.pdf
+
+I dati locali ENDF/B-VIII.0 contengono scattering legato per c_H_in_YH2
+e c_Y_in_YH2, ma non una legge specifica per YH1.7 o YH1.85. Il lavoro
+Mehta et al. 2021 sottolinea che servono TSL sotto-stechiometriche per
+calcoli di alta affidabilità. Perciò il filtro che può dichiarare una
+configurazione vincente usa YH2; le altre x restano opzioni concettuali
+finché non saranno ottenuti/validati dati coerenti.
+https://wx1.ans.org/pubs/journals/nse/a_49475
+
+FAMIGLIE PREVISTE
+1. Matrice YH2 vicino al combustibile, passo e canali He variati:
+   dalla TB35/C3 a rapporti H/U più bassi o più alti.
+2. YH2 solo nella matrice centrale con buffer periferico Be:
+   spettro meno termalizzato, nocciolo e riflettore eventualmente maggiori.
+3. YH2 solo nel buffer periferico con matrice Be:
+   disposizione spaziale diversa, da vagliare per il margine di controllo.
+4. Riflettore Be o BeO, con spessore radiale/assiale e tamburi modificati.
+5. Varianti a maggiore inventario UN/altezza attiva per conservare k_OUT>1
+   quando la moderazione è ridotta; massa lasciata libera in questo filtro.
+6. Varianti con YH2 nella sola matrice e B4C più esteso nei tamburi:
+   introdotte dopo che i primi nuclei di questa famiglia sono risultati
+   sufficientemente reattivi con tamburi OUT ma non spegnibili con tamburi IN.
+
+COME SONO STATE SCELTE LE 24 GEOMETRIE
+Le 24 configurazioni non sono copie di 24 progetti pubblicati e non derivano
+da un'ottimizzazione statistica formale. La base e' la cella UN/He/YH2, il
+numero di pin e l'architettura dei tamburi TB35/C3 gia' presenti nel
+workspace. Diciotto casi iniziali campionano ipotesi fisiche diverse:
+sei con YH2 nella matrice e Be nel buffer periferico, sei con YH2 anche nel
+buffer, due con piu' combustibile, due con YH2 nel solo buffer, due con
+moderazione centrale sparsa e nocciolo piu' alto. I sei casi aggiunti
+mantengono YH2 nella matrice e aumentano la copertura B4C dei tamburi per
+affrontare l'incapacita' di spegnimento riscontrata nei primi sei.
+Passi 2.12–2.45 cm, altezze 47–70 cm e spessori di riflettore vicini alla
+TB35/C3 sono scelte euristiche per variare rapporto H/U, fuga neutronica e
+worth dei tamburi; non sono valori imposti dalla letteratura. Be contro BeO
+e' un confronto di sensibilita' del riflettore. Il catalogo non e' esaustivo
+e il generatore successivo campiona combinazioni pseudo-casuali
+deterministiche, senza apprendere automaticamente dai risultati precedenti.
+
+Il catalogo esplicito contiene 24 geometrie; dopo queste, il codice genera
+altre combinazioni deterministiche senza un limite prefissato. I file di ogni
+caso e le valutazioni completate vengono conservati per il riavvio.
+
+Le figure, masse definitive, idraulica, temperature YH2, durata,
+irraggiamento e analisi di sicurezza seguono solo dopo il passaggio
+neutronico. Il filtro automatizzato non è una certificazione regolatoria.

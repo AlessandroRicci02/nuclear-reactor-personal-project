@@ -1,0 +1,13 @@
+{
+  "candidate": "full_mid_be",
+  "stage": "confirmation",
+  "case": "moderator_minus",
+  "request_sha256": "e4ea1a5546a3a5f8d48067d574df0b4ac162de60f9ab13d0a4089f740cc77c96",
+  "k_eff": 1.059676281508387,
+  "sigma_k": 0.00021969818223918207,
+  "rho_pcm": 5631.557726614534,
+  "sigma_rho_pcm": 19.56500828601577,
+  "batches": 960,
+  "particles": 20000,
+  "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/campaign/full_mid_be/confirmation/moderator_minus/statepoint.0960.h5"
+}

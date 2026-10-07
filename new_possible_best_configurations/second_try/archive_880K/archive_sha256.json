@@ -1,0 +1,16 @@
+{
+  "configuration.json": "048b8400499515280f498cc0579c20d30068e10c66d41967f10255305ea28e2a",
+  "report.txt": "efe501935c417d74a143e987b80792923a87d3b709034391594d9de1c2e3987b",
+  "mass_breakdown.csv": "9594eaabd6899f6a8baf46cc10c82e092a0e4b351bcf4ab9d0a3f54d95948214",
+  "screening.json": "5f0d0977b984c43c1a717d75f2feb7af70784ba5ed4410c07095b0005aeede0e",
+  "pins.csv": "312fc4a247baa5801e63cc17b60594fd0ddacdd1b38f9aada83cb73aa24e345d",
+  "figures/03_axial_and_flow.pdf": "054177727c3bb9ca85c6e3d6d2cac34a1db1cd9d23e58b92ed1ad7ff603fc52e",
+  "figures/03_axial_and_flow.png": "00e70edb23a16b4b52f8110d370ab0b1f59bdd3255c3d2f66785da008d2ac01c",
+  "figures/01_core_xy.pdf": "aa0e5e3cccc171044cf1dea02f3ada05b87fb5bec63a601fc3574193fb00a7cb",
+  "figures/01_core_xy.png": "3f14aea7e8c12a53988f05d7f66de1c422cef60e169ec72b06809b8179fdd580",
+  "figures/02_unit_cell.pdf": "14df476b39c8cd86d5b7a7eb136313b0dc009b839c0ea51cc029ece196078ea5",
+  "figures/02_unit_cell.png": "c3f8d7d9c4793208c0deba625f651c83a19fc8d622f50480a6e6bb7ec7eb19bd",
+  "figures/04_mass_and_energy_screen.png": "4d8f47ded2aebd16ac7d8494f5e16462fd5a21750d92cd5d35a8657e5c8d99e6",
+  "figures/04_mass_and_energy_screen.pdf": "e7c3e52e0ce3ca8758a163059199ddc3dd6d75ae2e6e92f38d855ddbcdeaf04f",
+  "scripts/generate_design.py": "560f6a64d5275811426204cfe723fd1e144f8492b860e279c8b3b8fa58d482fd"
+}

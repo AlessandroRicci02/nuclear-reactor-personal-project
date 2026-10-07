@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<settings>
+  <run_mode>volume</run_mode>
+  <particles>20000</particles>
+  <batches>130</batches>
+  <inactive>40</inactive>
+  <source type="independent" strength="1.0" particle="neutron">
+    <space type="box">
+      <parameters>-19.535682819383258 -19.535682819383258 -22.75 19.535682819383258 19.535682819383258 22.75</parameters>
+    </space>
+    <constraints>
+      <fissionable>true</fissionable>
+    </constraints>
+  </source>
+  <output>
+    <tallies>false</tallies>
+  </output>
+  <photon_transport>false</photon_transport>
+  <seed>173</seed>
+  <entropy_mesh>1</entropy_mesh>
+  <mesh id="1">
+    <dimension>10 10 10</dimension>
+    <lower_left>-19.535682819383258 -19.535682819383258 -22.75</lower_left>
+    <upper_right>19.535682819383258 19.535682819383258 22.75</upper_right>
+  </mesh>
+  <temperature_method>nearest</temperature_method>
+  <temperature_multipole>true</temperature_multipole>
+  <temperature_tolerance>1500.0</temperature_tolerance>
+  <volume_calc>
+    <domain_type>material</domain_type>
+    <domain_ids>100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 1 2 3 4 5 6</domain_ids>
+    <samples>5000000</samples>
+    <lower_left>-28.535682819383258 -28.535682819383258 -31.05</lower_left>
+    <upper_right>28.535682819383258 28.535682819383258 31.05</upper_right>
+  </volume_calc>
+</settings>

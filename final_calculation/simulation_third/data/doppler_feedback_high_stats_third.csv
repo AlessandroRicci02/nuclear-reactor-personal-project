@@ -1,0 +1,7 @@
+coefficient,symbol,value_pcm_per_K,sigma_pcm_per_K,perturbation,classification
+Fuel_Doppler,alpha_Dop,-0.5019635542975835,0.3138518303156925,+300 K fuel,VERIFIED_OPENMC
+Moderator_Thermal,alpha_mod,0.18991064263823576,0.493551063181493,+200 K YH2 moderator,VERIFIED_OPENMC
+Coolant_Density,alpha_cool_per_pct,-3.7885663169018313,5.1598911850581874,-20% helium density,VERIFIED_OPENMC
+Axial_Fuel_Expansion,alpha_ax_exp,-1.2,0.05,Analytical Nb-1Zr / UN expansion,ANALYTICAL_EXPANSION
+Net_Prompt_Feedback,alpha_prompt,-1.7019635542975835,0.3138518303156925,Doppler + Axial Expansion,DERIVED (INHERENTLY SAFE)
+Net_Isothermal_Feedback,alpha_iso,-1.5120529116593477,0.5848894112224057,Doppler + Mod + Axial Exp,DERIVED

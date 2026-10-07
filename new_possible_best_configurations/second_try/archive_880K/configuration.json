@@ -1,0 +1,122 @@
+{
+  "parameters": {
+    "name": "S2_YH_SLEEVES_BE_COLD_FIRST",
+    "status": "CONCEPT_NOT_VALIDATED",
+    "power_W": 400000,
+    "pitch_cm": 2.3,
+    "rings": 8,
+    "active_height_cm": 50.0,
+    "core_radius_cm": 19.7,
+    "radial_reflector_cm": 8.8,
+    "axial_reflector_cm": 8.5,
+    "drum_count": 10,
+    "drum_radius_cm": 3.95,
+    "drum_centres_radius_cm": 23.83,
+    "absorber_thickness_cm": 1.5,
+    "absorber_sector_deg": 148.0,
+    "b10_atom_fraction": 0.9,
+    "pressure_Pa": 2500000,
+    "inlet_K": 700.0,
+    "mixed_outlet_target_K": 880.0,
+    "helium_cp_J_kgK": 5193.16,
+    "hardware_allowance_kg": 60.0,
+    "contingency_kg": 15.0,
+    "nominal_moderator_peak_target_K": 900.0,
+    "moderator_limit_K": 950.0,
+    "life_goal_full_power_years": 18.0,
+    "minimum_life_full_power_years": 15.0
+  },
+  "radial_layers": [
+    {
+      "name": "Combustibile UN",
+      "r_outer_cm": 0.585,
+      "density_g_cm3": 13.5,
+      "material": "UN"
+    },
+    {
+      "name": "Guaina combustibile",
+      "r_outer_cm": 0.633,
+      "density_g_cm3": 8.57,
+      "material": "Nb-1Zr"
+    },
+    {
+      "name": "Elio: secondo passaggio",
+      "r_outer_cm": 0.717,
+      "density_g_cm3": 0.0,
+      "material": "He"
+    },
+    {
+      "name": "Parete separatrice",
+      "r_outer_cm": 0.737,
+      "density_g_cm3": 8.57,
+      "material": "Nb-1Zr"
+    },
+    {
+      "name": "Elio: primo passaggio",
+      "r_outer_cm": 0.837,
+      "density_g_cm3": 0.0,
+      "material": "He"
+    },
+    {
+      "name": "Contenitore interno YH2",
+      "r_outer_cm": 0.857,
+      "density_g_cm3": 8.57,
+      "material": "Nb-1Zr"
+    },
+    {
+      "name": "Barriera interna proposta",
+      "r_outer_cm": 0.867,
+      "density_g_cm3": 3.95,
+      "material": "Al2O3"
+    },
+    {
+      "name": "Moderatore YH2",
+      "r_outer_cm": 1.087,
+      "density_g_cm3": 4.3,
+      "material": "YH2"
+    },
+    {
+      "name": "Barriera esterna proposta",
+      "r_outer_cm": 1.097,
+      "density_g_cm3": 3.95,
+      "material": "Al2O3"
+    },
+    {
+      "name": "Contenitore esterno YH2",
+      "r_outer_cm": 1.117,
+      "density_g_cm3": 8.57,
+      "material": "Nb-1Zr"
+    }
+  ],
+  "metrics": {
+    "solid_mass_kg": 506.42669101300504,
+    "concept_mass_with_allowances_kg": 581.426691013005,
+    "remaining_to_600_kg": 18.57330898699496,
+    "maximum_hardware_plus_contingency_kg": 93.57330898699496,
+    "fuel_UN_kg": 157.47989318200646,
+    "approx_HM_kg": 148.73101022745055,
+    "approx_U235_kg": 29.354840723647374,
+    "moderator_kg": 63.00794373825927,
+    "outer_radius_cm": 28.5,
+    "total_reflector_height_cm": 67.0,
+    "helium_flow_kg_s": 0.42791329791922883,
+    "active_hot_flow_area_cm2": 77.30768370100684,
+    "active_cold_flow_area_cm2": 107.30361035748224,
+    "cell_clearance_mm": 0.6599999999999895,
+    "outer_cell_clearance_mm": 1.8300000000000072,
+    "drum_inner_web_mm": 1.7999999999999972,
+    "drum_outer_web_mm": 7.200000000000015,
+    "mass_volume_closure_error_cm3": 2.9103830456733704e-11,
+    "modeled_gas_volume_cm3": 17012.675873576944,
+    "energy_15y_MWd": 2191.5,
+    "burnup_15y_MWd_kgHM": 14.734654169622022,
+    "energy_18y_MWd": 2629.7999999999997,
+    "burnup_18y_MWd_kgHM": 17.681585003546424
+  },
+  "notes": [
+    "Dimensions nominal; no thermal expansion or tolerances.",
+    "Nb-1Zr/Al2O3 hydrogen containment is a proposal, not qualified.",
+    "60 kg hardware + 15 kg contingency are allowances, not modeled parts.",
+    "No keff, feedback, lifetime or peak temperature calculated."
+  ]
+}

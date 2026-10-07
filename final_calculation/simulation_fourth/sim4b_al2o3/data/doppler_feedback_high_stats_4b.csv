@@ -1,0 +1,6 @@
+configuration,coefficient,symbol,value_pcm_per_K,sigma_pcm_per_K,classification
+Sim 4B: 5-Layer (With 100 um Al2O3 Liner),Fuel_Doppler,alpha_Dop,-0.6352105688952614,0.25605180271157313,VERIFIED_OPENMC
+Sim 4B: 5-Layer (With 100 um Al2O3 Liner),Moderator_Thermal,alpha_mod,0.3224600294317592,0.40643782631754893,VERIFIED_OPENMC
+Sim 4B: 5-Layer (With 100 um Al2O3 Liner),Coolant_Density,alpha_cool_per_pct,-6.807141891660985,4.569613291889729,VERIFIED_OPENMC
+Sim 4B: 5-Layer (With 100 um Al2O3 Liner),Net_Prompt_Feedback,alpha_prompt,-1.8352105688952614,0.25605180271157313,PROMPT NEGATIVE
+Sim 4B: 5-Layer (With 100 um Al2O3 Liner),Net_Isothermal_Feedback,alpha_iso,-1.5127505394635021,0.4803688502948338,DERIVED

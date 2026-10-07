@@ -1,0 +1,31 @@
+{
+  "name": "fuel_plus",
+  "keff": 1.0463300654648526,
+  "sigma": 9.97324906050828e-05,
+  "sigma_pcm_k": 9.97324906050828,
+  "reactivity_pcm": 4427.863347716155,
+  "reactivity_sigma_pcm": 9.109598907058995,
+  "batches": 4730,
+  "requested_batches": 180,
+  "inactive": 60,
+  "particles": 20000,
+  "wall_seconds": 1978.9912197589874,
+  "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/campaign/neutronics/fuel_plus/statepoint.04730.h5",
+  "request": {
+    "configuration": "TB35_REFERENCE",
+    "theta_deg": 0.0,
+    "target_sigma": 0.0001,
+    "particles": 20000,
+    "initial_batches": 180,
+    "inactive_batches": 60,
+    "seed": 42002,
+    "temperatures": {
+      "fuel": 1395.0
+    },
+    "cross_sections": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/campaign/data/endfb-viii.0-hdf5/cross_sections.xml"
+  },
+  "request_sha256": "8d5106ec7e10c11f4a3e6e53f5513a8bbe091faeb7f002668c0ed92ca6873cd1",
+  "target_achieved": true,
+  "entropy_inactive_last20_mean": 9.457218269104848,
+  "entropy_active_first20_mean": 9.456887622602764
+}

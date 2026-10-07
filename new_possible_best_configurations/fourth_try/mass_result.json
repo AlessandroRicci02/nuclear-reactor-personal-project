@@ -1,0 +1,16 @@
+{
+  "method": "OpenMC stochastic material-volume calculation (5M rays)",
+  "samples": 5000000,
+  "modeled_dry_mass_kg": 558.7463259185207,
+  "sampling_sigma_kg": 0.3039226961118309,
+  "analytic_dry_mass_kg": 558.295690068754,
+  "stochastic_minus_analytic_kg": 0.45063584976674065,
+  "discrepancy_percent": 0.08071634042370002,
+  "helium_inventory_kg": 0.02185555414469465,
+  "mass_ceiling_kg": 650.0,
+  "margin_to_650kg": 91.25367408147929,
+  "hardware_allowance_kg_not_modeled": 65.0,
+  "contingency_allowance_kg_not_modeled": 15.0,
+  "screening_total_with_allowances_kg": 638.7463259185207,
+  "margin_with_allowances_to_650kg": 11.25367408147929
+}

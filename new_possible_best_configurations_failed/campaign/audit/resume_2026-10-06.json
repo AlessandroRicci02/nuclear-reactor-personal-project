@@ -1,0 +1,66 @@
+{
+  "environment_cross_sections": "/home/aleri/nndc_hdf5/cross_sections.xml",
+  "existing_default_xs": true,
+  "prior_audit": "environment.json",
+  "openmc": {
+    "command": [
+      "/home/aleri/miniforge3/envs/openmc-env/bin/openmc",
+      "--version"
+    ],
+    "returncode": 0,
+    "stdout": "OpenMC version 0.16.0\nCommit hash: 617d35a5063c57796b43428bc401e627d2011046\nCopyright (c) 2011-2026 MIT, UChicago Argonne LLC, and contributors\nMIT/X license at <https://docs.openmc.org/en/latest/license.html>\nBuild type:            Release\nCompiler ID:           GNU 15.3.0\nMPI enabled:           no\nParallel HDF5 enabled: no\nPNG support:           yes\nDAGMC support:         yes\nlibMesh support:       no\nCoverage testing:      no\nProfiling flags:       no\nUWUW support:          no\nStrict FP:             no\n",
+    "stderr": ""
+  },
+  "python": {
+    "command": [
+      "/home/aleri/miniforge3/envs/openmc-env/bin/python",
+      "-c",
+      "import openmc; print(openmc.__version__)"
+    ],
+    "returncode": 0,
+    "stdout": "0.16.0\n",
+    "stderr": ""
+  },
+  "cardinal_commit": {
+    "command": [
+      "git",
+      "-C",
+      "/home/aleri/projects/cardinal",
+      "rev-parse",
+      "HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "9fb1dffcc095dd6ac9c87c6b16f44635b79cfc46\n",
+    "stderr": ""
+  },
+  "cardinal_status": {
+    "command": [
+      "git",
+      "-C",
+      "/home/aleri/projects/cardinal",
+      "status",
+      "--short"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "cardinal_version": {
+    "command": [
+      "/home/aleri/projects/cardinal/cardinal-opt",
+      "--version"
+    ],
+    "returncode": 0,
+    "stdout": "Application Version: snapshot-20-10-27-56855-ge6a7269a5c\n",
+    "stderr": ""
+  },
+  "moose_version": {
+    "command": [
+      "/home/aleri/miniforge3/envs/moose/bin/moose-opt",
+      "--version"
+    ],
+    "returncode": 0,
+    "stdout": "Application Version: snapshot-20-10-27-56855-ge6a7269a5c\n",
+    "stderr": ""
+  }
+}

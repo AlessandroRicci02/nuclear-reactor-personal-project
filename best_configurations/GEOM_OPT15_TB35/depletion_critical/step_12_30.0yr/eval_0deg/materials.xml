@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='utf-8'?>
+<materials>
+  <material id="1" name="UN Fuel Inner (19.60%)" depletable="true" volume="929.4512214087358" temperature="1195.0">
+    <density units="sum"/>
+    <nuclide name="N14" ao="0.03225438620569447"/>
+    <nuclide name="Cs135" ao="4.077165706592338e-05"/>
+    <nuclide name="Gd156" ao="2.3353672866952317e-07"/>
+    <nuclide name="Gd157" ao="4.561238220876831e-09"/>
+    <nuclide name="I135" ao="1.3364261865157458e-09"/>
+    <nuclide name="Np239" ao="1.0155517245919067e-07"/>
+    <nuclide name="Pu239" ao="0.00022753108029821732"/>
+    <nuclide name="Pu240" ao="3.510734939760225e-05"/>
+    <nuclide name="U235" ao="0.005174558957433429"/>
+    <nuclide name="U238" ao="0.025545008925369785"/>
+    <nuclide name="Xe135" ao="1.9601265415910743e-09"/>
+    <nuclide name="Xe136" ao="2.9605812751386058e-05"/>
+  </material>
+  <material id="2" name="UN Fuel Outer (19.75%)" depletable="true" volume="9685.860096785775" temperature="1195.0">
+    <density units="sum"/>
+    <nuclide name="N14" ao="0.03225438620569447"/>
+    <nuclide name="Cs135" ao="3.399391057945517e-05"/>
+    <nuclide name="Gd156" ao="1.918104091869839e-07"/>
+    <nuclide name="Gd157" ao="3.895163137895491e-09"/>
+    <nuclide name="I135" ao="1.152618427558136e-09"/>
+    <nuclide name="Np239" ao="7.72087132711702e-08"/>
+    <nuclide name="Pu239" ao="0.0001798720105956182"/>
+    <nuclide name="Pu240" ao="2.274440702703951e-05"/>
+    <nuclide name="U235" ao="0.005416449659598466"/>
+    <nuclide name="U238" ao="0.025594405699082085"/>
+    <nuclide name="Xe135" ao="1.693166381152085e-09"/>
+    <nuclide name="Xe136" ao="2.4593526726331293e-05"/>
+  </material>
+  <material id="3" name="Nb-1Zr Cladding" temperature="1170.0">
+    <density value="8.57" units="g/cm3"/>
+    <nuclide name="Nb93" wo="0.99"/>
+    <nuclide name="Zr90" wo="0.005070611750923317"/>
+    <nuclide name="Zr91" wo="0.0011180887453100783"/>
+    <nuclide name="Zr92" wo="0.001727810146362816"/>
+    <nuclide name="Zr94" wo="0.0017891104342343414"/>
+    <nuclide name="Zr96" wo="0.00029437892316944896"/>
+  </material>
+  <material id="4" name="Al2O3 Liner" temperature="904.5">
+    <density value="3.95" units="g/cm3"/>
+    <nuclide name="Al27" ao="2.0"/>
+    <nuclide name="O16" ao="2.998863"/>
+    <nuclide name="O17" ao="0.001137"/>
+  </material>
+  <material id="5" name="He Coolant Plenum" temperature="1001.0">
+    <density value="0.0012023036185004944" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="6" name="Canned YH2.0" temperature="904.5">
+    <density value="4.3" units="g/cm3"/>
+    <nuclide name="Y89" ao="1.0"/>
+    <nuclide name="H1" ao="2.0"/>
+    <sab name="c_H_in_ZrH"/>
+  </material>
+  <material id="7" name="BeO Reflector" temperature="870.0">
+    <density value="2.9" units="g/cm3"/>
+    <nuclide name="Be9" ao="1.0"/>
+    <nuclide name="O16" ao="1.0"/>
+    <sab name="c_Be_in_BeO"/>
+    <sab name="c_O_in_BeO"/>
+  </material>
+  <material id="8" name="B4C Absorber" temperature="870.0">
+    <density value="2.52" units="g/cm3"/>
+    <nuclide name="B10" ao="3.6"/>
+    <nuclide name="B11" ao="0.4"/>
+    <nuclide name="C0" ao="1.0"/>
+  </material>
+  <material id="20" name="He Coolant S0" temperature="902.8999999999996">
+    <density value="0.0013329337934643874" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="21" name="He Coolant S1" temperature="924.7000000000002">
+    <density value="0.0013015095945917536" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="22" name="He Coolant S2" temperature="946.5">
+    <density value="0.0012715329340929687" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="23" name="He Coolant S3" temperature="968.2999999999998">
+    <density value="0.0012429060437044255" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="24" name="He Coolant S4" temperature="990.1000000000004">
+    <density value="0.0012155397658004186" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="25" name="He Coolant S5" temperature="1011.8999999999996">
+    <density value="0.0011893526258711289" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="26" name="He Coolant S6" temperature="1033.7000000000003">
+    <density value="0.0011642700223652846" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="27" name="He Coolant S7" temperature="1055.5">
+    <density value="0.0011402235169294126" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="28" name="He Coolant S8" temperature="1077.2999999999997">
+    <density value="0.001117150210822422" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="29" name="He Coolant S9" temperature="1099.1000000000004">
+    <density value="0.0010949921955408922" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+</materials>

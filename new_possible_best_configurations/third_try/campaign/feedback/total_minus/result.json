@@ -1,0 +1,13 @@
+{
+  "case": "total_minus",
+  "request_signature": "fed04c795706a210f937ff021b6cb4ffd46c3b75b26bba1170a5e71ba3779a06",
+  "k_eff": 1.0525680893610572,
+  "sigma_k": 0.00029972354146032493,
+  "reactivity_pcm": 4994.269719212907,
+  "sigma_reactivity_pcm": 27.053312965308933,
+  "particles_per_batch": 18000,
+  "active_batches": 570,
+  "inactive_batches": 50,
+  "target_achieved": true,
+  "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/third_try/campaign/feedback/total_minus/statepoint.620.h5"
+}

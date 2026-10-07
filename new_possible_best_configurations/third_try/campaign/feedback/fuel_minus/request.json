@@ -1,0 +1,31 @@
+{
+  "kind": "fuel",
+  "shift_K": -100.0,
+  "seed": 2101,
+  "base": {
+    "pitch": 2.3,
+    "core_h": 47.0,
+    "refl_rad_th": 8.8,
+    "refl_ax_th": 8.5,
+    "drum_angles": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "particles": 18000,
+    "batches": 180,
+    "inactive": 50,
+    "n_axial_slices": 6
+  },
+  "target_sigma_k": 0.0003,
+  "max_batches": 650,
+  "cross_sections": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations_failed/campaign/data/endfb-viii.0-hdf5/cross_sections.xml",
+  "builder_sha256": "411ef5fce2fe2af765fdd6e5c8b5a4503add42f4a8995bea13757f7420168f04"
+}

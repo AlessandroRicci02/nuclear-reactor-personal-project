@@ -1,0 +1,45 @@
+{
+  "case": "third_try_C3_BOL_all_drums_OUT",
+  "k_eff": 1.0529458493031623,
+  "k_eff_sigma": 0.0006884857161584707,
+  "confidence_95_normal": [
+    1.0515964172994916,
+    1.054295281306833
+  ],
+  "modeled_dry_mass_kg_analytic": 503.0868890451708,
+  "mass_breakdown_kg": {
+    "UN": 148.03109959108608,
+    "Nb1Zr": 16.05376169990986,
+    "Al2O3": 1.8275604599478628,
+    "YH2": 155.16198980484162,
+    "Be": 167.32731625848027,
+    "B4C": 14.685161230905043
+  },
+  "hardware_plus_reserve_allowance_kg_not_modeled": 80.0,
+  "screening_mass_with_allowance_kg": 583.0868890451708,
+  "parameters": {
+    "pitch": 2.3,
+    "core_h": 47.0,
+    "refl_rad_th": 8.8,
+    "refl_ax_th": 8.5,
+    "particles": 15000,
+    "batches": 170,
+    "inactive": 50,
+    "n_axial_slices": 6,
+    "seed": 1010,
+    "drum_angles": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "cross_sections": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations_failed/campaign/data/endfb-viii.0-hdf5/cross_sections.xml",
+  "mass_note": "Analytic axial duct overlap corrected 2026-10-07; independent OpenMC stochastic volume result in mass_result.json."
+}

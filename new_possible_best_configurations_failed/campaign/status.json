@@ -1,0 +1,15 @@
+{
+  "completed": [
+    "bol"
+  ],
+  "errors": {},
+  "status": "RUNNING",
+  "controller_pid": 2329526,
+  "stage": "source_check",
+  "updated_unix": 1791269866.6843264,
+  "available_memory_MiB": 7847.0,
+  "free_swap_MiB": 3538.1,
+  "active_transport": "p1_source_check",
+  "child_pid": 2338838,
+  "stage_log": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/campaign/logs/source_check.log"
+}

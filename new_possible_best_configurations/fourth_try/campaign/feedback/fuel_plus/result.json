@@ -1,0 +1,13 @@
+{
+  "case": "fuel_plus",
+  "request_signature": "a8afa5a3fc633896d8eeeaf944131656cd9b4691724ef9cb0badda4a00de1280",
+  "k_eff": 1.0259708713689093,
+  "sigma_k": 0.000308226887074572,
+  "reactivity_pcm": 2531.345878685376,
+  "sigma_reactivity_pcm": 29.281981277964146,
+  "particles_per_batch": 18000,
+  "active_batches": 600,
+  "inactive_batches": 50,
+  "target_achieved": false,
+  "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/fourth_try/campaign/feedback/fuel_plus/statepoint.650.h5"
+}

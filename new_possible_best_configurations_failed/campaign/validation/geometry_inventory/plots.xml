@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<plots>
+  <plot id="1" filename="p1_radial_xy" color_by="material" type="slice" basis="xy">
+    <pixels>2000 2000</pixels>
+    <origin>0 0 0</origin>
+    <width>60 60</width>
+    <color id="1" rgb="102 107 117"/>
+    <color id="2" rgb="198 200 204"/>
+    <color id="3" rgb="239 226 170"/>
+    <color id="4" rgb="145 186 196"/>
+    <color id="5" rgb="39 41 56"/>
+    <color id="6" rgb="118 202 239"/>
+    <color id="100" rgb="200 88 54"/>
+    <color id="101" rgb="200 88 54"/>
+    <color id="102" rgb="200 88 54"/>
+    <color id="103" rgb="200 88 54"/>
+    <color id="104" rgb="200 88 54"/>
+    <color id="105" rgb="200 88 54"/>
+    <color id="106" rgb="200 88 54"/>
+    <color id="107" rgb="200 88 54"/>
+    <color id="108" rgb="200 88 54"/>
+    <color id="109" rgb="200 88 54"/>
+    <color id="110" rgb="200 88 54"/>
+    <color id="111" rgb="200 88 54"/>
+    <color id="112" rgb="200 88 54"/>
+    <color id="113" rgb="200 88 54"/>
+    <color id="114" rgb="200 88 54"/>
+    <color id="115" rgb="200 88 54"/>
+    <color id="116" rgb="200 88 54"/>
+    <color id="117" rgb="200 88 54"/>
+    <color id="118" rgb="200 88 54"/>
+    <color id="119" rgb="200 88 54"/>
+    <color id="120" rgb="200 88 54"/>
+    <color id="121" rgb="200 88 54"/>
+    <color id="122" rgb="200 88 54"/>
+    <color id="123" rgb="200 88 54"/>
+    <color id="124" rgb="200 88 54"/>
+    <color id="125" rgb="200 88 54"/>
+    <color id="126" rgb="200 88 54"/>
+    <color id="127" rgb="200 88 54"/>
+    <color id="128" rgb="200 88 54"/>
+    <color id="129" rgb="200 88 54"/>
+  </plot>
+  <plot id="2" filename="p1_axial_xz" color_by="material" type="slice" basis="xz">
+    <pixels>1800 1980</pixels>
+    <origin>0 0 0</origin>
+    <width>60 66</width>
+    <color id="1" rgb="102 107 117"/>
+    <color id="2" rgb="198 200 204"/>
+    <color id="3" rgb="239 226 170"/>
+    <color id="4" rgb="145 186 196"/>
+    <color id="5" rgb="39 41 56"/>
+    <color id="6" rgb="118 202 239"/>
+    <color id="100" rgb="200 88 54"/>
+    <color id="101" rgb="200 88 54"/>
+    <color id="102" rgb="200 88 54"/>
+    <color id="103" rgb="200 88 54"/>
+    <color id="104" rgb="200 88 54"/>
+    <color id="105" rgb="200 88 54"/>
+    <color id="106" rgb="200 88 54"/>
+    <color id="107" rgb="200 88 54"/>
+    <color id="108" rgb="200 88 54"/>
+    <color id="109" rgb="200 88 54"/>
+    <color id="110" rgb="200 88 54"/>
+    <color id="111" rgb="200 88 54"/>
+    <color id="112" rgb="200 88 54"/>
+    <color id="113" rgb="200 88 54"/>
+    <color id="114" rgb="200 88 54"/>
+    <color id="115" rgb="200 88 54"/>
+    <color id="116" rgb="200 88 54"/>
+    <color id="117" rgb="200 88 54"/>
+    <color id="118" rgb="200 88 54"/>
+    <color id="119" rgb="200 88 54"/>
+    <color id="120" rgb="200 88 54"/>
+    <color id="121" rgb="200 88 54"/>
+    <color id="122" rgb="200 88 54"/>
+    <color id="123" rgb="200 88 54"/>
+    <color id="124" rgb="200 88 54"/>
+    <color id="125" rgb="200 88 54"/>
+    <color id="126" rgb="200 88 54"/>
+    <color id="127" rgb="200 88 54"/>
+    <color id="128" rgb="200 88 54"/>
+    <color id="129" rgb="200 88 54"/>
+  </plot>
+  <plot id="3" filename="p1_inner_unit_cell" color_by="material" type="slice" basis="xy">
+    <pixels>1400 1400</pixels>
+    <origin>0 0 0</origin>
+    <width>2.8 2.8</width>
+    <color id="1" rgb="102 107 117"/>
+    <color id="2" rgb="198 200 204"/>
+    <color id="3" rgb="239 226 170"/>
+    <color id="4" rgb="145 186 196"/>
+    <color id="5" rgb="39 41 56"/>
+    <color id="6" rgb="118 202 239"/>
+    <color id="100" rgb="200 88 54"/>
+    <color id="101" rgb="200 88 54"/>
+    <color id="102" rgb="200 88 54"/>
+    <color id="103" rgb="200 88 54"/>
+    <color id="104" rgb="200 88 54"/>
+    <color id="105" rgb="200 88 54"/>
+    <color id="106" rgb="200 88 54"/>
+    <color id="107" rgb="200 88 54"/>
+    <color id="108" rgb="200 88 54"/>
+    <color id="109" rgb="200 88 54"/>
+    <color id="110" rgb="200 88 54"/>
+    <color id="111" rgb="200 88 54"/>
+    <color id="112" rgb="200 88 54"/>
+    <color id="113" rgb="200 88 54"/>
+    <color id="114" rgb="200 88 54"/>
+    <color id="115" rgb="200 88 54"/>
+    <color id="116" rgb="200 88 54"/>
+    <color id="117" rgb="200 88 54"/>
+    <color id="118" rgb="200 88 54"/>
+    <color id="119" rgb="200 88 54"/>
+    <color id="120" rgb="200 88 54"/>
+    <color id="121" rgb="200 88 54"/>
+    <color id="122" rgb="200 88 54"/>
+    <color id="123" rgb="200 88 54"/>
+    <color id="124" rgb="200 88 54"/>
+    <color id="125" rgb="200 88 54"/>
+    <color id="126" rgb="200 88 54"/>
+    <color id="127" rgb="200 88 54"/>
+    <color id="128" rgb="200 88 54"/>
+    <color id="129" rgb="200 88 54"/>
+  </plot>
+</plots>

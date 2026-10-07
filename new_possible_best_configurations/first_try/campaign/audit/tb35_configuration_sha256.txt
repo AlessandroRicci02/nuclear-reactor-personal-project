@@ -1,0 +1,2 @@
+9e56ca3338c8106dc2f30a477781053ef11a5ba97ced2a4311c35acd7115d92f  /home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/configuration/TB35_REFERENCE/geometry.json
+d32b3061b3dba696418569eb6742941bc7c7d77834fb71ead53bf69866921990  /home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/configuration/TB35_REFERENCE/pins.csv

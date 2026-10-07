@@ -1,0 +1,34 @@
+{
+  "candidate": "matrix_wide_be",
+  "spec": {
+    "r_fuel": 0.585,
+    "clad_th": 0.048,
+    "chan_gap": 0.084,
+    "al2o3_mod_th": 0.01,
+    "pitch": 2.38,
+    "core_h": 52,
+    "refl_ax_th": 9.5,
+    "refl_rad_th": 10,
+    "drum_r": 3.95,
+    "abs_th": 1.5,
+    "abs_angle": 148.0,
+    "drum_clearance": 0.18,
+    "r_add": 0.16,
+    "reflector_kind": "Be",
+    "matrix_kind": "YH2",
+    "peripheral_kind": "Be"
+  },
+  "case": "in",
+  "stage": "pilot",
+  "fidelity": {
+    "particles": 4000,
+    "batches": 100,
+    "inactive": 30,
+    "n_axial_slices": 2,
+    "delta_K": 150.0,
+    "threads": 8
+  },
+  "beta_min": 2.4e-05,
+  "builder_sha256": "9564b68a01b50d1a2d26729b4497167764a47dcf6191c161bafc4a41bcc2bd26",
+  "xs": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations_failed/campaign/data/endfb-viii.0-hdf5/cross_sections.xml"
+}

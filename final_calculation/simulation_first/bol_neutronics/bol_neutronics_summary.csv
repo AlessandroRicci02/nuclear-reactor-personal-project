@@ -1,0 +1,15 @@
+Parameter,Value,Uncertainty,Unit
+Operating k_eff (theta = 0 deg),1.01136,0.00072,-
+Excess Reactivity,1123.1,70.2,pcm
+Shutdown k_eff (theta = 180 deg),0.96486,0.00063,-
+All-Drums-In Shutdown Margin,3513.9,62.8,pcm
+Total Control Drum Worth,4764.9,106.9,pcm
+Stuck-Drum k_eff (1 stuck at 0 deg),0.96946,0.0008,-
+Single Stuck-Drum Margin,3054.1,80.5,pcm
+BOL Critical Drum Angle,59.24,0.5,degrees
+k_eff at BOL Critical Angle,0.99856,0.00068,-
+Fuel Doppler Coefficient (alpha_Dop),0.378,0.713,pcm/K
+Moderator Temp Coefficient (alpha_mod),-0.199,0.953,pcm/K
+Coolant Density Reactivity (Delta rho for -10% rho),35.0,94.1,pcm
+Structural Thermal Expansion Coefficient,-1.2,0.05,pcm/K
+Net Temperature Feedback Coefficient,-1.021,1.19,pcm/K

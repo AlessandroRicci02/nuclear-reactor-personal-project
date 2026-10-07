@@ -1,0 +1,33 @@
+{
+  "case": "third_try_C3_BOL_all_drums_IN",
+  "k_eff": 0.9904900951430674,
+  "k_eff_sigma": 0.0007149966134417335,
+  "confidence_95_normal": [
+    0.9890887017807216,
+    0.9918914885054132
+  ],
+  "parameters": {
+    "pitch": 2.3,
+    "core_h": 47.0,
+    "refl_rad_th": 8.8,
+    "refl_ax_th": 8.5,
+    "particles": 15000,
+    "batches": 170,
+    "inactive": 50,
+    "n_axial_slices": 6,
+    "seed": 1011,
+    "drum_angles": [
+      180.0,
+      180.0,
+      180.0,
+      180.0,
+      180.0,
+      180.0,
+      180.0,
+      180.0,
+      180.0,
+      180.0
+    ]
+  },
+  "cross_sections": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations_failed/campaign/data/endfb-viii.0-hdf5/cross_sections.xml"
+}

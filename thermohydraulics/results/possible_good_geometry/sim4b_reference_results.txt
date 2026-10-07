@@ -1,0 +1,100 @@
+==============================================================================================================
+SIMULATION 4B REFERENCE GEOMETRY AND BASELINE RESULTS
+Configuration: V7_CAND_BALANCED_ROBUST (Opt-17 Hexagonal Array, 217 Pins, 400 kWth)
+5-Layer Insulated Unit Cell: UN Fuel / Nb-1Zr Clad / Pure He Coolant / 100 um Al2O3 Liner / Canned YH2
+==============================================================================================================
+
+1. GEOMETRY AND MATERIAL SPECIFICATIONS
+--------------------------------------------------------------------------------------------------------------
+Core Topology:
+  - Fuel Pin Array: 217 pins arranged in 9 concentric hexagonal rings (1, 6, 12, 18, 24, 30, 36, 42, 48)
+  - Active Core Height (H_core): 42.45 cm
+  - Hexagonal Lattice Pitch (pitch): 2.270 cm
+  - Core Equivalent Radius (R_core): 19.45 cm
+  - Subassembly Total Height (H_tot): 61.00 cm
+
+Unit Cell Radial Dimensions (5 Concentric Radial Layers):
+  - Layer 1 (Fuel Pellet Outer Radius, r_fuel): 0.580 cm (UN, 13.50 g/cm3)
+      * Inner Enrichment (Rings 0-2, 19 pins): 19.30 wt% U-235
+      * Outer Enrichment (Rings 3-8, 198 pins): 19.75 wt% U-235
+      * Initial Heavy Metal Mass (HM): 124.12 kgU (24.47 kg U-235, 99.65 kg U-238)
+      * Total UN Fuel Mass: 131.42 kg
+  - Layer 2 (Cladding Nb-1Zr, t_clad): 0.048 cm -> Outer Clad Radius r_clad = 0.628 cm (8.57 g/cm3)
+      * Total Cladding Mass: 14.38 kg
+  - Layer 3 (Helium Coolant Annulus, t_gap): 0.084 cm -> Outer Channel Radius r_chan = 0.712 cm
+      * Hydraulic Diameter (D_h): 1.68 mm
+      * Total Flow Area: 7.635e-3 m2
+  - Layer 4 (Al2O3 Insulator Barrier, t_Al2O3): 0.010 cm (100 um) -> Outer Liner Radius r_Al2O3 = 0.722 cm (3.95 g/cm3)
+      * Function: Chemical separation & hydrogen diffusion barrier (PRF = 2500)
+  - Layer 5 (Moderator Matrix, Canned YH2.0): Interstitial matrix beyond r = 0.722 cm (4.30 g/cm3)
+      * Total Moderator Mass: 96.88 kg
+
+Reflectors & Control Drums:
+  - Radial Reflector: BeO Ceramic, Thickness t_refl_rad = 9.80 cm -> Outer Reflector Radius R_refl = 29.25 cm (2.90 g/cm3)
+  - Axial Reflectors: BeO Ceramic, Top and Bottom t_refl_ax = 9.275 cm each
+  - Total BeO Reflector Mass: 281.83 kg
+  - Control Drums: 10 Rotating BeO cylinders in radial reflector, Radius r_drum = 3.95 cm, Position R_pos = 23.58 cm
+  - Absorber Segment: B4C (90% enriched B-10), Thickness 1.50 cm, Angular Span 148.0 degrees, Mass = 13.26 kg
+  - Total Reactor Subassembly Mass: 537.80 +/- 2.50 kg (< 600 kg requirement met)
+
+--------------------------------------------------------------------------------------------------------------
+2. SIMULATION 4B OPERATING THERMAL-HYDRAULIC & THERMODYNAMIC RESULTS
+--------------------------------------------------------------------------------------------------------------
+Operating Conditions:
+  - Reactor Thermal Power Output: 400.0 kWth
+  - Bulk Coolant Inlet Temperature: 920.0 K
+  - Bulk Coolant Outlet Temperature: 1130.0 K
+  - Bulk Coolant Temperature Rise (Delta T): 210.0 K
+  - Enforced Helium Mass Flow Rate: 0.36678 kg/s
+
+Core Fluid Dynamics & Material Temperatures:
+  - Operating Core Pressure Drop (Delta P): 19.21 kPa (Strictly < 35 kPa limit, 15.79 kPa safety margin)
+  - Peak Cladding Surface Temp (1D Annular): 1218.6 K
+  - Peak Cladding Surface Temp (MOOSE 2D FEM): 1194.4 K
+  - Nb-1Zr Cladding Creep Margin (Limit 1350 K): +155.6 K (Strong structural integrity)
+  - Peak Fuel Centerline Temp (1D Annular): 1246.1 K
+  - Peak Fuel Centerline Temp (MOOSE 2D FEM): 1213.3 K
+  - UN Fuel Dissociation Margin (Limit 2073 K): +859.7 K
+  - Canned YH2 Moderator Operating Temperature: 940.0 K (< 950 K requirement met)
+  - YH2 Equilibrium Hydrogen Dissociation Pressure: 32.1 kPa (Sieverts' law)
+  - Permeation Reduction Factor (PRF): 2500
+  - Relative Hydrogen Loss Rate: 0.000216 (0.02% vs 31.7% in unlined 4A)
+
+Thermodynamics & Power Conversion:
+  - Closed Brayton Cycle (CBC) Thermal Efficiency: 40.13%
+  - Net Electrical Power Output: 160.50 kWe
+  - Space Radiator Surface Area: 100.55 m2
+  - Radiator Subsystem Mass (4.50 kg/m2): 452.46 kg
+
+--------------------------------------------------------------------------------------------------------------
+3. SIMULATION 4B NEUTRONICS & DEPLETION RESULTS
+--------------------------------------------------------------------------------------------------------------
+Beginning-of-Life (BOL) Reactivity:
+  - Operating Multiplication Factor k_eff (BOL, theta = 0 deg): 1.00966 +/- 0.00150
+  - BOL Excess Reactivity: +956.8 pcm
+  - All-Drums-In Shutdown Margin (SDM_all, theta = 180 deg): 4053.4 pcm
+  - Single Stuck-Drum Shutdown Margin (SDM_stuck): 3745.3 pcm
+  - Critical Control Drum Angle (theta_crit): 51.83 degrees
+  - Total Control Drum Reactivity Worth: 5010.2 pcm
+
+Reactivity Feedback Coefficients:
+  - Fuel Doppler Coefficient (alpha_Dop): -0.635 pcm/K
+  - Net Prompt Power Feedback (alpha_prompt): -1.835 pcm/K (Prompt Negative)
+  - Net Isothermal Coefficient (alpha_iso): -1.645 pcm/K
+
+Depletion Trajectory & Operational Lifespan:
+  - Burnup Rate: 1.177 MWd/kgU/year (400 kWth continuous)
+  - Controllable Lifespan (theta_crit -> 0 deg): 13.60 years
+  - Reactivity Exhaustion (k_eff < 1.000): 12.50 years (< 15 years target!)
+  - Cumulative Burnup at 12.5 years: 14.71 MWd/kgU (1.57 %FIMA)
+
+Note on Design Limitation:
+  In Sim 4B, the 100 um Al2O3 liner absorbs ~245 pcm of excess reactivity.
+  Because the active fuel mass is 124.12 kgU, reactivity exhaustion occurs at 12.50 years,
+  and full outward control drum rotation is reached by 13.60 years.
+  The current prompt specifically demands finding a geometry where:
+    1. Lifespan MUST be > 15 years (both controllable and k_eff >= 1.000 at 15+ years)
+    2. YH2 maximum temperature MUST be < 950 K
+    3. Total reactor mass MUST be < 600 kg
+    4. Core pressure drop MUST be < 35 kPa (well below valid limit)
+==============================================================================================================

@@ -1,0 +1,10 @@
+{
+  "time": 1.0,
+  "Q_removed_W": 59.999999999998,
+  "T_YH2_max_K": 851.91174307932,
+  "expected_heat_W": 60.0,
+  "relative_energy_error": -3.327708479143136e-14,
+  "k_YH2_W_mK": 10.0,
+  "nx": 12,
+  "ny": 60
+}

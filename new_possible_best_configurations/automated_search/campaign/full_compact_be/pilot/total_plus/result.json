@@ -1,0 +1,13 @@
+{
+  "candidate": "full_compact_be",
+  "stage": "pilot",
+  "case": "total_plus",
+  "request_sha256": "efd6efd37096752f27ab023b91da48dbef9bc99f3c562bccb96f9c2b6cd330a1",
+  "k_eff": 1.0616086353266845,
+  "sigma_k": 0.00177666782074842,
+  "rho_pcm": 5803.328390195872,
+  "sigma_rho_pcm": 157.64396567784644,
+  "batches": 100,
+  "particles": 4000,
+  "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/campaign/full_compact_be/pilot/total_plus/statepoint.100.h5"
+}

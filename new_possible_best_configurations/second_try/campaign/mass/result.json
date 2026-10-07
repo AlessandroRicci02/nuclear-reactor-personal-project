@@ -1,0 +1,13 @@
+{
+  "method": "OpenMC stochastic material volumes; 2,000,000 samples",
+  "solid_mass_kg": 498.65288672452493,
+  "sampling_sigma_kg": 0.4791052720126451,
+  "analytic_mass_kg": 498.7734100044888,
+  "difference_kg": -0.12052327996389067,
+  "helium_mass_kg": 0.017826697545003732,
+  "prescribed_hardware_allowance_kg": 65.0,
+  "prescribed_contingency_kg": 15.0,
+  "conditional_total_kg": 578.6528867245249,
+  "conditional_total_sampling_sigma_kg": 0.4791052720126451,
+  "excluded": "Shield, conversion equipment, radiators, external piping and vehicle structure; actual hardware dimensions unknown"
+}

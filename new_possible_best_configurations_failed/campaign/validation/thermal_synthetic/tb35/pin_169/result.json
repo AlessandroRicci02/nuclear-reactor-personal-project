@@ -1,0 +1,9 @@
+{
+  "time": 1.0,
+  "Q_removed": 1710.0,
+  "T_clad_max": 1185.6506347183,
+  "T_fuel_max": 1197.1867028679,
+  "pin_id": 169,
+  "expected_power_W": 1710.0,
+  "relative_energy_residual": 0.0
+}

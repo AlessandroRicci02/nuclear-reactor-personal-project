@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<settings>
+  <run_mode>volume</run_mode>
+  <particles>1000</particles>
+  <batches>10</batches>
+  <inactive>3</inactive>
+  <source type="independent" strength="1.0" particle="neutron">
+    <space type="box">
+      <parameters>-19.7 -19.7 -24.0 19.7 19.7 24.0</parameters>
+    </space>
+    <constraints>
+      <fissionable>true</fissionable>
+    </constraints>
+  </source>
+  <output>
+    <tallies>false</tallies>
+  </output>
+  <photon_transport>false</photon_transport>
+  <seed>601</seed>
+  <entropy_mesh>1</entropy_mesh>
+  <mesh id="1">
+    <dimension>8 8 8</dimension>
+    <lower_left>-19.7 -19.7 -24.0</lower_left>
+    <upper_right>19.7 19.7 24.0</upper_right>
+  </mesh>
+  <temperature_method>interpolation</temperature_method>
+  <temperature_tolerance>10.0</temperature_tolerance>
+  <volume_calc>
+    <domain_type>material</domain_type>
+    <domain_ids>1 2 3 4 5 6 7 8 9 10 11 12 13 14</domain_ids>
+    <samples>2000000</samples>
+    <lower_left>-28.5 -28.5 -32.5</lower_left>
+    <upper_right>28.5 28.5 32.5</upper_right>
+  </volume_calc>
+</settings>

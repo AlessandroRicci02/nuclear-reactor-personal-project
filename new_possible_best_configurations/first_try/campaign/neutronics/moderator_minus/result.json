@@ -1,0 +1,31 @@
+{
+  "name": "moderator_minus",
+  "keff": 1.0468858609234564,
+  "sigma": 9.961473802902968e-05,
+  "sigma_pcm_k": 9.961473802902969,
+  "reactivity_pcm": 4478.602937869314,
+  "reactivity_sigma_pcm": 9.08918469499398,
+  "batches": 4730,
+  "requested_batches": 180,
+  "inactive": 60,
+  "particles": 20000,
+  "wall_seconds": 1847.411190032959,
+  "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/campaign/neutronics/moderator_minus/statepoint.04730.h5",
+  "request": {
+    "configuration": "TB35_REFERENCE",
+    "theta_deg": 0.0,
+    "target_sigma": 0.0001,
+    "particles": 20000,
+    "initial_batches": 180,
+    "inactive_batches": 60,
+    "seed": 43001,
+    "temperatures": {
+      "moderator": 804.5
+    },
+    "cross_sections": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/campaign/data/endfb-viii.0-hdf5/cross_sections.xml"
+  },
+  "request_sha256": "8c79415702de17a56edbd49ca141f471f02db3968fd30c126b91fd122da4b6bc",
+  "target_achieved": true,
+  "entropy_inactive_last20_mean": 9.462044638085647,
+  "entropy_active_first20_mean": 9.45695196834206
+}

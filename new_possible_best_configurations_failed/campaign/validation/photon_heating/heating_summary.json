@@ -1,0 +1,20 @@
+{
+  "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/campaign/validation/photon_heating/statepoint.20.h5",
+  "normalization": "Sum of neutron+photon deposited material heating scaled to 400 kW; not identical to recoverable-fission depletion normalization",
+  "raw_deposited_eV_per_source": 81774242.90072499,
+  "scale_W_per_eV": 0.004891515785546376,
+  "pin_block_heat_W": {
+    "fuel": 379935.56465232227,
+    "clad": 1316.2533667935363,
+    "liner": 144.2384011228756,
+    "moderator": 11673.180201171152
+  },
+  "peripheral_moderator_heat_W": 2163.7697670451653,
+  "unmodeled_reflector_absorber_coolant_heat_W": 4766.9936115450055,
+  "max_cell_relative_sampling_sigma": {
+    "fuel": 1.0000000000000002,
+    "clad": 5.102963086076197e+17,
+    "liner": 1.0000000000000004,
+    "moderator": 0.8567668724255973
+  }
+}

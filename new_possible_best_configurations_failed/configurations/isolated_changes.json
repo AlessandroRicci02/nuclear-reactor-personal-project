@@ -1,0 +1,4370 @@
+[
+  {
+    "schema_version": 1,
+    "status": "PROPOSED_GEOMETRY_NOT_TRANSPORT_OR_THERMALLY_VALIDATED",
+    "parameters": {
+      "id": "A00_REFERENCE",
+      "shape": "C6_VERTEX",
+      "channel_centre_cm": 0.9140088105726871,
+      "height_cm": 45.5,
+      "middle_fuel_area_factor": 1.0,
+      "annulus_allocation": "uniform",
+      "core_radius_cm": 19.535682819383258,
+      "peripheral_hull_offset_cm": -1.0,
+      "radial_reflector_cm": 9.3,
+      "axial_reflector_cm": 8.8
+    },
+    "metrics": {
+      "id": "A00_REFERENCE",
+      "shape": "C6_VERTEX",
+      "channel_centre_cm": 0.9140088105726871,
+      "height_cm": 45.5,
+      "middle_fuel_area_factor": 1.0,
+      "annulus_allocation": "uniform",
+      "core_radius_cm": 19.535682819383258,
+      "peripheral_hull_offset_cm": -1.0,
+      "radial_reflector_cm": 9.3,
+      "axial_reflector_cm": 8.8,
+      "fuel_kg": 143.3067027956259,
+      "cladding_kg": 15.54140760310423,
+      "liner_kg": 1.7692340622899523,
+      "moderator_cells_kg": 102.63362154637788,
+      "moderator_periphery_kg": 43.442939794248254,
+      "beo_kg": 274.2431967511833,
+      "b4c_kg": 14.216485872471903,
+      "modeled_solids_kg": 595.1535884253015,
+      "hm_kg": 135.34521930698003,
+      "u235_kg": 26.712905058519112,
+      "moderator_total_kg": 146.07656134062614,
+      "nominal_unallocated_mass_kg": 4.84641157469855,
+      "geometry_screen_pass": false,
+      "study_575kg_screen_pass": false,
+      "reasons": "ligament_below_study_0.50mm;less_than_study_25kg_hardware_allowance",
+      "min_ligament_mm": 0.37008810572687123,
+      "inner_ligament_mm": 0.37008810572687123,
+      "cell_face_ligament_mm": 1.984451507612539,
+      "outer_drum_web_mm": 12.200000000000006,
+      "auxiliary_perimeter_ratio": 1.0,
+      "auxiliary_resistance_ratio_at_same_mu": 1.0,
+      "auxiliary_area_cm2_per_cell": 0.42411500823462206,
+      "annular_area_cm2_all_pins": 77.30768370100684,
+      "fuel_radius_inner_mm": 5.85,
+      "fuel_radius_middle_mm": 5.85,
+      "fuel_radius_outer_mm": 5.85,
+      "outer_radius_cm": 28.83568281938326,
+      "total_height_cm": 63.1,
+      "moderator_envelope_area_cm2": 1198.9665410492069,
+      "area_quadrature_error_cm2": 0.0,
+      "axial_coolant_overlap_union_correction_cm2_per_pin": 0.11089345858672026
+    },
+    "zones": [
+      {
+        "zone": 0,
+        "rings": [
+          0,
+          2
+        ],
+        "pins": 19,
+        "uranium_u235_weight_fraction": 0.196,
+        "fuel_radius_cm": 0.585,
+        "clad_outer_radius_cm": 0.633,
+        "annulus_outer_radius_cm": 0.717,
+        "liner_outer_radius_cm": 0.727,
+        "annulus_gap_mm": 0.8399999999999996,
+        "annulus_area_cm2_per_pin": 0.3562566069170822,
+        "provisional_main_flow_per_pin_relative_to_mean": 1.0,
+        "auxiliary_flow_per_pin_relative_to_mean": 1.0
+      },
+      {
+        "zone": 1,
+        "rings": [
+          3,
+          5
+        ],
+        "pins": 72,
+        "uranium_u235_weight_fraction": 0.1975,
+        "fuel_radius_cm": 0.585,
+        "clad_outer_radius_cm": 0.633,
+        "annulus_outer_radius_cm": 0.717,
+        "liner_outer_radius_cm": 0.727,
+        "annulus_gap_mm": 0.8399999999999996,
+        "annulus_area_cm2_per_pin": 0.3562566069170822,
+        "provisional_main_flow_per_pin_relative_to_mean": 1.0,
+        "auxiliary_flow_per_pin_relative_to_mean": 1.0
+      },
+      {
+        "zone": 2,
+        "rings": [
+          6,
+          8
+        ],
+        "pins": 126,
+        "uranium_u235_weight_fraction": 0.1975,
+        "fuel_radius_cm": 0.585,
+        "clad_outer_radius_cm": 0.633,
+        "annulus_outer_radius_cm": 0.717,
+        "liner_outer_radius_cm": 0.727,
+        "annulus_gap_mm": 0.8399999999999996,
+        "annulus_area_cm2_per_pin": 0.3562566069170822,
+        "provisional_main_flow_per_pin_relative_to_mean": 1.0,
+        "auxiliary_flow_per_pin_relative_to_mean": 1.0
+      }
+    ],
+    "auxiliary_channels": {
+      "count": 6,
+      "a_cm": 0.15,
+      "b_cm": 0.15,
+      "phase_deg": 0.0,
+      "centre_radius_cm": 0.9140088105726871,
+      "perimeter_cm": 5.654866776461628,
+      "perimeter_ratio": 1.0,
+      "min_face_ligament_cm": 0.1984451507612539,
+      "min_aux_pair_ligament_bound_cm": 0.6140088105726869,
+      "axial_union_area_cm2": 2.6367434762429127,
+      "axial_overlap_area_cm2": 0.11089345858672026,
+      "laminar_aux_resistance_ratio": 1.0
+    },
+    "geometry": {
+      "length_unit": "cm",
+      "pin_count": 217,
+      "pitch_cm": 2.28,
+      "lattice_orientation": "OpenMC HexLattice orientation=y",
+      "unit_cell_face_normal_degrees": [
+        30,
+        90,
+        150,
+        210,
+        270,
+        330
+      ],
+      "axial_main_duct_radius_cm": 0.86,
+      "axial_coolant_rule": "Boolean union of central duct and auxiliary holes; overlap counted once",
+      "peripheral_rule": "full circle if offset<0; otherwise intersection of circle and offset occupied-cell convex hull",
+      "peripheral_complement_material": "BeO",
+      "hull_halfspaces_nx_ny_d": [
+        [
+          0.5,
+          0.8660254037844387,
+          17.11266197878051
+        ],
+        [
+          -0.5000000000000001,
+          -0.8660254037844386,
+          17.11266197878051
+        ],
+        [
+          -0.8660254037844383,
+          0.5000000000000006,
+          19.379999999999995
+        ],
+        [
+          -0.0,
+          1.0,
+          19.38
+        ],
+        [
+          -0.5000000000000001,
+          0.8660254037844387,
+          17.11266197878051
+        ],
+        [
+          1.0,
+          -0.0,
+          17.112661978780505
+        ],
+        [
+          0.8660254037844395,
+          0.49999999999999856,
+          19.38
+        ],
+        [
+          -0.8660254037844392,
+          -0.49999999999999917,
+          19.379999999999995
+        ],
+        [
+          -1.0,
+          0.0,
+          17.112661978780505
+        ],
+        [
+          0.8660254037844395,
+          -0.49999999999999856,
+          19.379999999999995
+        ],
+        [
+          -0.0,
+          -1.0,
+          19.38
+        ],
+        [
+          0.5,
+          -0.8660254037844387,
+          17.11266197878051
+        ]
+      ],
+      "central_liner_thickness_cm": 0.01,
+      "fuel_clad_thickness_cm": 0.048,
+      "drum_count": 10,
+      "drum_radius_cm": 3.95,
+      "absorber_thickness_cm": 1.5,
+      "absorber_sector_degrees": 148.0,
+      "b10_atom_fraction": 0.9,
+      "drum_centres_radius_cm": 23.665682819383257,
+      "drum_azimuth_degrees": [
+        0,
+        36,
+        72,
+        108,
+        144,
+        180,
+        216,
+        252,
+        288,
+        324
+      ]
+    },
+    "materials": {
+      "densities_g_cm3": {
+        "fuel": 13.5,
+        "clad": 8.57,
+        "liner": 3.95,
+        "moderator": 4.3,
+        "reflector": 2.9,
+        "absorber": 2.52
+      },
+      "fuel": "UN with reference N14 weight prescription",
+      "moderator": "YH2.0",
+      "cladding": "Nb-1Zr",
+      "liner": "Al2O3",
+      "reflector": "BeO",
+      "absorber": "B4C",
+      "coolant": "He4"
+    },
+    "boundaries": {
+      "power_W": 400000,
+      "pressure_Pa": 2500000,
+      "inlet_K": 892,
+      "target_mixed_outlet_K": 1110,
+      "cp_J_kgK": 5193.16,
+      "total_mass_flow_kg_s": 0.3533229065388128,
+      "interpretation": "Common screening boundary conditions, not an established Brayton operating point"
+    },
+    "flow": {
+      "topology": "Provisional parallel fuel-annulus and moderator-auxiliary branches",
+      "auxiliary_fraction": 0.175,
+      "pressure_balance": "Common inlet/outlet pressure; orifice coefficients and plenum routing unresolved",
+      "note": "Flow weights are design targets, not calculated natural flow. Reassess after pin heating tallies."
+    },
+    "unresolved": [
+      "neutron multiplication and all feedbacks",
+      "pin and moderator heat deposition",
+      "full hydrogen encapsulation including auxiliary walls and end faces",
+      "pressure vessel, supports, drum shrouds/drives and end manifolds",
+      "common-pressure flow solution and coupled temperature fields",
+      "validated depletion and feasible Brayton cycle"
+    ],
+    "performance": {
+      "keff": null,
+      "lifetime_years": null,
+      "peak_moderator_K": null,
+      "core_pressure_drop_kPa": null,
+      "net_electrical_kW": null
+    }
+  },
+  {
+    "schema_version": 1,
+    "status": "PROPOSED_GEOMETRY_NOT_TRANSPORT_OR_THERMALLY_VALIDATED",
+    "parameters": {
+      "id": "A01_PLACEMENT_ONLY",
+      "shape": "C6_VERTEX",
+      "channel_centre_cm": 0.93,
+      "height_cm": 45.5,
+      "middle_fuel_area_factor": 1.0,
+      "annulus_allocation": "uniform",
+      "core_radius_cm": 19.535682819383258,
+      "peripheral_hull_offset_cm": -1.0,
+      "radial_reflector_cm": 9.3,
+      "axial_reflector_cm": 8.8
+    },
+    "metrics": {
+      "id": "A01_PLACEMENT_ONLY",
+      "shape": "C6_VERTEX",
+      "channel_centre_cm": 0.93,
+      "height_cm": 45.5,
+      "middle_fuel_area_factor": 1.0,
+      "annulus_allocation": "uniform",
+      "core_radius_cm": 19.535682819383258,
+      "peripheral_hull_offset_cm": -1.0,
+      "radial_reflector_cm": 9.3,
+      "axial_reflector_cm": 8.8,
+      "fuel_kg": 143.3067027956259,
+      "cladding_kg": 15.54140760310423,
+      "liner_kg": 1.7692340622899523,
+      "moderator_cells_kg": 102.63362154637788,
+      "moderator_periphery_kg": 43.442939794248254,
+      "beo_kg": 273.9638403157325,
+      "b4c_kg": 14.216485872471903,
+      "modeled_solids_kg": 594.8742319898506,
+      "hm_kg": 135.34521930698003,
+      "u235_kg": 26.712905058519112,
+      "moderator_total_kg": 146.07656134062614,
+      "nominal_unallocated_mass_kg": 5.125768010149386,
+      "geometry_screen_pass": true,
+      "study_575kg_screen_pass": false,
+      "reasons": "less_than_study_25kg_hardware_allowance",
+      "min_ligament_mm": 0.5300000000000005,
+      "inner_ligament_mm": 0.5300000000000005,
+      "cell_face_ligament_mm": 1.8459637448047175,
+      "outer_drum_web_mm": 12.200000000000006,
+      "auxiliary_perimeter_ratio": 1.0,
+      "auxiliary_resistance_ratio_at_same_mu": 1.0,
+      "auxiliary_area_cm2_per_cell": 0.42411500823462206,
+      "annular_area_cm2_all_pins": 77.30768370100684,
+      "fuel_radius_inner_mm": 5.85,
+      "fuel_radius_middle_mm": 5.85,
+      "fuel_radius_outer_mm": 5.85,
+      "outer_radius_cm": 28.83568281938326,
+      "total_height_cm": 63.1,
+      "moderator_envelope_area_cm2": 1198.9665410492069,
+      "area_quadrature_error_cm2": 0.0,
+      "axial_coolant_overlap_union_correction_cm2_per_pin": 0.0856709498603235
+    },
+    "zones": [
+      {
+        "zone": 0,
+        "rings": [
+          0,
+          2
+        ],
+        "pins": 19,
+        "uranium_u235_weight_fraction": 0.196,
+        "fuel_radius_cm": 0.585,
+        "clad_outer_radius_cm": 0.633,
+        "annulus_outer_radius_cm": 0.717,
+        "liner_outer_radius_cm": 0.727,
+        "annulus_gap_mm": 0.8399999999999996,
+        "annulus_area_cm2_per_pin": 0.3562566069170822,
+        "provisional_main_flow_per_pin_relative_to_mean": 1.0,
+        "auxiliary_flow_per_pin_relative_to_mean": 1.0
+      },
+      {
+        "zone": 1,
+        "rings": [
+          3,
+          5
+        ],
+        "pins": 72,
+        "uranium_u235_weight_fraction": 0.1975,
+        "fuel_radius_cm": 0.585,
+        "clad_outer_radius_cm": 0.633,
+        "annulus_outer_radius_cm": 0.717,
+        "liner_outer_radius_cm": 0.727,
+        "annulus_gap_mm": 0.8399999999999996,
+        "annulus_area_cm2_per_pin": 0.3562566069170822,
+        "provisional_main_flow_per_pin_relative_to_mean": 1.0,
+        "auxiliary_flow_per_pin_relative_to_mean": 1.0
+      },
+      {
+        "zone": 2,
+        "rings": [
+          6,
+          8
+        ],
+        "pins": 126,
+        "uranium_u235_weight_fraction": 0.1975,
+        "fuel_radius_cm": 0.585,
+        "clad_outer_radius_cm": 0.633,
+        "annulus_outer_radius_cm": 0.717,
+        "liner_outer_radius_cm": 0.727,
+        "annulus_gap_mm": 0.8399999999999996,
+        "annulus_area_cm2_per_pin": 0.3562566069170822,
+        "provisional_main_flow_per_pin_relative_to_mean": 1.0,
+        "auxiliary_flow_per_pin_relative_to_mean": 1.0
+      }
+    ],
+    "auxiliary_channels": {
+      "count": 6,
+      "a_cm": 0.15,
+      "b_cm": 0.15,
+      "phase_deg": 0.0,
+      "centre_radius_cm": 0.93,
+      "perimeter_cm": 5.654866776461628,
+      "perimeter_ratio": 1.0,
+      "min_face_ligament_cm": 0.18459637448047175,
+      "min_aux_pair_ligament_bound_cm": 0.6299999999999997,
+      "axial_union_area_cm2": 2.661965984969309,
+      "axial_overlap_area_cm2": 0.0856709498603235,
+      "laminar_aux_resistance_ratio": 1.0
+    },
+    "geometry": {
+      "length_unit": "cm",
+      "pin_count": 217,
+      "pitch_cm": 2.28,
+      "lattice_orientation": "OpenMC HexLattice orientation=y",
+      "unit_cell_face_normal_degrees": [
+        30,
+        90,
+        150,
+        210,
+        270,
+        330
+      ],
+      "axial_main_duct_radius_cm": 0.86,
+      "axial_coolant_rule": "Boolean union of central duct and auxiliary holes; overlap counted once",
+      "peripheral_rule": "full circle if offset<0; otherwise intersection of circle and offset occupied-cell convex hull",
+      "peripheral_complement_material": "BeO",
+      "hull_halfspaces_nx_ny_d": [
+        [
+          0.5,
+          0.8660254037844387,
+          17.11266197878051
+        ],
+        [
+          -0.5000000000000001,
+          -0.8660254037844386,
+          17.11266197878051
+        ],
+        [
+          -0.8660254037844383,
+          0.5000000000000006,
+          19.379999999999995
+        ],
+        [
+          -0.0,
+          1.0,
+          19.38
+        ],
+        [
+          -0.5000000000000001,
+          0.8660254037844387,
+          17.11266197878051
+        ],
+        [
+          1.0,
+          -0.0,
+          17.112661978780505
+        ],
+        [
+          0.8660254037844395,
+          0.49999999999999856,
+          19.38
+        ],
+        [
+          -0.8660254037844392,
+          -0.49999999999999917,
+          19.379999999999995
+        ],
+        [
+          -1.0,
+          0.0,
+          17.112661978780505
+        ],
+        [
+          0.8660254037844395,
+          -0.49999999999999856,
+          19.379999999999995
+        ],
+        [
+          -0.0,
+          -1.0,
+          19.38
+        ],
+        [
+          0.5,
+          -0.8660254037844387,
+          17.11266197878051
+        ]
+      ],
+      "central_liner_thickness_cm": 0.01,
+      "fuel_clad_thickness_cm": 0.048,
+      "drum_count": 10,
+      "drum_radius_cm": 3.95,
+      "absorber_thickness_cm": 1.5,
+      "absorber_sector_degrees": 148.0,
+      "b10_atom_fraction": 0.9,
+      "drum_centres_radius_cm": 23.665682819383257,
+      "drum_azimuth_degrees": [
+        0,
+        36,
+        72,
+        108,
+        144,
+        180,
+        216,
+        252,
+        288,
+        324
+      ]
+    },
+    "materials": {
+      "densities_g_cm3": {
+        "fuel": 13.5,
+        "clad": 8.57,
+        "liner": 3.95,
+        "moderator": 4.3,
+        "reflector": 2.9,
+        "absorber": 2.52
+      },
+      "fuel": "UN with reference N14 weight prescription",
+      "moderator": "YH2.0",
+      "cladding": "Nb-1Zr",
+      "liner": "Al2O3",
+      "reflector": "BeO",
+      "absorber": "B4C",
+      "coolant": "He4"
+    },
+    "boundaries": {
+      "power_W": 400000,
+      "pressure_Pa": 2500000,
+      "inlet_K": 892,
+      "target_mixed_outlet_K": 1110,
+      "cp_J_kgK": 5193.16,
+      "total_mass_flow_kg_s": 0.3533229065388128,
+      "interpretation": "Common screening boundary conditions, not an established Brayton operating point"
+    },
+    "flow": {
+      "topology": "Provisional parallel fuel-annulus and moderator-auxiliary branches",
+      "auxiliary_fraction": 0.175,
+      "pressure_balance": "Common inlet/outlet pressure; orifice coefficients and plenum routing unresolved",
+      "note": "Flow weights are design targets, not calculated natural flow. Reassess after pin heating tallies."
+    },
+    "unresolved": [
+      "neutron multiplication and all feedbacks",
+      "pin and moderator heat deposition",
+      "full hydrogen encapsulation including auxiliary walls and end faces",
+      "pressure vessel, supports, drum shrouds/drives and end manifolds",
+      "common-pressure flow solution and coupled temperature fields",
+      "validated depletion and feasible Brayton cycle"
+    ],
+    "performance": {
+      "keff": null,
+      "lifetime_years": null,
+      "peak_moderator_K": null,
+      "core_pressure_drop_kPa": null,
+      "net_electrical_kW": null
+    }
+  },
+  {
+    "schema_version": 1,
+    "status": "PROPOSED_GEOMETRY_NOT_TRANSPORT_OR_THERMALLY_VALIDATED",
+    "parameters": {
+      "id": "A02_ELLIPSE_ONLY",
+      "shape": "E6_VERTEX_150",
+      "channel_centre_cm": 0.9140088105726871,
+      "height_cm": 45.5,
+      "middle_fuel_area_factor": 1.0,
+      "annulus_allocation": "uniform",
+      "core_radius_cm": 19.535682819383258,
+      "peripheral_hull_offset_cm": -1.0,
+      "radial_reflector_cm": 9.3,
+      "axial_reflector_cm": 8.8
+    },
+    "metrics": {
+      "id": "A02_ELLIPSE_ONLY",
+      "shape": "E6_VERTEX_150",
+      "channel_centre_cm": 0.9140088105726871,
+      "height_cm": 45.5,
+      "middle_fuel_area_factor": 1.0,
+      "annulus_allocation": "uniform",
+      "core_radius_cm": 19.535682819383258,
+      "peripheral_hull_offset_cm": -1.0,
+      "radial_reflector_cm": 9.3,
+      "axial_reflector_cm": 8.8,
+      "fuel_kg": 143.3067027956259,
+      "cladding_kg": 15.54140760310423,
+      "liner_kg": 1.7692340622899523,
+      "moderator_cells_kg": 102.63362154637788,
+      "moderator_periphery_kg": 43.442939794248254,
+      "beo_kg": 273.984891030779,
+      "b4c_kg": 14.216485872471903,
+      "modeled_solids_kg": 594.8952827048971,
+      "hm_kg": 135.34521930698003,
+      "u235_kg": 26.712905058519112,
+      "moderator_total_kg": 146.07656134062614,
+      "nominal_unallocated_mass_kg": 5.104717295102887,
+      "geometry_screen_pass": true,
+      "study_575kg_screen_pass": false,
+      "reasons": "less_than_study_25kg_hardware_allowance",
+      "min_ligament_mm": 0.6453432343352827,
+      "inner_ligament_mm": 0.6453432343352827,
+      "cell_face_ligament_mm": 2.0813299875723112,
+      "outer_drum_web_mm": 12.200000000000006,
+      "auxiliary_perimeter_ratio": 1.0308527081613332,
+      "auxiliary_resistance_ratio_at_same_mu": 1.0833333333333335,
+      "auxiliary_area_cm2_per_cell": 0.42411500823462206,
+      "annular_area_cm2_all_pins": 77.30768370100684,
+      "fuel_radius_inner_mm": 5.85,
+      "fuel_radius_middle_mm": 5.85,
+      "fuel_radius_outer_mm": 5.85,
+      "outer_radius_cm": 28.83568281938326,
+      "total_height_cm": 63.1,
+      "moderator_envelope_area_cm2": 1198.9665410492069,
+      "area_quadrature_error_cm2": 0.0,
+      "axial_coolant_overlap_union_correction_cm2_per_pin": 0.08757157492772269
+    },
+    "zones": [
+      {
+        "zone": 0,
+        "rings": [
+          0,
+          2
+        ],
+        "pins": 19,
+        "uranium_u235_weight_fraction": 0.196,
+        "fuel_radius_cm": 0.585,
+        "clad_outer_radius_cm": 0.633,
+        "annulus_outer_radius_cm": 0.717,
+        "liner_outer_radius_cm": 0.727,
+        "annulus_gap_mm": 0.8399999999999996,
+        "annulus_area_cm2_per_pin": 0.3562566069170822,
+        "provisional_main_flow_per_pin_relative_to_mean": 1.0,
+        "auxiliary_flow_per_pin_relative_to_mean": 1.0
+      },
+      {
+        "zone": 1,
+        "rings": [
+          3,
+          5
+        ],
+        "pins": 72,
+        "uranium_u235_weight_fraction": 0.1975,
+        "fuel_radius_cm": 0.585,
+        "clad_outer_radius_cm": 0.633,
+        "annulus_outer_radius_cm": 0.717,
+        "liner_outer_radius_cm": 0.727,
+        "annulus_gap_mm": 0.8399999999999996,
+        "annulus_area_cm2_per_pin": 0.3562566069170822,
+        "provisional_main_flow_per_pin_relative_to_mean": 1.0,
+        "auxiliary_flow_per_pin_relative_to_mean": 1.0
+      },
+      {
+        "zone": 2,
+        "rings": [
+          6,
+          8
+        ],
+        "pins": 126,
+        "uranium_u235_weight_fraction": 0.1975,
+        "fuel_radius_cm": 0.585,
+        "clad_outer_radius_cm": 0.633,
+        "annulus_outer_radius_cm": 0.717,
+        "liner_outer_radius_cm": 0.727,
+        "annulus_gap_mm": 0.8399999999999996,
+        "annulus_area_cm2_per_pin": 0.3562566069170822,
+        "provisional_main_flow_per_pin_relative_to_mean": 1.0,
+        "auxiliary_flow_per_pin_relative_to_mean": 1.0
+      }
+    ],
+    "auxiliary_channels": {
+      "count": 6,
+      "a_cm": 0.1224744871391589,
+      "b_cm": 0.18371173070873836,
+      "phase_deg": 0.0,
+      "centre_radius_cm": 0.9140088105726871,
+      "perimeter_cm": 5.829334730807018,
+      "perimeter_ratio": 1.0308527081613332,
+      "min_face_ligament_cm": 0.20813299875723112,
+      "min_aux_pair_ligament_bound_cm": 0.5465853491552102,
+      "axial_union_area_cm2": 2.66006535990191,
+      "axial_overlap_area_cm2": 0.08757157492772269,
+      "laminar_aux_resistance_ratio": 1.0833333333333335
+    },
+    "geometry": {
+      "length_unit": "cm",
+      "pin_count": 217,
+      "pitch_cm": 2.28,
+      "lattice_orientation": "OpenMC HexLattice orientation=y",
+      "unit_cell_face_normal_degrees": [
+        30,
+        90,
+        150,
+        210,
+        270,
+        330
+      ],
+      "axial_main_duct_radius_cm": 0.86,
+      "axial_coolant_rule": "Boolean union of central duct and auxiliary holes; overlap counted once",
+      "peripheral_rule": "full circle if offset<0; otherwise intersection of circle and offset occupied-cell convex hull",
+      "peripheral_complement_material": "BeO",
+      "hull_halfspaces_nx_ny_d": [
+        [
+          0.5,
+          0.8660254037844387,
+          17.11266197878051
+        ],
+        [
+          -0.5000000000000001,
+          -0.8660254037844386,
+          17.11266197878051
+        ],
+        [
+          -0.8660254037844383,
+          0.5000000000000006,
+          19.379999999999995
+        ],
+        [
+          -0.0,
+          1.0,
+          19.38
+        ],
+        [
+          -0.5000000000000001,
+          0.8660254037844387,
+          17.11266197878051
+        ],
+        [
+          1.0,
+          -0.0,
+          17.112661978780505
+        ],
+        [
+          0.8660254037844395,
+          0.49999999999999856,
+          19.38
+        ],
+        [
+          -0.8660254037844392,
+          -0.49999999999999917,
+          19.379999999999995
+        ],
+        [
+          -1.0,
+          0.0,
+          17.112661978780505
+        ],
+        [
+          0.8660254037844395,
+          -0.49999999999999856,
+          19.379999999999995
+        ],
+        [
+          -0.0,
+          -1.0,
+          19.38
+        ],
+        [
+          0.5,
+          -0.8660254037844387,
+          17.11266197878051
+        ]
+      ],
+      "central_liner_thickness_cm": 0.01,
+      "fuel_clad_thickness_cm": 0.048,
+      "drum_count": 10,
+      "drum_radius_cm": 3.95,
+      "absorber_thickness_cm": 1.5,
+      "absorber_sector_degrees": 148.0,
+      "b10_atom_fraction": 0.9,
+      "drum_centres_radius_cm": 23.665682819383257,
+      "drum_azimuth_degrees": [
+        0,
+        36,
+        72,
+        108,
+        144,
+        180,
+        216,
+        252,
+        288,
+        324
+      ]
+    },
+    "materials": {
+      "densities_g_cm3": {
+        "fuel": 13.5,
+        "clad": 8.57,
+        "liner": 3.95,
+        "moderator": 4.3,
+        "reflector": 2.9,
+        "absorber": 2.52
+      },
+      "fuel": "UN with reference N14 weight prescription",
+      "moderator": "YH2.0",
+      "cladding": "Nb-1Zr",
+      "liner": "Al2O3",
+      "reflector": "BeO",
+      "absorber": "B4C",
+      "coolant": "He4"
+    },
+    "boundaries": {
+      "power_W": 400000,
+      "pressure_Pa": 2500000,
+      "inlet_K": 892,
+      "target_mixed_outlet_K": 1110,
+      "cp_J_kgK": 5193.16,
+      "total_mass_flow_kg_s": 0.3533229065388128,
+      "interpretation": "Common screening boundary conditions, not an established Brayton operating point"
+    },
+    "flow": {
+      "topology": "Provisional parallel fuel-annulus and moderator-auxiliary branches",
+      "auxiliary_fraction": 0.175,
+      "pressure_balance": "Common inlet/outlet pressure; orifice coefficients and plenum routing unresolved",
+      "note": "Flow weights are design targets, not calculated natural flow. Reassess after pin heating tallies."
+    },
+    "unresolved": [
+      "neutron multiplication and all feedbacks",
+      "pin and moderator heat deposition",
+      "full hydrogen encapsulation including auxiliary walls and end faces",
+      "pressure vessel, supports, drum shrouds/drives and end manifolds",
+      "common-pressure flow solution and coupled temperature fields",
+      "validated depletion and feasible Brayton cycle"
+    ],
+    "performance": {
+      "keff": null,
+      "lifetime_years": null,
+      "peak_moderator_K": null,
+      "core_pressure_drop_kPa": null,
+      "net_electrical_kW": null
+    }
+  },
+  {
+    "schema_version": 1,
+    "status": "PROPOSED_GEOMETRY_NOT_TRANSPORT_OR_THERMALLY_VALIDATED",
+    "parameters": {
+      "id": "A03_FACE_ROTATION_ONLY",
+      "shape": "C6_FACE",
+      "channel_centre_cm": 0.9140088105726871,
+      "height_cm": 45.5,
+      "middle_fuel_area_factor": 1.0,
+      "annulus_allocation": "uniform",
+      "core_radius_cm": 19.535682819383258,
+      "peripheral_hull_offset_cm": -1.0,
+      "radial_reflector_cm": 9.3,
+      "axial_reflector_cm": 8.8
+    },
+    "metrics": {
+      "id": "A03_FACE_ROTATION_ONLY",
+      "shape": "C6_FACE",
+      "channel_centre_cm": 0.9140088105726871,
+      "height_cm": 45.5,
+      "middle_fuel_area_factor": 1.0,
+      "annulus_allocation": "uniform",
+      "core_radius_cm": 19.535682819383258,
+      "peripheral_hull_offset_cm": -1.0,
+      "radial_reflector_cm": 9.3,
+      "axial_reflector_cm": 8.8,
+      "fuel_kg": 143.3067027956259,
+      "cladding_kg": 15.54140760310423,
+      "liner_kg": 1.7692340622899523,
+      "moderator_cells_kg": 102.63362154637788,
+      "moderator_periphery_kg": 43.442939794248254,
+      "beo_kg": 274.2431967511833,
+      "b4c_kg": 14.216485872471903,
+      "modeled_solids_kg": 595.1535884253015,
+      "hm_kg": 135.34521930698003,
+      "u235_kg": 26.712905058519112,
+      "moderator_total_kg": 146.07656134062614,
+      "nominal_unallocated_mass_kg": 4.84641157469855,
+      "geometry_screen_pass": false,
+      "study_575kg_screen_pass": false,
+      "reasons": "ligament_below_study_0.50mm;less_than_study_25kg_hardware_allowance",
+      "min_ligament_mm": 0.37008810572687123,
+      "inner_ligament_mm": 0.37008810572687123,
+      "cell_face_ligament_mm": 0.7599118942731267,
+      "outer_drum_web_mm": 12.200000000000006,
+      "auxiliary_perimeter_ratio": 1.0,
+      "auxiliary_resistance_ratio_at_same_mu": 1.0,
+      "auxiliary_area_cm2_per_cell": 0.42411500823462206,
+      "annular_area_cm2_all_pins": 77.30768370100684,
+      "fuel_radius_inner_mm": 5.85,
+      "fuel_radius_middle_mm": 5.85,
+      "fuel_radius_outer_mm": 5.85,
+      "outer_radius_cm": 28.83568281938326,
+      "total_height_cm": 63.1,
+      "moderator_envelope_area_cm2": 1198.9665410492069,
+      "area_quadrature_error_cm2": 0.0,
+      "axial_coolant_overlap_union_correction_cm2_per_pin": 0.11089345858672026
+    },
+    "zones": [
+      {
+        "zone": 0,
+        "rings": [
+          0,
+          2
+        ],
+        "pins": 19,
+        "uranium_u235_weight_fraction": 0.196,
+        "fuel_radius_cm": 0.585,
+        "clad_outer_radius_cm": 0.633,
+        "annulus_outer_radius_cm": 0.717,
+        "liner_outer_radius_cm": 0.727,
+        "annulus_gap_mm": 0.8399999999999996,
+        "annulus_area_cm2_per_pin": 0.3562566069170822,
+        "provisional_main_flow_per_pin_relative_to_mean": 1.0,
+        "auxiliary_flow_per_pin_relative_to_mean": 1.0
+      },
+      {
+        "zone": 1,
+        "rings": [
+          3,
+          5
+        ],
+        "pins": 72,
+        "uranium_u235_weight_fraction": 0.1975,
+        "fuel_radius_cm": 0.585,
+        "clad_outer_radius_cm": 0.633,
+        "annulus_outer_radius_cm": 0.717,
+        "liner_outer_radius_cm": 0.727,
+        "annulus_gap_mm": 0.8399999999999996,
+        "annulus_area_cm2_per_pin": 0.3562566069170822,
+        "provisional_main_flow_per_pin_relative_to_mean": 1.0,
+        "auxiliary_flow_per_pin_relative_to_mean": 1.0
+      },
+      {
+        "zone": 2,
+        "rings": [
+          6,
+          8
+        ],
+        "pins": 126,
+        "uranium_u235_weight_fraction": 0.1975,
+        "fuel_radius_cm": 0.585,
+        "clad_outer_radius_cm": 0.633,
+        "annulus_outer_radius_cm": 0.717,
+        "liner_outer_radius_cm": 0.727,
+        "annulus_gap_mm": 0.8399999999999996,
+        "annulus_area_cm2_per_pin": 0.3562566069170822,
+        "provisional_main_flow_per_pin_relative_to_mean": 1.0,
+        "auxiliary_flow_per_pin_relative_to_mean": 1.0
+      }
+    ],
+    "auxiliary_channels": {
+      "count": 6,
+      "a_cm": 0.15,
+      "b_cm": 0.15,
+      "phase_deg": 30.0,
+      "centre_radius_cm": 0.9140088105726871,
+      "perimeter_cm": 5.654866776461628,
+      "perimeter_ratio": 1.0,
+      "min_face_ligament_cm": 0.07599118942731267,
+      "min_aux_pair_ligament_bound_cm": 0.6140088105726869,
+      "axial_union_area_cm2": 2.6367434762429127,
+      "axial_overlap_area_cm2": 0.11089345858672026,
+      "laminar_aux_resistance_ratio": 1.0
+    },
+    "geometry": {
+      "length_unit": "cm",
+      "pin_count": 217,
+      "pitch_cm": 2.28,
+      "lattice_orientation": "OpenMC HexLattice orientation=y",
+      "unit_cell_face_normal_degrees": [
+        30,
+        90,
+        150,
+        210,
+        270,
+        330
+      ],
+      "axial_main_duct_radius_cm": 0.86,
+      "axial_coolant_rule": "Boolean union of central duct and auxiliary holes; overlap counted once",
+      "peripheral_rule": "full circle if offset<0; otherwise intersection of circle and offset occupied-cell convex hull",
+      "peripheral_complement_material": "BeO",
+      "hull_halfspaces_nx_ny_d": [
+        [
+          0.5,
+          0.8660254037844387,
+          17.11266197878051
+        ],
+        [
+          -0.5000000000000001,
+          -0.8660254037844386,
+          17.11266197878051
+        ],
+        [
+          -0.8660254037844383,
+          0.5000000000000006,
+          19.379999999999995
+        ],
+        [
+          -0.0,
+          1.0,
+          19.38
+        ],
+        [
+          -0.5000000000000001,
+          0.8660254037844387,
+          17.11266197878051
+        ],
+        [
+          1.0,
+          -0.0,
+          17.112661978780505
+        ],
+        [
+          0.8660254037844395,
+          0.49999999999999856,
+          19.38
+        ],
+        [
+          -0.8660254037844392,
+          -0.49999999999999917,
+          19.379999999999995
+        ],
+        [
+          -1.0,
+          0.0,
+          17.112661978780505
+        ],
+        [
+          0.8660254037844395,
+          -0.49999999999999856,
+          19.379999999999995
+        ],
+        [
+          -0.0,
+          -1.0,
+          19.38
+        ],
+        [
+          0.5,
+          -0.8660254037844387,
+          17.11266197878051
+        ]
+      ],
+      "central_liner_thickness_cm": 0.01,
+      "fuel_clad_thickness_cm": 0.048,
+      "drum_count": 10,
+      "drum_radius_cm": 3.95,
+      "absorber_thickness_cm": 1.5,
+      "absorber_sector_degrees": 148.0,
+      "b10_atom_fraction": 0.9,
+      "drum_centres_radius_cm": 23.665682819383257,
+      "drum_azimuth_degrees": [
+        0,
+        36,
+        72,
+        108,
+        144,
+        180,
+        216,
+        252,
+        288,
+        324
+      ]
+    },
+    "materials": {
+      "densities_g_cm3": {
+        "fuel": 13.5,
+        "clad": 8.57,
+        "liner": 3.95,
+        "moderator": 4.3,
+        "reflector": 2.9,
+        "absorber": 2.52
+      },
+      "fuel": "UN with reference N14 weight prescription",
+      "moderator": "YH2.0",
+      "cladding": "Nb-1Zr",
+      "liner": "Al2O3",
+      "reflector": "BeO",
+      "absorber": "B4C",
+      "coolant": "He4"
+    },
+    "boundaries": {
+      "power_W": 400000,
+      "pressure_Pa": 2500000,
+      "inlet_K": 892,
+      "target_mixed_outlet_K": 1110,
+      "cp_J_kgK": 5193.16,
+      "total_mass_flow_kg_s": 0.3533229065388128,
+      "interpretation": "Common screening boundary conditions, not an established Brayton operating point"
+    },
+    "flow": {
+      "topology": "Provisional parallel fuel-annulus and moderator-auxiliary branches",
+      "auxiliary_fraction": 0.175,
+      "pressure_balance": "Common inlet/outlet pressure; orifice coefficients and plenum routing unresolved",
+      "note": "Flow weights are design targets, not calculated natural flow. Reassess after pin heating tallies."
+    },
+    "unresolved": [
+      "neutron multiplication and all feedbacks",
+      "pin and moderator heat deposition",
+      "full hydrogen encapsulation including auxiliary walls and end faces",
+      "pressure vessel, supports, drum shrouds/drives and end manifolds",
+      "common-pressure flow solution and coupled temperature fields",
+      "validated depletion and feasible Brayton cycle"
+    ],
+    "performance": {
+      "keff": null,
+      "lifetime_years": null,
+      "peak_moderator_K": null,
+      "core_pressure_drop_kPa": null,
+      "net_electrical_kW": null
+    }
+  },
+  {
+    "schema_version": 1,
+    "status": "PROPOSED_GEOMETRY_NOT_TRANSPORT_OR_THERMALLY_VALIDATED",
+    "parameters": {
+      "id": "A04_TWELVE_ONLY",
+      "shape": "C12_STAGGERED",
+      "channel_centre_cm": 0.9140088105726871,
+      "height_cm": 45.5,
+      "middle_fuel_area_factor": 1.0,
+      "annulus_allocation": "uniform",
+      "core_radius_cm": 19.535682819383258,
+      "peripheral_hull_offset_cm": -1.0,
+      "radial_reflector_cm": 9.3,
+      "axial_reflector_cm": 8.8
+    },
+    "metrics": {
+      "id": "A04_TWELVE_ONLY",
+      "shape": "C12_STAGGERED",
+      "channel_centre_cm": 0.9140088105726871,
+      "height_cm": 45.5,
+      "middle_fuel_area_factor": 1.0,
+      "annulus_allocation": "uniform",
+      "core_radius_cm": 19.535682819383258,
+      "peripheral_hull_offset_cm": -1.0,
+      "radial_reflector_cm": 9.3,
+      "axial_reflector_cm": 8.8,
+      "fuel_kg": 143.3067027956259,
+      "cladding_kg": 15.54140760310423,
+      "liner_kg": 1.7692340622899523,
+      "moderator_cells_kg": 102.63362154637788,
+      "moderator_periphery_kg": 43.442939794248254,
+      "beo_kg": 273.8721211869521,
+      "b4c_kg": 14.216485872471903,
+      "modeled_solids_kg": 594.7825128610702,
+      "hm_kg": 135.34521930698003,
+      "u235_kg": 26.712905058519112,
+      "moderator_total_kg": 146.07656134062614,
+      "nominal_unallocated_mass_kg": 5.217487138929755,
+      "geometry_screen_pass": true,
+      "study_575kg_screen_pass": false,
+      "reasons": "less_than_study_25kg_hardware_allowance",
+      "min_ligament_mm": 0.80942793394705,
+      "inner_ligament_mm": 0.80942793394705,
+      "cell_face_ligament_mm": 1.5106926723410619,
+      "outer_drum_web_mm": 12.200000000000006,
+      "auxiliary_perimeter_ratio": 1.414213562373095,
+      "auxiliary_resistance_ratio_at_same_mu": 2.0,
+      "auxiliary_area_cm2_per_cell": 0.42411500823462206,
+      "annular_area_cm2_all_pins": 77.30768370100684,
+      "fuel_radius_inner_mm": 5.85,
+      "fuel_radius_middle_mm": 5.85,
+      "fuel_radius_outer_mm": 5.85,
+      "outer_radius_cm": 28.83568281938326,
+      "total_height_cm": 63.1,
+      "moderator_envelope_area_cm2": 1198.9665410492069,
+      "area_quadrature_error_cm2": 0.0,
+      "axial_coolant_overlap_union_correction_cm2_per_pin": 0.07738982140768147
+    },
+    "zones": [
+      {
+        "zone": 0,
+        "rings": [
+          0,
+          2
+        ],
+        "pins": 19,
+        "uranium_u235_weight_fraction": 0.196,
+        "fuel_radius_cm": 0.585,
+        "clad_outer_radius_cm": 0.633,
+        "annulus_outer_radius_cm": 0.717,
+        "liner_outer_radius_cm": 0.727,
+        "annulus_gap_mm": 0.8399999999999996,
+        "annulus_area_cm2_per_pin": 0.3562566069170822,
+        "provisional_main_flow_per_pin_relative_to_mean": 1.0,
+        "auxiliary_flow_per_pin_relative_to_mean": 1.0
+      },
+      {
+        "zone": 1,
+        "rings": [
+          3,
+          5
+        ],
+        "pins": 72,
+        "uranium_u235_weight_fraction": 0.1975,
+        "fuel_radius_cm": 0.585,
+        "clad_outer_radius_cm": 0.633,
+        "annulus_outer_radius_cm": 0.717,
+        "liner_outer_radius_cm": 0.727,
+        "annulus_gap_mm": 0.8399999999999996,
+        "annulus_area_cm2_per_pin": 0.3562566069170822,
+        "provisional_main_flow_per_pin_relative_to_mean": 1.0,
+        "auxiliary_flow_per_pin_relative_to_mean": 1.0
+      },
+      {
+        "zone": 2,
+        "rings": [
+          6,
+          8
+        ],
+        "pins": 126,
+        "uranium_u235_weight_fraction": 0.1975,
+        "fuel_radius_cm": 0.585,
+        "clad_outer_radius_cm": 0.633,
+        "annulus_outer_radius_cm": 0.717,
+        "liner_outer_radius_cm": 0.727,
+        "annulus_gap_mm": 0.8399999999999996,
+        "annulus_area_cm2_per_pin": 0.3562566069170822,
+        "provisional_main_flow_per_pin_relative_to_mean": 1.0,
+        "auxiliary_flow_per_pin_relative_to_mean": 1.0
+      }
+    ],
+    "auxiliary_channels": {
+      "count": 12,
+      "a_cm": 0.10606601717798213,
+      "b_cm": 0.10606601717798213,
+      "phase_deg": 15.0,
+      "centre_radius_cm": 0.9140088105726871,
+      "perimeter_cm": 7.997189288685059,
+      "perimeter_ratio": 1.414213562373095,
+      "min_face_ligament_cm": 0.15106926723410619,
+      "min_aux_pair_ligament_bound_cm": 0.26099374077946247,
+      "axial_union_area_cm2": 2.670247113421951,
+      "axial_overlap_area_cm2": 0.07738982140768147,
+      "laminar_aux_resistance_ratio": 2.0
+    },
+    "geometry": {
+      "length_unit": "cm",
+      "pin_count": 217,
+      "pitch_cm": 2.28,
+      "lattice_orientation": "OpenMC HexLattice orientation=y",
+      "unit_cell_face_normal_degrees": [
+        30,
+        90,
+        150,
+        210,
+        270,
+        330
+      ],
+      "axial_main_duct_radius_cm": 0.86,
+      "axial_coolant_rule": "Boolean union of central duct and auxiliary holes; overlap counted once",
+      "peripheral_rule": "full circle if offset<0; otherwise intersection of circle and offset occupied-cell convex hull",
+      "peripheral_complement_material": "BeO",
+      "hull_halfspaces_nx_ny_d": [
+        [
+          0.5,
+          0.8660254037844387,
+          17.11266197878051
+        ],
+        [
+          -0.5000000000000001,
+          -0.8660254037844386,
+          17.11266197878051
+        ],
+        [
+          -0.8660254037844383,
+          0.5000000000000006,
+          19.379999999999995
+        ],
+        [
+          -0.0,
+          1.0,
+          19.38
+        ],
+        [
+          -0.5000000000000001,
+          0.8660254037844387,
+          17.11266197878051
+        ],
+        [
+          1.0,
+          -0.0,
+          17.112661978780505
+        ],
+        [
+          0.8660254037844395,
+          0.49999999999999856,
+          19.38
+        ],
+        [
+          -0.8660254037844392,
+          -0.49999999999999917,
+          19.379999999999995
+        ],
+        [
+          -1.0,
+          0.0,
+          17.112661978780505
+        ],
+        [
+          0.8660254037844395,
+          -0.49999999999999856,
+          19.379999999999995
+        ],
+        [
+          -0.0,
+          -1.0,
+          19.38
+        ],
+        [
+          0.5,
+          -0.8660254037844387,
+          17.11266197878051
+        ]
+      ],
+      "central_liner_thickness_cm": 0.01,
+      "fuel_clad_thickness_cm": 0.048,
+      "drum_count": 10,
+      "drum_radius_cm": 3.95,
+      "absorber_thickness_cm": 1.5,
+      "absorber_sector_degrees": 148.0,
+      "b10_atom_fraction": 0.9,
+      "drum_centres_radius_cm": 23.665682819383257,
+      "drum_azimuth_degrees": [
+        0,
+        36,
+        72,
+        108,
+        144,
+        180,
+        216,
+        252,
+        288,
+        324
+      ]
+    },
+    "materials": {
+      "densities_g_cm3": {
+        "fuel": 13.5,
+        "clad": 8.57,
+        "liner": 3.95,
+        "moderator": 4.3,
+        "reflector": 2.9,
+        "absorber": 2.52
+      },
+      "fuel": "UN with reference N14 weight prescription",
+      "moderator": "YH2.0",
+      "cladding": "Nb-1Zr",
+      "liner": "Al2O3",
+      "reflector": "BeO",
+      "absorber": "B4C",
+      "coolant": "He4"
+    },
+    "boundaries": {
+      "power_W": 400000,
+      "pressure_Pa": 2500000,
+      "inlet_K": 892,
+      "target_mixed_outlet_K": 1110,
+      "cp_J_kgK": 5193.16,
+      "total_mass_flow_kg_s": 0.3533229065388128,
+      "interpretation": "Common screening boundary conditions, not an established Brayton operating point"
+    },
+    "flow": {
+      "topology": "Provisional parallel fuel-annulus and moderator-auxiliary branches",
+      "auxiliary_fraction": 0.175,
+      "pressure_balance": "Common inlet/outlet pressure; orifice coefficients and plenum routing unresolved",
+      "note": "Flow weights are design targets, not calculated natural flow. Reassess after pin heating tallies."
+    },
+    "unresolved": [
+      "neutron multiplication and all feedbacks",
+      "pin and moderator heat deposition",
+      "full hydrogen encapsulation including auxiliary walls and end faces",
+      "pressure vessel, supports, drum shrouds/drives and end manifolds",
+      "common-pressure flow solution and coupled temperature fields",
+      "validated depletion and feasible Brayton cycle"
+    ],
+    "performance": {
+      "keff": null,
+      "lifetime_years": null,
+      "peak_moderator_K": null,
+      "core_pressure_drop_kPa": null,
+      "net_electrical_kW": null
+    }
+  },
+  {
+    "schema_version": 1,
+    "status": "PROPOSED_GEOMETRY_NOT_TRANSPORT_OR_THERMALLY_VALIDATED",
+    "parameters": {
+      "id": "A05_FUEL_ZONING_ONLY",
+      "shape": "C6_VERTEX",
+      "channel_centre_cm": 0.9140088105726871,
+      "height_cm": 45.5,
+      "middle_fuel_area_factor": 0.96,
+      "annulus_allocation": "uniform",
+      "core_radius_cm": 19.535682819383258,
+      "peripheral_hull_offset_cm": -1.0,
+      "radial_reflector_cm": 9.3,
+      "axial_reflector_cm": 8.8
+    },
+    "metrics": {
+      "id": "A05_FUEL_ZONING_ONLY",
+      "shape": "C6_VERTEX",
+      "channel_centre_cm": 0.9140088105726871,
+      "height_cm": 45.5,
+      "middle_fuel_area_factor": 0.96,
+      "annulus_allocation": "uniform",
+      "core_radius_cm": 19.535682819383258,
+      "peripheral_hull_offset_cm": -1.0,
+      "radial_reflector_cm": 9.3,
+      "axial_reflector_cm": 8.8,
+      "fuel_kg": 143.30670279562588,
+      "cladding_kg": 15.539836881979236,
+      "liner_kg": 1.7691282308283658,
+      "moderator_cells_kg": 102.63452486509341,
+      "moderator_periphery_kg": 43.442939794248254,
+      "beo_kg": 274.2431967511833,
+      "b4c_kg": 14.216485872471903,
+      "modeled_solids_kg": 595.1528151914304,
+      "hm_kg": 135.34521930698,
+      "u235_kg": 26.71290505851911,
+      "moderator_total_kg": 146.07746465934167,
+      "nominal_unallocated_mass_kg": 4.8471848085696365,
+      "geometry_screen_pass": false,
+      "study_575kg_screen_pass": false,
+      "reasons": "ligament_below_study_0.50mm;less_than_study_25kg_hardware_allowance",
+      "min_ligament_mm": 0.3113296506403984,
+      "inner_ligament_mm": 0.3113296506403984,
+      "cell_face_ligament_mm": 1.984451507612539,
+      "outer_drum_web_mm": 12.200000000000006,
+      "auxiliary_perimeter_ratio": 1.0,
+      "auxiliary_resistance_ratio_at_same_mu": 1.0,
+      "auxiliary_area_cm2_per_cell": 0.42411500823462206,
+      "annular_area_cm2_all_pins": 77.30768370100684,
+      "fuel_radius_inner_mm": 5.85,
+      "fuel_radius_middle_mm": 5.731805998112636,
+      "fuel_radius_outer_mm": 5.91647940682874,
+      "outer_radius_cm": 28.83568281938326,
+      "total_height_cm": 63.1,
+      "moderator_envelope_area_cm2": 1198.9665410492069,
+      "area_quadrature_error_cm2": 0.0,
+      "axial_coolant_overlap_union_correction_cm2_per_pin": 0.11089345858672026
+    },
+    "zones": [
+      {
+        "zone": 0,
+        "rings": [
+          0,
+          2
+        ],
+        "pins": 19,
+        "uranium_u235_weight_fraction": 0.196,
+        "fuel_radius_cm": 0.585,
+        "clad_outer_radius_cm": 0.633,
+        "annulus_outer_radius_cm": 0.717,
+        "liner_outer_radius_cm": 0.727,
+        "annulus_gap_mm": 0.8399999999999996,
+        "annulus_area_cm2_per_pin": 0.3562566069170822,
+        "provisional_main_flow_per_pin_relative_to_mean": 1.0,
+        "auxiliary_flow_per_pin_relative_to_mean": 1.0
+      },
+      {
+        "zone": 1,
+        "rings": [
+          3,
+          5
+        ],
+        "pins": 72,
+        "uranium_u235_weight_fraction": 0.1975,
+        "fuel_radius_cm": 0.5731805998112636,
+        "clad_outer_radius_cm": 0.6211805998112636,
+        "annulus_outer_radius_cm": 0.706587105445522,
+        "liner_outer_radius_cm": 0.716587105445522,
+        "annulus_gap_mm": 0.8540650563425833,
+        "annulus_area_cm2_per_pin": 0.3562566069170822,
+        "provisional_main_flow_per_pin_relative_to_mean": 1.0,
+        "auxiliary_flow_per_pin_relative_to_mean": 1.0
+      },
+      {
+        "zone": 2,
+        "rings": [
+          6,
+          8
+        ],
+        "pins": 126,
+        "uranium_u235_weight_fraction": 0.1975,
+        "fuel_radius_cm": 0.5916479406828741,
+        "clad_outer_radius_cm": 0.6396479406828741,
+        "annulus_outer_radius_cm": 0.7228758455086473,
+        "liner_outer_radius_cm": 0.7328758455086473,
+        "annulus_gap_mm": 0.8322790482577314,
+        "annulus_area_cm2_per_pin": 0.3562566069170822,
+        "provisional_main_flow_per_pin_relative_to_mean": 1.0,
+        "auxiliary_flow_per_pin_relative_to_mean": 1.0
+      }
+    ],
+    "auxiliary_channels": {
+      "count": 6,
+      "a_cm": 0.15,
+      "b_cm": 0.15,
+      "phase_deg": 0.0,
+      "centre_radius_cm": 0.9140088105726871,
+      "perimeter_cm": 5.654866776461628,
+      "perimeter_ratio": 1.0,
+      "min_face_ligament_cm": 0.1984451507612539,
+      "min_aux_pair_ligament_bound_cm": 0.6140088105726869,
+      "axial_union_area_cm2": 2.6367434762429127,
+      "axial_overlap_area_cm2": 0.11089345858672026,
+      "laminar_aux_resistance_ratio": 1.0
+    },
+    "geometry": {
+      "length_unit": "cm",
+      "pin_count": 217,
+      "pitch_cm": 2.28,
+      "lattice_orientation": "OpenMC HexLattice orientation=y",
+      "unit_cell_face_normal_degrees": [
+        30,
+        90,
+        150,
+        210,
+        270,
+        330
+      ],
+      "axial_main_duct_radius_cm": 0.86,
+      "axial_coolant_rule": "Boolean union of central duct and auxiliary holes; overlap counted once",
+      "peripheral_rule": "full circle if offset<0; otherwise intersection of circle and offset occupied-cell convex hull",
+      "peripheral_complement_material": "BeO",
+      "hull_halfspaces_nx_ny_d": [
+        [
+          0.5,
+          0.8660254037844387,
+          17.11266197878051
+        ],
+        [
+          -0.5000000000000001,
+          -0.8660254037844386,
+          17.11266197878051
+        ],
+        [
+          -0.8660254037844383,
+          0.5000000000000006,
+          19.379999999999995
+        ],
+        [
+          -0.0,
+          1.0,
+          19.38
+        ],
+        [
+          -0.5000000000000001,
+          0.8660254037844387,
+          17.11266197878051
+        ],
+        [
+          1.0,
+          -0.0,
+          17.112661978780505
+        ],
+        [
+          0.8660254037844395,
+          0.49999999999999856,
+          19.38
+        ],
+        [
+          -0.8660254037844392,
+          -0.49999999999999917,
+          19.379999999999995
+        ],
+        [
+          -1.0,
+          0.0,
+          17.112661978780505
+        ],
+        [
+          0.8660254037844395,
+          -0.49999999999999856,
+          19.379999999999995
+        ],
+        [
+          -0.0,
+          -1.0,
+          19.38
+        ],
+        [
+          0.5,
+          -0.8660254037844387,
+          17.11266197878051
+        ]
+      ],
+      "central_liner_thickness_cm": 0.01,
+      "fuel_clad_thickness_cm": 0.048,
+      "drum_count": 10,
+      "drum_radius_cm": 3.95,
+      "absorber_thickness_cm": 1.5,
+      "absorber_sector_degrees": 148.0,
+      "b10_atom_fraction": 0.9,
+      "drum_centres_radius_cm": 23.665682819383257,
+      "drum_azimuth_degrees": [
+        0,
+        36,
+        72,
+        108,
+        144,
+        180,
+        216,
+        252,
+        288,
+        324
+      ]
+    },
+    "materials": {
+      "densities_g_cm3": {
+        "fuel": 13.5,
+        "clad": 8.57,
+        "liner": 3.95,
+        "moderator": 4.3,
+        "reflector": 2.9,
+        "absorber": 2.52
+      },
+      "fuel": "UN with reference N14 weight prescription",
+      "moderator": "YH2.0",
+      "cladding": "Nb-1Zr",
+      "liner": "Al2O3",
+      "reflector": "BeO",
+      "absorber": "B4C",
+      "coolant": "He4"
+    },
+    "boundaries": {
+      "power_W": 400000,
+      "pressure_Pa": 2500000,
+      "inlet_K": 892,
+      "target_mixed_outlet_K": 1110,
+      "cp_J_kgK": 5193.16,
+      "total_mass_flow_kg_s": 0.3533229065388128,
+      "interpretation": "Common screening boundary conditions, not an established Brayton operating point"
+    },
+    "flow": {
+      "topology": "Provisional parallel fuel-annulus and moderator-auxiliary branches",
+      "auxiliary_fraction": 0.175,
+      "pressure_balance": "Common inlet/outlet pressure; orifice coefficients and plenum routing unresolved",
+      "note": "Flow weights are design targets, not calculated natural flow. Reassess after pin heating tallies."
+    },
+    "unresolved": [
+      "neutron multiplication and all feedbacks",
+      "pin and moderator heat deposition",
+      "full hydrogen encapsulation including auxiliary walls and end faces",
+      "pressure vessel, supports, drum shrouds/drives and end manifolds",
+      "common-pressure flow solution and coupled temperature fields",
+      "validated depletion and feasible Brayton cycle"
+    ],
+    "performance": {
+      "keff": null,
+      "lifetime_years": null,
+      "peak_moderator_K": null,
+      "core_pressure_drop_kPa": null,
+      "net_electrical_kW": null
+    }
+  },
+  {
+    "schema_version": 1,
+    "status": "PROPOSED_GEOMETRY_NOT_TRANSPORT_OR_THERMALLY_VALIDATED",
+    "parameters": {
+      "id": "A06_REVERSE_FUEL_ZONING_ONLY",
+      "shape": "C6_VERTEX",
+      "channel_centre_cm": 0.9140088105726871,
+      "height_cm": 45.5,
+      "middle_fuel_area_factor": 1.04,
+      "annulus_allocation": "uniform",
+      "core_radius_cm": 19.535682819383258,
+      "peripheral_hull_offset_cm": -1.0,
+      "radial_reflector_cm": 9.3,
+      "axial_reflector_cm": 8.8
+    },
+    "metrics": {
+      "id": "A06_REVERSE_FUEL_ZONING_ONLY",
+      "shape": "C6_VERTEX",
+      "channel_centre_cm": 0.9140088105726871,
+      "height_cm": 45.5,
+      "middle_fuel_area_factor": 1.04,
+      "annulus_allocation": "uniform",
+      "core_radius_cm": 19.535682819383258,
+      "peripheral_hull_offset_cm": -1.0,
+      "radial_reflector_cm": 9.3,
+      "axial_reflector_cm": 8.8,
+      "fuel_kg": 143.3067027956259,
+      "cladding_kg": 15.539863594386716,
+      "liner_kg": 1.7691297007749573,
+      "moderator_cells_kg": 102.63450986194016,
+      "moderator_periphery_kg": 43.442939794248254,
+      "beo_kg": 274.2431967511833,
+      "b4c_kg": 14.216485872471903,
+      "modeled_solids_kg": 595.1528283706311,
+      "hm_kg": 135.34521930698003,
+      "u235_kg": 26.71290505851911,
+      "moderator_total_kg": 146.0774496561884,
+      "nominal_unallocated_mass_kg": 4.847171629368859,
+      "geometry_screen_pass": false,
+      "study_575kg_screen_pass": false,
+      "reasons": "ligament_below_study_0.50mm;less_than_study_25kg_hardware_allowance",
+      "min_ligament_mm": 0.2676044366034114,
+      "inner_ligament_mm": 0.2676044366034114,
+      "cell_face_ligament_mm": 1.984451507612539,
+      "outer_drum_web_mm": 12.200000000000006,
+      "auxiliary_perimeter_ratio": 1.0,
+      "auxiliary_resistance_ratio_at_same_mu": 1.0,
+      "auxiliary_area_cm2_per_cell": 0.42411500823462206,
+      "annular_area_cm2_all_pins": 77.30768370100684,
+      "fuel_radius_inner_mm": 5.85,
+      "fuel_radius_middle_mm": 5.965852830903558,
+      "fuel_radius_outer_mm": 5.782756386756356,
+      "outer_radius_cm": 28.83568281938326,
+      "total_height_cm": 63.1,
+      "moderator_envelope_area_cm2": 1198.9665410492069,
+      "area_quadrature_error_cm2": 0.0,
+      "axial_coolant_overlap_union_correction_cm2_per_pin": 0.11089345858672026
+    },
+    "zones": [
+      {
+        "zone": 0,
+        "rings": [
+          0,
+          2
+        ],
+        "pins": 19,
+        "uranium_u235_weight_fraction": 0.196,
+        "fuel_radius_cm": 0.585,
+        "clad_outer_radius_cm": 0.633,
+        "annulus_outer_radius_cm": 0.717,
+        "liner_outer_radius_cm": 0.727,
+        "annulus_gap_mm": 0.8399999999999996,
+        "annulus_area_cm2_per_pin": 0.3562566069170822,
+        "provisional_main_flow_per_pin_relative_to_mean": 1.0,
+        "auxiliary_flow_per_pin_relative_to_mean": 1.0
+      },
+      {
+        "zone": 1,
+        "rings": [
+          3,
+          5
+        ],
+        "pins": 72,
+        "uranium_u235_weight_fraction": 0.1975,
+        "fuel_radius_cm": 0.5965852830903559,
+        "clad_outer_radius_cm": 0.6445852830903559,
+        "annulus_outer_radius_cm": 0.727248366912346,
+        "liner_outer_radius_cm": 0.737248366912346,
+        "annulus_gap_mm": 0.8266308382199006,
+        "annulus_area_cm2_per_pin": 0.3562566069170822,
+        "provisional_main_flow_per_pin_relative_to_mean": 1.0,
+        "auxiliary_flow_per_pin_relative_to_mean": 1.0
+      },
+      {
+        "zone": 2,
+        "rings": [
+          6,
+          8
+        ],
+        "pins": 126,
+        "uranium_u235_weight_fraction": 0.1975,
+        "fuel_radius_cm": 0.5782756386756356,
+        "clad_outer_radius_cm": 0.6262756386756356,
+        "annulus_outer_radius_cm": 0.7110704434854365,
+        "liner_outer_radius_cm": 0.7210704434854365,
+        "annulus_gap_mm": 0.8479480480980084,
+        "annulus_area_cm2_per_pin": 0.3562566069170822,
+        "provisional_main_flow_per_pin_relative_to_mean": 1.0,
+        "auxiliary_flow_per_pin_relative_to_mean": 1.0
+      }
+    ],
+    "auxiliary_channels": {
+      "count": 6,
+      "a_cm": 0.15,
+      "b_cm": 0.15,
+      "phase_deg": 0.0,
+      "centre_radius_cm": 0.9140088105726871,
+      "perimeter_cm": 5.654866776461628,
+      "perimeter_ratio": 1.0,
+      "min_face_ligament_cm": 0.1984451507612539,
+      "min_aux_pair_ligament_bound_cm": 0.6140088105726869,
+      "axial_union_area_cm2": 2.6367434762429127,
+      "axial_overlap_area_cm2": 0.11089345858672026,
+      "laminar_aux_resistance_ratio": 1.0
+    },
+    "geometry": {
+      "length_unit": "cm",
+      "pin_count": 217,
+      "pitch_cm": 2.28,
+      "lattice_orientation": "OpenMC HexLattice orientation=y",
+      "unit_cell_face_normal_degrees": [
+        30,
+        90,
+        150,
+        210,
+        270,
+        330
+      ],
+      "axial_main_duct_radius_cm": 0.86,
+      "axial_coolant_rule": "Boolean union of central duct and auxiliary holes; overlap counted once",
+      "peripheral_rule": "full circle if offset<0; otherwise intersection of circle and offset occupied-cell convex hull",
+      "peripheral_complement_material": "BeO",
+      "hull_halfspaces_nx_ny_d": [
+        [
+          0.5,
+          0.8660254037844387,
+          17.11266197878051
+        ],
+        [
+          -0.5000000000000001,
+          -0.8660254037844386,
+          17.11266197878051
+        ],
+        [
+          -0.8660254037844383,
+          0.5000000000000006,
+          19.379999999999995
+        ],
+        [
+          -0.0,
+          1.0,
+          19.38
+        ],
+        [
+          -0.5000000000000001,
+          0.8660254037844387,
+          17.11266197878051
+        ],
+        [
+          1.0,
+          -0.0,
+          17.112661978780505
+        ],
+        [
+          0.8660254037844395,
+          0.49999999999999856,
+          19.38
+        ],
+        [
+          -0.8660254037844392,
+          -0.49999999999999917,
+          19.379999999999995
+        ],
+        [
+          -1.0,
+          0.0,
+          17.112661978780505
+        ],
+        [
+          0.8660254037844395,
+          -0.49999999999999856,
+          19.379999999999995
+        ],
+        [
+          -0.0,
+          -1.0,
+          19.38
+        ],
+        [
+          0.5,
+          -0.8660254037844387,
+          17.11266197878051
+        ]
+      ],
+      "central_liner_thickness_cm": 0.01,
+      "fuel_clad_thickness_cm": 0.048,
+      "drum_count": 10,
+      "drum_radius_cm": 3.95,
+      "absorber_thickness_cm": 1.5,
+      "absorber_sector_degrees": 148.0,
+      "b10_atom_fraction": 0.9,
+      "drum_centres_radius_cm": 23.665682819383257,
+      "drum_azimuth_degrees": [
+        0,
+        36,
+        72,
+        108,
+        144,
+        180,
+        216,
+        252,
+        288,
+        324
+      ]
+    },
+    "materials": {
+      "densities_g_cm3": {
+        "fuel": 13.5,
+        "clad": 8.57,
+        "liner": 3.95,
+        "moderator": 4.3,
+        "reflector": 2.9,
+        "absorber": 2.52
+      },
+      "fuel": "UN with reference N14 weight prescription",
+      "moderator": "YH2.0",
+      "cladding": "Nb-1Zr",
+      "liner": "Al2O3",
+      "reflector": "BeO",
+      "absorber": "B4C",
+      "coolant": "He4"
+    },
+    "boundaries": {
+      "power_W": 400000,
+      "pressure_Pa": 2500000,
+      "inlet_K": 892,
+      "target_mixed_outlet_K": 1110,
+      "cp_J_kgK": 5193.16,
+      "total_mass_flow_kg_s": 0.3533229065388128,
+      "interpretation": "Common screening boundary conditions, not an established Brayton operating point"
+    },
+    "flow": {
+      "topology": "Provisional parallel fuel-annulus and moderator-auxiliary branches",
+      "auxiliary_fraction": 0.175,
+      "pressure_balance": "Common inlet/outlet pressure; orifice coefficients and plenum routing unresolved",
+      "note": "Flow weights are design targets, not calculated natural flow. Reassess after pin heating tallies."
+    },
+    "unresolved": [
+      "neutron multiplication and all feedbacks",
+      "pin and moderator heat deposition",
+      "full hydrogen encapsulation including auxiliary walls and end faces",
+      "pressure vessel, supports, drum shrouds/drives and end manifolds",
+      "common-pressure flow solution and coupled temperature fields",
+      "validated depletion and feasible Brayton cycle"
+    ],
+    "performance": {
+      "keff": null,
+      "lifetime_years": null,
+      "peak_moderator_K": null,
+      "core_pressure_drop_kPa": null,
+      "net_electrical_kW": null
+    }
+  },
+  {
+    "schema_version": 1,
+    "status": "PROPOSED_GEOMETRY_NOT_TRANSPORT_OR_THERMALLY_VALIDATED",
+    "parameters": {
+      "id": "A07_ANNULUS_ALLOCATION_ONLY",
+      "shape": "C6_VERTEX",
+      "channel_centre_cm": 0.9140088105726871,
+      "height_cm": 45.5,
+      "middle_fuel_area_factor": 1.0,
+      "annulus_allocation": "graded",
+      "core_radius_cm": 19.535682819383258,
+      "peripheral_hull_offset_cm": -1.0,
+      "radial_reflector_cm": 9.3,
+      "axial_reflector_cm": 8.8
+    },
+    "metrics": {
+      "id": "A07_ANNULUS_ALLOCATION_ONLY",
+      "shape": "C6_VERTEX",
+      "channel_centre_cm": 0.9140088105726871,
+      "height_cm": 45.5,
+      "middle_fuel_area_factor": 1.0,
+      "annulus_allocation": "graded",
+      "core_radius_cm": 19.535682819383258,
+      "peripheral_hull_offset_cm": -1.0,
+      "radial_reflector_cm": 9.3,
+      "axial_reflector_cm": 8.8,
+      "fuel_kg": 143.3067027956259,
+      "cladding_kg": 15.54140760310423,
+      "liner_kg": 1.7692148821928726,
+      "moderator_cells_kg": 102.63364242597723,
+      "moderator_periphery_kg": 43.442939794248254,
+      "beo_kg": 274.2431967511833,
+      "b4c_kg": 14.216485872471903,
+      "modeled_solids_kg": 595.1535901248037,
+      "hm_kg": 135.34521930698003,
+      "u235_kg": 26.712905058519112,
+      "moderator_total_kg": 146.07658222022548,
+      "nominal_unallocated_mass_kg": 4.8464098751962865,
+      "geometry_screen_pass": false,
+      "study_575kg_screen_pass": false,
+      "reasons": "ligament_below_study_0.50mm;less_than_study_25kg_hardware_allowance",
+      "min_ligament_mm": 0.3071011708568794,
+      "inner_ligament_mm": 0.3071011708568794,
+      "cell_face_ligament_mm": 1.984451507612539,
+      "outer_drum_web_mm": 12.200000000000006,
+      "auxiliary_perimeter_ratio": 1.0,
+      "auxiliary_resistance_ratio_at_same_mu": 1.0,
+      "auxiliary_area_cm2_per_cell": 0.42411500823462206,
+      "annular_area_cm2_all_pins": 77.30768370100684,
+      "fuel_radius_inner_mm": 5.85,
+      "fuel_radius_middle_mm": 5.85,
+      "fuel_radius_outer_mm": 5.85,
+      "outer_radius_cm": 28.83568281938326,
+      "total_height_cm": 63.1,
+      "moderator_envelope_area_cm2": 1198.9665410492069,
+      "area_quadrature_error_cm2": 0.0,
+      "axial_coolant_overlap_union_correction_cm2_per_pin": 0.11089345858672026
+    },
+    "zones": [
+      {
+        "zone": 0,
+        "rings": [
+          0,
+          2
+        ],
+        "pins": 19,
+        "uranium_u235_weight_fraction": 0.196,
+        "fuel_radius_cm": 0.585,
+        "clad_outer_radius_cm": 0.633,
+        "annulus_outer_radius_cm": 0.7232986934869992,
+        "liner_outer_radius_cm": 0.7332986934869992,
+        "annulus_gap_mm": 0.9029869348699915,
+        "annulus_area_cm2_per_pin": 0.3847571354704488,
+        "provisional_main_flow_per_pin_relative_to_mean": 1.08,
+        "auxiliary_flow_per_pin_relative_to_mean": 1.0
+      },
+      {
+        "zone": 1,
+        "rings": [
+          3,
+          5
+        ],
+        "pins": 72,
+        "uranium_u235_weight_fraction": 0.1975,
+        "fuel_radius_cm": 0.585,
+        "clad_outer_radius_cm": 0.633,
+        "annulus_outer_radius_cm": 0.7201562330494682,
+        "liner_outer_radius_cm": 0.7301562330494682,
+        "annulus_gap_mm": 0.8715623304946818,
+        "annulus_area_cm2_per_pin": 0.3705068711937655,
+        "provisional_main_flow_per_pin_relative_to_mean": 1.04,
+        "auxiliary_flow_per_pin_relative_to_mean": 1.0
+      },
+      {
+        "zone": 2,
+        "rings": [
+          6,
+          8
+        ],
+        "pins": 126,
+        "uranium_u235_weight_fraction": 0.1975,
+        "fuel_radius_cm": 0.585,
+        "clad_outer_radius_cm": 0.633,
+        "annulus_outer_radius_cm": 0.7142331552091375,
+        "liner_outer_radius_cm": 0.7242331552091376,
+        "annulus_gap_mm": 0.8123315520913754,
+        "annulus_area_cm2_per_pin": 0.34381590000886664,
+        "provisional_main_flow_per_pin_relative_to_mean": 0.965079365079365,
+        "auxiliary_flow_per_pin_relative_to_mean": 1.0
+      }
+    ],
+    "auxiliary_channels": {
+      "count": 6,
+      "a_cm": 0.15,
+      "b_cm": 0.15,
+      "phase_deg": 0.0,
+      "centre_radius_cm": 0.9140088105726871,
+      "perimeter_cm": 5.654866776461628,
+      "perimeter_ratio": 1.0,
+      "min_face_ligament_cm": 0.1984451507612539,
+      "min_aux_pair_ligament_bound_cm": 0.6140088105726869,
+      "axial_union_area_cm2": 2.6367434762429127,
+      "axial_overlap_area_cm2": 0.11089345858672026,
+      "laminar_aux_resistance_ratio": 1.0
+    },
+    "geometry": {
+      "length_unit": "cm",
+      "pin_count": 217,
+      "pitch_cm": 2.28,
+      "lattice_orientation": "OpenMC HexLattice orientation=y",
+      "unit_cell_face_normal_degrees": [
+        30,
+        90,
+        150,
+        210,
+        270,
+        330
+      ],
+      "axial_main_duct_radius_cm": 0.86,
+      "axial_coolant_rule": "Boolean union of central duct and auxiliary holes; overlap counted once",
+      "peripheral_rule": "full circle if offset<0; otherwise intersection of circle and offset occupied-cell convex hull",
+      "peripheral_complement_material": "BeO",
+      "hull_halfspaces_nx_ny_d": [
+        [
+          0.5,
+          0.8660254037844387,
+          17.11266197878051
+        ],
+        [
+          -0.5000000000000001,
+          -0.8660254037844386,
+          17.11266197878051
+        ],
+        [
+          -0.8660254037844383,
+          0.5000000000000006,
+          19.379999999999995
+        ],
+        [
+          -0.0,
+          1.0,
+          19.38
+        ],
+        [
+          -0.5000000000000001,
+          0.8660254037844387,
+          17.11266197878051
+        ],
+        [
+          1.0,
+          -0.0,
+          17.112661978780505
+        ],
+        [
+          0.8660254037844395,
+          0.49999999999999856,
+          19.38
+        ],
+        [
+          -0.8660254037844392,
+          -0.49999999999999917,
+          19.379999999999995
+        ],
+        [
+          -1.0,
+          0.0,
+          17.112661978780505
+        ],
+        [
+          0.8660254037844395,
+          -0.49999999999999856,
+          19.379999999999995
+        ],
+        [
+          -0.0,
+          -1.0,
+          19.38
+        ],
+        [
+          0.5,
+          -0.8660254037844387,
+          17.11266197878051
+        ]
+      ],
+      "central_liner_thickness_cm": 0.01,
+      "fuel_clad_thickness_cm": 0.048,
+      "drum_count": 10,
+      "drum_radius_cm": 3.95,
+      "absorber_thickness_cm": 1.5,
+      "absorber_sector_degrees": 148.0,
+      "b10_atom_fraction": 0.9,
+      "drum_centres_radius_cm": 23.665682819383257,
+      "drum_azimuth_degrees": [
+        0,
+        36,
+        72,
+        108,
+        144,
+        180,
+        216,
+        252,
+        288,
+        324
+      ]
+    },
+    "materials": {
+      "densities_g_cm3": {
+        "fuel": 13.5,
+        "clad": 8.57,
+        "liner": 3.95,
+        "moderator": 4.3,
+        "reflector": 2.9,
+        "absorber": 2.52
+      },
+      "fuel": "UN with reference N14 weight prescription",
+      "moderator": "YH2.0",
+      "cladding": "Nb-1Zr",
+      "liner": "Al2O3",
+      "reflector": "BeO",
+      "absorber": "B4C",
+      "coolant": "He4"
+    },
+    "boundaries": {
+      "power_W": 400000,
+      "pressure_Pa": 2500000,
+      "inlet_K": 892,
+      "target_mixed_outlet_K": 1110,
+      "cp_J_kgK": 5193.16,
+      "total_mass_flow_kg_s": 0.3533229065388128,
+      "interpretation": "Common screening boundary conditions, not an established Brayton operating point"
+    },
+    "flow": {
+      "topology": "Provisional parallel fuel-annulus and moderator-auxiliary branches",
+      "auxiliary_fraction": 0.175,
+      "pressure_balance": "Common inlet/outlet pressure; orifice coefficients and plenum routing unresolved",
+      "note": "Flow weights are design targets, not calculated natural flow. Reassess after pin heating tallies."
+    },
+    "unresolved": [
+      "neutron multiplication and all feedbacks",
+      "pin and moderator heat deposition",
+      "full hydrogen encapsulation including auxiliary walls and end faces",
+      "pressure vessel, supports, drum shrouds/drives and end manifolds",
+      "common-pressure flow solution and coupled temperature fields",
+      "validated depletion and feasible Brayton cycle"
+    ],
+    "performance": {
+      "keff": null,
+      "lifetime_years": null,
+      "peak_moderator_K": null,
+      "core_pressure_drop_kPa": null,
+      "net_electrical_kW": null
+    }
+  },
+  {
+    "schema_version": 1,
+    "status": "PROPOSED_GEOMETRY_NOT_TRANSPORT_OR_THERMALLY_VALIDATED",
+    "parameters": {
+      "id": "A08_HEIGHT_SHORT_ONLY",
+      "shape": "C6_VERTEX",
+      "channel_centre_cm": 0.9140088105726871,
+      "height_cm": 44.5,
+      "middle_fuel_area_factor": 1.0,
+      "annulus_allocation": "uniform",
+      "core_radius_cm": 19.535682819383258,
+      "peripheral_hull_offset_cm": -1.0,
+      "radial_reflector_cm": 9.3,
+      "axial_reflector_cm": 8.8
+    },
+    "metrics": {
+      "id": "A08_HEIGHT_SHORT_ONLY",
+      "shape": "C6_VERTEX",
+      "channel_centre_cm": 0.9140088105726871,
+      "height_cm": 44.5,
+      "middle_fuel_area_factor": 1.0,
+      "annulus_allocation": "uniform",
+      "core_radius_cm": 19.535682819383258,
+      "peripheral_hull_offset_cm": -1.0,
+      "radial_reflector_cm": 9.3,
+      "axial_reflector_cm": 8.8,
+      "fuel_kg": 143.3067027956259,
+      "cladding_kg": 15.362981031955181,
+      "liner_kg": 1.7441955943547864,
+      "moderator_cells_kg": 99.2778027100358,
+      "moderator_periphery_kg": 42.48814990866038,
+      "beo_kg": 270.50431696892906,
+      "b4c_kg": 13.904035633516475,
+      "modeled_solids_kg": 586.5881846430776,
+      "hm_kg": 135.34521930698003,
+      "u235_kg": 26.712905058519112,
+      "moderator_total_kg": 141.7659526186962,
+      "nominal_unallocated_mass_kg": 13.411815356922375,
+      "geometry_screen_pass": false,
+      "study_575kg_screen_pass": false,
+      "reasons": "ligament_below_study_0.50mm;less_than_study_25kg_hardware_allowance",
+      "min_ligament_mm": 0.31231559306451495,
+      "inner_ligament_mm": 0.31231559306451495,
+      "cell_face_ligament_mm": 1.984451507612539,
+      "outer_drum_web_mm": 12.200000000000006,
+      "auxiliary_perimeter_ratio": 1.0,
+      "auxiliary_resistance_ratio_at_same_mu": 0.978021978021978,
+      "auxiliary_area_cm2_per_cell": 0.42411500823462206,
+      "annular_area_cm2_all_pins": 77.30768370100684,
+      "fuel_radius_inner_mm": 5.915365157267996,
+      "fuel_radius_middle_mm": 5.915365157267996,
+      "fuel_radius_outer_mm": 5.915365157267996,
+      "outer_radius_cm": 28.83568281938326,
+      "total_height_cm": 62.1,
+      "moderator_envelope_area_cm2": 1198.9665410492069,
+      "area_quadrature_error_cm2": 0.0,
+      "axial_coolant_overlap_union_correction_cm2_per_pin": 0.11089345858672026
+    },
+    "zones": [
+      {
+        "zone": 0,
+        "rings": [
+          0,
+          2
+        ],
+        "pins": 19,
+        "uranium_u235_weight_fraction": 0.196,
+        "fuel_radius_cm": 0.5915365157267997,
+        "clad_outer_radius_cm": 0.6395365157267997,
+        "annulus_outer_radius_cm": 0.7227772512662356,
+        "liner_outer_radius_cm": 0.7327772512662356,
+        "annulus_gap_mm": 0.832407355394359,
+        "annulus_area_cm2_per_pin": 0.3562566069170822,
+        "provisional_main_flow_per_pin_relative_to_mean": 1.0,
+        "auxiliary_flow_per_pin_relative_to_mean": 1.0
+      },
+      {
+        "zone": 1,
+        "rings": [
+          3,
+          5
+        ],
+        "pins": 72,
+        "uranium_u235_weight_fraction": 0.1975,
+        "fuel_radius_cm": 0.5915365157267997,
+        "clad_outer_radius_cm": 0.6395365157267997,
+        "annulus_outer_radius_cm": 0.7227772512662356,
+        "liner_outer_radius_cm": 0.7327772512662356,
+        "annulus_gap_mm": 0.832407355394359,
+        "annulus_area_cm2_per_pin": 0.3562566069170822,
+        "provisional_main_flow_per_pin_relative_to_mean": 1.0,
+        "auxiliary_flow_per_pin_relative_to_mean": 1.0
+      },
+      {
+        "zone": 2,
+        "rings": [
+          6,
+          8
+        ],
+        "pins": 126,
+        "uranium_u235_weight_fraction": 0.1975,
+        "fuel_radius_cm": 0.5915365157267997,
+        "clad_outer_radius_cm": 0.6395365157267997,
+        "annulus_outer_radius_cm": 0.7227772512662356,
+        "liner_outer_radius_cm": 0.7327772512662356,
+        "annulus_gap_mm": 0.832407355394359,
+        "annulus_area_cm2_per_pin": 0.3562566069170822,
+        "provisional_main_flow_per_pin_relative_to_mean": 1.0,
+        "auxiliary_flow_per_pin_relative_to_mean": 1.0
+      }
+    ],
+    "auxiliary_channels": {
+      "count": 6,
+      "a_cm": 0.15,
+      "b_cm": 0.15,
+      "phase_deg": 0.0,
+      "centre_radius_cm": 0.9140088105726871,
+      "perimeter_cm": 5.654866776461628,
+      "perimeter_ratio": 1.0,
+      "min_face_ligament_cm": 0.1984451507612539,
+      "min_aux_pair_ligament_bound_cm": 0.6140088105726869,
+      "axial_union_area_cm2": 2.6367434762429127,
+      "axial_overlap_area_cm2": 0.11089345858672026,
+      "laminar_aux_resistance_ratio": 1.0
+    },
+    "geometry": {
+      "length_unit": "cm",
+      "pin_count": 217,
+      "pitch_cm": 2.28,
+      "lattice_orientation": "OpenMC HexLattice orientation=y",
+      "unit_cell_face_normal_degrees": [
+        30,
+        90,
+        150,
+        210,
+        270,
+        330
+      ],
+      "axial_main_duct_radius_cm": 0.86,
+      "axial_coolant_rule": "Boolean union of central duct and auxiliary holes; overlap counted once",
+      "peripheral_rule": "full circle if offset<0; otherwise intersection of circle and offset occupied-cell convex hull",
+      "peripheral_complement_material": "BeO",
+      "hull_halfspaces_nx_ny_d": [
+        [
+          0.5,
+          0.8660254037844387,
+          17.11266197878051
+        ],
+        [
+          -0.5000000000000001,
+          -0.8660254037844386,
+          17.11266197878051
+        ],
+        [
+          -0.8660254037844383,
+          0.5000000000000006,
+          19.379999999999995
+        ],
+        [
+          -0.0,
+          1.0,
+          19.38
+        ],
+        [
+          -0.5000000000000001,
+          0.8660254037844387,
+          17.11266197878051
+        ],
+        [
+          1.0,
+          -0.0,
+          17.112661978780505
+        ],
+        [
+          0.8660254037844395,
+          0.49999999999999856,
+          19.38
+        ],
+        [
+          -0.8660254037844392,
+          -0.49999999999999917,
+          19.379999999999995
+        ],
+        [
+          -1.0,
+          0.0,
+          17.112661978780505
+        ],
+        [
+          0.8660254037844395,
+          -0.49999999999999856,
+          19.379999999999995
+        ],
+        [
+          -0.0,
+          -1.0,
+          19.38
+        ],
+        [
+          0.5,
+          -0.8660254037844387,
+          17.11266197878051
+        ]
+      ],
+      "central_liner_thickness_cm": 0.01,
+      "fuel_clad_thickness_cm": 0.048,
+      "drum_count": 10,
+      "drum_radius_cm": 3.95,
+      "absorber_thickness_cm": 1.5,
+      "absorber_sector_degrees": 148.0,
+      "b10_atom_fraction": 0.9,
+      "drum_centres_radius_cm": 23.665682819383257,
+      "drum_azimuth_degrees": [
+        0,
+        36,
+        72,
+        108,
+        144,
+        180,
+        216,
+        252,
+        288,
+        324
+      ]
+    },
+    "materials": {
+      "densities_g_cm3": {
+        "fuel": 13.5,
+        "clad": 8.57,
+        "liner": 3.95,
+        "moderator": 4.3,
+        "reflector": 2.9,
+        "absorber": 2.52
+      },
+      "fuel": "UN with reference N14 weight prescription",
+      "moderator": "YH2.0",
+      "cladding": "Nb-1Zr",
+      "liner": "Al2O3",
+      "reflector": "BeO",
+      "absorber": "B4C",
+      "coolant": "He4"
+    },
+    "boundaries": {
+      "power_W": 400000,
+      "pressure_Pa": 2500000,
+      "inlet_K": 892,
+      "target_mixed_outlet_K": 1110,
+      "cp_J_kgK": 5193.16,
+      "total_mass_flow_kg_s": 0.3533229065388128,
+      "interpretation": "Common screening boundary conditions, not an established Brayton operating point"
+    },
+    "flow": {
+      "topology": "Provisional parallel fuel-annulus and moderator-auxiliary branches",
+      "auxiliary_fraction": 0.175,
+      "pressure_balance": "Common inlet/outlet pressure; orifice coefficients and plenum routing unresolved",
+      "note": "Flow weights are design targets, not calculated natural flow. Reassess after pin heating tallies."
+    },
+    "unresolved": [
+      "neutron multiplication and all feedbacks",
+      "pin and moderator heat deposition",
+      "full hydrogen encapsulation including auxiliary walls and end faces",
+      "pressure vessel, supports, drum shrouds/drives and end manifolds",
+      "common-pressure flow solution and coupled temperature fields",
+      "validated depletion and feasible Brayton cycle"
+    ],
+    "performance": {
+      "keff": null,
+      "lifetime_years": null,
+      "peak_moderator_K": null,
+      "core_pressure_drop_kPa": null,
+      "net_electrical_kW": null
+    }
+  },
+  {
+    "schema_version": 1,
+    "status": "PROPOSED_GEOMETRY_NOT_TRANSPORT_OR_THERMALLY_VALIDATED",
+    "parameters": {
+      "id": "A09_HEIGHT_TALL_ONLY",
+      "shape": "C6_VERTEX",
+      "channel_centre_cm": 0.9140088105726871,
+      "height_cm": 46.5,
+      "middle_fuel_area_factor": 1.0,
+      "annulus_allocation": "uniform",
+      "core_radius_cm": 19.535682819383258,
+      "peripheral_hull_offset_cm": -1.0,
+      "radial_reflector_cm": 9.3,
+      "axial_reflector_cm": 8.8
+    },
+    "metrics": {
+      "id": "A09_HEIGHT_TALL_ONLY",
+      "shape": "C6_VERTEX",
+      "channel_centre_cm": 0.9140088105726871,
+      "height_cm": 46.5,
+      "middle_fuel_area_factor": 1.0,
+      "annulus_allocation": "uniform",
+      "core_radius_cm": 19.535682819383258,
+      "peripheral_hull_offset_cm": -1.0,
+      "radial_reflector_cm": 9.3,
+      "axial_reflector_cm": 8.8,
+      "fuel_kg": 143.3067027956259,
+      "cladding_kg": 15.718031107908336,
+      "liner_kg": 1.7941508332555327,
+      "moderator_cells_kg": 105.99047755202987,
+      "moderator_periphery_kg": 44.397729679836125,
+      "beo_kg": 277.9820765334374,
+      "b4c_kg": 14.52893611142733,
+      "modeled_solids_kg": 603.7181046135205,
+      "hm_kg": 135.34521930698003,
+      "u235_kg": 26.712905058519112,
+      "moderator_total_kg": 150.388207231866,
+      "nominal_unallocated_mass_kg": -3.718104613520495,
+      "geometry_screen_pass": false,
+      "study_575kg_screen_pass": false,
+      "reasons": "ligament_below_study_0.50mm;modeled_solids_above_600kg;less_than_study_25kg_hardware_allowance",
+      "min_ligament_mm": 0.4258617274863885,
+      "inner_ligament_mm": 0.4258617274863885,
+      "cell_face_ligament_mm": 1.984451507612539,
+      "outer_drum_web_mm": 12.200000000000006,
+      "auxiliary_perimeter_ratio": 1.0,
+      "auxiliary_resistance_ratio_at_same_mu": 1.021978021978022,
+      "auxiliary_area_cm2_per_cell": 0.42411500823462206,
+      "annular_area_cm2_all_pins": 77.30768370100684,
+      "fuel_radius_inner_mm": 5.786754898737678,
+      "fuel_radius_middle_mm": 5.786754898737678,
+      "fuel_radius_outer_mm": 5.786754898737678,
+      "outer_radius_cm": 28.83568281938326,
+      "total_height_cm": 64.1,
+      "moderator_envelope_area_cm2": 1198.9665410492069,
+      "area_quadrature_error_cm2": 0.0,
+      "axial_coolant_overlap_union_correction_cm2_per_pin": 0.11089345858672026
+    },
+    "zones": [
+      {
+        "zone": 0,
+        "rings": [
+          0,
+          2
+        ],
+        "pins": 19,
+        "uranium_u235_weight_fraction": 0.196,
+        "fuel_radius_cm": 0.5786754898737678,
+        "clad_outer_radius_cm": 0.6266754898737679,
+        "annulus_outer_radius_cm": 0.7114226378240482,
+        "liner_outer_radius_cm": 0.7214226378240483,
+        "annulus_gap_mm": 0.8474714795028038,
+        "annulus_area_cm2_per_pin": 0.3562566069170822,
+        "provisional_main_flow_per_pin_relative_to_mean": 1.0,
+        "auxiliary_flow_per_pin_relative_to_mean": 1.0
+      },
+      {
+        "zone": 1,
+        "rings": [
+          3,
+          5
+        ],
+        "pins": 72,
+        "uranium_u235_weight_fraction": 0.1975,
+        "fuel_radius_cm": 0.5786754898737678,
+        "clad_outer_radius_cm": 0.6266754898737679,
+        "annulus_outer_radius_cm": 0.7114226378240482,
+        "liner_outer_radius_cm": 0.7214226378240483,
+        "annulus_gap_mm": 0.8474714795028038,
+        "annulus_area_cm2_per_pin": 0.3562566069170822,
+        "provisional_main_flow_per_pin_relative_to_mean": 1.0,
+        "auxiliary_flow_per_pin_relative_to_mean": 1.0
+      },
+      {
+        "zone": 2,
+        "rings": [
+          6,
+          8
+        ],
+        "pins": 126,
+        "uranium_u235_weight_fraction": 0.1975,
+        "fuel_radius_cm": 0.5786754898737678,
+        "clad_outer_radius_cm": 0.6266754898737679,
+        "annulus_outer_radius_cm": 0.7114226378240482,
+        "liner_outer_radius_cm": 0.7214226378240483,
+        "annulus_gap_mm": 0.8474714795028038,
+        "annulus_area_cm2_per_pin": 0.3562566069170822,
+        "provisional_main_flow_per_pin_relative_to_mean": 1.0,
+        "auxiliary_flow_per_pin_relative_to_mean": 1.0
+      }
+    ],
+    "auxiliary_channels": {
+      "count": 6,
+      "a_cm": 0.15,
+      "b_cm": 0.15,
+      "phase_deg": 0.0,
+      "centre_radius_cm": 0.9140088105726871,
+      "perimeter_cm": 5.654866776461628,
+      "perimeter_ratio": 1.0,
+      "min_face_ligament_cm": 0.1984451507612539,
+      "min_aux_pair_ligament_bound_cm": 0.6140088105726869,
+      "axial_union_area_cm2": 2.6367434762429127,
+      "axial_overlap_area_cm2": 0.11089345858672026,
+      "laminar_aux_resistance_ratio": 1.0
+    },
+    "geometry": {
+      "length_unit": "cm",
+      "pin_count": 217,
+      "pitch_cm": 2.28,
+      "lattice_orientation": "OpenMC HexLattice orientation=y",
+      "unit_cell_face_normal_degrees": [
+        30,
+        90,
+        150,
+        210,
+        270,
+        330
+      ],
+      "axial_main_duct_radius_cm": 0.86,
+      "axial_coolant_rule": "Boolean union of central duct and auxiliary holes; overlap counted once",
+      "peripheral_rule": "full circle if offset<0; otherwise intersection of circle and offset occupied-cell convex hull",
+      "peripheral_complement_material": "BeO",
+      "hull_halfspaces_nx_ny_d": [
+        [
+          0.5,
+          0.8660254037844387,
+          17.11266197878051
+        ],
+        [
+          -0.5000000000000001,
+          -0.8660254037844386,
+          17.11266197878051
+        ],
+        [
+          -0.8660254037844383,
+          0.5000000000000006,
+          19.379999999999995
+        ],
+        [
+          -0.0,
+          1.0,
+          19.38
+        ],
+        [
+          -0.5000000000000001,
+          0.8660254037844387,
+          17.11266197878051
+        ],
+        [
+          1.0,
+          -0.0,
+          17.112661978780505
+        ],
+        [
+          0.8660254037844395,
+          0.49999999999999856,
+          19.38
+        ],
+        [
+          -0.8660254037844392,
+          -0.49999999999999917,
+          19.379999999999995
+        ],
+        [
+          -1.0,
+          0.0,
+          17.112661978780505
+        ],
+        [
+          0.8660254037844395,
+          -0.49999999999999856,
+          19.379999999999995
+        ],
+        [
+          -0.0,
+          -1.0,
+          19.38
+        ],
+        [
+          0.5,
+          -0.8660254037844387,
+          17.11266197878051
+        ]
+      ],
+      "central_liner_thickness_cm": 0.01,
+      "fuel_clad_thickness_cm": 0.048,
+      "drum_count": 10,
+      "drum_radius_cm": 3.95,
+      "absorber_thickness_cm": 1.5,
+      "absorber_sector_degrees": 148.0,
+      "b10_atom_fraction": 0.9,
+      "drum_centres_radius_cm": 23.665682819383257,
+      "drum_azimuth_degrees": [
+        0,
+        36,
+        72,
+        108,
+        144,
+        180,
+        216,
+        252,
+        288,
+        324
+      ]
+    },
+    "materials": {
+      "densities_g_cm3": {
+        "fuel": 13.5,
+        "clad": 8.57,
+        "liner": 3.95,
+        "moderator": 4.3,
+        "reflector": 2.9,
+        "absorber": 2.52
+      },
+      "fuel": "UN with reference N14 weight prescription",
+      "moderator": "YH2.0",
+      "cladding": "Nb-1Zr",
+      "liner": "Al2O3",
+      "reflector": "BeO",
+      "absorber": "B4C",
+      "coolant": "He4"
+    },
+    "boundaries": {
+      "power_W": 400000,
+      "pressure_Pa": 2500000,
+      "inlet_K": 892,
+      "target_mixed_outlet_K": 1110,
+      "cp_J_kgK": 5193.16,
+      "total_mass_flow_kg_s": 0.3533229065388128,
+      "interpretation": "Common screening boundary conditions, not an established Brayton operating point"
+    },
+    "flow": {
+      "topology": "Provisional parallel fuel-annulus and moderator-auxiliary branches",
+      "auxiliary_fraction": 0.175,
+      "pressure_balance": "Common inlet/outlet pressure; orifice coefficients and plenum routing unresolved",
+      "note": "Flow weights are design targets, not calculated natural flow. Reassess after pin heating tallies."
+    },
+    "unresolved": [
+      "neutron multiplication and all feedbacks",
+      "pin and moderator heat deposition",
+      "full hydrogen encapsulation including auxiliary walls and end faces",
+      "pressure vessel, supports, drum shrouds/drives and end manifolds",
+      "common-pressure flow solution and coupled temperature fields",
+      "validated depletion and feasible Brayton cycle"
+    ],
+    "performance": {
+      "keff": null,
+      "lifetime_years": null,
+      "peak_moderator_K": null,
+      "core_pressure_drop_kPa": null,
+      "net_electrical_kW": null
+    }
+  },
+  {
+    "schema_version": 1,
+    "status": "PROPOSED_GEOMETRY_NOT_TRANSPORT_OR_THERMALLY_VALIDATED",
+    "parameters": {
+      "id": "A10_HEIGHT_48_ONLY",
+      "shape": "C6_VERTEX",
+      "channel_centre_cm": 0.9140088105726871,
+      "height_cm": 48.0,
+      "middle_fuel_area_factor": 1.0,
+      "annulus_allocation": "uniform",
+      "core_radius_cm": 19.535682819383258,
+      "peripheral_hull_offset_cm": -1.0,
+      "radial_reflector_cm": 9.3,
+      "axial_reflector_cm": 8.8
+    },
+    "metrics": {
+      "id": "A10_HEIGHT_48_ONLY",
+      "shape": "C6_VERTEX",
+      "channel_centre_cm": 0.9140088105726871,
+      "height_cm": 48.0,
+      "middle_fuel_area_factor": 1.0,
+      "annulus_allocation": "uniform",
+      "core_radius_cm": 19.535682819383258,
+      "peripheral_hull_offset_cm": -1.0,
+      "radial_reflector_cm": 9.3,
+      "axial_reflector_cm": 8.8,
+      "fuel_kg": 143.3067027956259,
+      "cladding_kg": 15.979711351637997,
+      "liner_kg": 1.8313078350530454,
+      "moderator_cells_kg": 111.02763224927904,
+      "moderator_periphery_kg": 45.82991450821794,
+      "beo_kg": 283.5903962068187,
+      "b4c_kg": 14.99761146986047,
+      "modeled_solids_kg": 616.5632764164931,
+      "hm_kg": 135.34521930698003,
+      "u235_kg": 26.712905058519112,
+      "moderator_total_kg": 156.85754675749698,
+      "nominal_unallocated_mass_kg": -16.563276416493068,
+      "geometry_screen_pass": true,
+      "study_575kg_screen_pass": false,
+      "reasons": "modeled_solids_above_600kg;less_than_study_25kg_hardware_allowance",
+      "min_ligament_mm": 0.5060087372866473,
+      "inner_ligament_mm": 0.5060087372866473,
+      "cell_face_ligament_mm": 1.984451507612539,
+      "outer_drum_web_mm": 12.200000000000006,
+      "auxiliary_perimeter_ratio": 1.0,
+      "auxiliary_resistance_ratio_at_same_mu": 1.054945054945055,
+      "auxiliary_area_cm2_per_cell": 0.42411500823462206,
+      "annular_area_cm2_all_pins": 77.30768370100684,
+      "fuel_radius_inner_mm": 5.695619204704611,
+      "fuel_radius_middle_mm": 5.695619204704611,
+      "fuel_radius_outer_mm": 5.695619204704611,
+      "outer_radius_cm": 28.83568281938326,
+      "total_height_cm": 65.6,
+      "moderator_envelope_area_cm2": 1198.9665410492069,
+      "area_quadrature_error_cm2": 0.0,
+      "axial_coolant_overlap_union_correction_cm2_per_pin": 0.11089345858672026
+    },
+    "zones": [
+      {
+        "zone": 0,
+        "rings": [
+          0,
+          2
+        ],
+        "pins": 19,
+        "uranium_u235_weight_fraction": 0.196,
+        "fuel_radius_cm": 0.5695619204704612,
+        "clad_outer_radius_cm": 0.6175619204704612,
+        "annulus_outer_radius_cm": 0.7034079368440224,
+        "liner_outer_radius_cm": 0.7134079368440224,
+        "annulus_gap_mm": 0.8584601637356115,
+        "annulus_area_cm2_per_pin": 0.3562566069170822,
+        "provisional_main_flow_per_pin_relative_to_mean": 1.0,
+        "auxiliary_flow_per_pin_relative_to_mean": 1.0
+      },
+      {
+        "zone": 1,
+        "rings": [
+          3,
+          5
+        ],
+        "pins": 72,
+        "uranium_u235_weight_fraction": 0.1975,
+        "fuel_radius_cm": 0.5695619204704612,
+        "clad_outer_radius_cm": 0.6175619204704612,
+        "annulus_outer_radius_cm": 0.7034079368440224,
+        "liner_outer_radius_cm": 0.7134079368440224,
+        "annulus_gap_mm": 0.8584601637356115,
+        "annulus_area_cm2_per_pin": 0.3562566069170822,
+        "provisional_main_flow_per_pin_relative_to_mean": 1.0,
+        "auxiliary_flow_per_pin_relative_to_mean": 1.0
+      },
+      {
+        "zone": 2,
+        "rings": [
+          6,
+          8
+        ],
+        "pins": 126,
+        "uranium_u235_weight_fraction": 0.1975,
+        "fuel_radius_cm": 0.5695619204704612,
+        "clad_outer_radius_cm": 0.6175619204704612,
+        "annulus_outer_radius_cm": 0.7034079368440224,
+        "liner_outer_radius_cm": 0.7134079368440224,
+        "annulus_gap_mm": 0.8584601637356115,
+        "annulus_area_cm2_per_pin": 0.3562566069170822,
+        "provisional_main_flow_per_pin_relative_to_mean": 1.0,
+        "auxiliary_flow_per_pin_relative_to_mean": 1.0
+      }
+    ],
+    "auxiliary_channels": {
+      "count": 6,
+      "a_cm": 0.15,
+      "b_cm": 0.15,
+      "phase_deg": 0.0,
+      "centre_radius_cm": 0.9140088105726871,
+      "perimeter_cm": 5.654866776461628,
+      "perimeter_ratio": 1.0,
+      "min_face_ligament_cm": 0.1984451507612539,
+      "min_aux_pair_ligament_bound_cm": 0.6140088105726869,
+      "axial_union_area_cm2": 2.6367434762429127,
+      "axial_overlap_area_cm2": 0.11089345858672026,
+      "laminar_aux_resistance_ratio": 1.0
+    },
+    "geometry": {
+      "length_unit": "cm",
+      "pin_count": 217,
+      "pitch_cm": 2.28,
+      "lattice_orientation": "OpenMC HexLattice orientation=y",
+      "unit_cell_face_normal_degrees": [
+        30,
+        90,
+        150,
+        210,
+        270,
+        330
+      ],
+      "axial_main_duct_radius_cm": 0.86,
+      "axial_coolant_rule": "Boolean union of central duct and auxiliary holes; overlap counted once",
+      "peripheral_rule": "full circle if offset<0; otherwise intersection of circle and offset occupied-cell convex hull",
+      "peripheral_complement_material": "BeO",
+      "hull_halfspaces_nx_ny_d": [
+        [
+          0.5,
+          0.8660254037844387,
+          17.11266197878051
+        ],
+        [
+          -0.5000000000000001,
+          -0.8660254037844386,
+          17.11266197878051
+        ],
+        [
+          -0.8660254037844383,
+          0.5000000000000006,
+          19.379999999999995
+        ],
+        [
+          -0.0,
+          1.0,
+          19.38
+        ],
+        [
+          -0.5000000000000001,
+          0.8660254037844387,
+          17.11266197878051
+        ],
+        [
+          1.0,
+          -0.0,
+          17.112661978780505
+        ],
+        [
+          0.8660254037844395,
+          0.49999999999999856,
+          19.38
+        ],
+        [
+          -0.8660254037844392,
+          -0.49999999999999917,
+          19.379999999999995
+        ],
+        [
+          -1.0,
+          0.0,
+          17.112661978780505
+        ],
+        [
+          0.8660254037844395,
+          -0.49999999999999856,
+          19.379999999999995
+        ],
+        [
+          -0.0,
+          -1.0,
+          19.38
+        ],
+        [
+          0.5,
+          -0.8660254037844387,
+          17.11266197878051
+        ]
+      ],
+      "central_liner_thickness_cm": 0.01,
+      "fuel_clad_thickness_cm": 0.048,
+      "drum_count": 10,
+      "drum_radius_cm": 3.95,
+      "absorber_thickness_cm": 1.5,
+      "absorber_sector_degrees": 148.0,
+      "b10_atom_fraction": 0.9,
+      "drum_centres_radius_cm": 23.665682819383257,
+      "drum_azimuth_degrees": [
+        0,
+        36,
+        72,
+        108,
+        144,
+        180,
+        216,
+        252,
+        288,
+        324
+      ]
+    },
+    "materials": {
+      "densities_g_cm3": {
+        "fuel": 13.5,
+        "clad": 8.57,
+        "liner": 3.95,
+        "moderator": 4.3,
+        "reflector": 2.9,
+        "absorber": 2.52
+      },
+      "fuel": "UN with reference N14 weight prescription",
+      "moderator": "YH2.0",
+      "cladding": "Nb-1Zr",
+      "liner": "Al2O3",
+      "reflector": "BeO",
+      "absorber": "B4C",
+      "coolant": "He4"
+    },
+    "boundaries": {
+      "power_W": 400000,
+      "pressure_Pa": 2500000,
+      "inlet_K": 892,
+      "target_mixed_outlet_K": 1110,
+      "cp_J_kgK": 5193.16,
+      "total_mass_flow_kg_s": 0.3533229065388128,
+      "interpretation": "Common screening boundary conditions, not an established Brayton operating point"
+    },
+    "flow": {
+      "topology": "Provisional parallel fuel-annulus and moderator-auxiliary branches",
+      "auxiliary_fraction": 0.175,
+      "pressure_balance": "Common inlet/outlet pressure; orifice coefficients and plenum routing unresolved",
+      "note": "Flow weights are design targets, not calculated natural flow. Reassess after pin heating tallies."
+    },
+    "unresolved": [
+      "neutron multiplication and all feedbacks",
+      "pin and moderator heat deposition",
+      "full hydrogen encapsulation including auxiliary walls and end faces",
+      "pressure vessel, supports, drum shrouds/drives and end manifolds",
+      "common-pressure flow solution and coupled temperature fields",
+      "validated depletion and feasible Brayton cycle"
+    ],
+    "performance": {
+      "keff": null,
+      "lifetime_years": null,
+      "peak_moderator_K": null,
+      "core_pressure_drop_kPa": null,
+      "net_electrical_kW": null
+    }
+  },
+  {
+    "schema_version": 1,
+    "status": "PROPOSED_GEOMETRY_NOT_TRANSPORT_OR_THERMALLY_VALIDATED",
+    "parameters": {
+      "id": "A11_RADIAL_REFLECTOR_ONLY",
+      "shape": "C6_VERTEX",
+      "channel_centre_cm": 0.9140088105726871,
+      "height_cm": 45.5,
+      "middle_fuel_area_factor": 1.0,
+      "annulus_allocation": "uniform",
+      "core_radius_cm": 19.535682819383258,
+      "peripheral_hull_offset_cm": -1.0,
+      "radial_reflector_cm": 9.0,
+      "axial_reflector_cm": 8.8
+    },
+    "metrics": {
+      "id": "A11_RADIAL_REFLECTOR_ONLY",
+      "shape": "C6_VERTEX",
+      "channel_centre_cm": 0.9140088105726871,
+      "height_cm": 45.5,
+      "middle_fuel_area_factor": 1.0,
+      "annulus_allocation": "uniform",
+      "core_radius_cm": 19.535682819383258,
+      "peripheral_hull_offset_cm": -1.0,
+      "radial_reflector_cm": 9.0,
+      "axial_reflector_cm": 8.8,
+      "fuel_kg": 143.3067027956259,
+      "cladding_kg": 15.54140760310423,
+      "liner_kg": 1.7692340622899523,
+      "moderator_cells_kg": 102.63362154637788,
+      "moderator_periphery_kg": 43.442939794248254,
+      "beo_kg": 264.3487008647034,
+      "b4c_kg": 14.216485872471903,
+      "modeled_solids_kg": 585.2590925388215,
+      "hm_kg": 135.34521930698003,
+      "u235_kg": 26.712905058519112,
+      "moderator_total_kg": 146.07656134062614,
+      "nominal_unallocated_mass_kg": 14.740907461178494,
+      "geometry_screen_pass": false,
+      "study_575kg_screen_pass": false,
+      "reasons": "ligament_below_study_0.50mm;less_than_study_25kg_hardware_allowance",
+      "min_ligament_mm": 0.37008810572687123,
+      "inner_ligament_mm": 0.37008810572687123,
+      "cell_face_ligament_mm": 1.984451507612539,
+      "outer_drum_web_mm": 9.2,
+      "auxiliary_perimeter_ratio": 1.0,
+      "auxiliary_resistance_ratio_at_same_mu": 1.0,
+      "auxiliary_area_cm2_per_cell": 0.42411500823462206,
+      "annular_area_cm2_all_pins": 77.30768370100684,
+      "fuel_radius_inner_mm": 5.85,
+      "fuel_radius_middle_mm": 5.85,
+      "fuel_radius_outer_mm": 5.85,
+      "outer_radius_cm": 28.535682819383258,
+      "total_height_cm": 63.1,
+      "moderator_envelope_area_cm2": 1198.9665410492069,
+      "area_quadrature_error_cm2": 0.0,
+      "axial_coolant_overlap_union_correction_cm2_per_pin": 0.11089345858672026
+    },
+    "zones": [
+      {
+        "zone": 0,
+        "rings": [
+          0,
+          2
+        ],
+        "pins": 19,
+        "uranium_u235_weight_fraction": 0.196,
+        "fuel_radius_cm": 0.585,
+        "clad_outer_radius_cm": 0.633,
+        "annulus_outer_radius_cm": 0.717,
+        "liner_outer_radius_cm": 0.727,
+        "annulus_gap_mm": 0.8399999999999996,
+        "annulus_area_cm2_per_pin": 0.3562566069170822,
+        "provisional_main_flow_per_pin_relative_to_mean": 1.0,
+        "auxiliary_flow_per_pin_relative_to_mean": 1.0
+      },
+      {
+        "zone": 1,
+        "rings": [
+          3,
+          5
+        ],
+        "pins": 72,
+        "uranium_u235_weight_fraction": 0.1975,
+        "fuel_radius_cm": 0.585,
+        "clad_outer_radius_cm": 0.633,
+        "annulus_outer_radius_cm": 0.717,
+        "liner_outer_radius_cm": 0.727,
+        "annulus_gap_mm": 0.8399999999999996,
+        "annulus_area_cm2_per_pin": 0.3562566069170822,
+        "provisional_main_flow_per_pin_relative_to_mean": 1.0,
+        "auxiliary_flow_per_pin_relative_to_mean": 1.0
+      },
+      {
+        "zone": 2,
+        "rings": [
+          6,
+          8
+        ],
+        "pins": 126,
+        "uranium_u235_weight_fraction": 0.1975,
+        "fuel_radius_cm": 0.585,
+        "clad_outer_radius_cm": 0.633,
+        "annulus_outer_radius_cm": 0.717,
+        "liner_outer_radius_cm": 0.727,
+        "annulus_gap_mm": 0.8399999999999996,
+        "annulus_area_cm2_per_pin": 0.3562566069170822,
+        "provisional_main_flow_per_pin_relative_to_mean": 1.0,
+        "auxiliary_flow_per_pin_relative_to_mean": 1.0
+      }
+    ],
+    "auxiliary_channels": {
+      "count": 6,
+      "a_cm": 0.15,
+      "b_cm": 0.15,
+      "phase_deg": 0.0,
+      "centre_radius_cm": 0.9140088105726871,
+      "perimeter_cm": 5.654866776461628,
+      "perimeter_ratio": 1.0,
+      "min_face_ligament_cm": 0.1984451507612539,
+      "min_aux_pair_ligament_bound_cm": 0.6140088105726869,
+      "axial_union_area_cm2": 2.6367434762429127,
+      "axial_overlap_area_cm2": 0.11089345858672026,
+      "laminar_aux_resistance_ratio": 1.0
+    },
+    "geometry": {
+      "length_unit": "cm",
+      "pin_count": 217,
+      "pitch_cm": 2.28,
+      "lattice_orientation": "OpenMC HexLattice orientation=y",
+      "unit_cell_face_normal_degrees": [
+        30,
+        90,
+        150,
+        210,
+        270,
+        330
+      ],
+      "axial_main_duct_radius_cm": 0.86,
+      "axial_coolant_rule": "Boolean union of central duct and auxiliary holes; overlap counted once",
+      "peripheral_rule": "full circle if offset<0; otherwise intersection of circle and offset occupied-cell convex hull",
+      "peripheral_complement_material": "BeO",
+      "hull_halfspaces_nx_ny_d": [
+        [
+          0.5,
+          0.8660254037844387,
+          17.11266197878051
+        ],
+        [
+          -0.5000000000000001,
+          -0.8660254037844386,
+          17.11266197878051
+        ],
+        [
+          -0.8660254037844383,
+          0.5000000000000006,
+          19.379999999999995
+        ],
+        [
+          -0.0,
+          1.0,
+          19.38
+        ],
+        [
+          -0.5000000000000001,
+          0.8660254037844387,
+          17.11266197878051
+        ],
+        [
+          1.0,
+          -0.0,
+          17.112661978780505
+        ],
+        [
+          0.8660254037844395,
+          0.49999999999999856,
+          19.38
+        ],
+        [
+          -0.8660254037844392,
+          -0.49999999999999917,
+          19.379999999999995
+        ],
+        [
+          -1.0,
+          0.0,
+          17.112661978780505
+        ],
+        [
+          0.8660254037844395,
+          -0.49999999999999856,
+          19.379999999999995
+        ],
+        [
+          -0.0,
+          -1.0,
+          19.38
+        ],
+        [
+          0.5,
+          -0.8660254037844387,
+          17.11266197878051
+        ]
+      ],
+      "central_liner_thickness_cm": 0.01,
+      "fuel_clad_thickness_cm": 0.048,
+      "drum_count": 10,
+      "drum_radius_cm": 3.95,
+      "absorber_thickness_cm": 1.5,
+      "absorber_sector_degrees": 148.0,
+      "b10_atom_fraction": 0.9,
+      "drum_centres_radius_cm": 23.665682819383257,
+      "drum_azimuth_degrees": [
+        0,
+        36,
+        72,
+        108,
+        144,
+        180,
+        216,
+        252,
+        288,
+        324
+      ]
+    },
+    "materials": {
+      "densities_g_cm3": {
+        "fuel": 13.5,
+        "clad": 8.57,
+        "liner": 3.95,
+        "moderator": 4.3,
+        "reflector": 2.9,
+        "absorber": 2.52
+      },
+      "fuel": "UN with reference N14 weight prescription",
+      "moderator": "YH2.0",
+      "cladding": "Nb-1Zr",
+      "liner": "Al2O3",
+      "reflector": "BeO",
+      "absorber": "B4C",
+      "coolant": "He4"
+    },
+    "boundaries": {
+      "power_W": 400000,
+      "pressure_Pa": 2500000,
+      "inlet_K": 892,
+      "target_mixed_outlet_K": 1110,
+      "cp_J_kgK": 5193.16,
+      "total_mass_flow_kg_s": 0.3533229065388128,
+      "interpretation": "Common screening boundary conditions, not an established Brayton operating point"
+    },
+    "flow": {
+      "topology": "Provisional parallel fuel-annulus and moderator-auxiliary branches",
+      "auxiliary_fraction": 0.175,
+      "pressure_balance": "Common inlet/outlet pressure; orifice coefficients and plenum routing unresolved",
+      "note": "Flow weights are design targets, not calculated natural flow. Reassess after pin heating tallies."
+    },
+    "unresolved": [
+      "neutron multiplication and all feedbacks",
+      "pin and moderator heat deposition",
+      "full hydrogen encapsulation including auxiliary walls and end faces",
+      "pressure vessel, supports, drum shrouds/drives and end manifolds",
+      "common-pressure flow solution and coupled temperature fields",
+      "validated depletion and feasible Brayton cycle"
+    ],
+    "performance": {
+      "keff": null,
+      "lifetime_years": null,
+      "peak_moderator_K": null,
+      "core_pressure_drop_kPa": null,
+      "net_electrical_kW": null
+    }
+  },
+  {
+    "schema_version": 1,
+    "status": "PROPOSED_GEOMETRY_NOT_TRANSPORT_OR_THERMALLY_VALIDATED",
+    "parameters": {
+      "id": "A12_AXIAL_REFLECTOR_ONLY",
+      "shape": "C6_VERTEX",
+      "channel_centre_cm": 0.9140088105726871,
+      "height_cm": 45.5,
+      "middle_fuel_area_factor": 1.0,
+      "annulus_allocation": "uniform",
+      "core_radius_cm": 19.535682819383258,
+      "peripheral_hull_offset_cm": -1.0,
+      "radial_reflector_cm": 9.3,
+      "axial_reflector_cm": 8.3
+    },
+    "metrics": {
+      "id": "A12_AXIAL_REFLECTOR_ONLY",
+      "shape": "C6_VERTEX",
+      "channel_centre_cm": 0.9140088105726871,
+      "height_cm": 45.5,
+      "middle_fuel_area_factor": 1.0,
+      "annulus_allocation": "uniform",
+      "core_radius_cm": 19.535682819383258,
+      "peripheral_hull_offset_cm": -1.0,
+      "radial_reflector_cm": 9.3,
+      "axial_reflector_cm": 8.3,
+      "fuel_kg": 143.3067027956259,
+      "cladding_kg": 15.54140760310423,
+      "liner_kg": 1.7692340622899523,
+      "moderator_cells_kg": 102.63362154637788,
+      "moderator_periphery_kg": 43.442939794248254,
+      "beo_kg": 268.32705091830724,
+      "b4c_kg": 14.216485872471903,
+      "modeled_solids_kg": 589.2374425924254,
+      "hm_kg": 135.34521930698003,
+      "u235_kg": 26.712905058519112,
+      "moderator_total_kg": 146.07656134062614,
+      "nominal_unallocated_mass_kg": 10.762557407574604,
+      "geometry_screen_pass": false,
+      "study_575kg_screen_pass": false,
+      "reasons": "ligament_below_study_0.50mm;less_than_study_25kg_hardware_allowance",
+      "min_ligament_mm": 0.37008810572687123,
+      "inner_ligament_mm": 0.37008810572687123,
+      "cell_face_ligament_mm": 1.984451507612539,
+      "outer_drum_web_mm": 12.200000000000006,
+      "auxiliary_perimeter_ratio": 1.0,
+      "auxiliary_resistance_ratio_at_same_mu": 1.0,
+      "auxiliary_area_cm2_per_cell": 0.42411500823462206,
+      "annular_area_cm2_all_pins": 77.30768370100684,
+      "fuel_radius_inner_mm": 5.85,
+      "fuel_radius_middle_mm": 5.85,
+      "fuel_radius_outer_mm": 5.85,
+      "outer_radius_cm": 28.83568281938326,
+      "total_height_cm": 62.1,
+      "moderator_envelope_area_cm2": 1198.9665410492069,
+      "area_quadrature_error_cm2": 0.0,
+      "axial_coolant_overlap_union_correction_cm2_per_pin": 0.11089345858672026
+    },
+    "zones": [
+      {
+        "zone": 0,
+        "rings": [
+          0,
+          2
+        ],
+        "pins": 19,
+        "uranium_u235_weight_fraction": 0.196,
+        "fuel_radius_cm": 0.585,
+        "clad_outer_radius_cm": 0.633,
+        "annulus_outer_radius_cm": 0.717,
+        "liner_outer_radius_cm": 0.727,
+        "annulus_gap_mm": 0.8399999999999996,
+        "annulus_area_cm2_per_pin": 0.3562566069170822,
+        "provisional_main_flow_per_pin_relative_to_mean": 1.0,
+        "auxiliary_flow_per_pin_relative_to_mean": 1.0
+      },
+      {
+        "zone": 1,
+        "rings": [
+          3,
+          5
+        ],
+        "pins": 72,
+        "uranium_u235_weight_fraction": 0.1975,
+        "fuel_radius_cm": 0.585,
+        "clad_outer_radius_cm": 0.633,
+        "annulus_outer_radius_cm": 0.717,
+        "liner_outer_radius_cm": 0.727,
+        "annulus_gap_mm": 0.8399999999999996,
+        "annulus_area_cm2_per_pin": 0.3562566069170822,
+        "provisional_main_flow_per_pin_relative_to_mean": 1.0,
+        "auxiliary_flow_per_pin_relative_to_mean": 1.0
+      },
+      {
+        "zone": 2,
+        "rings": [
+          6,
+          8
+        ],
+        "pins": 126,
+        "uranium_u235_weight_fraction": 0.1975,
+        "fuel_radius_cm": 0.585,
+        "clad_outer_radius_cm": 0.633,
+        "annulus_outer_radius_cm": 0.717,
+        "liner_outer_radius_cm": 0.727,
+        "annulus_gap_mm": 0.8399999999999996,
+        "annulus_area_cm2_per_pin": 0.3562566069170822,
+        "provisional_main_flow_per_pin_relative_to_mean": 1.0,
+        "auxiliary_flow_per_pin_relative_to_mean": 1.0
+      }
+    ],
+    "auxiliary_channels": {
+      "count": 6,
+      "a_cm": 0.15,
+      "b_cm": 0.15,
+      "phase_deg": 0.0,
+      "centre_radius_cm": 0.9140088105726871,
+      "perimeter_cm": 5.654866776461628,
+      "perimeter_ratio": 1.0,
+      "min_face_ligament_cm": 0.1984451507612539,
+      "min_aux_pair_ligament_bound_cm": 0.6140088105726869,
+      "axial_union_area_cm2": 2.6367434762429127,
+      "axial_overlap_area_cm2": 0.11089345858672026,
+      "laminar_aux_resistance_ratio": 1.0
+    },
+    "geometry": {
+      "length_unit": "cm",
+      "pin_count": 217,
+      "pitch_cm": 2.28,
+      "lattice_orientation": "OpenMC HexLattice orientation=y",
+      "unit_cell_face_normal_degrees": [
+        30,
+        90,
+        150,
+        210,
+        270,
+        330
+      ],
+      "axial_main_duct_radius_cm": 0.86,
+      "axial_coolant_rule": "Boolean union of central duct and auxiliary holes; overlap counted once",
+      "peripheral_rule": "full circle if offset<0; otherwise intersection of circle and offset occupied-cell convex hull",
+      "peripheral_complement_material": "BeO",
+      "hull_halfspaces_nx_ny_d": [
+        [
+          0.5,
+          0.8660254037844387,
+          17.11266197878051
+        ],
+        [
+          -0.5000000000000001,
+          -0.8660254037844386,
+          17.11266197878051
+        ],
+        [
+          -0.8660254037844383,
+          0.5000000000000006,
+          19.379999999999995
+        ],
+        [
+          -0.0,
+          1.0,
+          19.38
+        ],
+        [
+          -0.5000000000000001,
+          0.8660254037844387,
+          17.11266197878051
+        ],
+        [
+          1.0,
+          -0.0,
+          17.112661978780505
+        ],
+        [
+          0.8660254037844395,
+          0.49999999999999856,
+          19.38
+        ],
+        [
+          -0.8660254037844392,
+          -0.49999999999999917,
+          19.379999999999995
+        ],
+        [
+          -1.0,
+          0.0,
+          17.112661978780505
+        ],
+        [
+          0.8660254037844395,
+          -0.49999999999999856,
+          19.379999999999995
+        ],
+        [
+          -0.0,
+          -1.0,
+          19.38
+        ],
+        [
+          0.5,
+          -0.8660254037844387,
+          17.11266197878051
+        ]
+      ],
+      "central_liner_thickness_cm": 0.01,
+      "fuel_clad_thickness_cm": 0.048,
+      "drum_count": 10,
+      "drum_radius_cm": 3.95,
+      "absorber_thickness_cm": 1.5,
+      "absorber_sector_degrees": 148.0,
+      "b10_atom_fraction": 0.9,
+      "drum_centres_radius_cm": 23.665682819383257,
+      "drum_azimuth_degrees": [
+        0,
+        36,
+        72,
+        108,
+        144,
+        180,
+        216,
+        252,
+        288,
+        324
+      ]
+    },
+    "materials": {
+      "densities_g_cm3": {
+        "fuel": 13.5,
+        "clad": 8.57,
+        "liner": 3.95,
+        "moderator": 4.3,
+        "reflector": 2.9,
+        "absorber": 2.52
+      },
+      "fuel": "UN with reference N14 weight prescription",
+      "moderator": "YH2.0",
+      "cladding": "Nb-1Zr",
+      "liner": "Al2O3",
+      "reflector": "BeO",
+      "absorber": "B4C",
+      "coolant": "He4"
+    },
+    "boundaries": {
+      "power_W": 400000,
+      "pressure_Pa": 2500000,
+      "inlet_K": 892,
+      "target_mixed_outlet_K": 1110,
+      "cp_J_kgK": 5193.16,
+      "total_mass_flow_kg_s": 0.3533229065388128,
+      "interpretation": "Common screening boundary conditions, not an established Brayton operating point"
+    },
+    "flow": {
+      "topology": "Provisional parallel fuel-annulus and moderator-auxiliary branches",
+      "auxiliary_fraction": 0.175,
+      "pressure_balance": "Common inlet/outlet pressure; orifice coefficients and plenum routing unresolved",
+      "note": "Flow weights are design targets, not calculated natural flow. Reassess after pin heating tallies."
+    },
+    "unresolved": [
+      "neutron multiplication and all feedbacks",
+      "pin and moderator heat deposition",
+      "full hydrogen encapsulation including auxiliary walls and end faces",
+      "pressure vessel, supports, drum shrouds/drives and end manifolds",
+      "common-pressure flow solution and coupled temperature fields",
+      "validated depletion and feasible Brayton cycle"
+    ],
+    "performance": {
+      "keff": null,
+      "lifetime_years": null,
+      "peak_moderator_K": null,
+      "core_pressure_drop_kPa": null,
+      "net_electrical_kW": null
+    }
+  },
+  {
+    "schema_version": 1,
+    "status": "PROPOSED_GEOMETRY_NOT_TRANSPORT_OR_THERMALLY_VALIDATED",
+    "parameters": {
+      "id": "A13_PERIPHERY_ONLY",
+      "shape": "C6_VERTEX",
+      "channel_centre_cm": 0.9140088105726871,
+      "height_cm": 45.5,
+      "middle_fuel_area_factor": 1.0,
+      "annulus_allocation": "uniform",
+      "core_radius_cm": 19.535682819383258,
+      "peripheral_hull_offset_cm": 1.5,
+      "radial_reflector_cm": 9.3,
+      "axial_reflector_cm": 8.8
+    },
+    "metrics": {
+      "id": "A13_PERIPHERY_ONLY",
+      "shape": "C6_VERTEX",
+      "channel_centre_cm": 0.9140088105726871,
+      "height_cm": 45.5,
+      "middle_fuel_area_factor": 1.0,
+      "annulus_allocation": "uniform",
+      "core_radius_cm": 19.535682819383258,
+      "peripheral_hull_offset_cm": 1.5,
+      "radial_reflector_cm": 9.3,
+      "axial_reflector_cm": 8.8,
+      "fuel_kg": 143.3067027956259,
+      "cladding_kg": 15.54140760310423,
+      "liner_kg": 1.7692340622899523,
+      "moderator_cells_kg": 102.63362154637788,
+      "moderator_periphery_kg": 34.8287525163585,
+      "beo_kg": 280.0527649153415,
+      "b4c_kg": 14.216485872471903,
+      "modeled_solids_kg": 592.3489693115699,
+      "hm_kg": 135.34521930698003,
+      "u235_kg": 26.712905058519112,
+      "moderator_total_kg": 137.4623740627364,
+      "nominal_unallocated_mass_kg": 7.651030688430069,
+      "geometry_screen_pass": false,
+      "study_575kg_screen_pass": false,
+      "reasons": "ligament_below_study_0.50mm;less_than_study_25kg_hardware_allowance",
+      "min_ligament_mm": 0.37008810572687123,
+      "inner_ligament_mm": 0.37008810572687123,
+      "cell_face_ligament_mm": 1.984451507612539,
+      "outer_drum_web_mm": 12.200000000000006,
+      "auxiliary_perimeter_ratio": 1.0,
+      "auxiliary_resistance_ratio_at_same_mu": 1.0,
+      "auxiliary_area_cm2_per_cell": 0.42411500823462206,
+      "annular_area_cm2_all_pins": 77.30768370100684,
+      "fuel_radius_inner_mm": 5.85,
+      "fuel_radius_middle_mm": 5.85,
+      "fuel_radius_outer_mm": 5.85,
+      "outer_radius_cm": 28.83568281938326,
+      "total_height_cm": 63.1,
+      "moderator_envelope_area_cm2": 1154.937983533798,
+      "area_quadrature_error_cm2": 2.4715725199123135e-09,
+      "axial_coolant_overlap_union_correction_cm2_per_pin": 0.11089345858672026
+    },
+    "zones": [
+      {
+        "zone": 0,
+        "rings": [
+          0,
+          2
+        ],
+        "pins": 19,
+        "uranium_u235_weight_fraction": 0.196,
+        "fuel_radius_cm": 0.585,
+        "clad_outer_radius_cm": 0.633,
+        "annulus_outer_radius_cm": 0.717,
+        "liner_outer_radius_cm": 0.727,
+        "annulus_gap_mm": 0.8399999999999996,
+        "annulus_area_cm2_per_pin": 0.3562566069170822,
+        "provisional_main_flow_per_pin_relative_to_mean": 1.0,
+        "auxiliary_flow_per_pin_relative_to_mean": 1.0
+      },
+      {
+        "zone": 1,
+        "rings": [
+          3,
+          5
+        ],
+        "pins": 72,
+        "uranium_u235_weight_fraction": 0.1975,
+        "fuel_radius_cm": 0.585,
+        "clad_outer_radius_cm": 0.633,
+        "annulus_outer_radius_cm": 0.717,
+        "liner_outer_radius_cm": 0.727,
+        "annulus_gap_mm": 0.8399999999999996,
+        "annulus_area_cm2_per_pin": 0.3562566069170822,
+        "provisional_main_flow_per_pin_relative_to_mean": 1.0,
+        "auxiliary_flow_per_pin_relative_to_mean": 1.0
+      },
+      {
+        "zone": 2,
+        "rings": [
+          6,
+          8
+        ],
+        "pins": 126,
+        "uranium_u235_weight_fraction": 0.1975,
+        "fuel_radius_cm": 0.585,
+        "clad_outer_radius_cm": 0.633,
+        "annulus_outer_radius_cm": 0.717,
+        "liner_outer_radius_cm": 0.727,
+        "annulus_gap_mm": 0.8399999999999996,
+        "annulus_area_cm2_per_pin": 0.3562566069170822,
+        "provisional_main_flow_per_pin_relative_to_mean": 1.0,
+        "auxiliary_flow_per_pin_relative_to_mean": 1.0
+      }
+    ],
+    "auxiliary_channels": {
+      "count": 6,
+      "a_cm": 0.15,
+      "b_cm": 0.15,
+      "phase_deg": 0.0,
+      "centre_radius_cm": 0.9140088105726871,
+      "perimeter_cm": 5.654866776461628,
+      "perimeter_ratio": 1.0,
+      "min_face_ligament_cm": 0.1984451507612539,
+      "min_aux_pair_ligament_bound_cm": 0.6140088105726869,
+      "axial_union_area_cm2": 2.6367434762429127,
+      "axial_overlap_area_cm2": 0.11089345858672026,
+      "laminar_aux_resistance_ratio": 1.0
+    },
+    "geometry": {
+      "length_unit": "cm",
+      "pin_count": 217,
+      "pitch_cm": 2.28,
+      "lattice_orientation": "OpenMC HexLattice orientation=y",
+      "unit_cell_face_normal_degrees": [
+        30,
+        90,
+        150,
+        210,
+        270,
+        330
+      ],
+      "axial_main_duct_radius_cm": 0.86,
+      "axial_coolant_rule": "Boolean union of central duct and auxiliary holes; overlap counted once",
+      "peripheral_rule": "full circle if offset<0; otherwise intersection of circle and offset occupied-cell convex hull",
+      "peripheral_complement_material": "BeO",
+      "hull_halfspaces_nx_ny_d": [
+        [
+          0.5,
+          0.8660254037844387,
+          17.11266197878051
+        ],
+        [
+          -0.5000000000000001,
+          -0.8660254037844386,
+          17.11266197878051
+        ],
+        [
+          -0.8660254037844383,
+          0.5000000000000006,
+          19.379999999999995
+        ],
+        [
+          -0.0,
+          1.0,
+          19.38
+        ],
+        [
+          -0.5000000000000001,
+          0.8660254037844387,
+          17.11266197878051
+        ],
+        [
+          1.0,
+          -0.0,
+          17.112661978780505
+        ],
+        [
+          0.8660254037844395,
+          0.49999999999999856,
+          19.38
+        ],
+        [
+          -0.8660254037844392,
+          -0.49999999999999917,
+          19.379999999999995
+        ],
+        [
+          -1.0,
+          0.0,
+          17.112661978780505
+        ],
+        [
+          0.8660254037844395,
+          -0.49999999999999856,
+          19.379999999999995
+        ],
+        [
+          -0.0,
+          -1.0,
+          19.38
+        ],
+        [
+          0.5,
+          -0.8660254037844387,
+          17.11266197878051
+        ]
+      ],
+      "central_liner_thickness_cm": 0.01,
+      "fuel_clad_thickness_cm": 0.048,
+      "drum_count": 10,
+      "drum_radius_cm": 3.95,
+      "absorber_thickness_cm": 1.5,
+      "absorber_sector_degrees": 148.0,
+      "b10_atom_fraction": 0.9,
+      "drum_centres_radius_cm": 23.665682819383257,
+      "drum_azimuth_degrees": [
+        0,
+        36,
+        72,
+        108,
+        144,
+        180,
+        216,
+        252,
+        288,
+        324
+      ]
+    },
+    "materials": {
+      "densities_g_cm3": {
+        "fuel": 13.5,
+        "clad": 8.57,
+        "liner": 3.95,
+        "moderator": 4.3,
+        "reflector": 2.9,
+        "absorber": 2.52
+      },
+      "fuel": "UN with reference N14 weight prescription",
+      "moderator": "YH2.0",
+      "cladding": "Nb-1Zr",
+      "liner": "Al2O3",
+      "reflector": "BeO",
+      "absorber": "B4C",
+      "coolant": "He4"
+    },
+    "boundaries": {
+      "power_W": 400000,
+      "pressure_Pa": 2500000,
+      "inlet_K": 892,
+      "target_mixed_outlet_K": 1110,
+      "cp_J_kgK": 5193.16,
+      "total_mass_flow_kg_s": 0.3533229065388128,
+      "interpretation": "Common screening boundary conditions, not an established Brayton operating point"
+    },
+    "flow": {
+      "topology": "Provisional parallel fuel-annulus and moderator-auxiliary branches",
+      "auxiliary_fraction": 0.175,
+      "pressure_balance": "Common inlet/outlet pressure; orifice coefficients and plenum routing unresolved",
+      "note": "Flow weights are design targets, not calculated natural flow. Reassess after pin heating tallies."
+    },
+    "unresolved": [
+      "neutron multiplication and all feedbacks",
+      "pin and moderator heat deposition",
+      "full hydrogen encapsulation including auxiliary walls and end faces",
+      "pressure vessel, supports, drum shrouds/drives and end manifolds",
+      "common-pressure flow solution and coupled temperature fields",
+      "validated depletion and feasible Brayton cycle"
+    ],
+    "performance": {
+      "keff": null,
+      "lifetime_years": null,
+      "peak_moderator_K": null,
+      "core_pressure_drop_kPa": null,
+      "net_electrical_kW": null
+    }
+  },
+  {
+    "schema_version": 1,
+    "status": "PROPOSED_GEOMETRY_NOT_TRANSPORT_OR_THERMALLY_VALIDATED",
+    "parameters": {
+      "id": "A14_CORE_RADIUS_ONLY",
+      "shape": "C6_VERTEX",
+      "channel_centre_cm": 0.9140088105726871,
+      "height_cm": 45.5,
+      "middle_fuel_area_factor": 1.0,
+      "annulus_allocation": "uniform",
+      "core_radius_cm": 19.435682819383256,
+      "peripheral_hull_offset_cm": -1.0,
+      "radial_reflector_cm": 9.3,
+      "axial_reflector_cm": 8.8
+    },
+    "metrics": {
+      "id": "A14_CORE_RADIUS_ONLY",
+      "shape": "C6_VERTEX",
+      "channel_centre_cm": 0.9140088105726871,
+      "height_cm": 45.5,
+      "middle_fuel_area_factor": 1.0,
+      "annulus_allocation": "uniform",
+      "core_radius_cm": 19.435682819383256,
+      "peripheral_hull_offset_cm": -1.0,
+      "radial_reflector_cm": 9.3,
+      "axial_reflector_cm": 8.8,
+      "fuel_kg": 143.3067027956259,
+      "cladding_kg": 15.54140760310423,
+      "liner_kg": 1.7692340622899523,
+      "moderator_cells_kg": 102.63362154637788,
+      "moderator_periphery_kg": 41.0475546622821,
+      "beo_kg": 272.549026153199,
+      "b4c_kg": 14.216485872471903,
+      "modeled_solids_kg": 591.064032695351,
+      "hm_kg": 135.34521930698003,
+      "u235_kg": 26.712905058519112,
+      "moderator_total_kg": 143.68117620866,
+      "nominal_unallocated_mass_kg": 8.935967304649012,
+      "geometry_screen_pass": false,
+      "study_575kg_screen_pass": false,
+      "reasons": "ligament_below_study_0.50mm;less_than_study_25kg_hardware_allowance",
+      "min_ligament_mm": 0.37008810572687123,
+      "inner_ligament_mm": 0.37008810572687123,
+      "cell_face_ligament_mm": 1.984451507612539,
+      "outer_drum_web_mm": 12.200000000000006,
+      "auxiliary_perimeter_ratio": 1.0,
+      "auxiliary_resistance_ratio_at_same_mu": 1.0,
+      "auxiliary_area_cm2_per_cell": 0.42411500823462206,
+      "annular_area_cm2_all_pins": 77.30768370100684,
+      "fuel_radius_inner_mm": 5.85,
+      "fuel_radius_middle_mm": 5.85,
+      "fuel_radius_outer_mm": 5.85,
+      "outer_radius_cm": 28.735682819383257,
+      "total_height_cm": 63.1,
+      "moderator_envelope_area_cm2": 1186.7233254500954,
+      "area_quadrature_error_cm2": 0.0,
+      "axial_coolant_overlap_union_correction_cm2_per_pin": 0.11089345858672026
+    },
+    "zones": [
+      {
+        "zone": 0,
+        "rings": [
+          0,
+          2
+        ],
+        "pins": 19,
+        "uranium_u235_weight_fraction": 0.196,
+        "fuel_radius_cm": 0.585,
+        "clad_outer_radius_cm": 0.633,
+        "annulus_outer_radius_cm": 0.717,
+        "liner_outer_radius_cm": 0.727,
+        "annulus_gap_mm": 0.8399999999999996,
+        "annulus_area_cm2_per_pin": 0.3562566069170822,
+        "provisional_main_flow_per_pin_relative_to_mean": 1.0,
+        "auxiliary_flow_per_pin_relative_to_mean": 1.0
+      },
+      {
+        "zone": 1,
+        "rings": [
+          3,
+          5
+        ],
+        "pins": 72,
+        "uranium_u235_weight_fraction": 0.1975,
+        "fuel_radius_cm": 0.585,
+        "clad_outer_radius_cm": 0.633,
+        "annulus_outer_radius_cm": 0.717,
+        "liner_outer_radius_cm": 0.727,
+        "annulus_gap_mm": 0.8399999999999996,
+        "annulus_area_cm2_per_pin": 0.3562566069170822,
+        "provisional_main_flow_per_pin_relative_to_mean": 1.0,
+        "auxiliary_flow_per_pin_relative_to_mean": 1.0
+      },
+      {
+        "zone": 2,
+        "rings": [
+          6,
+          8
+        ],
+        "pins": 126,
+        "uranium_u235_weight_fraction": 0.1975,
+        "fuel_radius_cm": 0.585,
+        "clad_outer_radius_cm": 0.633,
+        "annulus_outer_radius_cm": 0.717,
+        "liner_outer_radius_cm": 0.727,
+        "annulus_gap_mm": 0.8399999999999996,
+        "annulus_area_cm2_per_pin": 0.3562566069170822,
+        "provisional_main_flow_per_pin_relative_to_mean": 1.0,
+        "auxiliary_flow_per_pin_relative_to_mean": 1.0
+      }
+    ],
+    "auxiliary_channels": {
+      "count": 6,
+      "a_cm": 0.15,
+      "b_cm": 0.15,
+      "phase_deg": 0.0,
+      "centre_radius_cm": 0.9140088105726871,
+      "perimeter_cm": 5.654866776461628,
+      "perimeter_ratio": 1.0,
+      "min_face_ligament_cm": 0.1984451507612539,
+      "min_aux_pair_ligament_bound_cm": 0.6140088105726869,
+      "axial_union_area_cm2": 2.6367434762429127,
+      "axial_overlap_area_cm2": 0.11089345858672026,
+      "laminar_aux_resistance_ratio": 1.0
+    },
+    "geometry": {
+      "length_unit": "cm",
+      "pin_count": 217,
+      "pitch_cm": 2.28,
+      "lattice_orientation": "OpenMC HexLattice orientation=y",
+      "unit_cell_face_normal_degrees": [
+        30,
+        90,
+        150,
+        210,
+        270,
+        330
+      ],
+      "axial_main_duct_radius_cm": 0.86,
+      "axial_coolant_rule": "Boolean union of central duct and auxiliary holes; overlap counted once",
+      "peripheral_rule": "full circle if offset<0; otherwise intersection of circle and offset occupied-cell convex hull",
+      "peripheral_complement_material": "BeO",
+      "hull_halfspaces_nx_ny_d": [
+        [
+          0.5,
+          0.8660254037844387,
+          17.11266197878051
+        ],
+        [
+          -0.5000000000000001,
+          -0.8660254037844386,
+          17.11266197878051
+        ],
+        [
+          -0.8660254037844383,
+          0.5000000000000006,
+          19.379999999999995
+        ],
+        [
+          -0.0,
+          1.0,
+          19.38
+        ],
+        [
+          -0.5000000000000001,
+          0.8660254037844387,
+          17.11266197878051
+        ],
+        [
+          1.0,
+          -0.0,
+          17.112661978780505
+        ],
+        [
+          0.8660254037844395,
+          0.49999999999999856,
+          19.38
+        ],
+        [
+          -0.8660254037844392,
+          -0.49999999999999917,
+          19.379999999999995
+        ],
+        [
+          -1.0,
+          0.0,
+          17.112661978780505
+        ],
+        [
+          0.8660254037844395,
+          -0.49999999999999856,
+          19.379999999999995
+        ],
+        [
+          -0.0,
+          -1.0,
+          19.38
+        ],
+        [
+          0.5,
+          -0.8660254037844387,
+          17.11266197878051
+        ]
+      ],
+      "central_liner_thickness_cm": 0.01,
+      "fuel_clad_thickness_cm": 0.048,
+      "drum_count": 10,
+      "drum_radius_cm": 3.95,
+      "absorber_thickness_cm": 1.5,
+      "absorber_sector_degrees": 148.0,
+      "b10_atom_fraction": 0.9,
+      "drum_centres_radius_cm": 23.565682819383255,
+      "drum_azimuth_degrees": [
+        0,
+        36,
+        72,
+        108,
+        144,
+        180,
+        216,
+        252,
+        288,
+        324
+      ]
+    },
+    "materials": {
+      "densities_g_cm3": {
+        "fuel": 13.5,
+        "clad": 8.57,
+        "liner": 3.95,
+        "moderator": 4.3,
+        "reflector": 2.9,
+        "absorber": 2.52
+      },
+      "fuel": "UN with reference N14 weight prescription",
+      "moderator": "YH2.0",
+      "cladding": "Nb-1Zr",
+      "liner": "Al2O3",
+      "reflector": "BeO",
+      "absorber": "B4C",
+      "coolant": "He4"
+    },
+    "boundaries": {
+      "power_W": 400000,
+      "pressure_Pa": 2500000,
+      "inlet_K": 892,
+      "target_mixed_outlet_K": 1110,
+      "cp_J_kgK": 5193.16,
+      "total_mass_flow_kg_s": 0.3533229065388128,
+      "interpretation": "Common screening boundary conditions, not an established Brayton operating point"
+    },
+    "flow": {
+      "topology": "Provisional parallel fuel-annulus and moderator-auxiliary branches",
+      "auxiliary_fraction": 0.175,
+      "pressure_balance": "Common inlet/outlet pressure; orifice coefficients and plenum routing unresolved",
+      "note": "Flow weights are design targets, not calculated natural flow. Reassess after pin heating tallies."
+    },
+    "unresolved": [
+      "neutron multiplication and all feedbacks",
+      "pin and moderator heat deposition",
+      "full hydrogen encapsulation including auxiliary walls and end faces",
+      "pressure vessel, supports, drum shrouds/drives and end manifolds",
+      "common-pressure flow solution and coupled temperature fields",
+      "validated depletion and feasible Brayton cycle"
+    ],
+    "performance": {
+      "keff": null,
+      "lifetime_years": null,
+      "peak_moderator_K": null,
+      "core_pressure_drop_kPa": null,
+      "net_electrical_kW": null
+    }
+  },
+  {
+    "schema_version": 1,
+    "status": "PROPOSED_GEOMETRY_NOT_TRANSPORT_OR_THERMALLY_VALIDATED",
+    "parameters": {
+      "id": "A15_P1_ORIGINAL_REFLECTORS",
+      "shape": "E6_VERTEX_150",
+      "channel_centre_cm": 0.93,
+      "height_cm": 45.5,
+      "middle_fuel_area_factor": 0.96,
+      "annulus_allocation": "graded",
+      "core_radius_cm": 19.535682819383258,
+      "peripheral_hull_offset_cm": -1.0,
+      "radial_reflector_cm": 9.3,
+      "axial_reflector_cm": 8.8
+    },
+    "metrics": {
+      "id": "A15_P1_ORIGINAL_REFLECTORS",
+      "shape": "E6_VERTEX_150",
+      "channel_centre_cm": 0.93,
+      "height_cm": 45.5,
+      "middle_fuel_area_factor": 0.96,
+      "annulus_allocation": "graded",
+      "core_radius_cm": 19.535682819383258,
+      "peripheral_hull_offset_cm": -1.0,
+      "radial_reflector_cm": 9.3,
+      "axial_reflector_cm": 8.8,
+      "fuel_kg": 143.30670279562588,
+      "cladding_kg": 15.539836881979236,
+      "liner_kg": 1.7691788215539526,
+      "moderator_cells_kg": 102.63446979164533,
+      "moderator_periphery_kg": 43.442939794248254,
+      "beo_kg": 273.6752405701877,
+      "b4c_kg": 14.216485872471903,
+      "modeled_solids_kg": 594.5848545277123,
+      "hm_kg": 135.34521930698,
+      "u235_kg": 26.71290505851911,
+      "moderator_total_kg": 146.07740958589358,
+      "nominal_unallocated_mass_kg": 5.415145472287691,
+      "geometry_screen_pass": true,
+      "study_575kg_screen_pass": false,
+      "reasons": "less_than_study_25kg_hardware_allowance",
+      "min_ligament_mm": 0.7422681937384201,
+      "inner_ligament_mm": 0.7422681937384201,
+      "cell_face_ligament_mm": 1.9428422247644896,
+      "outer_drum_web_mm": 12.200000000000006,
+      "auxiliary_perimeter_ratio": 1.0308527081613332,
+      "auxiliary_resistance_ratio_at_same_mu": 1.0833333333333335,
+      "auxiliary_area_cm2_per_cell": 0.42411500823462206,
+      "annular_area_cm2_all_pins": 77.30768370100684,
+      "fuel_radius_inner_mm": 5.85,
+      "fuel_radius_middle_mm": 5.731805998112636,
+      "fuel_radius_outer_mm": 5.91647940682874,
+      "outer_radius_cm": 28.83568281938326,
+      "total_height_cm": 63.1,
+      "moderator_envelope_area_cm2": 1198.9665410492069,
+      "area_quadrature_error_cm2": 0.0,
+      "axial_coolant_overlap_union_correction_cm2_per_pin": 0.05961388198324534
+    },
+    "zones": [
+      {
+        "zone": 0,
+        "rings": [
+          0,
+          2
+        ],
+        "pins": 19,
+        "uranium_u235_weight_fraction": 0.196,
+        "fuel_radius_cm": 0.585,
+        "clad_outer_radius_cm": 0.633,
+        "annulus_outer_radius_cm": 0.7232986934869992,
+        "liner_outer_radius_cm": 0.7332986934869992,
+        "annulus_gap_mm": 0.9029869348699915,
+        "annulus_area_cm2_per_pin": 0.3847571354704488,
+        "provisional_main_flow_per_pin_relative_to_mean": 1.08,
+        "auxiliary_flow_per_pin_relative_to_mean": 1.0
+      },
+      {
+        "zone": 1,
+        "rings": [
+          3,
+          5
+        ],
+        "pins": 72,
+        "uranium_u235_weight_fraction": 0.1975,
+        "fuel_radius_cm": 0.5731805998112636,
+        "clad_outer_radius_cm": 0.6211805998112636,
+        "annulus_outer_radius_cm": 0.7097896431914749,
+        "liner_outer_radius_cm": 0.7197896431914749,
+        "annulus_gap_mm": 0.8860904338021125,
+        "annulus_area_cm2_per_pin": 0.3705068711937655,
+        "provisional_main_flow_per_pin_relative_to_mean": 1.04,
+        "auxiliary_flow_per_pin_relative_to_mean": 1.0
+      },
+      {
+        "zone": 2,
+        "rings": [
+          6,
+          8
+        ],
+        "pins": 126,
+        "uranium_u235_weight_fraction": 0.1975,
+        "fuel_radius_cm": 0.5916479406828741,
+        "clad_outer_radius_cm": 0.6396479406828741,
+        "annulus_outer_radius_cm": 0.7201315768801153,
+        "liner_outer_radius_cm": 0.7301315768801153,
+        "annulus_gap_mm": 0.8048363619724119,
+        "annulus_area_cm2_per_pin": 0.34381590000886664,
+        "provisional_main_flow_per_pin_relative_to_mean": 0.965079365079365,
+        "auxiliary_flow_per_pin_relative_to_mean": 1.0
+      }
+    ],
+    "auxiliary_channels": {
+      "count": 6,
+      "a_cm": 0.1224744871391589,
+      "b_cm": 0.18371173070873836,
+      "phase_deg": 0.0,
+      "centre_radius_cm": 0.93,
+      "perimeter_cm": 5.829334730807018,
+      "perimeter_ratio": 1.0308527081613332,
+      "min_face_ligament_cm": 0.19428422247644897,
+      "min_aux_pair_ligament_bound_cm": 0.562576538582523,
+      "axial_union_area_cm2": 2.6880230528463875,
+      "axial_overlap_area_cm2": 0.05961388198324534,
+      "laminar_aux_resistance_ratio": 1.0833333333333335
+    },
+    "geometry": {
+      "length_unit": "cm",
+      "pin_count": 217,
+      "pitch_cm": 2.28,
+      "lattice_orientation": "OpenMC HexLattice orientation=y",
+      "unit_cell_face_normal_degrees": [
+        30,
+        90,
+        150,
+        210,
+        270,
+        330
+      ],
+      "axial_main_duct_radius_cm": 0.86,
+      "axial_coolant_rule": "Boolean union of central duct and auxiliary holes; overlap counted once",
+      "peripheral_rule": "full circle if offset<0; otherwise intersection of circle and offset occupied-cell convex hull",
+      "peripheral_complement_material": "BeO",
+      "hull_halfspaces_nx_ny_d": [
+        [
+          0.5,
+          0.8660254037844387,
+          17.11266197878051
+        ],
+        [
+          -0.5000000000000001,
+          -0.8660254037844386,
+          17.11266197878051
+        ],
+        [
+          -0.8660254037844383,
+          0.5000000000000006,
+          19.379999999999995
+        ],
+        [
+          -0.0,
+          1.0,
+          19.38
+        ],
+        [
+          -0.5000000000000001,
+          0.8660254037844387,
+          17.11266197878051
+        ],
+        [
+          1.0,
+          -0.0,
+          17.112661978780505
+        ],
+        [
+          0.8660254037844395,
+          0.49999999999999856,
+          19.38
+        ],
+        [
+          -0.8660254037844392,
+          -0.49999999999999917,
+          19.379999999999995
+        ],
+        [
+          -1.0,
+          0.0,
+          17.112661978780505
+        ],
+        [
+          0.8660254037844395,
+          -0.49999999999999856,
+          19.379999999999995
+        ],
+        [
+          -0.0,
+          -1.0,
+          19.38
+        ],
+        [
+          0.5,
+          -0.8660254037844387,
+          17.11266197878051
+        ]
+      ],
+      "central_liner_thickness_cm": 0.01,
+      "fuel_clad_thickness_cm": 0.048,
+      "drum_count": 10,
+      "drum_radius_cm": 3.95,
+      "absorber_thickness_cm": 1.5,
+      "absorber_sector_degrees": 148.0,
+      "b10_atom_fraction": 0.9,
+      "drum_centres_radius_cm": 23.665682819383257,
+      "drum_azimuth_degrees": [
+        0,
+        36,
+        72,
+        108,
+        144,
+        180,
+        216,
+        252,
+        288,
+        324
+      ]
+    },
+    "materials": {
+      "densities_g_cm3": {
+        "fuel": 13.5,
+        "clad": 8.57,
+        "liner": 3.95,
+        "moderator": 4.3,
+        "reflector": 2.9,
+        "absorber": 2.52
+      },
+      "fuel": "UN with reference N14 weight prescription",
+      "moderator": "YH2.0",
+      "cladding": "Nb-1Zr",
+      "liner": "Al2O3",
+      "reflector": "BeO",
+      "absorber": "B4C",
+      "coolant": "He4"
+    },
+    "boundaries": {
+      "power_W": 400000,
+      "pressure_Pa": 2500000,
+      "inlet_K": 892,
+      "target_mixed_outlet_K": 1110,
+      "cp_J_kgK": 5193.16,
+      "total_mass_flow_kg_s": 0.3533229065388128,
+      "interpretation": "Common screening boundary conditions, not an established Brayton operating point"
+    },
+    "flow": {
+      "topology": "Provisional parallel fuel-annulus and moderator-auxiliary branches",
+      "auxiliary_fraction": 0.175,
+      "pressure_balance": "Common inlet/outlet pressure; orifice coefficients and plenum routing unresolved",
+      "note": "Flow weights are design targets, not calculated natural flow. Reassess after pin heating tallies."
+    },
+    "unresolved": [
+      "neutron multiplication and all feedbacks",
+      "pin and moderator heat deposition",
+      "full hydrogen encapsulation including auxiliary walls and end faces",
+      "pressure vessel, supports, drum shrouds/drives and end manifolds",
+      "common-pressure flow solution and coupled temperature fields",
+      "validated depletion and feasible Brayton cycle"
+    ],
+    "performance": {
+      "keff": null,
+      "lifetime_years": null,
+      "peak_moderator_K": null,
+      "core_pressure_drop_kPa": null,
+      "net_electrical_kW": null
+    }
+  }
+]

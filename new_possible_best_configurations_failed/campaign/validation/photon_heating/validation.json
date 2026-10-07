@@ -1,0 +1,23 @@
+{
+  "validation_only": true,
+  "passed": true,
+  "purpose": "Low-statistics neutron/photon transport and material/cell heating handoff; not a precision-qualified reactor result.",
+  "array_shapes": {
+    "fuel": [
+      217,
+      10
+    ],
+    "clad": [
+      217,
+      10
+    ],
+    "liner": [
+      217,
+      10
+    ],
+    "moderator": [
+      217,
+      10
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+S2-R1 — SCARTATO AL VAGLIO DI CRITICITÀ BOL
+
+OpenMC BOL, tutti i tamburi a 0 gradi (assorbitore rivolto verso lo spazio),
+ENDF/B-VIII.0, trasporto accoppiato neutroni/fotoni:
+k_eff = 0.81713 +/- 0.00059 (1 sigma).
+La differenza da 1 è enorme rispetto all'incertezza statistica. La configurazione
+non può sostenere 400 kW ed è stata scartata su richiesta dell'utente il
+7 ottobre 2026. I calcoli dei coefficienti ancora in esecuzione sono stati
+fermati; la simulazione termoidraulica non è stata avviata. I dati parziali
+già calcolati restano nel dossier storico, non sono prestazioni di un reattore
+operabile.
+
+MASSA, VERIFICATA CON OPENMC
+Solidi modellati: 498.653 +/- 0.479 kg (1 sigma di campionamento, 2 milioni di punti).
+Analitica: 498.773 kg; differenza 0.121 kg, compatibile con il campionamento.
+Inventario He nei volumi modellati: 0.01783 kg.
+Con i 65 kg di hardware e 15 kg di riserva NON dimensionati: 578.653 kg circa.
+Scudo, convertitore, radiatori, tubi esterni e struttura del veicolo esclusi.
+
+RISULTATO PRELIMINARE CHE CAMBIA LA VALUTAZIONE
+OpenMC pilot, tutti i tamburi OUT, BOL: k_eff=0.81936 +/- 0.00375.
+La candidata risulta nettamente sottocritica anche nella configurazione
+di massimo rilascio dell'assorbitore. Questo risultato non è una misura dei
+coefficienti o della temperatura; è incluso perché ne cambia il significato
+fisico. Un campo termico a 400 kW per S2-R1 sarà uno scenario imposto,
+non una condizione operativa sostenuta dall'attuale geometria.
+
+COEFFICIENTI TERMICI
+Campagna interrotta. Il solo coefficiente combustibile completato è
+-1.154 +/- 0.235 pcm/K (1 sigma), ma non viene usato per qualificare S2-R1.
+
+TEMPERATURA YH2
+Non calcolata. Il caso è stato scartato prima del calcolo termoidraulico.

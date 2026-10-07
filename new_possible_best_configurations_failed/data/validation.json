@@ -1,0 +1,248 @@
+{
+  "status": "PASS_GEOMETRY_AND_ACCOUNTING_ONLY",
+  "checks": [
+    {
+      "check": "pin_count_and_zones",
+      "status": "PASS",
+      "detail": "217 pins; radial groups 19/72/126"
+    },
+    {
+      "check": "nearest_neighbor_pitch",
+      "status": "PASS",
+      "detail": "2.2799999999999985"
+    },
+    {
+      "check": "coordinates_match_openmc_lattice",
+      "status": "PASS",
+      "detail": "0.0"
+    },
+    {
+      "check": "axial_duct_union_matches_exact_lens",
+      "status": "PASS",
+      "detail": "Overlap counted once: 0.1108934586 cm2/cell"
+    },
+    {
+      "check": "reference_mass_correction",
+      "status": "PASS",
+      "detail": "595.153588425 kg vs historical analytic 593.925367964 kg"
+    },
+    {
+      "check": "agreement_with_archived_stochastic_total",
+      "status": "PASS",
+      "detail": "Within archived two-sigma total mass interval; this is not a new Monte Carlo calculation"
+    },
+    {
+      "check": "polar_envelope_area_vs_convex_hull",
+      "status": "PASS",
+      "detail": "Polar 1012.937953279; Qhull 1012.937953282 cm2"
+    },
+    {
+      "check": "fixed_auxiliary_area_C6_VERTEX",
+      "status": "PASS",
+      "detail": "0.424115008235 cm2 per cell"
+    },
+    {
+      "check": "fixed_auxiliary_area_C6_FACE",
+      "status": "PASS",
+      "detail": "0.424115008235 cm2 per cell"
+    },
+    {
+      "check": "fixed_auxiliary_area_E6_VERTEX_150",
+      "status": "PASS",
+      "detail": "0.424115008235 cm2 per cell"
+    },
+    {
+      "check": "fixed_auxiliary_area_E6_VERTEX_178",
+      "status": "PASS",
+      "detail": "0.424115008235 cm2 per cell"
+    },
+    {
+      "check": "fixed_auxiliary_area_E6_FACE_150",
+      "status": "PASS",
+      "detail": "0.424115008235 cm2 per cell"
+    },
+    {
+      "check": "fixed_auxiliary_area_E6_FACE_178",
+      "status": "PASS",
+      "detail": "0.424115008235 cm2 per cell"
+    },
+    {
+      "check": "fixed_auxiliary_area_C12_STAGGERED",
+      "status": "PASS",
+      "detail": "0.424115008235 cm2 per cell"
+    },
+    {
+      "check": "TB35_REFERENCE_inventory",
+      "status": "PASS",
+      "detail": "Fuel volume, U235 mass, and total main annular area conserved"
+    },
+    {
+      "check": "TB35_REFERENCE_flow_normalization",
+      "status": "PASS",
+      "detail": "Per-pin target flow weights normalize to 217"
+    },
+    {
+      "check": "TB35_REFERENCE_containment",
+      "status": "PASS",
+      "detail": "All occupied hex cells retained; no cropped fuel or channels"
+    },
+    {
+      "check": "TB35_REFERENCE_volume_closure",
+      "status": "PASS",
+      "detail": "Residual 0 cm3"
+    },
+    {
+      "check": "TB35_REFERENCE_distance_sampling",
+      "status": "PASS",
+      "detail": "Max 4.24689/4.24689 mm; p95 3.34572/3.32148 mm"
+    },
+    {
+      "check": "TB35_REFERENCE_uncomputed_physics_null",
+      "status": "PASS",
+      "detail": "No invented reactor performance values"
+    },
+    {
+      "check": "P1_ELLIPTIC_BALANCED_inventory",
+      "status": "PASS",
+      "detail": "Fuel volume, U235 mass, and total main annular area conserved"
+    },
+    {
+      "check": "P1_ELLIPTIC_BALANCED_flow_normalization",
+      "status": "PASS",
+      "detail": "Per-pin target flow weights normalize to 217"
+    },
+    {
+      "check": "P1_ELLIPTIC_BALANCED_containment",
+      "status": "PASS",
+      "detail": "All occupied hex cells retained; no cropped fuel or channels"
+    },
+    {
+      "check": "P1_ELLIPTIC_BALANCED_volume_closure",
+      "status": "PASS",
+      "detail": "Residual 0 cm3"
+    },
+    {
+      "check": "P1_ELLIPTIC_BALANCED_study_geometry",
+      "status": "PASS",
+      "detail": "0.50 mm study ligament and 7 mm outer drum web criteria; modeled solids <600 kg"
+    },
+    {
+      "check": "P1_ELLIPTIC_BALANCED_distance_sampling",
+      "status": "PASS",
+      "detail": "Max 3.89779/3.89778 mm; p95 3.01605/3.00870 mm"
+    },
+    {
+      "check": "P1_ELLIPTIC_BALANCED_uncomputed_physics_null",
+      "status": "PASS",
+      "detail": "No invented reactor performance values"
+    },
+    {
+      "check": "P2_ELLIPTIC_LIGHT_inventory",
+      "status": "PASS",
+      "detail": "Fuel volume, U235 mass, and total main annular area conserved"
+    },
+    {
+      "check": "P2_ELLIPTIC_LIGHT_flow_normalization",
+      "status": "PASS",
+      "detail": "Per-pin target flow weights normalize to 217"
+    },
+    {
+      "check": "P2_ELLIPTIC_LIGHT_containment",
+      "status": "PASS",
+      "detail": "All occupied hex cells retained; no cropped fuel or channels"
+    },
+    {
+      "check": "P2_ELLIPTIC_LIGHT_volume_closure",
+      "status": "PASS",
+      "detail": "Residual 0 cm3"
+    },
+    {
+      "check": "P2_ELLIPTIC_LIGHT_study_geometry",
+      "status": "PASS",
+      "detail": "0.50 mm study ligament and 7 mm outer drum web criteria; modeled solids <600 kg"
+    },
+    {
+      "check": "P2_ELLIPTIC_LIGHT_distance_sampling",
+      "status": "PASS",
+      "detail": "Max 3.89779/3.89778 mm; p95 3.01605/3.00870 mm"
+    },
+    {
+      "check": "P2_ELLIPTIC_LIGHT_uncomputed_physics_null",
+      "status": "PASS",
+      "detail": "No invented reactor performance values"
+    },
+    {
+      "check": "P3_TWELVE_CHANNEL_inventory",
+      "status": "PASS",
+      "detail": "Fuel volume, U235 mass, and total main annular area conserved"
+    },
+    {
+      "check": "P3_TWELVE_CHANNEL_flow_normalization",
+      "status": "PASS",
+      "detail": "Per-pin target flow weights normalize to 217"
+    },
+    {
+      "check": "P3_TWELVE_CHANNEL_containment",
+      "status": "PASS",
+      "detail": "All occupied hex cells retained; no cropped fuel or channels"
+    },
+    {
+      "check": "P3_TWELVE_CHANNEL_volume_closure",
+      "status": "PASS",
+      "detail": "Residual 0 cm3"
+    },
+    {
+      "check": "P3_TWELVE_CHANNEL_study_geometry",
+      "status": "PASS",
+      "detail": "0.50 mm study ligament and 7 mm outer drum web criteria; modeled solids <600 kg"
+    },
+    {
+      "check": "P3_TWELVE_CHANNEL_distance_sampling",
+      "status": "PASS",
+      "detail": "Max 3.76325/3.76325 mm; p95 2.49548/2.48184 mm"
+    },
+    {
+      "check": "P3_TWELVE_CHANNEL_uncomputed_physics_null",
+      "status": "PASS",
+      "detail": "No invented reactor performance values"
+    },
+    {
+      "check": "P4_TALL_CONTOURED_inventory",
+      "status": "PASS",
+      "detail": "Fuel volume, U235 mass, and total main annular area conserved"
+    },
+    {
+      "check": "P4_TALL_CONTOURED_flow_normalization",
+      "status": "PASS",
+      "detail": "Per-pin target flow weights normalize to 217"
+    },
+    {
+      "check": "P4_TALL_CONTOURED_containment",
+      "status": "PASS",
+      "detail": "All occupied hex cells retained; no cropped fuel or channels"
+    },
+    {
+      "check": "P4_TALL_CONTOURED_volume_closure",
+      "status": "PASS",
+      "detail": "Residual 2.91e-11 cm3"
+    },
+    {
+      "check": "P4_TALL_CONTOURED_study_geometry",
+      "status": "PASS",
+      "detail": "0.50 mm study ligament and 7 mm outer drum web criteria; modeled solids <600 kg"
+    },
+    {
+      "check": "P4_TALL_CONTOURED_distance_sampling",
+      "status": "PASS",
+      "detail": "Max 3.89779/3.89778 mm; p95 3.01605/3.00870 mm"
+    },
+    {
+      "check": "P4_TALL_CONTOURED_uncomputed_physics_null",
+      "status": "PASS",
+      "detail": "No invented reactor performance values"
+    }
+  ],
+  "count": 48,
+  "openmc_used_for": "Coordinate API check only; no transport or volume run",
+  "excludes": "Neutronics, depletion, thermal hydraulics, structural qualification, hydrogen retention"
+}

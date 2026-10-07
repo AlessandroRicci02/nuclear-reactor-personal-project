@@ -1,0 +1,13 @@
+{
+  "candidate": "matrix_compact_beo",
+  "stage": "pilot",
+  "case": "in",
+  "request_sha256": "e4ab3ad6742842ba5a555d20384e29cb874d945b2af5f41f5ebf121cc182e5f3",
+  "k_eff": 1.008969377475204,
+  "sigma_k": 0.0016511865104921804,
+  "rho_pcm": 888.9642912303764,
+  "sigma_rho_pcm": 162.19600798266154,
+  "batches": 100,
+  "particles": 4000,
+  "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/campaign/matrix_compact_beo/pilot/in/statepoint.100.h5"
+}

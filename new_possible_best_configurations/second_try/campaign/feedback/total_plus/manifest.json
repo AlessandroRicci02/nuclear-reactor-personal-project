@@ -1,0 +1,28 @@
+{
+  "config": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/second_try/configuration.json",
+  "cross_sections": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations_failed/campaign/data/endfb-viii.0-hdf5/cross_sections.xml",
+  "theta": 0.0,
+  "temperatures": {
+    "fuel": 1400.0,
+    "clad": 1300.0,
+    "hot_he": 1150.0,
+    "hot_wall": 1220.0,
+    "foil": 1100.0,
+    "cold_wall": 975.0,
+    "cold_he": 925.0,
+    "inner_can": 975.0,
+    "barrier": 975.0,
+    "moderator": 975.0,
+    "outer_can": 980.0,
+    "be": 950.0,
+    "absorber": 950.0
+  },
+  "particles": 10000,
+  "batches": 180,
+  "inactive": 60,
+  "seed": 7105,
+  "slices": 6,
+  "heating": false,
+  "photons": false,
+  "volume": false
+}

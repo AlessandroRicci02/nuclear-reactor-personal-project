@@ -1,0 +1,13 @@
+{
+  "candidate": "full_compact_beo",
+  "stage": "pilot",
+  "case": "total_minus",
+  "request_sha256": "986281e75bf00cb35033ed1791cb2940f441ef4e1028cf479903dd66df1d184f",
+  "k_eff": 1.066746107307915,
+  "sigma_k": 0.0016938427168959925,
+  "rho_pcm": 6256.9815676532635,
+  "sigma_rho_pcm": 148.85072271995077,
+  "batches": 100,
+  "particles": 4000,
+  "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/campaign/full_compact_beo/pilot/total_minus/statepoint.100.h5"
+}

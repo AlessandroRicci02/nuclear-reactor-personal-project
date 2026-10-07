@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-06T08:41:27.292413+02:00",
+  "sha256": {
+    "scripts/p1_model.py": "916c478b2116e27e9e875ba80838a81d9ce05a83f72555e484c7f44fc7ecae88",
+    "scripts/p1_transport.py": "d01221098dd02eb4b7348f653021f0dc5204482ded23ccb8c2f1c89c99f73d48",
+    "scripts/p1_geometry_outputs.py": "a9258d8e1626a6f20c321e8c64ccaa6999b8e0fe7c8badf58096ea501a2378a1",
+    "scripts/p1_control.py": "4c319449950e5b84601a2a0778cdd0585e9b9086cb90637cf867ace130359a1c",
+    "scripts/p1_report.py": "f857b6750e3d0f1a69ad30669c179b910b25bdf9b1d4781668c9fefe389d4818",
+    "scripts/p1_validate_runtime.py": "6d2fa44759bec866b9182a15664bb1c1248e5256a932a77e5e8ea55c6cf4640b",
+    "scripts/p1_depletion.py": "dc3b4c0feb8d02082730063ce370537f00f7519b40c731126b2f8d74cd6658c6",
+    "scripts/p1_campaign.py": "62b4257a8ebfb0ea546d9b0a976b08b6e80c7b31be5504ac7edaec6daecf420f",
+    "scripts/p1_thermal.py": "4c480b1f3ecc147911aefc7a5cde97584f5d09298fb073eb999dacecf294c494",
+    "configurations/P1_ELLIPTIC_BALANCED/geometry.json": "2cb9b6ef2633e233172edddd0399007896dcc0cc0a2468af6ecca7081ca935fd",
+    "configurations/P1_ELLIPTIC_BALANCED/pins.csv": "c23e7d24ba9ed0dd5db371fbee546cd108d190ee58e4f914432c3cbdca571050",
+    "configurations/TB35_REFERENCE/geometry.json": "9e56ca3338c8106dc2f30a477781053ef11a5ba97ced2a4311c35acd7115d92f",
+    "configurations/TB35_REFERENCE/pins.csv": "d32b3061b3dba696418569eb6742941bc7c7d77834fb71ead53bf69866921990",
+    "campaign/data/chain_endfb80_thermal.xml": "98bf49c92c821280087ee180763ce11b849be5faf5c2ff8ef8a3cd90bd93e87e",
+    "campaign/data/endfb-viii.0-hdf5/cross_sections.xml": "ba7f6d5a371b5a8de8157356f8ef5d1c17cb0ed60accccfbc3075f46ae13f489"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "candidate": "full_compact_beo",
+  "stage": "confirmation",
+  "case": "moderator_minus",
+  "request_sha256": "98a5e5557b507a6e7848144b7d518ed96c037f4a5388500a513b973b4675d009",
+  "k_eff": 1.0662819095717773,
+  "sigma_k": 0.00021842806033015692,
+  "rho_pcm": 6216.171256098335,
+  "sigma_rho_pcm": 19.211635890074245,
+  "batches": 1020,
+  "particles": 20000,
+  "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/campaign/full_compact_beo/confirmation/moderator_minus/statepoint.1020.h5"
+}

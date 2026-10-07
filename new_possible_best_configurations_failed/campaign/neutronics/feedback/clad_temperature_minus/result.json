@@ -1,0 +1,25 @@
+{
+  "keff": 1.0465024398306422,
+  "sigma": 0.00014962168911676705,
+  "sigma_pcm_k": 14.962168911676706,
+  "reactivity_pcm": 4443.605486306157,
+  "reactivity_sigma_pcm": 13.661993139128096,
+  "batches": 2180,
+  "requested_batches": 180,
+  "inactive": 60,
+  "particles": 20000,
+  "wall_seconds": 887.1114358901978,
+  "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/campaign/neutronics/feedback/clad_temperature_minus/statepoint.02180.h5",
+  "request_sha256": "57c4ccfa4e78828c3ef93d47afe5a2ea29e6163238dacf5d85d305c955bce643",
+  "request": {
+    "sigma": 0.00015,
+    "theta": 0.0,
+    "seed": 6301,
+    "temperatures": {
+      "clad": 1070.0
+    }
+  },
+  "target_achieved": true,
+  "entropy_inactive_last20_mean": 9.457534875684837,
+  "entropy_active_first20_mean": 9.45290076550025
+}

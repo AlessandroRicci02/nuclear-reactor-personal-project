@@ -1,0 +1,72 @@
+RICERCA NEUTRONICA YH2 PER NEP — STATO CORRENTE
+
+Criteri: k_OUT>1, k_IN<1 e coefficienti di combustibile, moderatore e totale <0, con margini statistici indicati.
+I coefficienti di moderatore e totale includono la stima conservativa di dilatazione YH2 beta=2.4e-5/K.
+Le incertezze riportate sono Monte Carlo (1 sigma): non includono incertezza delle sezioni d'urto, della legge S(a,b) o della dilatazione di componenti reali.
+Il profilo He nominale 800→1150 K è imposto, non verificato termoidraulicamente.
+
+Candidati completati: 9
+Processo: running; candidato attuale: full_mid_be; fase: confirmation; caso: moderator_plus
+
+[00] matrix_compact_be — rejected
+  motivo: IN clearly supercritical
+  k_OUT: 1.088678 ± 0.001993; k_IN: 1.008235 ± 0.001841
+  alpha_moderatore [pcm/K]: —
+  alpha_combustibile [pcm/K]: —
+  alpha_totale [pcm/K]: —
+
+[01] matrix_compact_beo — rejected
+  motivo: IN clearly supercritical
+  k_OUT: 1.090433 ± 0.001680; k_IN: 1.008969 ± 0.001651
+  alpha_moderatore [pcm/K]: —
+  alpha_combustibile [pcm/K]: —
+  alpha_totale [pcm/K]: —
+
+[02] matrix_mid_be — rejected
+  motivo: IN clearly supercritical
+  k_OUT: 1.090021 ± 0.001746; k_IN: 1.016477 ± 0.001617
+  alpha_moderatore [pcm/K]: —
+  alpha_combustibile [pcm/K]: —
+  alpha_totale [pcm/K]: —
+
+[03] matrix_mid_beo — rejected
+  motivo: IN clearly supercritical
+  k_OUT: 1.094088 ± 0.001965; k_IN: 1.017223 ± 0.002009
+  alpha_moderatore [pcm/K]: —
+  alpha_combustibile [pcm/K]: —
+  alpha_totale [pcm/K]: —
+
+[04] matrix_wide_be — rejected
+  motivo: IN clearly supercritical
+  k_OUT: 1.111158 ± 0.001951; k_IN: 1.044329 ± 0.001691
+  alpha_moderatore [pcm/K]: —
+  alpha_combustibile [pcm/K]: —
+  alpha_totale [pcm/K]: —
+
+[05] matrix_wide_beo — rejected
+  motivo: IN clearly supercritical
+  k_OUT: 1.114698 ± 0.001780; k_IN: 1.045520 ± 0.001711
+  alpha_moderatore [pcm/K]: —
+  alpha_combustibile [pcm/K]: —
+  alpha_totale [pcm/K]: —
+
+[06] full_compact_be — rejected
+  motivo: moderator clearly nonnegative
+  k_OUT: 1.063951 ± 0.000219; k_IN: 0.990102 ± 0.000218
+  alpha_moderatore [pcm/K]: +0.232 ± 0.137 (limite superiore 95%: +0.457)
+  alpha_combustibile [pcm/K]: —
+  alpha_totale [pcm/K]: —
+
+[07] full_compact_beo — rejected
+  motivo: moderator not negative at 95% confidence
+  k_OUT: 1.066018 ± 0.000219; k_IN: 0.993560 ± 0.000220
+  alpha_moderatore [pcm/K]: +0.159 ± 0.136 (limite superiore 95%: +0.382)
+  alpha_combustibile [pcm/K]: —
+  alpha_totale [pcm/K]: —
+
+[08] full_mid_be — rejected
+  motivo: moderator clearly nonnegative
+  k_OUT: 1.060765 ± 0.000219; k_IN: 0.992351 ± 0.000219
+  alpha_moderatore [pcm/K]: +0.633 ± 0.138 (limite superiore 95%: +0.860)
+  alpha_combustibile [pcm/K]: —
+  alpha_totale [pcm/K]: —

@@ -1,0 +1,23 @@
+{
+  "request": {
+    "name": "fuel_plus",
+    "change": {
+      "fuel": 200.0
+    },
+    "seed": 7101,
+    "target_sigma": 0.00045,
+    "particles": 10000,
+    "xs": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations_failed/campaign/data/endfb-viii.0-hdf5/cross_sections.xml",
+    "config_sha256": "fc7658995fa6bd380f923eb638c64be40e5c5a82a81241d99f701f6eb9b425a9"
+  },
+  "request_sha256": "3ca9a0649152e73e8432bd36ec8dcaa7890d8e58c83589a87fa5f6711a1a18f8",
+  "keff": 0.8157191109075274,
+  "sigma_k": 0.00044281372413989146,
+  "reactivity_pcm": -22591.218794353263,
+  "sigma_reactivity_pcm": 66.54873401308573,
+  "active_batches": 400,
+  "inactive_batches": 60,
+  "particles": 10000,
+  "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/second_try/campaign/feedback/fuel_plus/statepoint.0460.h5",
+  "target_achieved": true
+}

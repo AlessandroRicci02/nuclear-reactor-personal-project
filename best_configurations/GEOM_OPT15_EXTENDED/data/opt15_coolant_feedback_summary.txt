@@ -1,0 +1,4 @@
+alpha_cool_gls: +0.0870
+sigma_alpha_cool: 0.2470
+z_score: +0.35
+confidence_pct: 63.78

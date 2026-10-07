@@ -1,0 +1,6 @@
+configuration,coefficient,symbol,value_pcm_per_K,sigma_pcm_per_K,classification
+Sim 4A: Base 4-Layer (No Al2O3),Fuel_Doppler,alpha_Dop,-1.4440094569784234,0.2846757476408051,VERIFIED_OPENMC
+Sim 4A: Base 4-Layer (No Al2O3),Moderator_Thermal,alpha_mod,-0.3152858859608032,0.4555655758137778,VERIFIED_OPENMC
+Sim 4A: Base 4-Layer (No Al2O3),Coolant_Density,alpha_cool_per_pct,-0.5537364871366357,4.030169673710138,VERIFIED_OPENMC
+Sim 4A: Base 4-Layer (No Al2O3),Net_Prompt_Feedback,alpha_prompt,-2.6440094569784236,0.2846757476408051,PROMPT NEGATIVE
+Sim 4A: Base 4-Layer (No Al2O3),Net_Isothermal_Feedback,alpha_iso,-2.9592953429392264,0.5371966820089178,DERIVED

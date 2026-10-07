@@ -1,0 +1,10 @@
+{
+  "method": "OpenMC stochastic volume calculation",
+  "samples": 5000000,
+  "modeled_solid_mass_kg": 595.1280207525162,
+  "sigma_kg": 0.27822736144208354,
+  "analytic_geometry_mass_kg": 595.1535884253015,
+  "analytic_minus_stochastic_sigma": 0.09189489003770315,
+  "helium_mass_kg": 0.021374330180376905,
+  "excludes": "Pressure vessel, drum drives/shrouds, end manifolds, supports, additional hydrogen encapsulation, shielding, conversion system."
+}

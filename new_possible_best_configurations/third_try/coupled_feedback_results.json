@@ -1,0 +1,30 @@
+{
+  "definition": "central temperature difference at BOL, all drums OUT; YH2 density adjusted as rho(T)=rho_nominal*(1-beta*(T-875K)); geometry fixed; total also varies all material temperatures and helium density at fixed pressure",
+  "assumed_volumetric_expansion_1_per_K": 3.6e-05,
+  "temperature_shift_K": 100.0,
+  "caveat": "Conditional scenario, not a qualified thermoelastic or hydrogen-retention model; no geometric expansion is included",
+  "coefficients": [
+    {
+      "kind": "moderator",
+      "alpha_pcm_per_K": 0.231510165210334,
+      "sampling_sigma_pcm_per_K": 0.190774428841595,
+      "confidence_95_normal_pcm_per_K": [
+        -0.14240771531919225,
+        0.6054280457398602
+      ],
+      "minus_case": "moderator_minus",
+      "plus_case": "moderator_plus"
+    },
+    {
+      "kind": "total",
+      "alpha_pcm_per_K": -0.5350768661954726,
+      "sampling_sigma_pcm_per_K": 0.18913123017620087,
+      "confidence_95_normal_pcm_per_K": [
+        -0.9057740773408263,
+        -0.16437965505011887
+      ],
+      "minus_case": "total_minus",
+      "plus_case": "total_plus"
+    }
+  ]
+}

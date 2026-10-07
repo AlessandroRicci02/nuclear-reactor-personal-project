@@ -1,0 +1,35 @@
+{
+  "name": "total_isothermal_plus",
+  "keff": 1.0485961168616698,
+  "sigma": 9.973253549562001e-05,
+  "sigma_pcm_k": 9.973253549562001,
+  "reactivity_pcm": 4634.3979421850645,
+  "reactivity_sigma_pcm": 9.070273234234085,
+  "batches": 4680,
+  "requested_batches": 180,
+  "inactive": 60,
+  "particles": 20000,
+  "wall_seconds": 1858.9826352596283,
+  "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/campaign/neutronics/total_isothermal_plus/statepoint.04680.h5",
+  "request": {
+    "configuration": "TB35_REFERENCE",
+    "theta_deg": 0.0,
+    "target_sigma": 0.0001,
+    "particles": 20000,
+    "initial_batches": 180,
+    "inactive_batches": 60,
+    "seed": 44002,
+    "temperatures": {
+      "fuel": 1295.0,
+      "clad": 1270.0,
+      "moderator": 1004.5,
+      "reflector": 970.0,
+      "coolant": 1101.0
+    },
+    "cross_sections": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/campaign/data/endfb-viii.0-hdf5/cross_sections.xml"
+  },
+  "request_sha256": "ea8f5f7bbcd9198b27b99e5f452f86ce86bdd3e32d7df23f0e9b0608b9aa98db",
+  "target_achieved": true,
+  "entropy_inactive_last20_mean": 9.457035029497895,
+  "entropy_active_first20_mean": 9.455712313406204
+}

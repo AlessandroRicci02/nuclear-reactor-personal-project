@@ -1,0 +1,13 @@
+{
+  "candidate": "matrix_wide_be",
+  "stage": "pilot",
+  "case": "out",
+  "request_sha256": "29dce642da7c21d5b15bddadbf3b3195f7d0984b1be71aa8a1092415c55bd1c9",
+  "k_eff": 1.1111581053515618,
+  "sigma_k": 0.0019505882719581039,
+  "rho_pcm": 10003.806372486679,
+  "sigma_rho_pcm": 157.98428591326063,
+  "batches": 100,
+  "particles": 4000,
+  "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/campaign/matrix_wide_be/pilot/out/statepoint.100.h5"
+}

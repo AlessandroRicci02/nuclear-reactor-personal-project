@@ -1,0 +1,152 @@
+{
+  "parameters": {
+    "name": "S2R1_1150K_INSULATED_COLD_FIRST",
+    "status": "CONCEPT_NOT_VALIDATED",
+    "power_W": 400000,
+    "pitch_cm": 2.3,
+    "rings": 8,
+    "active_height_cm": 48.0,
+    "core_radius_cm": 19.7,
+    "radial_reflector_cm": 8.8,
+    "axial_reflector_cm": 8.5,
+    "drum_count": 10,
+    "drum_radius_cm": 3.95,
+    "drum_centres_radius_cm": 23.83,
+    "absorber_thickness_cm": 1.5,
+    "absorber_sector_deg": 148.0,
+    "b10_atom_fraction": 0.9,
+    "pressure_Pa": 2500000,
+    "inlet_K": 800.0,
+    "mixed_outlet_target_K": 1150.0,
+    "helium_cp_J_kgK": 5193.16,
+    "cold_pass_bulk_outlet_target_K": 850.0,
+    "hardware_allowance_kg": 65.0,
+    "contingency_kg": 15.0,
+    "nominal_moderator_peak_target_K": 900.0,
+    "moderator_limit_K": 950.0,
+    "life_goal_full_power_years": 18.0,
+    "minimum_life_full_power_years": 15.0
+  },
+  "radial_layers": [
+    {
+      "name": "Combustibile UN",
+      "r_outer_cm": 0.585,
+      "density_g_cm3": 13.5,
+      "material": "UN"
+    },
+    {
+      "name": "Guaina combustibile",
+      "r_outer_cm": 0.633,
+      "density_g_cm3": 8.57,
+      "material": "Nb-1Zr"
+    },
+    {
+      "name": "Elio: secondo passaggio",
+      "r_outer_cm": 0.717,
+      "density_g_cm3": 0.0,
+      "material": "He"
+    },
+    {
+      "name": "Parete calda camera vuoto",
+      "r_outer_cm": 0.747,
+      "density_g_cm3": 8.57,
+      "material": "Nb-1Zr"
+    },
+    {
+      "name": "Vuoto interno",
+      "r_outer_cm": 0.77575,
+      "density_g_cm3": 0.0,
+      "material": "vacuum"
+    },
+    {
+      "name": "Schermo radiativo Mo",
+      "r_outer_cm": 0.77825,
+      "density_g_cm3": 10.28,
+      "material": "Mo"
+    },
+    {
+      "name": "Vuoto esterno",
+      "r_outer_cm": 0.807,
+      "density_g_cm3": 0.0,
+      "material": "vacuum"
+    },
+    {
+      "name": "Parete fredda camera vuoto",
+      "r_outer_cm": 0.837,
+      "density_g_cm3": 8.57,
+      "material": "Nb-1Zr"
+    },
+    {
+      "name": "Elio: primo passaggio",
+      "r_outer_cm": 0.897,
+      "density_g_cm3": 0.0,
+      "material": "He"
+    },
+    {
+      "name": "Contenitore interno YH2",
+      "r_outer_cm": 0.917,
+      "density_g_cm3": 8.57,
+      "material": "Nb-1Zr"
+    },
+    {
+      "name": "Barriera interna proposta",
+      "r_outer_cm": 0.927,
+      "density_g_cm3": 3.95,
+      "material": "Al2O3"
+    },
+    {
+      "name": "Moderatore YH2",
+      "r_outer_cm": 1.087,
+      "density_g_cm3": 4.3,
+      "material": "YH2"
+    },
+    {
+      "name": "Barriera esterna proposta",
+      "r_outer_cm": 1.097,
+      "density_g_cm3": 3.95,
+      "material": "Al2O3"
+    },
+    {
+      "name": "Contenitore esterno YH2",
+      "r_outer_cm": 1.117,
+      "density_g_cm3": 8.57,
+      "material": "Nb-1Zr"
+    }
+  ],
+  "metrics": {
+    "solid_mass_kg": 498.7734100044888,
+    "concept_mass_with_allowances_kg": 578.7734100044888,
+    "remaining_to_600_kg": 21.226589995511176,
+    "maximum_hardware_plus_contingency_kg": 101.22658999551118,
+    "fuel_UN_kg": 151.18069745472621,
+    "approx_HM_kg": 142.78176981835253,
+    "approx_U235_kg": 28.180647094701477,
+    "moderator_kg": 45.341799103489315,
+    "outer_radius_cm": 28.5,
+    "total_reflector_height_cm": 65.0,
+    "helium_flow_kg_s": 0.22006969607274623,
+    "active_hot_flow_area_cm2": 77.30768370100684,
+    "active_cold_flow_area_cm2": 70.92673203044762,
+    "cell_clearance_mm": 0.6599999999999895,
+    "outer_cell_clearance_mm": 1.8300000000000072,
+    "drum_inner_web_mm": 1.7999999999999972,
+    "drum_outer_web_mm": 7.200000000000015,
+    "mass_volume_closure_error_cm3": 0.0,
+    "modeled_gas_volume_cm3": 14278.956194202714,
+    "modeled_vacuum_volume_cm3": 3959.5134480751904,
+    "heat_capacity_flow_W_K": 1142.857142857143,
+    "cold_pass_heat_budget_W": 57142.857142857145,
+    "energy_15y_MWd": 2191.5,
+    "burnup_15y_MWd_kgHM": 15.348598093356275,
+    "energy_18y_MWd": 2629.7999999999997,
+    "burnup_18y_MWd_kgHM": 18.418317712027527
+  },
+  "notes": [
+    "Dimensions nominal; no thermal expansion or tolerances.",
+    "Nb-1Zr/Al2O3 hydrogen containment is a proposal, not qualified.",
+    "65 kg hardware + 15 kg contingency are allowances, not modeled parts.",
+    "1150 K final mixed outlet is mandatory. 800 K inlet is a proposed cycle condition.",
+    "Evacuated gap and Mo shield require lifetime, pressure and neutron-heating qualification.",
+    "No keff, feedback, lifetime or peak temperature calculated."
+  ]
+}

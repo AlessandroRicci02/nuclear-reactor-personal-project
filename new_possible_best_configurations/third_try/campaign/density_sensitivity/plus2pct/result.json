@@ -1,0 +1,10 @@
+{
+  "case": "plus2pct",
+  "moderator_density_multiplier": 1.02,
+  "seed": 2108,
+  "k_eff": 1.0594030571247146,
+  "sigma_k": 0.00030138484984908236,
+  "reactivity_pcm": 5607.219719182066,
+  "sigma_reactivity_pcm": 26.85338098700873,
+  "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/third_try/campaign/density_sensitivity/plus2pct/statepoint.650.h5"
+}

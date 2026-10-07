@@ -1,0 +1,24 @@
+================================================================================
+GEOM_OPT15_TB35 NEUTRONIC EXECUTION SUMMARY (BOL & REACTIVITY FEEDBACKS)
+================================================================================
+k_eff(0 deg):               1.01947 +/- 0.00054
+Excess Reactivity:          +1910.0 +/- 52.0 pcm
+k_eff(180 deg):             0.97163 +/- 0.00044
+Shutdown Margin (SDM_all):  +2920.1 +/- 47.1 pcm
+Total Drum Worth:           4830.1 +/- 70.2 pcm
+k_eff(Stuck Drum):          0.97521 +/- 0.00048
+Stuck-Drum Margin:          +2541.7 +/- 50.0 pcm
+Critical Drum Angle BOL:    80.50 deg -> keff = 0.99844 +/- 0.00045
+--------------------------------------------------------------------------------
+alpha_fuel (Doppler):       -0.9880 +/- 0.1626 pcm/K
+alpha_mod (spectral):       -0.0103 +/- 0.3187 pcm/K
+alpha_mod (expansion):      -1.1191 pcm/K
+alpha_mod (total):          -1.1294 +/- 0.3229 pcm/K
+alpha_mod_dens:             310.8651 +/- 14.4118 pcm/%
+alpha_cool (density):       -0.8476 +/- 0.6653 pcm/%
+alpha_refl (temperature):   0.0119 +/- 0.2872 pcm/K
+alpha_clad (temperature):   -0.6686 +/- 0.2909 pcm/K
+--------------------------------------------------------------------------------
+Total Isothermal alpha_iso: -2.6894 +/- 0.5497 pcm/K (NEGATIVE)
+Prompt Power Coeff alpha_P: -0.7442 +/- 0.1164 pcm/kWth (NEGATIVE)
+================================================================================

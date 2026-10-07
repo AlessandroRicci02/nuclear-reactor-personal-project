@@ -1,0 +1,35 @@
+{
+  "name": "bol_0deg",
+  "keff": 1.0480680209639177,
+  "sigma": 9.993142002158297e-05,
+  "sigma_pcm_k": 9.993142002158297,
+  "reactivity_pcm": 4586.345542697612,
+  "reactivity_sigma_pcm": 9.097522096512023,
+  "batches": 4580,
+  "requested_batches": 180,
+  "inactive": 60,
+  "particles": 20000,
+  "wall_seconds": 1798.3838527202606,
+  "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/campaign/neutronics/bol_0deg/statepoint.04580.h5",
+  "request": {
+    "configuration": "TB35_REFERENCE",
+    "theta_deg": 0.0,
+    "target_sigma": 0.0001,
+    "particles": 20000,
+    "initial_batches": 180,
+    "inactive_batches": 60,
+    "seed": 41001,
+    "temperatures": {
+      "fuel": 1195.0,
+      "clad": 1170.0,
+      "moderator": 904.5,
+      "reflector": 870.0,
+      "coolant": 1001.0
+    },
+    "cross_sections": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/campaign/data/endfb-viii.0-hdf5/cross_sections.xml"
+  },
+  "request_sha256": "90b945c568c657c0a26041fc9fb52d03c0c0db68482dbeb92e03994bf4f978e3",
+  "target_achieved": true,
+  "entropy_inactive_last20_mean": 9.457439772573881,
+  "entropy_active_first20_mean": 9.457256631612351
+}

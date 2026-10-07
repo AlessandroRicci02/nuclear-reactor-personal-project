@@ -1,0 +1,11 @@
+{
+  "designs_evaluated": 36288,
+  "geometry_pass": 29088,
+  "modeled_mass_le600_and_geometry_pass": 24138,
+  "study575_and_geometry_pass": 7098,
+  "min_modeled_mass_kg": 552.2936576185052,
+  "max_modeled_mass_kg": 622.4794241480229,
+  "fuel_inventory_spread_kg": 2.842170943040401e-14,
+  "u235_inventory_spread_kg": 3.552713678800501e-15,
+  "ranking": "No neutronic/thermal ranking or weighted pseudo-performance score applied"
+}

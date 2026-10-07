@@ -1,0 +1,98 @@
+[
+  {
+    "name": "fuel_temperature",
+    "value": -0.8786109269803546,
+    "sigma": 0.04794770369852913,
+    "units": "pcm/K",
+    "span": 400.0,
+    "negative_at_95pct": true,
+    "positive_at_95pct": false,
+    "reference": "Nominal prescribed temperatures; fixed drum angle recorded in endpoint manifests; geometry and nonperturbed densities held fixed",
+    "minus_statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/campaign/neutronics/feedback/fuel_temperature_minus/statepoint.02180.h5",
+    "plus_statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/campaign/neutronics/feedback/fuel_temperature_plus/statepoint.02080.h5"
+  },
+  {
+    "name": "moderator_temperature",
+    "value": 0.9167146918649951,
+    "sigma": 0.09650259244438321,
+    "units": "pcm/K",
+    "span": 200.0,
+    "negative_at_95pct": false,
+    "positive_at_95pct": true,
+    "reference": "Nominal prescribed temperatures; fixed drum angle recorded in endpoint manifests; geometry and nonperturbed densities held fixed",
+    "minus_statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/campaign/neutronics/feedback/moderator_temperature_minus/statepoint.02130.h5",
+    "plus_statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/campaign/neutronics/feedback/moderator_temperature_plus/statepoint.02080.h5"
+  },
+  {
+    "name": "reflector_temperature",
+    "value": 0.25486299242205407,
+    "sigma": 0.09631259454954871,
+    "units": "pcm/K",
+    "span": 200.0,
+    "negative_at_95pct": false,
+    "positive_at_95pct": true,
+    "reference": "Nominal prescribed temperatures; fixed drum angle recorded in endpoint manifests; geometry and nonperturbed densities held fixed",
+    "minus_statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/campaign/neutronics/feedback/reflector_temperature_minus/statepoint.02130.h5",
+    "plus_statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/campaign/neutronics/feedback/reflector_temperature_plus/statepoint.02080.h5"
+  },
+  {
+    "name": "clad_temperature",
+    "value": -0.08029471183723672,
+    "sigma": 0.0964265094562283,
+    "units": "pcm/K",
+    "span": 200.0,
+    "negative_at_95pct": false,
+    "positive_at_95pct": false,
+    "reference": "Nominal prescribed temperatures; fixed drum angle recorded in endpoint manifests; geometry and nonperturbed densities held fixed",
+    "minus_statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/campaign/neutronics/feedback/clad_temperature_minus/statepoint.02180.h5",
+    "plus_statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/campaign/neutronics/feedback/clad_temperature_plus/statepoint.02180.h5"
+  },
+  {
+    "name": "coolant_temperature_fixed_density",
+    "value": 0.0032506796275856686,
+    "sigma": 0.0960436612818768,
+    "units": "pcm/K",
+    "span": 200.0,
+    "negative_at_95pct": false,
+    "positive_at_95pct": false,
+    "reference": "Nominal prescribed temperatures; fixed drum angle recorded in endpoint manifests; geometry and nonperturbed densities held fixed",
+    "minus_statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/campaign/neutronics/feedback/coolant_temperature_fixed_density_minus/statepoint.02180.h5",
+    "plus_statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/campaign/neutronics/feedback/coolant_temperature_fixed_density_plus/statepoint.02180.h5"
+  },
+  {
+    "name": "moderator_density",
+    "value": 302.4878927169765,
+    "sigma": 4.831859306204859,
+    "units": "pcm/percent_density",
+    "span": 4.0,
+    "negative_at_95pct": false,
+    "positive_at_95pct": true,
+    "reference": "Nominal prescribed temperatures; fixed drum angle recorded in endpoint manifests; geometry and nonperturbed densities held fixed",
+    "minus_statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/campaign/neutronics/feedback/moderator_density_minus/statepoint.02080.h5",
+    "plus_statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/campaign/neutronics/feedback/moderator_density_plus/statepoint.02080.h5"
+  },
+  {
+    "name": "coolant_density",
+    "value": -0.1795580619204884,
+    "sigma": 0.19254853914140488,
+    "units": "pcm/percent_density",
+    "span": 100.0,
+    "negative_at_95pct": false,
+    "positive_at_95pct": false,
+    "reference": "Nominal prescribed temperatures; fixed drum angle recorded in endpoint manifests; geometry and nonperturbed densities held fixed",
+    "minus_statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/campaign/neutronics/feedback/coolant_density_minus/statepoint.02180.h5",
+    "plus_statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/campaign/neutronics/feedback/coolant_density_plus/statepoint.02180.h5"
+  },
+  {
+    "name": "isothermal_fixed_geometry_fixed_helium_pressure",
+    "value": 0.08489938641353546,
+    "sigma": 0.09608382626748081,
+    "units": "pcm/K",
+    "span": 200,
+    "negative_at_95pct": false,
+    "positive_at_95pct": false,
+    "reference": "Nominal prescribed temperatures; fixed drum angle recorded in endpoint manifests; geometry and nonperturbed densities held fixed",
+    "minus_statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/campaign/neutronics/feedback/isothermal_minus/statepoint.02180.h5",
+    "plus_statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/campaign/neutronics/feedback/isothermal_plus/statepoint.02230.h5"
+  }
+]

@@ -1,0 +1,16 @@
+metric,value
+T_fuel_max_fem_K,1244.3862534577
+T_clad_max_fem_K,1234.0741348683
+T_mod_peak_fem_K,1159.5116781575
+T_mod_avg_fem_K,958.13794451372
+T_mod_min_fem_K,801.58691335169
+ZrH_eutectoid_limit_K,823.15
+ZrH_eutectoid_limit_C,550.0
+exceedance_K,336.3616781575
+exceeds_stability_limit,True
+P_H2_dissoc_peak_kPa,33.36830676236786
+P_H2_dissoc_limit_kPa,0.00982091614105223
+W_net_elec_kWe,102.4993031956936
+eta_brayton_pct,25.6248257989234
+A_radiator_m2,75.12217157906176
+M_radiator_kg,338.0497721057779

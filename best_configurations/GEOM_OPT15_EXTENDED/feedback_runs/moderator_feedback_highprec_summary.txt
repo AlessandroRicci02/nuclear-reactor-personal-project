@@ -1,0 +1,12 @@
+GEOM_OPT15_EXTENDED HIGH-PRECISION MODERATOR FEEDBACK SUMMARY
+=================================================================
+T_mod_lower (K):            840.0
+k_eff (840 K):              1.020007 +/- 0.000217
+T_mod_upper (K):            1040.0
+k_eff (1040 K):             1.019877 +/- 0.000229
+Delta T (K):                200.0
+Delta rho (pcm):            -12.534
+alpha_mod (pcm/K):          -0.0627 +/- 0.1578
+Statistical histories:      36,000,000 total (18M active each)
+Runtime minus state (s):    285.0
+Runtime plus state (s):     286.7

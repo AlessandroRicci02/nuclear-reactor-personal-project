@@ -1,0 +1,23 @@
+{
+  "request": {
+    "name": "moderator_minus",
+    "change": {
+      "moderator": -100.0
+    },
+    "seed": 7102,
+    "target_sigma": 0.00045,
+    "particles": 10000,
+    "xs": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations_failed/campaign/data/endfb-viii.0-hdf5/cross_sections.xml",
+    "config_sha256": "fc7658995fa6bd380f923eb638c64be40e5c5a82a81241d99f701f6eb9b425a9"
+  },
+  "request_sha256": "27f882ba99bd700c4c8ebb246db7416b2bc746f29569744acf12f9c787b4835e",
+  "keff": 0.8175098531648641,
+  "sigma_k": 0.00044567226627238005,
+  "reactivity_pcm": -22322.6846904234,
+  "sigma_reactivity_pcm": 66.68522451619768,
+  "active_batches": 380,
+  "inactive_batches": 60,
+  "particles": 10000,
+  "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/second_try/campaign/feedback/moderator_minus/statepoint.0440.h5",
+  "target_achieved": true
+}

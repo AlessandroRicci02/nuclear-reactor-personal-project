@@ -1,0 +1,55 @@
+{
+  "definition": "central difference of rho=(k-1)/k at BOL, all drums OUT; static geometry and solid density; total varies every material temperature and helium density at fixed pressure",
+  "reference": {
+    "case": "reference",
+    "request_signature": "c4816ce898c248c1ed445528eca5bb4b2b84f60ed8b0a04d92a28bd67bc1fba3",
+    "k_eff": 1.052715095382306,
+    "sigma_k": 0.0002996071680894028,
+    "reactivity_pcm": 5007.536760281928,
+    "sigma_reactivity_pcm": 27.035256762184925,
+    "particles_per_batch": 18000,
+    "active_batches": 570,
+    "inactive_batches": 50,
+    "target_achieved": true,
+    "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/third_try/campaign/feedback/reference/statepoint.620.h5"
+  },
+  "coefficients": [
+    {
+      "kind": "fuel",
+      "alpha_pcm_per_K": -0.955415394175152,
+      "sigma_pcm_per_K": 0.18919119465125445,
+      "confidence_95_normal_pcm_per_K": [
+        -1.3262301356916106,
+        -0.5846006526586933
+      ],
+      "delta_K": 100.0,
+      "minus_case": "fuel_minus",
+      "plus_case": "fuel_plus"
+    },
+    {
+      "kind": "moderator",
+      "alpha_pcm_per_K": 1.002887416265471,
+      "sigma_pcm_per_K": 0.1919837196139441,
+      "confidence_95_normal_pcm_per_K": [
+        0.6265993258221407,
+        1.3791755067088014
+      ],
+      "delta_K": 100.0,
+      "minus_case": "moderator_minus",
+      "plus_case": "moderator_plus"
+    },
+    {
+      "kind": "total",
+      "alpha_pcm_per_K": 0.6104412670099327,
+      "sigma_pcm_per_K": 0.19109002914646023,
+      "confidence_95_normal_pcm_per_K": [
+        0.23590480988287071,
+        0.9849777241369948
+      ],
+      "delta_K": 100.0,
+      "minus_case": "total_minus",
+      "plus_case": "total_plus"
+    }
+  ],
+  "cross_sections": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations_failed/campaign/data/endfb-viii.0-hdf5/cross_sections.xml"
+}

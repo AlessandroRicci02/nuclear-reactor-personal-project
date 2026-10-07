@@ -1,0 +1,334 @@
+SECONDO TENTATIVO — S2_YH_SLEEVES_BE_COLD_FIRST
+Proposta concettuale del 7 ottobre 2026
+
+ESITO DEL LAVORO
+È stata definita una nuova geometria da sottoporre alla prossima verifica:
+217 elementi UN con manicotti sottili di YH2, matrice/riflettori in Be metallico,
+raffreddamento a elio in due passaggi seriali, prima sul moderatore e poi sul
+combustibile. Non è una configurazione già dimostrata conforme ai requisiti.
+
+La massa geometrica dei solidi è 506.427 kg. Con 60 kg di assegnazione per
+hardware e 15 kg di riserva, la stima concettuale è 581.427 kg, escluso il piccolo
+inventario di elio. La vita di 18 anni e il picco YH2 di 900 K sono OBIETTIVI,
+non risultati. Criticità, feedback e vita non sono stati simulati.
+
+Un punto determinante: mantenendo YH2 non posso promettere un coefficiente
+spettrale del moderatore negativo attraverso la sola modifica geometrica.
+La letteratura ORNL [1] e i risultati locali indicano proprio questo rischio.
+S2 prova a ridurre il peso del contributo dell'idruro e a migliorare il margine
+termico, ma potrebbe ancora avere alpha_mod > 0 oppure risultare sottocritica.
+Se il requisito è che TUTTI e tre i coefficienti a densità fissa siano negativi,
+S2 rimane una candidata non qualificata: non va accettata sulla sola base della
+massa o di un eventuale coefficiente totale negativo.
+
+1. REQUISITI E IPOTESI
+
+- Massa del reattore circa <600 kg, includendo un'assegnazione per vessel,
+  collettori, supporti, meccanismi dei tamburi e contenimento del moderatore.
+  Scudo radiologico, convertitore, radiatori, propulsori e struttura del veicolo
+  sono esclusi. Non si sta proponendo un intero sistema NEP sotto 600 kg.
+- Vita >15 anni a piena potenza; obiettivo progettuale 18 anni.
+- T_massima locale del solido YH2 <950 K; obiettivo nominale <=900 K.
+- Feedback del combustibile e totale negativi con margine statistico;
+  coefficiente del moderatore da verificare separatamente, senza occultarne
+  un eventuale segno positivo con una correzione di espansione assunta.
+- Si conservano 400 kW termici e arricchimento massimo U-235 del 19.75% in massa
+  nell'uranio. Non si assume una potenza elettrica netta di 100 kW.
+- Si propone esplicitamente un nuovo punto termico: He 700 K in ingresso,
+  880 K in uscita media, anziché circa 892/1110 K del riferimento.
+  Questa modifica di ciclo è una parte sostanziale della proposta, da discutere
+  insieme alla geometria. Se il vecchio punto di ciclo fosse inderogabile,
+  l'argomento termico di questa proposta non sarebbe trasferibile.
+
+2. COSA INSEGNANO I TENTATIVI PRECEDENTI
+
+Fonte TB35: ../first_try/results.txt, campagna completata con ENDF/B-VIII.0
+e scattering termico specifico dell'idruro di ittrio.
+
+  Grandezza                              TB35
+  Solidi geometrici                      595.154 kg
+  k_eff BOL, tamburi OUT                  1.0480680 +/- 0.0000999
+  alpha_fuel                             -0.92609 +/- 0.03207 pcm/K
+  alpha_moderator                         +1.03955 +/- 0.06416 pcm/K
+  alpha_totale isotermo                   +0.23006 +/- 0.06416 pcm/K
+
+Le incertezze sono 1 sigma Monte Carlo, non incertezze totali. Entrambi gli
+ultimi coefficienti sono positivi anche al 95%. La massa non comprendeva
+vessel, azionamenti, collettori e altri componenti necessari.
+Le perturbazioni mantengono geometria e densità dei solidi fisse; il caso
+totale mantiene la pressione dell'elio, quindi non la sua densità. Non sono
+coefficienti di un sistema strutturale con espansione accoppiata.
+
+P1, in ../../new_possible_best_configurations_failed/campaign/data/
+feedback_coefficients.json, dava circa +0.917 +/- 0.097 pcm/K per il moderatore
+e +0.085 +/- 0.096 pcm/K per il totale. I 578.963 kg di solidi e i canali
+ellittici non avevano risolto il problema: il totale non era dimostrato negativo.
+Pertanto non ripropongo solo fori diversi o un lieve assottigliamento di BeO.
+
+Sono stati consultati anche il report Opt-16 e gli script storici TB35.
+Non trasferisco a S2 le loro dichiarazioni di vita/feedback/qualifica.
+In run_neutronics_tb35.py il vecchio contributo di espansione del moderatore
+era ricavato da un coefficiente volumetrico assunto; build_model_tb35.py
+utilizzava c_H_in_ZrH. Nel vecchio script termico TB35 T_mod_avg=904.51 K e
+T_mod_peak=914.83 K sono assegnati nel codice, non una verifica termica di S2.
+Le vecchie conclusioni favorevoli non prevalgono sulla nuova campagna.
+
+3. FONDAMENTO SCIENTIFICO E SCELTA
+
+[1] Ade e collaboratori analizzano coefficienti positivi in sistemi con YHx.
+Il lavoro riguarda altri combustibili e assetti; supporta l'identificazione
+del problema, non il segno dei coefficienti di S2. La riduzione dell'inventario
+di idruro è qui un'ipotesi progettuale per ridurne l'importanza neutronica,
+NON una legge lineare alpha_mod proporzionale alla massa del moderatore.
+
+[2] Il contributo NASA sullo sviluppo NEP considera anche combustibili HALEU
+con moderazione a idruro e la necessità di maturare i materiali. Le potenze
+e durate del suo contesto non dimostrano i nostri 400 kWth e >15 anni.
+
+[3] JANUS è un precedente di progettazione accoppiata neutronica/termica per
+NEP a gas, con attenzione a passo, canali e rapporto d'aspetto. Il suo fuel
+coated-particle, il refrigerante He-Xe e le prestazioni non vengono copiati
+nel presente modello a pin UN e He puro.
+
+[4] Il contributo NASA sui moderatori confronta idruri, Be e BeO e richiama
+proprietà nucleari, termomeccaniche, fabbricabilità e compatibilità. Motiva
+la valutazione di Be; non garantisce equivalenza neutronica con BeO.
+
+Ho scelto manicotti annulari separati invece del blocco massiccio di YH2,
+eliminando l'idruro periferico. Il Be occupa interstizi e periferia e consente
+di contenere la massa. La quantità di UN aumenta del 9.89% con l'altezza attiva:
+è una riserva di inventario, non una dimostrazione di reattività a fine vita.
+Non viene utilizzata perdita di idrogeno come meccanismo desiderato di controllo.
+
+4. GEOMETRIA NOMINALE RIPRODUCIBILE
+
+Tutte le dimensioni seguenti sono nominali; tolleranze, dilatazione e giochi
+di assemblaggio sono ancora da dimensionare. configuration.json e pins.csv
+definiscono materiali, raggi, centri e arricchimenti senza dipendere da un disegno.
+
+Reticolo triangolare: 217 celle, anelli 0..8, passo 23.00 mm.
+Altezza attiva: 500 mm, contro 455 mm TB35.
+Raggio del nocciolo: 197 mm.
+Be radiale: 88 mm; Be assiale: 85 mm a ciascuna estremità.
+Diametro esterno del riflettore: 570 mm; altezza con riflettori: 670 mm.
+L'ingombro completo con vessel, collettori e motori sarà maggiore.
+
+Raggi esterni della cella, dal centro:
+  5.85 mm   UN, densità nominale 13.5 g/cm3
+  6.33 mm   guaina Nb-1Zr, 8.57 g/cm3
+  7.17 mm   anello He, secondo passaggio sul combustibile
+  7.37 mm   parete separatrice Nb-1Zr, spessore 0.20 mm
+  8.37 mm   anello He, primo passaggio sul moderatore, gap 1.00 mm
+  8.57 mm   parete interna contenitore YH2, Nb-1Zr
+  8.67 mm   strato Al2O3 proposto, spessore 0.10 mm
+ 10.87 mm   YH2, spessore 2.20 mm, densità 4.30 g/cm3
+ 10.97 mm   strato Al2O3 proposto, spessore 0.10 mm
+ 11.17 mm   parete esterna contenitore YH2, Nb-1Zr
+
+Be metallico a 1.85 g/cm3 fuori dalle celle fino al riflettore. Non rimane
+YH2 periferico. La distanza tra superfici esterne di celle adiacenti è 0.66 mm;
+la distanza minima di una cella dal cilindro del nocciolo è 1.83 mm. Sono
+clearance geometriche positive, non margini strutturali certificati.
+
+Nei riflettori assiali il combustibile e l'idruro non continuano: il secondo
+passaggio diventa un foro centrale r<7.17 mm, restano parete divisoria,
+anello freddo e parete esterna fino a r=8.57 mm; all'esterno è presente Be.
+Le chiusure terminali delle capsule e le connessioni ai collettori non sono
+modellate in dettaglio e ricadono nell'assegnazione hardware.
+
+Controllo: dieci tamburi, raggio 39.5 mm, centri a r=238.3 mm, altezza attiva
+500 mm. Settore B4C di 148 gradi, spessore radiale 15 mm, densità 2.52 g/cm3,
+B-10 al 90% atomico. Corpo restante Be. Convenzione conservata: theta=0 gradi
+assorbitore verso lo spazio; theta=180 gradi verso il nocciolo.
+Web nominale interno 1.8 mm, esterno 7.2 mm: soprattutto quello interno deve
+essere riesaminato per giochi, supporti e dilatazioni. I settori sostituiscono
+il Be nel bilancio: nessun doppio conteggio. Worth e shutdown sconosciuti.
+
+Arricchimento: 19.60% nei 19 pin degli anelli 0..2; 19.75% nei restanti 198.
+UN e azoto mantengono l'impostazione di confronto precedente: non si accredita
+un guadagno gratuito da N-15 arricchito. Le masse HM/U-235 qui usano la
+convenzione approssimata UN 238/252 del riferimento; la composizione isotopica
+stechiometrica effettiva dovrà essere definita per il prossimo input di trasporto.
+Gap pellet/guaina, swelling, plenum gas e contatti non sono risolti nel modello
+geometrico: il contatto nominale del riferimento non è una qualifica fuel.
+
+5. BILANCIO DI MASSA E CONFINE DEL SISTEMA
+
+  UN                                      157.480 kg
+  Guaina combustibile                      17.078 kg
+  Parete separatrice attiva                  8.495 kg
+  Contenitore interno YH2                    9.897 kg
+  Barriera interna Al2O3                     2.321 kg
+  YH2                                      63.008 kg
+  Barriera esterna Al2O3                     2.941 kg
+  Contenitore esterno YH2                   12.935 kg
+  Pareti nei riflettori assiali              6.253 kg
+  B4C                                      15.623 kg
+  Be interstiziale/periferico attivo         34.099 kg
+  Be assiale interno al raggio nocciolo     22.598 kg
+  Be radiale, inclusi corpi tamburi        153.699 kg
+  TOTALE SOLIDI                           506.427 kg
+
+Assegnazione hardware, ancora da dimensionare:
+  Vessel                                   20 kg
+  Testate, collettori, chiusure capsule      14 kg
+  Azionamenti e supporti tamburi            10 kg
+  Griglie e supporti                         8 kg
+  Isolamento e dettagli contenimento H       4 kg
+  Strumentazione e minuteria                 4 kg
+  TOTALE ASSEGNAZIONE                       60 kg
+  Riserva addizionale                       15 kg
+  TOTALE CONCETTUALE                      581.427 kg
+
+Margine residuo a 600 kg: 18.573 kg. Hardware più riserve non devono superare
+93.573 kg, meno l'inventario del gas. Il gas nei volumi modellati è dell'ordine
+di 0.02-0.03 kg a 2.5 MPa e 700-880 K; non sono inclusi tubi e volumi esterni.
+Nessuna incertezza Monte Carlo è attribuita al bilancio analitico: la vera
+incertezza dominante è progettuale, e può superare il margine residuo.
+La massa di Be totale è 210.396 kg, YH2 scende da 146.077 a 63.008 kg.
+
+Il vessel non è stato verificato a creep/pressione, né sono state definite
+le masse di cuscinetti e drive. Le barriere di Al2O3 e Nb-1Zr sono una proposta
+di stratificazione da qualificare per permeazione, compatibilità e irraggiamento;
+non considero il semplice rivestimento garanzia di ritenzione H per 18 anni.
+Giochi dei tamburi, tagli del Be e segmentazione non sono ancora nel CSG.
+Il limite di 600 kg è quindi compatibile con il budget, non dimostrato per
+un assieme meccanico realizzato. Scudo e sistema di potenza restano esclusi.
+
+6. RAFFREDDAMENTO E LIMITE YH2
+
+Percorso fisico proposto: collettore superiore freddo -> anello freddo in
+discesa -> inversione nel collettore inferiore -> anello sul fuel in salita
+-> collettore superiore caldo separato. I due anelli sono in serie; per
+ciascuna cella attraversa entrambi la stessa portata. La distribuzione tra
+le 217 celle richiede comunque un calcolo dei collettori e degli orifizi.
+
+Con cp_He=5193.16 J/(kg K), 400000 W e deltaT=180 K:
+  portata totale = 0.427913 kg/s.
+  area totale anelli sul fuel = 77.3077 cm2.
+  area totale anelli freddi = 107.3036 cm2.
+Questo è un bilancio energetico globale; non determina Reynolds, perdite di
+pressione, coefficienti di scambio né le temperature massime dei solidi.
+
+Se Q_primo è il calore NETTO ricevuto nel primo passaggio, compreso quello
+trasferito dalla parete calda, T_bulk_primo,out=700+Q_primo/(portata*cp).
+Per Q_primo=20/60/100/160/240 kW si ottengono 709/727/745/772/808 K.
+Sono scenari imposti, non potenze calcolate. Per trovare T_YH2,max mancano
+deposizione neutronica/gamma, film, conduzione, contatti, distribuzioni locali
+e scambio controcorrente attraverso la parete divisoria. Non si assume una
+parete adiabatica né un isolamento perfetto fra i due flussi.
+
+880 K è l'uscita media, non un tetto alla temperatura del fluido in ogni pin.
+Il target YH2=900 K lascia 50 K rispetto al limite utente, ma questo margine
+non è ancora un risultato. Serve modellare anche Be, terminali delle capsule,
+punti caldi e flussi sbilanciati. Il limite 950 K non prova da solo la ritenzione
+di idrogeno durante tutta la missione.
+
+Il punto 700/880 K penalizza la disponibilità di calore ad alta temperatura.
+La potenza elettrica netta, recuperatore, compressore e radiatore devono essere
+ricalcolati: non attribuisco alla proposta i 100 kWe del vecchio riferimento.
+Una temperatura più bassa non garantisce neppure un coefficiente neutronico
+più favorevole; anche le dipendenze dei feedback dalla temperatura vanno misurate.
+
+7. DURATA E FEEDBACK: COSA È ANCORA SCONOSCIUTO
+
+Inventario approssimato: 148.731 kg HM, 29.355 kg U-235, rispetto ai circa
+135.345/26.713 kg del riferimento. A 400 kWth continuativi:
+  15 anni = 2191.5 MWd = 14.735 MWd/kgHM;
+  18 anni = 2629.8 MWd = 17.682 MWd/kgHM.
+Questo controllo energetico non determina la vita: la disponibilità di
+reattività, le catture, i prodotti di fissione, lo spettro e la stabilità dei
+materiali potrebbero impedire anche il raggiungimento dei 15 anni.
+
+In particolare, dimezzare circa l'idruro e sostituire BeO con Be modifica
+spettro, leakage, assorbimenti, coefficiente del riflettore e worth dei tamburi.
+L'aumento del fuel non garantisce di compensare tali effetti. Non è stato
+dimostrato che S2 sia sotto-moderata: serve una scansione di moderazione.
+Non si può interpolare un k_eff di S2 dai risultati TB35/P1.
+
+Stato attuale dei requisiti:
+  Massa <600 kg          compatibile con budget preliminare; hardware ignoto
+  k_eff regolabile a 1   NON CALCOLATO
+  Vita >15 anni         NON CALCOLATA; obiettivo 18 anni
+  YH2 massimo <950 K    NON CALCOLATO; obiettivo nominale 900 K
+  alpha_fuel <0         NON CALCOLATO
+  alpha_moderator <0    NON CALCOLATO; rischio positivo documentato
+  alpha_totale <0       NON CALCOLATO
+  Arresto e stuck drum  NON CALCOLATI
+
+La prossima decisione dovrebbe partire dal feedback e dalla criticità: prima
+un confronto spettrale coerente con vere S(alpha,beta) di YH2 e Be e sensibilità
+a spessore/passo dei manicotti; poi il calcolo dettagliato alla criticità.
+La proposta va scartata o modificata se il criterio sul moderatore non passa.
+Non aggiungerei espansione arbitraria per trasformare un segno positivo in un
+risultato favorevole. Se alpha_mod a densità fissa deve essere negativo e
+rimane positivo, occorre aprire una diversa famiglia di moderatori/combustibili
+e rifare massa e criticità, invece di reiterare piccoli ritocchi a YH2.
+
+Solo dopo tale filtro hanno senso depletion con catena completa, ricerca
+theta_crit ad ogni passo e raffinamento vicino al fine vita, nonché il modello
+termico con deposizione energetica e flussi reali. Una verifica futura dovrà
+coprire BOL, stati intermedi ed EOL, non solo tutti i tamburi OUT al BOL.
+Per il segno dei coefficienti si propone limite superiore al 95% <0 e una
+precisione statistica rapportata alla distanza dallo zero, distinguendo sempre
+errore di campionamento da incertezza dei dati/materiali. Nessuna di queste
+simulazioni è stata avviata in questa consegna, come richiesto per questa fase.
+
+8. FILE E RIPRODUCIBILITÀ
+
+figures/01_core_xy.png/pdf: sezione attiva e tamburi OUT, in scala.
+figures/02_unit_cell.png/pdf: cella con tutti i raggi.
+figures/03_axial_and_flow.png/pdf: cella longitudinale e percorso dei flussi.
+figures/04_mass_and_energy_screen.png/pdf: masse e soli bilanci energetici.
+configuration.json: parametri e materiali; pins.csv: tutte le posizioni.
+mass_breakdown.csv: volumi, densità e masse senza arrotondamenti di tabella.
+screening.json: bilanci e controlli geometrici.
+scripts/generate_design.py: genera dati e figure, senza OpenMC o MOOSE.
+
+Rigenerazione dalla root del workspace:
+/home/aleri/miniforge3/envs/openmc-env/bin/python \
+  new_possible_best_configurations/second_try/scripts/generate_design.py
+
+Verifiche eseguite: 217 centri distinti, celle non sovrapposte e contenute nel
+nocciolo, tamburi separati e contenuti nel riflettore, partizione dei volumi
+solidi/gas chiusa entro errore numerico. Queste verifiche non sostituiscono un
+geometry-debug OpenMC né un controllo strutturale. Le figure sono disegni
+derivati dalla specifica, non mappe di flusso, potenza o temperatura simulate.
+
+Il precedente contenuto è stato spostato in ../first_try con rename e verifica
+di dimensioni/inode di 100 file/link. Log e manifest originali non sono stati
+riscritti: i vecchi percorsi assoluti campaign vanno reinterpretati con first_try.
+I dati di P1 e gli altri tentativi preesistenti sono rimasti nelle loro cartelle.
+
+9. BIBLIOGRAFIA VERIFICATA ONLINE IL 7 OTTOBRE 2026
+
+[1] B. J. Ade, B. R. Betzler, J. R. Burns, C. W. Chapman, J. Hu (2022).
+    Reactor Physics Considerations for Use of Yttrium Hydride Moderator.
+    Nuclear Science and Engineering 196(12), 1539-1558.
+    DOI: https://doi.org/10.1080/00295639.2022.2035157
+    https://www.ornl.gov/publication/reactor-physics-considerations-use-yttrium-hydride-moderator
+    Consultata scheda/abstract ufficiale ORNL. Testo editore non accessibile
+    nella sessione (403); non sono attribuiti al paper dettagli non letti.
+
+[2] D. V. Rao, K. Polzin, M. Houts, F. Curran, M. Rodriguez (2021).
+    Fuel and Moderator Development Strategy for NEP Systems. JANNAF.
+    https://ntrs.nasa.gov/citations/20210000794
+    Consultata scheda/abstract NASA NTRS.
+
+[3] A. Peakman, R. Gregg (2020).
+    The challenges of gas-cooled reactor technology for space propulsion
+    and the development of the JANUS space reactor concept.
+    https://arxiv.org/abs/2004.12116
+    Consultato abstract del manoscritto degli autori; documento dichiarato
+    accettato in Progress in Nuclear Energy. Non è un benchmark di S2.
+
+[4] K. Benensky Palomares (2021).
+    Moderator Considerations for Space Nuclear Power and Propulsion Systems.
+    Nuclear and Emerging Technologies for Space 2021.
+    https://ntrs.nasa.gov/citations/20210010285
+    Consultata scheda/abstract ufficiale NASA NTRS.
+
+Le dimensioni di S2, gli spessori delle capsule, le assegnazioni di massa e il
+punto di ciclo sono proposte nuove di questo studio, non valori qualificati
+estratti dalla letteratura. La conclusione è: nuova candidata documentata da
+valutare insieme, non reattore già dimostrato conforme ai tre limiti.

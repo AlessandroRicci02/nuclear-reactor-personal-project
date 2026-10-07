@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<settings>
+  <run_mode>eigenvalue</run_mode>
+  <particles>1000</particles>
+  <batches>5</batches>
+  <inactive>2</inactive>
+  <source type="independent" strength="1.0" particle="neutron">
+    <space type="box">
+      <parameters>-18.16 -18.16 -21.225 18.16 18.16 21.225</parameters>
+    </space>
+  </source>
+  <seed>42</seed>
+  <temperature_method>interpolation</temperature_method>
+</settings>

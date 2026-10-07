@@ -1,0 +1,10 @@
+{
+  "case": "moderator_minus",
+  "request_signature": "e2d042b440069f758ecd25aeceed3759ca1655ded874521ded4ee2ea9b876647",
+  "k_eff": 1.0528394188981933,
+  "sigma_k": 0.00030165953931618163,
+  "reactivity_pcm": 5018.753852652125,
+  "sigma_reactivity_pcm": 27.214025654995336,
+  "active_batches": 600,
+  "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/third_try/campaign/coupled_feedback/moderator_minus/statepoint.650.h5"
+}

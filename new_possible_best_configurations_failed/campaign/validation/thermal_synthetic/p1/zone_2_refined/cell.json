@@ -1,0 +1,10 @@
+{
+  "nodes": 8066,
+  "elements": 14424,
+  "moderator_area_m2": 0.00024032598037480188,
+  "liner_area_m2": 4.555994397157757e-06,
+  "exact_moderator_area_m2": 0.00024030731643101257,
+  "exact_liner_area_m2": 4.556136069625086e-06,
+  "spacing_m": 0.0002,
+  "all_boundary_edges_verified": true
+}

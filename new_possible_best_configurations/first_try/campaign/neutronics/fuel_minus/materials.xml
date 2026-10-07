@@ -1,0 +1,225 @@
+<?xml version='1.0' encoding='utf-8'?>
+<materials>
+  <cross_sections>/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations_failed/campaign/data/endfb-viii.0-hdf5/cross_sections.xml</cross_sections>
+  <material id="1" name="Nb1Zr" temperature="1170.0">
+    <density value="8.57" units="g/cm3"/>
+    <nuclide name="Nb93" wo="0.99"/>
+    <nuclide name="Zr90" wo="0.005070611750923317"/>
+    <nuclide name="Zr91" wo="0.0011180887453100783"/>
+    <nuclide name="Zr92" wo="0.001727810146362816"/>
+    <nuclide name="Zr94" wo="0.0017891104342343414"/>
+    <nuclide name="Zr96" wo="0.00029437892316944896"/>
+  </material>
+  <material id="2" name="Al2O3" temperature="904.5">
+    <density value="3.95" units="g/cm3"/>
+    <nuclide name="Al27" ao="2.0"/>
+    <nuclide name="O16" ao="2.9928618"/>
+    <nuclide name="O17" ao="0.001137"/>
+    <nuclide name="O18" ao="0.0060012"/>
+  </material>
+  <material id="3" name="YH2" temperature="904.5">
+    <density value="4.3" units="g/cm3"/>
+    <nuclide name="Y89" ao="1"/>
+    <nuclide name="H1" ao="2"/>
+    <sab name="c_H_in_YH2"/>
+    <sab name="c_Y_in_YH2"/>
+  </material>
+  <material id="4" name="BeO" temperature="870.0">
+    <density value="2.9" units="g/cm3"/>
+    <nuclide name="Be9" ao="1"/>
+    <nuclide name="O16" ao="1"/>
+    <sab name="c_Be_in_BeO"/>
+    <sab name="c_O_in_BeO"/>
+  </material>
+  <material id="5" name="B4C" temperature="870.0">
+    <density value="2.52" units="g/cm3"/>
+    <nuclide name="B10" ao="3.6"/>
+    <nuclide name="B11" ao="0.4"/>
+    <nuclide name="C12" ao="0.988922"/>
+    <nuclide name="C13" ao="0.011078"/>
+  </material>
+  <material id="6" name="Helium" temperature="1001.0">
+    <density value="0.0012023036185004944" units="g/cm3"/>
+    <nuclide name="He4" ao="1"/>
+  </material>
+  <material id="100" name="UN_zone0_slice0" depletable="true" volume="92.94512214087358" temperature="995.0">
+    <density value="13.5" units="g/cm3"/>
+    <nuclide name="U235" wo="0.18511111111111112"/>
+    <nuclide name="U238" wo="0.7593333333333333"/>
+    <nuclide name="N14" wo="0.05555555555555555"/>
+  </material>
+  <material id="101" name="UN_zone0_slice1" depletable="true" volume="92.94512214087358" temperature="995.0">
+    <density value="13.5" units="g/cm3"/>
+    <nuclide name="U235" wo="0.18511111111111112"/>
+    <nuclide name="U238" wo="0.7593333333333333"/>
+    <nuclide name="N14" wo="0.05555555555555555"/>
+  </material>
+  <material id="102" name="UN_zone0_slice2" depletable="true" volume="92.94512214087358" temperature="995.0">
+    <density value="13.5" units="g/cm3"/>
+    <nuclide name="U235" wo="0.18511111111111112"/>
+    <nuclide name="U238" wo="0.7593333333333333"/>
+    <nuclide name="N14" wo="0.05555555555555555"/>
+  </material>
+  <material id="103" name="UN_zone0_slice3" depletable="true" volume="92.94512214087358" temperature="995.0">
+    <density value="13.5" units="g/cm3"/>
+    <nuclide name="U235" wo="0.18511111111111112"/>
+    <nuclide name="U238" wo="0.7593333333333333"/>
+    <nuclide name="N14" wo="0.05555555555555555"/>
+  </material>
+  <material id="104" name="UN_zone0_slice4" depletable="true" volume="92.94512214087358" temperature="995.0">
+    <density value="13.5" units="g/cm3"/>
+    <nuclide name="U235" wo="0.18511111111111112"/>
+    <nuclide name="U238" wo="0.7593333333333333"/>
+    <nuclide name="N14" wo="0.05555555555555555"/>
+  </material>
+  <material id="105" name="UN_zone0_slice5" depletable="true" volume="92.94512214087358" temperature="995.0">
+    <density value="13.5" units="g/cm3"/>
+    <nuclide name="U235" wo="0.18511111111111112"/>
+    <nuclide name="U238" wo="0.7593333333333333"/>
+    <nuclide name="N14" wo="0.05555555555555555"/>
+  </material>
+  <material id="106" name="UN_zone0_slice6" depletable="true" volume="92.94512214087358" temperature="995.0">
+    <density value="13.5" units="g/cm3"/>
+    <nuclide name="U235" wo="0.18511111111111112"/>
+    <nuclide name="U238" wo="0.7593333333333333"/>
+    <nuclide name="N14" wo="0.05555555555555555"/>
+  </material>
+  <material id="107" name="UN_zone0_slice7" depletable="true" volume="92.94512214087358" temperature="995.0">
+    <density value="13.5" units="g/cm3"/>
+    <nuclide name="U235" wo="0.18511111111111112"/>
+    <nuclide name="U238" wo="0.7593333333333333"/>
+    <nuclide name="N14" wo="0.05555555555555555"/>
+  </material>
+  <material id="108" name="UN_zone0_slice8" depletable="true" volume="92.94512214087358" temperature="995.0">
+    <density value="13.5" units="g/cm3"/>
+    <nuclide name="U235" wo="0.18511111111111112"/>
+    <nuclide name="U238" wo="0.7593333333333333"/>
+    <nuclide name="N14" wo="0.05555555555555555"/>
+  </material>
+  <material id="109" name="UN_zone0_slice9" depletable="true" volume="92.94512214087358" temperature="995.0">
+    <density value="13.5" units="g/cm3"/>
+    <nuclide name="U235" wo="0.18511111111111112"/>
+    <nuclide name="U238" wo="0.7593333333333333"/>
+    <nuclide name="N14" wo="0.05555555555555555"/>
+  </material>
+  <material id="110" name="UN_zone1_slice0" depletable="true" volume="352.2130944285736" temperature="995.0">
+    <density value="13.5" units="g/cm3"/>
+    <nuclide name="U235" wo="0.1865277777777778"/>
+    <nuclide name="U238" wo="0.7579166666666667"/>
+    <nuclide name="N14" wo="0.05555555555555555"/>
+  </material>
+  <material id="111" name="UN_zone1_slice1" depletable="true" volume="352.2130944285736" temperature="995.0">
+    <density value="13.5" units="g/cm3"/>
+    <nuclide name="U235" wo="0.1865277777777778"/>
+    <nuclide name="U238" wo="0.7579166666666667"/>
+    <nuclide name="N14" wo="0.05555555555555555"/>
+  </material>
+  <material id="112" name="UN_zone1_slice2" depletable="true" volume="352.2130944285736" temperature="995.0">
+    <density value="13.5" units="g/cm3"/>
+    <nuclide name="U235" wo="0.1865277777777778"/>
+    <nuclide name="U238" wo="0.7579166666666667"/>
+    <nuclide name="N14" wo="0.05555555555555555"/>
+  </material>
+  <material id="113" name="UN_zone1_slice3" depletable="true" volume="352.2130944285736" temperature="995.0">
+    <density value="13.5" units="g/cm3"/>
+    <nuclide name="U235" wo="0.1865277777777778"/>
+    <nuclide name="U238" wo="0.7579166666666667"/>
+    <nuclide name="N14" wo="0.05555555555555555"/>
+  </material>
+  <material id="114" name="UN_zone1_slice4" depletable="true" volume="352.2130944285736" temperature="995.0">
+    <density value="13.5" units="g/cm3"/>
+    <nuclide name="U235" wo="0.1865277777777778"/>
+    <nuclide name="U238" wo="0.7579166666666667"/>
+    <nuclide name="N14" wo="0.05555555555555555"/>
+  </material>
+  <material id="115" name="UN_zone1_slice5" depletable="true" volume="352.2130944285736" temperature="995.0">
+    <density value="13.5" units="g/cm3"/>
+    <nuclide name="U235" wo="0.1865277777777778"/>
+    <nuclide name="U238" wo="0.7579166666666667"/>
+    <nuclide name="N14" wo="0.05555555555555555"/>
+  </material>
+  <material id="116" name="UN_zone1_slice6" depletable="true" volume="352.2130944285736" temperature="995.0">
+    <density value="13.5" units="g/cm3"/>
+    <nuclide name="U235" wo="0.1865277777777778"/>
+    <nuclide name="U238" wo="0.7579166666666667"/>
+    <nuclide name="N14" wo="0.05555555555555555"/>
+  </material>
+  <material id="117" name="UN_zone1_slice7" depletable="true" volume="352.2130944285736" temperature="995.0">
+    <density value="13.5" units="g/cm3"/>
+    <nuclide name="U235" wo="0.1865277777777778"/>
+    <nuclide name="U238" wo="0.7579166666666667"/>
+    <nuclide name="N14" wo="0.05555555555555555"/>
+  </material>
+  <material id="118" name="UN_zone1_slice8" depletable="true" volume="352.2130944285736" temperature="995.0">
+    <density value="13.5" units="g/cm3"/>
+    <nuclide name="U235" wo="0.1865277777777778"/>
+    <nuclide name="U238" wo="0.7579166666666667"/>
+    <nuclide name="N14" wo="0.05555555555555555"/>
+  </material>
+  <material id="119" name="UN_zone1_slice9" depletable="true" volume="352.2130944285736" temperature="995.0">
+    <density value="13.5" units="g/cm3"/>
+    <nuclide name="U235" wo="0.1865277777777778"/>
+    <nuclide name="U238" wo="0.7579166666666667"/>
+    <nuclide name="N14" wo="0.05555555555555555"/>
+  </material>
+  <material id="120" name="UN_zone2_slice0" depletable="true" volume="616.3729152500038" temperature="995.0">
+    <density value="13.5" units="g/cm3"/>
+    <nuclide name="U235" wo="0.1865277777777778"/>
+    <nuclide name="U238" wo="0.7579166666666667"/>
+    <nuclide name="N14" wo="0.05555555555555555"/>
+  </material>
+  <material id="121" name="UN_zone2_slice1" depletable="true" volume="616.3729152500038" temperature="995.0">
+    <density value="13.5" units="g/cm3"/>
+    <nuclide name="U235" wo="0.1865277777777778"/>
+    <nuclide name="U238" wo="0.7579166666666667"/>
+    <nuclide name="N14" wo="0.05555555555555555"/>
+  </material>
+  <material id="122" name="UN_zone2_slice2" depletable="true" volume="616.3729152500038" temperature="995.0">
+    <density value="13.5" units="g/cm3"/>
+    <nuclide name="U235" wo="0.1865277777777778"/>
+    <nuclide name="U238" wo="0.7579166666666667"/>
+    <nuclide name="N14" wo="0.05555555555555555"/>
+  </material>
+  <material id="123" name="UN_zone2_slice3" depletable="true" volume="616.3729152500038" temperature="995.0">
+    <density value="13.5" units="g/cm3"/>
+    <nuclide name="U235" wo="0.1865277777777778"/>
+    <nuclide name="U238" wo="0.7579166666666667"/>
+    <nuclide name="N14" wo="0.05555555555555555"/>
+  </material>
+  <material id="124" name="UN_zone2_slice4" depletable="true" volume="616.3729152500038" temperature="995.0">
+    <density value="13.5" units="g/cm3"/>
+    <nuclide name="U235" wo="0.1865277777777778"/>
+    <nuclide name="U238" wo="0.7579166666666667"/>
+    <nuclide name="N14" wo="0.05555555555555555"/>
+  </material>
+  <material id="125" name="UN_zone2_slice5" depletable="true" volume="616.3729152500038" temperature="995.0">
+    <density value="13.5" units="g/cm3"/>
+    <nuclide name="U235" wo="0.1865277777777778"/>
+    <nuclide name="U238" wo="0.7579166666666667"/>
+    <nuclide name="N14" wo="0.05555555555555555"/>
+  </material>
+  <material id="126" name="UN_zone2_slice6" depletable="true" volume="616.3729152500038" temperature="995.0">
+    <density value="13.5" units="g/cm3"/>
+    <nuclide name="U235" wo="0.1865277777777778"/>
+    <nuclide name="U238" wo="0.7579166666666667"/>
+    <nuclide name="N14" wo="0.05555555555555555"/>
+  </material>
+  <material id="127" name="UN_zone2_slice7" depletable="true" volume="616.3729152500038" temperature="995.0">
+    <density value="13.5" units="g/cm3"/>
+    <nuclide name="U235" wo="0.1865277777777778"/>
+    <nuclide name="U238" wo="0.7579166666666667"/>
+    <nuclide name="N14" wo="0.05555555555555555"/>
+  </material>
+  <material id="128" name="UN_zone2_slice8" depletable="true" volume="616.3729152500038" temperature="995.0">
+    <density value="13.5" units="g/cm3"/>
+    <nuclide name="U235" wo="0.1865277777777778"/>
+    <nuclide name="U238" wo="0.7579166666666667"/>
+    <nuclide name="N14" wo="0.05555555555555555"/>
+  </material>
+  <material id="129" name="UN_zone2_slice9" depletable="true" volume="616.3729152500038" temperature="995.0">
+    <density value="13.5" units="g/cm3"/>
+    <nuclide name="U235" wo="0.1865277777777778"/>
+    <nuclide name="U238" wo="0.7579166666666667"/>
+    <nuclide name="N14" wo="0.05555555555555555"/>
+  </material>
+</materials>

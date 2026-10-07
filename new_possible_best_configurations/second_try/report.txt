@@ -1,0 +1,439 @@
+SECONDO TENTATIVO, REVISIONE 1 — S2R1_1150K_INSULATED_COLD_FIRST
+Proposta concettuale aggiornata il 7 ottobre 2026
+VINCOLO INDEROGABILE: REFRIGERANTE ALL'USCITA DEL REATTORE A 1150 K
+
+ESITO DELLA REVISIONE
+
+La proposta con uscita a 880 K è superata e conservata in archive_880K/.
+Questa revisione mantiene 1150 K come temperatura media della miscela all'unica
+uscita del reattore diretta al ciclo. Non introduce un bypass freddo che diluisca
+successivamente tale uscita.
+
+La candidata usa 217 elementi UN, manicotti YH2, matrice/riflettori in Be e
+due passaggi seriali di elio: prima sul moderatore, poi sul combustibile.
+La novità principale è una camera evacuata con schermo radiativo Mo fra i
+due passaggi, per limitare il trasferimento di calore verso il moderatore
+senza abbassare la temperatura finale richiesta.
+
+Solidi geometrici: 498.773 kg. Assegnazione hardware: 65 kg; riserva: 15 kg.
+Massa concettuale: 578.773 kg, più circa 0.02 kg di He nei volumi modellati.
+Il limite di massa è compatibile con il budget, non ancora verificato per
+un progetto meccanico completo. Scudo e sistema di potenza sono esclusi.
+
+Vita >15 anni, criticità, coefficienti negativi e T_YH2,max<950 K restano
+DA VERIFICARE. Obiettivi: 18 anni a piena potenza e YH2 nominalmente <=900 K.
+Non sono state lanciate simulazioni OpenMC o MOOSE/Cardinal. I calcoli nuovi
+sono geometrici e bilanci termici condizionali.
+
+1. REQUISITI E CONDIZIONI DI CICLO
+
+Vincoli conservati: massa del reattore circa <600 kg; vita >15 anni; massimo
+LOCALE del solido YH2 <950 K; verifica distinta dei coefficienti del fuel,
+moderatore e totale con incertezze adeguate.
+
+Nuovo vincolo inderogabile: T_He,out=1150 K, intesa come media di miscela
+pesata sulla portata/entalpia alla sezione di uscita del reattore. Non è la
+temperatura massima di un singolo canale: localmente si potrebbe superarla.
+
+Condizioni proposte, ancora da integrare col ciclo:
+  potenza termica utile all'elio           400 kW
+  pressione nominale He                   2.5 MPa
+  ingresso He                             800 K
+  obiettivo bulk uscita primo passaggio    <=850 K
+  obiettivo nominale massimo YH2           <=900 K
+  arricchimento massimo U-235              19.75% in massa nell'uranio
+
+800 K in ingresso è una condizione proposta, NON un vincolo utente né un
+risultato già dimostrato del ciclo Brayton. Il punto 800/1150 K richiede una
+verifica di recuperazione, compressione, potenza netta e temperatura di rigetto.
+Il vecchio ingresso di circa 892 K non viene conservato implicitamente: a
+892 K l'obiettivo del primo passaggio <=850 K sarebbe impossibile. Se anche
+l'ingresso dovesse restare vicino a 892 K, il progetto termico andrebbe rivisto.
+Non si attribuisce alla candidata una potenza elettrica netta di 100 kW.
+
+2. RADIATORI: LEGGE CORRETTA E CONSEGUENZE
+
+Per superficie grigia isoterma con vista ideale verso lo spazio freddo [5]:
+  Q_rad = epsilon * sigma * A * (T_rad^4 - T_spazio^4)
+  sigma = 5.670374419e-8 W/(m2 K4).
+La dipendenza dalla temperatura assoluta è alla QUARTA potenza, non al quadrato.
+Il radiatore reale richiede fattori di vista, carichi esterni, emissività e
+profili termici; con temperatura variabile si integra T^4 sulla superficie.
+
+Radiatori più caldi possono smaltire più calore per unità di area, ma T_rad
+non coincide con i 1150 K del reattore: fra le due stanno conversione,
+recuperatore e scambiatori. Non si può usare (1150/880)^4 come guadagno del
+radiatore NEP senza calcolare il ciclo. Solo come esempio fisico, con epsilon
+0.9 e spazio a 3 K: 600 K -> 6.61 kW/m2; 700 K -> 12.25 kW/m2; 800 K ->
+20.90 kW/m2. Non sono le temperature o il dimensionamento del radiatore S2-R1.
+
+Il circuito seriale evita un secondo loop del moderatore con radiatore freddo
+dedicato: il calore raccolto sul moderatore rimane nello stesso flusso che
+poi raggiunge il fuel ed esce a 1150 K. Richiede comunque che il ciclo possa
+restituire elio sufficientemente freddo, qui proposto a 800 K.
+
+3. EVIDENZE DEL WORKSPACE E LETTERATURA
+
+TB35, archiviata in ../first_try/results.txt, nella campagna aggiornata dava:
+  solidi geometrici                       595.154 kg
+  k_eff BOL, tamburi OUT                  1.0480680 +/- 0.0000999
+  alpha_fuel                             -0.92609 +/- 0.03207 pcm/K
+  alpha_moderatore                        +1.03955 +/- 0.06416 pcm/K
+  alpha_totale isotermo                   +0.23006 +/- 0.06416 pcm/K
+Incertezze a 1 sigma Monte Carlo; gli ultimi due sono positivi anche al 95%.
+Geometria e densità dei solidi sono fisse; nel totale la pressione He è fissa,
+quindi la sua densità cambia. Non sono feedback termomeccanici completi.
+
+P1, in ../../new_possible_best_configurations_failed/campaign/data/
+feedback_coefficients.json, dava circa +0.917 +/- 0.097 e +0.085 +/- 0.096
+pcm/K rispettivamente per moderatore e totale. I 578.963 kg e i fori ellittici
+non dimostravano un feedback totale negativo. Non basta cambiare forma ai canali.
+
+Sono stati consultati anche il report Opt-16 e gli script storici TB35, senza
+trasferirne le dichiarazioni di qualifica/vita a questa geometria. Il vecchio
+modello TB35 usava c_H_in_ZrH e una correzione di espansione assunta; nello
+script termico T_mod_avg=904.51 K e T_mod_peak=914.83 K sono assegnate nel codice.
+Questi valori non costituiscono una verifica della candidata.
+
+[1] Ade e collaboratori (ORNL) documentano coefficienti positivi di YHx anche
+capaci di superare il contributo negativo del fuel. Questo motiva il controllo
+separato dei coefficienti; non dimostra il segno di S2-R1. Ridurre YH2 è
+un'ipotesi per diminuirne l'importanza neutronica, non una legge lineare fra
+massa e alpha_mod. Il coefficiente spettrale potrebbe rimanere positivo.
+
+[2] La strategia NASA NEP include opzioni HALEU/idruro e sviluppo dei materiali.
+[3] JANUS è un precedente di progettazione neutronica/termica NEP a gas, non
+un benchmark trasferibile ai nostri pin UN e He puro. [4] NASA discute idruri,
+Be e BeO insieme a compatibilità e fabbricabilità: non prova equivalenza
+neutronica fra Be metallico e BeO.
+
+La formulazione radiativa fra cilindri concentrici ha casi di verifica BISON/INL
+[6]. Il precedente spaziale SP-100/Stirling [7] confronta interfacce conduttive
+e radiative e relativi compromessi, senza validare un isolamento nel nostro
+nocciolo. Schermo Mo, emissività e spessori qui proposti NON sono valori
+qualificati ricavati da quel progetto.
+
+4. ARCHITETTURA E MODIFICHE RISPETTO ALLA VERSIONE A 880 K
+
+Percorso seriale: collettore superiore freddo -> anello vicino a YH2 in discesa
+-> collettore inferiore d'inversione -> anello sul fuel in salita -> uscita
+calda superiore a 1150 K. I collettori superiori caldo/freddo devono essere
+separati e isolati. Ogni cella ha la stessa portata nei suoi due passaggi;
+le 217 celle restano in parallelo e richiedono bilanciamento reale.
+
+Fra anello caldo e freddo: camera evacuata di 0.60 mm, con foglio cilindrico
+Mo da 0.025 mm, delimitata da due pareti Nb-1Zr da 0.30 mm. Non si usa più
+la sola parete metallica della versione a 880 K. Irraggiamento, conduzione
+dei supporti e gas residuo non sono nulli: il vuoto non è isolamento perfetto.
+
+Per recuperare margine di massa, l'altezza attiva passa da 500 a 480 mm.
+Con 500 mm questa revisione avrebbe circa 596.408 kg includendo gli stessi
+80 kg di hardware/riserva; a 480 mm arriva a 578.773 kg. È una scelta sul
+budget di massa, NON un optimum neutronico. L'inventario fuel resta circa
+5.49% sopra TB35, ma inferiore alla proposta a 500 mm: il costo in reattività
+e vita va verificato.
+
+L'isolamento occupa spazio prima destinato a YH2 e al canale freddo: il
+moderatore scende a 45.342 kg e il canale freddo si restringe. Queste modifiche
+possono peggiorare criticità, perdite di carico e fattibilità di fabbricazione.
+Il loro effetto non viene considerato automaticamente compensato dall'isolamento.
+
+5. GEOMETRIA NOMINALE, MATERIALI E CONTROLLO
+
+217 celle su reticolo triangolare, anelli 0..8, passo 23.00 mm.
+Altezza attiva 480 mm; raggio nocciolo 197 mm.
+Be radiale 88 mm, assiale 85 mm a ciascun estremo.
+Diametro esterno riflettore 570 mm; altezza con riflettori 650 mm.
+Vessel, collettori e azionamenti aumenteranno l'ingombro completo.
+
+Raggi esterni della cella, dal centro:
+   5.8500 mm  UN, densità 13.5 g/cm3
+   6.3300 mm  guaina Nb-1Zr, densità 8.57 g/cm3
+   7.1700 mm  anello He caldo, secondo passaggio, gap 0.84 mm
+   7.4700 mm  parete calda Nb-1Zr della camera evacuata
+   7.7575 mm  prima parte del vuoto
+   7.7825 mm  schermo Mo, 25 micrometri, densità 10.28 g/cm3
+   8.0700 mm  seconda parte del vuoto
+   8.3700 mm  parete fredda Nb-1Zr della camera evacuata
+   8.9700 mm  anello He freddo, primo passaggio, gap 0.60 mm
+   9.1700 mm  contenitore interno YH2, Nb-1Zr
+   9.2700 mm  barriera Al2O3 proposta, densità 3.95 g/cm3
+  10.8700 mm  YH2, spessore 1.60 mm, densità 4.30 g/cm3
+  10.9700 mm  barriera esterna Al2O3 proposta
+  11.1700 mm  contenitore esterno YH2, Nb-1Zr
+
+Il foglio Mo ha 0.2875 mm di vuoto su ciascun lato. Le cifre definiscono il
+modello nominale, NON tolleranze produttive già ottenibili. I distanziatori e
+le chiusure non sono modellati in dettaglio e devono rientrare nei budget di
+massa e ponti termici. Gap pellet/guaina, plenum gas, swelling e contatti non
+sono ancora risolti. Dilatazioni e tolleranze sono da dimensionare.
+
+Fuori dalle capsule: Be a 1.85 g/cm3, inclusa la periferia, senza YH2 periferico.
+Distanza nominale tra capsule 0.66 mm; distanza minima dal cilindro nocciolo
+1.83 mm. Sono clearance geometriche, non margini strutturali certificati.
+
+Nei riflettori assiali fuel e YH2 terminano; r<7.17 mm diventa un foro He caldo.
+Camera evacuata, Mo, anello freddo e contenitore interno continuano fino a
+r=9.17 mm; fuori è presente Be. L'isolamento si estende per tutti i 650 mm.
+Gli scambi attraverso terminali, collettori e supporti vanno inclusi a parte.
+
+Dieci tamburi: raggio 39.5 mm, centri a r=238.3 mm, lunghezza attiva 480 mm.
+Settori B4C di 148 gradi, spessore radiale 15 mm, densità 2.52 g/cm3, B-10
+al 90% atomico; resto del corpo Be. Theta=0 gradi assorbitore verso lo spazio,
+theta=180 gradi verso il nocciolo. Web interno 1.8 mm, esterno 7.2 mm.
+Worth, arresto, giochi e fattibilità strutturale restano da calcolare.
+
+U-235: 19.60% in massa nell'uranio dei 19 elementi degli anelli 0..2, 19.75%
+nei restanti 198. Nessun credito a N-15 arricchito. Le masse HM usano la
+convenzione approssimata UN 238/252 del riferimento per confronto; composizione
+isotopica effettiva e stechiometria richiedono un input dedicato.
+
+6. BILANCIO DI MASSA E FATTIBILITÀ MECCANICA
+
+  UN                                             151.181 kg
+  Guaina fuel                                     16.395 kg
+  Parete calda camera vuoto, attiva                 12.317 kg
+  Schermo Mo, attivo                                1.307 kg
+  Parete fredda camera vuoto, attiva                13.831 kg
+  Contenitore interno YH2, attivo                   10.174 kg
+  Barriera interna Al2O3                            2.383 kg
+  YH2                                             45.342 kg
+  Barriera esterna Al2O3                            2.823 kg
+  Contenitore esterno YH2                          12.418 kg
+  Prolungamenti assiali parete calda                4.362 kg
+  Prolungamenti assiali Mo                          0.463 kg
+  Prolungamenti assiali parete fredda               4.898 kg
+  Prolungamenti assiali contenitore interno         3.603 kg
+  B4C                                             14.998 kg
+  Be interstiziale/periferico attivo                32.735 kg
+  Be assiale interno al raggio nocciolo             20.316 kg
+  Be radiale e corpi tamburi                      149.228 kg
+  TOTALE SOLIDI                                  498.773 kg
+
+Assegnazioni non ancora dimensionate:
+  Vessel                                          20 kg
+  Testate, collettori, chiusure capsule             14 kg
+  Azionamenti e supporti tamburi                   10 kg
+  Griglie e supporti                               8 kg
+  Dettagli isolamento/contenimento H               4 kg
+  Strumentazione e minuteria                      4 kg
+  Extra tenute vuoto, distanziatori, connessioni   5 kg
+  TOTALE HARDWARE                                 65 kg
+  Riserva aggiuntiva                              15 kg
+  TOTALE CONCETTUALE                             578.773 kg
+
+Margine a 600 kg: 21.227 kg, prima del gas. Hardware e riserva potrebbero
+crescere complessivamente fino a circa 101.227 kg, meno il gas, contro gli
+80 kg assegnati. La differenza può essere consumata da rinforzi o tenute;
+non è un'incertezza statistica. Be totale 202.278 kg; Mo totale 1.770 kg.
+Pareti e foglio sono conteggiati geometricamente, non tutti nascosti nel budget.
+
+Sono esclusi scudo radiologico, convertitore, recuperatore, radiatori, linee
+esterne, propulsori e struttura del veicolo. Non è la massa del sistema NEP.
+
+Le pareti della camera evacuata vedono un differenziale vicino a 2.5 MPa:
+la parete interna va verificata a pressione interna/creep, quella esterna a
+collasso per pressione esterna, imperfezioni e creep. NON sono pareti a pressione
+bilanciata perché i due passaggi He sono alla stessa pressione. I 0.30 mm
+non sono qualificati; irraggiamento, contatti del foglio, vibrazioni e cicli
+termici possono compromettere isolamento e vita.
+
+Vanno qualificati evacuazione, tenuta, degassamento e gas residuo per >15 anni.
+Il vuoto dello spazio non garantisce il vuoto in una camera interna circondata
+da elio pressurizzato. Non si assume pompaggio attivo senza massa/potenza.
+Nb-1Zr/Al2O3 non sono automaticamente barriere H garantite: servono dati di
+permeazione, compatibilità e stabilità durante l'intera missione.
+
+7. BILANCIO ENERGETICO CON USCITA FISSA A 1150 K
+
+Con cp_He=5193.16 J/(kg K), costante per lo screening:
+  portata = 400000/[cp*(1150-800)] = 0.220070 kg/s
+  portata*cp = 1142.857 W/K.
+Area totale anelli caldi 77.3077 cm2; anelli freddi 70.9267 cm2.
+I 400 kW sono qui calore netto raccolto dall'elio; se parte della potenza di
+fissione esce altrove, normalizzazione e portata vanno riviste. Perdite di
+pressione e potenza di compressione non sono calcolate; il passaggio freddo
+più stretto non è assunto idraulicamente equivalente alla versione precedente.
+
+Definito Q1 il calore NETTO ricevuto nel primo passaggio:
+  T1,out = 800 + Q1/1142.857.
+Per T1,out<=850 K occorre Q1<=57.143 kW, il 14.29% dei 400 kW.
+Q1 comprende riscaldamento nucleare di YH2, pareti e Be e calore dalla regione
+calda, non soltanto una percentuale arbitraria di deposizione gamma.
+
+Il calore che attraversa l'isolamento è un trasferimento INTERNO: aumenta il
+carico del primo passaggio e si sottrae al secondo. Non si aggiunge due volte
+alla potenza del reattore. Nell'ipotesi illustrativa della sezione seguente:
+  primo passaggio: circa 51.082 kW -> T1,out circa 844.70 K;
+  secondo passaggio: netto circa 348.918 kW -> uscita finale 1150 K.
+I numeri chiudono il bilancio imposto, non dimostrano la distribuzione reale.
+
+I 50 K fra bulk obiettivo 850 K e solido obiettivo 900 K sono assegnati a film,
+contatti, conduzione e maldistribuzione: NON una loro stima. Per il limite
+950 K occorre il massimo locale del solido, incluse estremità e punti caldi.
+
+8. ISOLAMENTO: SCREENING CONDIZIONALE E SENSIBILITÀ
+
+Modello: 217 cilindri lunghi, altezza isolata 650 mm, superfici grigie diffuse,
+uno schermo opaco. Raggi affacciati al vuoto:
+  rh=7.4700 mm, rsi=7.7575 mm, rso=7.7825 mm, rc=8.0700 mm.
+Area calda totale A=217*2*pi*rh*0.65 m, usando rh in metri.
+Con emissività comune prescritta e:
+  D = 1/e + (rh/rsi)*(1/e-1) + (rh/rso)/e + (rh/rc)*(1/e-1)
+  Q_rad = A*sigma*(Th^4-Tc^4)/D.
+Sono due resistenze radiative concentriche in serie [6], con foglio isotermo
+senza generazione propria nella soluzione di base. La deposizione nel foglio
+va inclusa conservativamente nel carico diretto assegnato al lato freddo e
+poi risolta esplicitamente nel modello coniugato.
+
+Ipotesi, NON proprietà misurate o temperature simulate:
+  emissività di tutte le superfici affacciate e=0.15;
+  limite superiore prescritto parete calda Th=1200 K;
+  limite inferiore prescritto parete fredda Tc=800 K;
+  conduttanza totale ponti solidi G_bridge=10 W/K;
+  conduttanza equivalente gas residuo G_gas=2 W/K;
+  carico diretto lato freddo Q_n=20 kW.
+Q_n include contributi di Be, terminali, altre strutture e sorgenti nel foglio
+che raggiungano il lato freddo: deve derivare da tallies e problema coniugato.
+Non è una deposizione già calcolata.
+
+Con Q1=Q_n+Q_rad+(G_bridge+G_gas)*(Th-Tc), sulla lunghezza isolata completa:
+  irraggiamento 26.282 kW; ponti 4.000 kW; gas 0.800 kW;
+  Q1=51.082 kW; bulk uscita fredda 844.70 K.
+È compatibilità CONDIZIONALE con 57.143 kW: il margine è appena 6.061 kW.
+Non dimostra T_YH2,max o durata dell'isolamento.
+
+Variazioni singole rispetto all'ipotesi precedente:
+  Caso                         Q1 [kW]   T1,out [K]   Target bulk <=850 K
+  Ipotesi di progetto           51.082     844.70      compatibile
+  Emissività 0.30                81.901     871.66      non soddisfatto
+  Parete calda 1300 K            64.641     856.56      non soddisfatto
+  Ponti solidi 40 W/K            63.082     855.20      non soddisfatto
+  Carico diretto 40 kW           71.082     862.20      non soddisfatto
+  Gas residuo 100 W/K            90.282     879.00      non soddisfatto
+
+Stare sotto 850 K bulk non dimostra il rispetto del limite del solido; superarlo
+non dimostra automaticamente YH2>950 K: segnala il consumo del margine.
+Variazioni combinate possono essere peggiori. La perdita completa di vuoto
+richiede un modello diverso e non è rappresentata dal solo G_gas=100 W/K.
+
+La stima radiativa è un limite di screening solo SE le pareti rispettano gli
+inviluppi Th/Tc prescritti. Non è noto se Th,max resti a 1200 K con He medio
+a 1150 K o se e=0.15 si mantenga per 18 anni. Servono profili assiali, riscaldamento
+del foglio, estremità, contatti ed emissività variabile. I 10 W/K riguardano
+TUTTO l'assieme, non ogni pin: una connessione massiccia può invalidare il budget.
+
+9. CRITICITÀ, FEEDBACK E DURATA ANCORA DA DIMOSTRARE
+
+Inventari indicativi: 151.181 kg UN, 142.782 kg HM, 28.181 kg U-235.
+A 400 kWth continui e 365.25 giorni/anno:
+  15 anni = 2191.5 MWd = 15.349 MWd/kgHM;
+  18 anni = 2629.8 MWd = 18.418 MWd/kgHM.
+È esposizione energetica, NON previsione di lifespan. Rispetto a TB35 ci sono
+più fuel, molto meno YH2, diverso riflettore e assorbimenti nuovi in Mo/pareti:
+la candidata potrebbe non essere critica. Non è dimostrato che sia sotto-moderata.
+
+L'isolamento affronta la separazione termica, ma non rende alpha_mod negativo.
+Se il criterio è avere tutti e tre i coefficienti a densità fissa negativi,
+il segno positivo di uno resta motivo di revisione/scarto anche con totale
+negativo. Non si useranno espansione arbitraria o perdita H per mascherarlo.
+Se il problema persiste, va considerata una diversa famiglia di moderatori/fuel
+rifacendo massa e criticità: un moderatore più freddo non risolve da solo il segno.
+
+Stato dei requisiti:
+  Uscita He 1150 K       VINCOLO impostato; bilancio energetico chiuso
+  Massa <600 kg          compatibile con budget; hardware non dimensionato
+  k_eff regolabile a 1   NON CALCOLATO
+  Vita >15 anni          NON CALCOLATA; obiettivo 18 anni
+  YH2 massimo <950 K     NON CALCOLATO; screening solo condizionale
+  alpha_fuel <0          NON CALCOLATO
+  alpha_moderatore <0    NON CALCOLATO; rischio positivo noto
+  alpha_totale <0        NON CALCOLATO
+  Arresto/stuck drum     NON CALCOLATI
+  Jacket per 18 anni     NON QUALIFICATO
+  Ciclo e radiatori      NON DIMENSIONATI
+
+Nella prossima fase, da decidere insieme, servono prima criticità/feedback con
+dati termici specifici di YH2 e Be, sensibilità alla moderazione e dati realistici
+per jacket e ciclo 800/1150 K. Dopo i filtri essenziali: depletion con catena
+completa e ricerca theta_crit, termoidraulica con deposizione/contatti/flussaggi.
+Feedback e arresto vanno verificati anche a metà/fine vita. Vicino all'esaurimento
+della riserva di reattività occorrono passi temporali più fini. L'incertezza
+Monte Carlo non copre da sola dati nucleari, materiali, geometria e degrado.
+
+10. FILE, CONTROLLI E RIPRODUCIBILITÀ
+
+report.txt: questa revisione, sostituisce il report a 880 K.
+configuration.json: geometria e condizioni aggiornate, incluso vincolo 1150 K.
+pins.csv: tutti i 217 centri e arricchimenti.
+mass_breakdown.csv: volumi, densità e masse analitiche.
+screening.json: bilanci globali e controlli geometrici.
+thermal_screen.json, thermal_sensitivity.csv: ipotesi e scenari espliciti.
+scripts/generate_design.py: rigenera dati e figure; non lancia simulatori.
+
+Figure PNG e PDF:
+  01_core_xy: sezione attiva e tamburi OUT.
+  02_unit_cell: cella con vuoto, Mo e raggi aggiornati.
+  03_axial_and_flow: isolamento esteso ai riflettori e percorso seriale.
+  04_mass_and_energy_screen: massa e budget del passaggio freddo.
+  05_insulation_sensitivity_and_radiator: sensibilità isolamento e legge T^4.
+Non sono mappe simulate di flusso, temperatura o potenza.
+
+Rigenerazione dalla root del workspace:
+/home/aleri/miniforge3/envs/openmc-env/bin/python \
+  new_possible_best_configurations/second_try/scripts/generate_design.py
+
+Controlli: 217 celle non sovrapposte; celle/tamburi contenuti nei relativi
+inviluppi; partizione solidi/He/vuoto chiusa entro errore numerico; somma masse;
+bilancio entalpico a 1150 K. Non sostituiscono geometry-debug OpenMC o FEM.
+archive_880K/ conserva la stesura precedente con manifest SHA-256. ../first_try
+e i risultati precedenti non sono stati modificati in questa revisione.
+
+11. BIBLIOGRAFIA E ATTRIBUZIONE
+
+[1] B. J. Ade, B. R. Betzler, J. R. Burns, C. W. Chapman, J. Hu (2022).
+    Reactor Physics Considerations for Use of Yttrium Hydride Moderator.
+    Nuclear Science and Engineering 196(12), 1539-1558.
+    https://doi.org/10.1080/00295639.2022.2035157
+    https://www.ornl.gov/publication/reactor-physics-considerations-use-yttrium-hydride-moderator
+    Scheda/abstract ORNL consultati nella prima stesura; testo editore non
+    disponibile. Non valida questa geometria.
+
+[2] D. V. Rao, K. Polzin, M. Houts, F. Curran, M. Rodriguez (2021).
+    Fuel and Moderator Development Strategy for NEP Systems. JANNAF.
+    https://ntrs.nasa.gov/citations/20210000794
+    Scheda/abstract NASA NTRS, non dimostrazione di vita per S2-R1.
+
+[3] A. Peakman, R. Gregg (2020).
+    The challenges of gas-cooled reactor technology for space propulsion
+    and the development of the JANUS space reactor concept.
+    https://arxiv.org/abs/2004.12116
+    Abstract del manoscritto degli autori consultato nella prima stesura.
+
+[4] K. Benensky Palomares (2021).
+    Moderator Considerations for Space Nuclear Power and Propulsion Systems.
+    https://ntrs.nasa.gov/citations/20210010285
+    Scheda/abstract NASA NTRS.
+
+[5] NASA Goddard, Multiwavelength Milky Way: Radiation Laws.
+    https://asd.gsfc.nasa.gov/archive/mwmw/mmw_bbody.html
+    Fonte primaria divulgativa per Stefan-Boltzmann, non un modello del ciclo.
+
+[6] INL, BISON, ECAR 131 Verification Problems, Radiation between Concentric
+    Cylinders (Problem #8).
+    https://mooseframework.inl.gov/bison/verification/ECAR_131/ECAR_131.html
+    Verifica della formulazione radiativa; le due resistenze con schermo sono
+    combinate analiticamente qui. Non è stata eseguita una simulazione BISON.
+
+[7] P. Schmitz, L. Tower, R. Dawson, B. Blue, P. Dunn (1993).
+    Preliminary SP-100/Stirling heat exchanger designs. NASA-TM-106444.
+    https://ntrs.nasa.gov/citations/19940017336
+    Scheda/abstract NASA consultati; PDF non accessibile nella sessione.
+    Precedente sulle interfacce radiative/conduttive spaziali, non qualifica
+    del foglio Mo o della camera evacuata interna a questo nocciolo.
+
+Fonti consultate il 7 ottobre 2026. Dimensioni, emissività, conduttanze,
+carichi termici, budget hardware e punto 800/1150 K sono ipotesi della proposta,
+non prestazioni sperimentali tratte dalla letteratura. La candidata incorpora
+il nuovo vincolo nella specifica e nei bilanci; la sua conformità fisica resta
+da verificare insieme.

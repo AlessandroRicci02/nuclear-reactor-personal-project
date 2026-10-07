@@ -1,0 +1,3 @@
+Configuration,Coolant_Gap_mm,Clad_Thickness_mm,Pin_Flow_Area_m2,Core_Flow_Area_m2,Mass_Flow_kg_s,Friction_Delta_P_kPa,Orifice_Delta_P_kPa,Total_Core_Delta_P_kPa,Margin_to_35kPa_Limit,Compliance_Status,Physical_Mechanism
+Historical Opt-17 Baseline (Cand 17-Clean),0.75,0.5,3.146e-05,0.006826,0.38512,16.2,10.22,26.42,8.58,MARGINALLY_COMPLIANT,Narrow gap (0.75 mm) increases laminar/transitional friction velocity head.
+Reference Flight Architecture (V7_CAND_BALANCED_ROBUST),0.84,0.48,3.519e-05,0.007635,0.38512,10.62,13.09,20.59,14.41,ROBUST_PASS,"+12.0% gap expansion (0.84 mm) expands annular flow area by +11.8%, cutting frictional pressure drop by 34.4% and leaving 14.41 kPa margin."

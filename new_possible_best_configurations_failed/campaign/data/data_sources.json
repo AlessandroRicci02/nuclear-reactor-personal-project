@@ -1,0 +1,8 @@
+{
+  "sources": {
+    "endfb80_hdf5.tar.xz": "https://anl.box.com/shared/static/uhbxlrx7hvxqw27psymfbhi7bx7s6u6a.xz?download=1",
+    "chain_endfb80_thermal.xml": "https://anl.box.com/shared/static/nyezmyuofd4eqt6wzd626lqth7wvpprr.xml"
+  },
+  "library": "Official OpenMC ENDF/B-VIII.0 NJOY2016.68",
+  "reason": "Existing local neutron tables are room-temperature only and lack YH2 thermal scattering; chain_nep.xml contains only 12 nuclides."
+}

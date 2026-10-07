@@ -1,0 +1,11 @@
+Material,Domain,Max_Temperature_K,Max_Location,Mean_Temperature_K,Modeling_Approach,Thermal_Status,Source_File
+UN Fuel (Sintered Pellets),Solid Fuel Matrix (217 pins),1272.1,"Pin 203 (Ring 2), Centerline r=0, z=31.8 cm",1186.8,MOOSE 2D RZ Continuous FEM (24x60 elements),SOLVED_HIGH_FIDELITY,moose_thermal/cardinal_peak_pin_203_out.csv
+UN Fuel (1D Annular Channel Model),Solid Fuel Matrix (217 pins),1304.9,"Pin 203 (Ring 2), Centerline r=0, z=31.8 cm",1172.9,1D Closed-Form Radial Conduction (Conservative),SOLVED_CONSERVATIVE_1D,coupled_picard/converged_channel_results.csv
+Nb-1Zr Cladding,Fuel Clad Outer Surface (217 pins),1248.8,"Pin 203 (Ring 2), Outer Surface r=0.628 cm, z=42.45 cm",1177.2,MOOSE 2D RZ Continuous FEM (8x60 elements),SOLVED_HIGH_FIDELITY,moose_thermal/cardinal_peak_pin_203_out.csv
+Nb-1Zr Cladding (1D Annular Model),Fuel Clad Outer Surface (217 pins),1273.0,"Pin 203 (Ring 2), Outer Surface r=0.628 cm, z=42.45 cm",1160.7,1D Annular Radial Conduction (Conservative),SOLVED_CONSERVATIVE_1D,coupled_picard/converged_channel_results.csv
+Helium Coolant (Bulk Fluid),217 Annular Flow Channels,1167.5,"Channel 203 Exit, z=42.45 cm",1050.0,1D Compressible Axial Flow with Orificing,SOLVED_COMPRESSIBLE_FLOW,coupled_picard/converged_channel_results.csv
+Helium Coolant (Inlet Header),Inlet Plenum Boundary,950.0,"Core Inlet Plane, z=0.0 cm",950.0,Prescribed Thermal Boundary Condition,PRESCRIBED_BOUNDARY_CONDITION,build_reference_model.py (T_INLET)
+Helium Coolant (Mixed Bulk Outlet),Outlet Header Mixing Chamber,1150.0,"Mixed Outlet Plenum, z=42.45 cm",1150.0,Integrated Enthalpy Conservation: sum(m_i*Cp*T_i)/M_tot,EXACT_ENERGY_CONSERVED,coupled_picard/picard_convergence_history.csv
+Solid YH2.0 Moderator,Interstitial Hexagonal Matrix,965.0,Core-Wide Interstitial Matrix (Uniform Value),965.0,Assumed Boundary Condition in OpenMC geometry,UNAVAILABLE_CONJUGATE_FIELD (BC_ONLY),build_reference_model.py (T_mod = 965 K)
+BeO Radial & Axial Reflectors,External Reflector Blocks,900.0,External Reflector (Uniform Value),900.0,Assumed Boundary Condition in OpenMC geometry,UNAVAILABLE_CONJUGATE_FIELD (BC_ONLY),build_reference_model.py (T_refl = 900 K)
+Al2O3 Hydrogen Barrier,Sub-Micron Coating on Moderator Cans,UNAVAILABLE,Not Discretely Meshed in Thermal Model,UNAVAILABLE,Not Represented in Finite Element Discretization,UNAVAILABLE_NOT_MESHED,N/A

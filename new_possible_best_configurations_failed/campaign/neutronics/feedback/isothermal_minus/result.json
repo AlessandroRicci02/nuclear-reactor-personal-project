@@ -1,0 +1,29 @@
+{
+  "keff": 1.0461928482111844,
+  "sigma": 0.00014862975485935986,
+  "sigma_pcm_k": 14.862975485935987,
+  "reactivity_pcm": 4415.328234193772,
+  "reactivity_sigma_pcm": 13.579452733934563,
+  "batches": 2180,
+  "requested_batches": 180,
+  "inactive": 60,
+  "particles": 20000,
+  "wall_seconds": 873.1683974266052,
+  "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/campaign/neutronics/feedback/isothermal_minus/statepoint.02180.h5",
+  "request_sha256": "33afa38c3234f505ca725cc2202e3ac3e79130ab4ff8b33d0cf35439ae30fb9b",
+  "request": {
+    "sigma": 0.00015,
+    "theta": 0.0,
+    "seed": 7501,
+    "temperatures": {
+      "fuel": 1095.0,
+      "clad": 1070.0,
+      "moderator": 804.5,
+      "reflector": 770.0,
+      "coolant": 901.0
+    }
+  },
+  "target_achieved": true,
+  "entropy_inactive_last20_mean": 9.458233387790093,
+  "entropy_active_first20_mean": 9.455333813074475
+}

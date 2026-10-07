@@ -1,0 +1,13 @@
+{
+  "candidate": "full_mid_be",
+  "stage": "pilot",
+  "case": "fuel_minus",
+  "request_sha256": "ae8b1f1a00ed26847eef21fe0fec04e7c8a117582501f938231ad166afbc77e3",
+  "k_eff": 1.061137658977199,
+  "sigma_k": 0.0018155929679292784,
+  "rho_pcm": 5761.520049729263,
+  "sigma_rho_pcm": 161.24083436165398,
+  "batches": 100,
+  "particles": 4000,
+  "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/campaign/full_mid_be/pilot/fuel_minus/statepoint.100.h5"
+}

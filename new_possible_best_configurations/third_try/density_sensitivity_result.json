@@ -1,0 +1,19 @@
+{
+  "definition": "central difference of reactivity at fixed moderator temperature 875 K, YH2 density changed by +/-2%; geometry fixed",
+  "reactivity_sensitivity_pcm_per_fractional_density": 29801.236280901638,
+  "sampling_sigma_pcm_per_fractional_density": 959.3990817202755,
+  "reactivity_sensitivity_pcm_per_percent_density": 298.0123628090164,
+  "assumed_volumetric_expansion_1_per_K": 3.6e-05,
+  "exploratory_beta_range_1_per_K": [
+    2.4e-05,
+    4.95e-05
+  ],
+  "estimated_density_feedback_pcm_per_K": -1.072844506112459,
+  "sampling_sigma_density_feedback_pcm_per_K": 0.03453836694192992,
+  "estimated_feedback_range_beta_only_pcm_per_K": [
+    -1.475161195904631,
+    -0.7152296707416393
+  ],
+  "caveat": "An auxiliary sensitivity, not a qualified physical expansion model: YH2 composition and geometry expansion are not modeled. The beta range is a rough 3x conversion of ORNL-reported linear CTE 8-16.5e-6/K for YHx (x 1.60-1.95), not a measurement for this YH2 component.",
+  "source": "https://info.ornl.gov/sites/publications/Files/Pub160401.pdf"
+}

@@ -1,0 +1,60 @@
+{
+  "definition": "central difference of rho=(k-1)/k at BOL, all drums OUT; static geometry and solid density; total varies every material temperature and helium density at fixed pressure",
+  "moderator_material": "ZrHx (x=1.2)",
+  "moderator_thermal_scattering": [
+    "c_H_in_ZrH",
+    "c_Zr_in_ZrH"
+  ],
+  "reference": {
+    "case": "reference",
+    "request_signature": "f599304b41b90d22c143648bd2266d8740979e77386c840c91a3f1ea5cbe51fc",
+    "k_eff": 1.0269893371621277,
+    "sigma_k": 0.00029824006426039845,
+    "reactivity_pcm": 2628.005587351778,
+    "sigma_reactivity_pcm": 28.277051007207167,
+    "particles_per_batch": 18000,
+    "active_batches": 590,
+    "inactive_batches": 50,
+    "target_achieved": true,
+    "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/fourth_try/campaign/feedback/reference/statepoint.640.h5"
+  },
+  "coefficients": [
+    {
+      "kind": "fuel",
+      "alpha_pcm_per_K": -1.0130188431770604,
+      "sigma_pcm_per_K": 0.20320050771791004,
+      "confidence_95_normal_pcm_per_K": [
+        -1.4112918383041642,
+        -0.6147458480499567
+      ],
+      "delta_K": 100.0,
+      "minus_case": "fuel_minus",
+      "plus_case": "fuel_plus"
+    },
+    {
+      "kind": "moderator",
+      "alpha_pcm_per_K": -0.30977282738614575,
+      "sigma_pcm_per_K": 0.19842121232626034,
+      "confidence_95_normal_pcm_per_K": [
+        -0.698678403545616,
+        0.07913274877332449
+      ],
+      "delta_K": 100.0,
+      "minus_case": "moderator_minus",
+      "plus_case": "moderator_plus"
+    },
+    {
+      "kind": "total",
+      "alpha_pcm_per_K": -0.20632729211761444,
+      "sigma_pcm_per_K": 0.20023381061334486,
+      "confidence_95_normal_pcm_per_K": [
+        -0.5987855609197703,
+        0.18613097668454145
+      ],
+      "delta_K": 100.0,
+      "minus_case": "total_minus",
+      "plus_case": "total_plus"
+    }
+  ],
+  "cross_sections": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations_failed/campaign/data/endfb-viii.0-hdf5/cross_sections.xml"
+}

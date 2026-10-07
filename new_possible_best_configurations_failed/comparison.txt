@@ -1,0 +1,60 @@
+P1 ELLIPTIC BALANCED versus GEOM_OPT15_TB35
+Updated: 2026-10-06T08:57:46+02:00
+Campaign status: RUNNING; stage: source_check
+Active OpenMC calculation: p1_source_check
+Only completed solver outputs are reported as results. PENDING is not a result.
+Uncertainties on keff and feedback are Monte Carlo standard errors only; no nuclear-data covariance or thermal-property uncertainty has been propagated.
+
+MODEL AND MASS
+P1 modeled solids: 578.963 kg; stochastic check 578.978 +/- 0.272 kg.
+TB35, same Boolean-union inventory convention: 595.154 kg.
+P1 minus TB35: -16.190 kg.
+Both retain 135.345 kg initial uranium and 26.713 kg U235.
+These are modeled solid inventories, excluding pressure vessel, drives, manifolds, supports, extra hydrogen encapsulation, shielding and power conversion.
+
+BEGINNING-OF-LIFE NEUTRONICS AT PRESCRIBED NOMINAL TEMPERATURES
+P1, drums outward (0 deg): 1.0463155 +/- 0.0001983 (1 sigma, 19.8 pcm in k)
+P1, drums inward (180 deg): 0.9814963 +/- 0.0001966 (1 sigma, 19.7 pcm in k)
+TB35, corrected common data, outward: 1.0478786 +/- 0.0002000 (1 sigma, 20.0 pcm in k)
+TB35, corrected common data, inward: PENDING: no completed precision-qualified result
+Historical TB35 outward: 1.0194721 +/- 0.0005404.
+Historical TB35 inward: 0.9716279 +/- 0.0004446.
+Historical TB35 used the previous room-temperature/WMP library and ZrH scattering substitute. New common-data runs use ENDF/B-VIII.0, temperature interpolation and YH2 scattering. Historical-to-new differences cannot be attributed solely to geometry.
+P1 critical drum angle: PENDING.
+TB35 critical drum angle: PENDING.
+
+THERMAL AND DENSITY REACTIVITY COEFFICIENTS
+P1 feedback coefficients: PENDING.
+Historical TB35 coefficients (different nuclear-data treatment):
+  Fuel Doppler: -0.98803 +/- 0.1626 pcm/K; 95% sign: negative.
+  Moderator Spectral: -0.010324 +/- 0.3187 pcm/K; 95% sign: unresolved.
+  Moderator Density: +310.87 +/- 14.41 pcm/%; 95% sign: positive.
+  Coolant Density: -0.8476 +/- 0.6653 pcm/%; 95% sign: unresolved.
+  Reflector Temperature: +0.011853 +/- 0.2872 pcm/K; 95% sign: unresolved.
+  Cladding Temperature: -0.66858 +/- 0.2909 pcm/K; 95% sign: negative.
+
+DEPLETION AND LIFETIME
+P1 lifespan and 2.5-year drum schedule: PENDING.
+P1 method: full thermal-branching ENDF/B-VIII.0 chain, 30 fuel compositions, CE/CM, 400 kW recoverable-fission power; startup steps 0.25/0.75/2/7/20/61.3125 days, then <=0.25 yr. Each transport stage checks criticality within a 75 pcm 95% statistical band and respects the 0–180 deg limits. This is quasi-static numerical control, not reactor dynamics.
+Historical TB35 outward-keff crossing: approximately 16.98 years by linear interpolation, bracketed by 15 and 17.5 years. Not an exact or uncertainty-qualified lifespan.
+Historical TB35 depletion uses chain_nep.xml (12 nuclides) and single 2.5-year predictor steps. 4 rows labeled critical exceed its own 100 pcm mean-keff tolerance. It is not a like-for-like full-chain benchmark.
+
+MOOSE/CARDINAL THERMAL-HYDRAULICS
+P1: PENDING actual heating-driven Cardinal results.
+TB35: PENDING actual heating-driven Cardinal results.
+Historical TB35 peak-pin Cardinal calculation: fuel 1207.847 K; clad 1191.454 K.
+Its pin powers and flow multipliers were prescribed. Moderator peak 914.83 K and core pressure loss 13.5 kPa are assigned constants in its script, not independently converged coupled predictions.
+The new and historical thermal results differ in heat deposition and flow accounting. The new common-model TB35 calculation is the appropriate geometry comparison.
+The reported depletion lifetime is a neutronic control-limit lifetime at prescribed temperatures. Thermal/material limits may restrict service life earlier.
+Net electric power and launch-system performance are not newly established by these neutronic and reduced thermal calculations.
+
+FILES AND REPRODUCTION
+campaign/status.json: stage status and error details
+campaign/logs/campaign.log: queue log; per-stage logs alongside it
+campaign/neutronics/*/result.json: precision-qualified keff and statepoint provenance
+campaign/data/feedback_coefficients.json: propagated independent-endpoint uncertainties
+campaign/depletion/interval_*/: restartable materials, full depletion HDF5 and control history
+campaign/thermal/{p1,tb35}/: deposited heating, meshes, MOOSE inputs/logs, fluid balances and FEM outputs
+Resume with: /home/aleri/miniforge3/envs/openmc-env/bin/python -u scripts/p1_campaign.py
+Existing OpenMC, standalone MOOSE, and Cardinal installations are reused. Native Cardinal/OpenMC interface validation is recorded separately under campaign/validation/cardinal_openmc_statepoint.
+No historical TB35 results are modified.

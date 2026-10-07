@@ -1,0 +1,86 @@
+{
+  "depletion_api/validation.json": {
+    "validation_only": true,
+    "purpose": "CE/CM full-chain API, 30 compositions, C API drum rotation, final-material export. Deliberately low statistics; not a critical reactor result.",
+    "timesteps_days": [
+      0.001
+    ],
+    "depletable_materials": 30,
+    "chain_nuclides": 3820,
+    "passed": true
+  },
+  "photon_heating/validation.json": {
+    "validation_only": true,
+    "passed": true,
+    "purpose": "Low-statistics neutron/photon transport and material/cell heating handoff; not a precision-qualified reactor result.",
+    "array_shapes": {
+      "fuel": [
+        217,
+        10
+      ],
+      "clad": [
+        217,
+        10
+      ],
+      "liner": [
+        217,
+        10
+      ],
+      "moderator": [
+        217,
+        10
+      ]
+    }
+  },
+  "controller_algorithm.json": {
+    "validation_only": true,
+    "cases": [
+      {
+        "case": "bracketed",
+        "status": "VERIFIED_WITHIN_60_PCM_AT_95_PERCENT",
+        "calls": 6,
+        "passed": true
+      },
+      {
+        "case": "subcritical",
+        "status": "SUBCRITICAL_AT_ALL_DRUM_ANGLES",
+        "calls": 2,
+        "passed": true
+      },
+      {
+        "case": "supercritical",
+        "status": "SUPERCRITICAL_AT_ALL_DRUM_ANGLES",
+        "calls": 2,
+        "passed": true
+      }
+    ]
+  },
+  "depletion_controller_algorithm.json": {
+    "validation_only": true,
+    "cases": [
+      {
+        "case": "bracketed",
+        "passed": true,
+        "transport_calls": 6
+      },
+      {
+        "case": "unavailable",
+        "passed": true,
+        "transport_calls": 3
+      }
+    ]
+  },
+  "thermal_p1": {
+    "validation_only": true,
+    "energy_residual_W": -8.731149137020111e-10,
+    "pin_mesh_change_peak_K": -0.09275471809996816,
+    "cell_mesh_change_peak_K": 0.00024005988234421238
+  },
+  "thermal_tb35": {
+    "validation_only": true,
+    "energy_residual_W": -9.89530235528946e-10,
+    "pin_mesh_change_peak_K": -0.08965470400016784,
+    "cell_mesh_change_peak_K": 0.0005840255867042288
+  },
+  "syntax_checked_python_files": 9
+}

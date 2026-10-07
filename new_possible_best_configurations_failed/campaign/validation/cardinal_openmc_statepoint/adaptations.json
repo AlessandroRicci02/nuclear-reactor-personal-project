@@ -1,0 +1,9 @@
+{
+  "official_source": "/home/aleri/projects/cardinal/test/tests/neutronics/openmc_statepoint",
+  "changes": [
+    "Absolute mesh path",
+    "294 K for available room-temperature data",
+    "5000 particles, 30 inactive, 100 active batches"
+  ],
+  "command": "env PATH=/home/aleri/miniforge3/envs/moose/bin:/usr/bin:/bin OPENMC_CROSS_SECTIONS=/home/aleri/nndc_hdf5/cross_sections.xml OMP_NUM_THREADS=2 /home/aleri/projects/cardinal/cardinal-opt -i openmc.i --n-threads=2"
+}

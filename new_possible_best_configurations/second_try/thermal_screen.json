@@ -1,0 +1,102 @@
+{
+  "status": "PRESCRIBED_SCENARIOS_NOT_SIMULATED_TEMPERATURES",
+  "radiating_hot_area_m2": 6.620237358205274,
+  "scenarios": [
+    {
+      "case": "Ipotesi di progetto",
+      "surface_emissivity_assumed": 0.15,
+      "hot_wall_bound_K": 1200,
+      "cold_wall_lower_bound_K": 800.0,
+      "bridge_conductance_W_K": 10,
+      "residual_gas_conductance_W_K": 2,
+      "direct_cold_load_kW": 20,
+      "radiative_leak_kW": 26.281638390742106,
+      "bridges_kW": 4.0,
+      "residual_gas_kW": 0.8,
+      "total_cold_load_kW": 51.081638390742114,
+      "cold_bulk_outlet_screen_K": 844.6964335918993,
+      "below_850K_bulk_target": true
+    },
+    {
+      "case": "Superfici degradate",
+      "surface_emissivity_assumed": 0.3,
+      "hot_wall_bound_K": 1200,
+      "cold_wall_lower_bound_K": 800.0,
+      "bridge_conductance_W_K": 10,
+      "residual_gas_conductance_W_K": 2,
+      "direct_cold_load_kW": 20,
+      "radiative_leak_kW": 57.100513467342026,
+      "bridges_kW": 4.0,
+      "residual_gas_kW": 0.8,
+      "total_cold_load_kW": 81.90051346734202,
+      "cold_bulk_outlet_screen_K": 871.6629492839243,
+      "below_850K_bulk_target": false
+    },
+    {
+      "case": "Parete calda a 1300 K",
+      "surface_emissivity_assumed": 0.15,
+      "hot_wall_bound_K": 1300,
+      "cold_wall_lower_bound_K": 800.0,
+      "bridge_conductance_W_K": 10,
+      "residual_gas_conductance_W_K": 2,
+      "direct_cold_load_kW": 20,
+      "radiative_leak_kW": 38.64064202100395,
+      "bridges_kW": 5.0,
+      "residual_gas_kW": 1.0,
+      "total_cold_load_kW": 64.64064202100396,
+      "cold_bulk_outlet_screen_K": 856.5605617683784,
+      "below_850K_bulk_target": false
+    },
+    {
+      "case": "Ponti termici maggiori",
+      "surface_emissivity_assumed": 0.15,
+      "hot_wall_bound_K": 1200,
+      "cold_wall_lower_bound_K": 800.0,
+      "bridge_conductance_W_K": 40,
+      "residual_gas_conductance_W_K": 2,
+      "direct_cold_load_kW": 20,
+      "radiative_leak_kW": 26.281638390742106,
+      "bridges_kW": 16.0,
+      "residual_gas_kW": 0.8,
+      "total_cold_load_kW": 63.081638390742114,
+      "cold_bulk_outlet_screen_K": 855.1964335918993,
+      "below_850K_bulk_target": false
+    },
+    {
+      "case": "Deposizione maggiore",
+      "surface_emissivity_assumed": 0.15,
+      "hot_wall_bound_K": 1200,
+      "cold_wall_lower_bound_K": 800.0,
+      "bridge_conductance_W_K": 10,
+      "residual_gas_conductance_W_K": 2,
+      "direct_cold_load_kW": 40,
+      "radiative_leak_kW": 26.281638390742106,
+      "bridges_kW": 4.0,
+      "residual_gas_kW": 0.8,
+      "total_cold_load_kW": 71.08163839074211,
+      "cold_bulk_outlet_screen_K": 862.1964335918993,
+      "below_850K_bulk_target": false
+    },
+    {
+      "case": "Gas residuo maggiore",
+      "surface_emissivity_assumed": 0.15,
+      "hot_wall_bound_K": 1200,
+      "cold_wall_lower_bound_K": 800.0,
+      "bridge_conductance_W_K": 10,
+      "residual_gas_conductance_W_K": 100,
+      "direct_cold_load_kW": 20,
+      "radiative_leak_kW": 26.281638390742106,
+      "bridges_kW": 4.0,
+      "residual_gas_kW": 40.0,
+      "total_cold_load_kW": 90.28163839074212,
+      "cold_bulk_outlet_screen_K": 878.9964335918994,
+      "below_850K_bulk_target": false
+    }
+  ],
+  "assumptions": [
+    "Common emissivity on all four gap-facing surfaces is prescribed, not measured.",
+    "Uniform hot-wall upper and cold-wall lower bounds over full 65 cm, not axial profiles.",
+    "Steady foil radiation; direct nuclear heating allowance includes its possible cold-side contribution.",
+    "No film/conduction temperature peak or loss-of-vacuum qualification."
+  ]
+}

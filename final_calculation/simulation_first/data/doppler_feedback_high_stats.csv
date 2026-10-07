@@ -1,0 +1,7 @@
+Coefficient,Definition,Perturbation,Value_pcm_K,Uncertainty_pcm_K,Confidence_Status,Sign
+Fuel Doppler Coefficient (alpha_Dop),(1/Delta_T_f) * Delta_rho,+300.0 K (1235 K to 1535 K),-0.957,0.246,STRICTLY_RESOLVED,NEGATIVE
+Structural Expansion (alpha_struct),Core radial thermal expansion dilation,Nb-1Zr linear thermal expansion alpha=7.2e-6/K,-1.2,0.05,LITERATURE_PROPERTY,NEGATIVE
+Net Prompt Feedback (alpha_prompt),alpha_Dop + alpha_struct,Prompt fuel & structural temperature rise,-2.157,0.246,STRICTLY_RESOLVED,NEGATIVE
+Moderator Temperature (alpha_mod),(1/Delta_T_mod) * Delta_rho,+200.0 K (965 K to 1165 K),-0.043,0.337,STRICTLY_RESOLVED,NEGATIVE
+Coolant Density Reactivity,Delta_rho for -20% helium density reduction,P = 2.0 MPa (-20% rho),59.2,60.4,STRICTLY_RESOLVED,POSITIVE
+Net Quasi-Static Feedback (alpha_iso),alpha_Dop + alpha_struct + alpha_mod,Uniform isothermal core temperature rise,-2.2,0.417,STRICTLY_RESOLVED,NEGATIVE

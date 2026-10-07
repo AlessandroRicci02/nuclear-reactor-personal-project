@@ -1,0 +1,7 @@
+state,description,T_K,P_MPa
+1,Compressor Inlet,400.0,1.0200202429149796
+2,Compressor Outlet,605.9807045634903,2.5500506072874494
+3,Core Inlet (Recup HP Out),920.0,2.51945
+4,Core Outlet / Turbine In,1130.0,2.5
+5,Turbine Outlet,835.3469452314882,1.0631966592470006
+6,Cooler Inlet (Recup LP Out),521.3276497949786,1.0440591193805544

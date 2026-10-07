@@ -1,0 +1,26 @@
+{
+  "name": "feedback/isothermal_plus",
+  "directory": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/campaign/neutronics/feedback/isothermal_plus",
+  "started_unix": 1791282854.8879595,
+  "command": [
+    "/home/aleri/miniforge3/envs/openmc-env/bin/openmc",
+    "-s",
+    "4"
+  ],
+  "request": {
+    "sigma": 0.00015,
+    "theta": 0.0,
+    "seed": 7503,
+    "temperatures": {
+      "fuel": 1295.0,
+      "clad": 1270.0,
+      "moderator": 1004.5,
+      "reflector": 970.0,
+      "coolant": 1101.0
+    }
+  },
+  "pid": 2627751,
+  "completed_unix": 1791283741.2403297,
+  "returncode": 0,
+  "result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/campaign/neutronics/feedback/isothermal_plus/result.json"
+}

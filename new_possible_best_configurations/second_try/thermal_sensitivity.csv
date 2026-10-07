@@ -1,0 +1,7 @@
+case,surface_emissivity_assumed,hot_wall_bound_K,cold_wall_lower_bound_K,bridge_conductance_W_K,residual_gas_conductance_W_K,direct_cold_load_kW,radiative_leak_kW,bridges_kW,residual_gas_kW,total_cold_load_kW,cold_bulk_outlet_screen_K,below_850K_bulk_target
+Ipotesi di progetto,0.15,1200,800.0,10,2,20,26.281638390742106,4.0,0.8,51.081638390742114,844.6964335918993,True
+Superfici degradate,0.3,1200,800.0,10,2,20,57.100513467342026,4.0,0.8,81.90051346734202,871.6629492839243,False
+Parete calda a 1300 K,0.15,1300,800.0,10,2,20,38.64064202100395,5.0,1.0,64.64064202100396,856.5605617683784,False
+Ponti termici maggiori,0.15,1200,800.0,40,2,20,26.281638390742106,16.0,0.8,63.081638390742114,855.1964335918993,False
+Deposizione maggiore,0.15,1200,800.0,10,2,40,26.281638390742106,4.0,0.8,71.08163839074211,862.1964335918993,False
+Gas residuo maggiore,0.15,1200,800.0,10,100,20,26.281638390742106,4.0,40.0,90.28163839074212,878.9964335918994,False

@@ -1,0 +1,26 @@
+{
+  "keff": 1.046284315195964,
+  "sigma": 0.00014854241257189325,
+  "sigma_pcm_k": 14.854241257189324,
+  "reactivity_pcm": 4423.684320193133,
+  "reactivity_sigma_pcm": 13.56910001384502,
+  "batches": 2180,
+  "requested_batches": 180,
+  "inactive": 60,
+  "particles": 20000,
+  "wall_seconds": 874.1677889823914,
+  "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/campaign/neutronics/feedback/coolant_temperature_fixed_density_minus/statepoint.02180.h5",
+  "request_sha256": "0ca3176b46066b3c5d5d0b6ca378e47b268500fe1c27685e539454b4864749eb",
+  "request": {
+    "sigma": 0.00015,
+    "theta": 0.0,
+    "seed": 6401,
+    "temperatures": {
+      "coolant": 901.0
+    },
+    "coolant_density": 0.9000999000999002
+  },
+  "target_achieved": true,
+  "entropy_inactive_last20_mean": 9.458032136100613,
+  "entropy_active_first20_mean": 9.453834604825833
+}

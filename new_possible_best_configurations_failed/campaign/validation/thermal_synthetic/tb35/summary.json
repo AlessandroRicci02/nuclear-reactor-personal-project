@@ -1,0 +1,62 @@
+{
+  "peak_fuel_1D_K": 1191.093849270062,
+  "peak_clad_outer_1D_K": 1178.3398045022286,
+  "peak_pin_cell_solid_K": 1086.942756967947,
+  "max_main_friction_Pa": 11276.417126369694,
+  "max_aux_friction_Pa": 396.20864629718426,
+  "heat_removed_W": 379013.999999999,
+  "energy_residual_W": -9.89530235528946e-10,
+  "mixed_active_coolant_outlet_K": 1098.5626299999994,
+  "pin_fem": [
+    {
+      "time": 1.0,
+      "Q_removed": 1710.0,
+      "T_clad_max": 1183.3323184012,
+      "T_fuel_max": 1194.8821944528,
+      "pin_id": 0,
+      "expected_power_W": 1710.0,
+      "relative_energy_residual": 0.0
+    },
+    {
+      "time": 1.0,
+      "Q_removed": 1710.0,
+      "T_clad_max": 1183.3323184012,
+      "T_fuel_max": 1194.8821944528,
+      "pin_id": 19,
+      "expected_power_W": 1710.0,
+      "relative_energy_residual": 0.0
+    },
+    {
+      "time": 1.0,
+      "Q_removed": 1710.0,
+      "T_clad_max": 1183.3323184012,
+      "T_fuel_max": 1194.8821944528,
+      "pin_id": 91,
+      "expected_power_W": 1710.0,
+      "relative_energy_residual": 0.0
+    },
+    {
+      "time": 1.0,
+      "Q_removed": 1710.0,
+      "T_clad_max": 1185.6506347183,
+      "T_fuel_max": 1197.1867028679,
+      "pin_id": 169,
+      "expected_power_W": 1710.0,
+      "relative_energy_residual": 0.0
+    }
+  ],
+  "pin_mesh_change_peak_K": -0.08965470400016784,
+  "cell_mesh_change_peak_K": 0.0005840255867042288,
+  "validation_only": true,
+  "model": "XY moderator/liner FEM response fields + 1D axial helium energy/friction + selected RZ fuel/clad FEM; file-based one-way OpenMC heating transfer",
+  "limitations": [
+    "Constant assumed YH2 conductivity 10 W/m/K and Al2O3 6 W/m/K; not validated irradiated properties",
+    "Prescribed parallel flow split 17.5% auxiliary; no plenum/orifice pressure-balance solution",
+    "Hydraulic-diameter heat-transfer closures; no resolved ellipse CFD",
+    "Friction pressure losses only; no manifolds/spacers/acceleration losses",
+    "Peripheral heat allocated to outer-ring cells; peripheral solid temperatures and full-core peak are unresolved",
+    "Reflector/absorber heat and cooling excluded from active thermal model",
+    "No two-way reactor temperature feedback; cell profiles at prescribed nominal neutronic temperatures",
+    "Monte Carlo heating statistics recorded separately; thermal systematic uncertainties are not a statistical confidence interval"
+  ]
+}

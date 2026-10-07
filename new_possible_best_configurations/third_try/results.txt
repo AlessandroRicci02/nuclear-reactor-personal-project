@@ -1,0 +1,128 @@
+TERZO TENTATIVO (C3) — SCARTATO DAL FILTRO NEUTRONICO RICHIESTO
+7 ottobre 2026
+
+Il 7 ottobre 2026 l'utente ha richiesto che combustibile, moderatore e
+totale siano TUTTI negativi, oltre al passaggio BOL OUT>1 e IN<1.
+C3 supera il passaggio dei tamburi ma NON supera il filtro dei coefficienti:
+moderatore e totale a densità dei solidi fissa sono positivi; il moderatore
+accoppiato alla dilatazione nominale ha segno statistico non risolto.
+Il totale negativo nello scenario con beta ipotizzato non basta a
+qualificare C3. I risultati seguenti restano come documentazione storica.
+
+ESITO
+OpenMC: k_eff(BOL, tutti i 10 tamburi a 0 gradi/OUT) = 1.052946 ± 0.000688
+(1 sigma statistica; intervallo normale approssimato al 95%: 1.05160–1.05430).
+OpenMC: k_eff(BOL, tutti i 10 tamburi a 180 gradi/IN) = 0.990490 ± 0.000715
+(1 sigma statistica; intervallo normale approssimato al 95%: 0.98909–0.99189).
+Il caso OUT è nettamente supercritico; il caso IN è nettamente sottocritico,
+anche considerando l'incertezza Monte Carlo. I due requisiti richiesti a BOL
+sono quindi soddisfatti nel modello. La differenza di reattività tra gli
+estremi, calcolata come 1/k_IN - 1/k_OUT, è 5988 ± 96 pcm (1 sigma).
+La reattività con tamburi IN è -960 pcm circa. Non è stato ricercato
+l'angolo che dà esattamente k_eff=1, né verificato il margine a caldo o EOL.
+
+GEOMETRIA E MATERIALI DEL CASO CALCOLATO
+217 pin di UN arricchito al 19.60% nei 19 pin centrali e al 19.75% negli
+altri 198; passo esagonale 2.30 cm; raggio combustibile 0.585 cm;
+altezza attiva 47.0 cm; raggio nocciolo 19.707 cm. Matrice e buffer
+periferico di YH2 con 6 canali ausiliari per cella. Riflettore di Be
+metallico spesso 8.8 cm radialmente e 8.5 cm assialmente; raggio esterno
+28.507 cm. Dieci tamburi Be/B4C. Rispetto al TB35 cambiano passo, altezza,
+spessori del riflettore e materiale del riflettore (Be al posto di BeO).
+
+OpenMC ha usato ENDF/B-VIII.0, le leggi termiche c_H_in_YH2,
+c_Y_in_YH2 e c_Be, 15 000 particelle per batch, 170 batch, 50 inattivi,
+6 sezioni assiali e seed 1010 (OUT) oppure 1011 (IN). Profilo prescritto del refrigerante He:
+800 K all'ingresso e 1150 K all'uscita. Questa è una condizione imposta
+nel modello neutronico, non un risultato termoidraulico.
+
+MASSA PRELIMINARE DELLA GEOMETRIA MODELLATA
+OpenMC, 5 milioni di campioni di volume: solidi 503.517 ± 0.284 kg (1 sigma
+di campionamento); inventario He 0.0219 kg. Il calcolo analitico della
+geometria dà 503.087 kg, entro circa 1.5 sigma dal volume OpenMC.
+La cifra analitica precedente (502.418 kg) trascurava la sovrapposizione
+fra i fori assiali del refrigerante; è stata corretta.
+Applicando provvisoriamente 65 kg di hardware e 15 kg di riserva,
+il valore di vaglio è 583.517 kg. L'hardware non è stato progettato
+né verificato per C3; schermo, conversione elettrica, radiatori, tubi
+esterni e struttura del veicolo sono esclusi. Non si può quindi ancora
+certificare una massa totale di sistema inferiore a 600 kg.
+
+COEFFICIENTI TERMICI BOL — OPENMC, TAMBURI OUT
+Definizione: alpha = [rho(T+100 K)-rho(T-100 K)]/(200 K),
+rho=(k_eff-1)/k_eff. Geometria e densità dei solidi fisse.
+Combustibile soltanto: -0.955 ± 0.189 pcm/K (1 sigma);
+intervallo normale al 95%: [-1.326, -0.585].
+Moderatore YH2 soltanto: +1.003 ± 0.192 pcm/K (1 sigma);
+intervallo normale al 95%: [+0.627, +1.379].
+Totale, tutte le temperature dei materiali: +0.610 ± 0.191 pcm/K
+(1 sigma); intervallo normale al 95%: [+0.236, +0.985].
+Nel totale la densità dell'He varia alla pressione fissa di 2.5 MPa;
+le densità dei solidi e la geometria restano fisse. Metodo di
+interpolazione in temperatura di OpenMC; ENDF/B-VIII.0 e scattering
+termico specifico YH2/Be. Il riferimento di questa campagna dà
+k_eff=1.052715 ± 0.000300. La simulazione con moderatore caldo ha
+mancato di appena 0.8% l'obiettivo prefissato di sigma_k=0.000300,
+raggiungendo 0.000302; il segno resta statisticamente ben definito.
+Il feedback termico totale A DENSITÀ FISSA è positivo: questo risultato
+non dimostra stabilità passiva.
+
+SENSIBILITÀ ALLA DENSITÀ YH2 E SCENARIO ACCOPPIATO
+Due ulteriori casi OpenMC a densità YH2 ±2% e temperatura fissa danno
+d(rho_rea)/d(densità percentuale) = +298.0 ± 9.6 pcm per +1%
+(1 sigma statistica). Assumendo, SOLO COME SCENARIO, che la densità
+YH2 vari come 1 - beta*(T - 875 K), con beta volumetrico = 3.6e-5/K:
+Moderatore T+dilatazione: +0.232 ± 0.191 pcm/K (1 sigma),
+intervallo normale al 95% [-0.142, +0.605]; segno non risolto.
+Totale T+dilatazione: -0.535 ± 0.189 pcm/K (1 sigma),
+intervallo normale al 95% [-0.906, -0.164]; negativo nell'ipotesi beta.
+Questi ultimi coefficienti provengono da quattro simulazioni accoppiate,
+non dalla semplice somma dei valori a densità fissa.
+
+La stessa fonte ORNL su YHx (x=1.60–1.95, non sul componente YH2 qui
+modellato) riporta coefficienti lineari circa 8–16.5e-6/K fra 400 e
+973 K; la conversione isotropa a beta volumetrico darebbe circa
+2.4–4.95e-5/K. La sensibilità OpenMC corrisponderebbe allora a un
+contributo di densità fra -0.715 e -1.475 pcm/K. Questa ampiezza
+di incertezza del modello è maggiore dell'incertezza Monte Carlo e
+non permette di certificare il segno del feedback fisico completo.
+Fonte: https://info.ornl.gov/sites/publications/Files/Pub160401.pdf
+
+Il modello mantiene geometria e stechiometria YH2 fisse: non include
+espansione dei pin e del riflettore, vincoli del contenitore, migrazione
+di H o temperature spaziali ottenute da termoidraulica. Lo scenario
+accoppiato è una sensibilità, non una verifica di stabilità del reattore.
+
+LIMITI DEL RISULTATO
+Sono stati calcolati i k_eff BOL agli estremi dei tamburi, la massa
+con volume OpenMC e i tre coefficienti a densità fissa.
+La geometria termica riprende l'architettura TB35;
+questa non era stata qualificata
+per 1150 K all'uscita e aveva avuto problemi con i coefficienti del
+moderatore. Il cambio del riflettore e delle dimensioni può modificarli,
+ma non li rende automaticamente accettabili. Temperatura YH2,
+espansione geometrica, variazioni di composizione dell'idruro,
+arresto nelle condizioni termiche reali e durata non sono stati calcolati.
+Non si deve quindi considerare C3 un progetto finale.
+
+FILE RIPRODUCIBILI
+scripts/build_model.py: modello OpenMC modificato dal TB35.
+scripts/run_bol.py: comando di riproduzione del solo caso BOL.
+campaign/c3_bol/: XML OpenMC e statepoint.170.h5.
+bol_result.json: risultati numerici e parametri del caso.
+scripts/run_bol_inward.py: riproduzione del caso IN.
+campaign/c3_bol_inward/: XML OpenMC e statepoint.170.h5.
+bol_inward_result.json: risultati numerici e parametri del caso IN.
+scripts/run_mass.py, mass_breakdown.csv, mass_result.json: verifica della massa.
+figures/: sezioni radiali OUT/IN, sezione assiale, cella esagonale,
+grafico massa/feedback e confronto degli scenari (PNG/PDF).
+scripts/run_feedback.py, feedback_results.json: sette casi OpenMC e i
+tre coefficienti a densità dei solidi fissa.
+scripts/run_density_sensitivity.py, density_sensitivity_result.json:
+due casi per la risposta alla densità YH2.
+scripts/run_coupled_feedback.py, coupled_feedback_results.json:
+quattro casi temperatura+dilatazione YH2 con beta ipotizzato.
+
+CONFRONTO CON S2-R1
+Il precedente S2-R1 dava k_eff=0.81713 ± 0.00059 a BOL con tamburi OUT.
+I suoi calcoli termici e dei coefficienti sono stati fermati.

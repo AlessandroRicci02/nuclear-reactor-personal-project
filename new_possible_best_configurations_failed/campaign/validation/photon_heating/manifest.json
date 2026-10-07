@@ -1,0 +1,34 @@
+{
+  "theta_deg": [
+    110.0,
+    110.0,
+    110.0,
+    110.0,
+    110.0,
+    110.0,
+    110.0,
+    110.0,
+    110.0,
+    110.0
+  ],
+  "reference": false,
+  "cross_sections": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/campaign/data/endfb-viii.0-hdf5/cross_sections.xml",
+  "temperatures": {
+    "fuel": 1195.0,
+    "clad": 1170.0,
+    "moderator": 904.5,
+    "reflector": 870.0,
+    "coolant": 1001.0
+  },
+  "moderator_density": 1.0,
+  "coolant_density": 1.0,
+  "particles": 1000,
+  "batches": 20,
+  "inactive": 10,
+  "seed": 96353,
+  "target_sigma": null,
+  "photons": true,
+  "legacy_data": false,
+  "slices": 10,
+  "geometry_source": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/configurations/P1_ELLIPTIC_BALANCED/geometry.json"
+}

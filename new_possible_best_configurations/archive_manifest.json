@@ -1,0 +1,606 @@
+{
+  "moved_on": "2026-10-07",
+  "method": "rename; original contents unchanged; inode and size verified",
+  "entries": [
+    {
+      "path": "campaign/feedback_coefficients.json",
+      "size": 1982,
+      "inode": 433110,
+      "symlink": null
+    },
+    {
+      "path": "campaign/status.json",
+      "size": 174,
+      "inode": 433088,
+      "symlink": null
+    },
+    {
+      "path": "campaign/job.json",
+      "size": 257,
+      "inode": 432998,
+      "symlink": null
+    },
+    {
+      "path": "campaign/audit/tb35_configuration_sha256.txt",
+      "size": 357,
+      "inode": 432985,
+      "symlink": null
+    },
+    {
+      "path": "campaign/mass/geometry.xml",
+      "size": 1359120,
+      "inode": 433002,
+      "symlink": null
+    },
+    {
+      "path": "campaign/mass/cell_metadata.csv",
+      "size": 156111,
+      "inode": 433005,
+      "symlink": null
+    },
+    {
+      "path": "campaign/mass/volume_1.h5",
+      "size": 75408,
+      "inode": 433008,
+      "symlink": null
+    },
+    {
+      "path": "campaign/mass/summary.h5",
+      "size": 48078802,
+      "inode": 433007,
+      "symlink": null
+    },
+    {
+      "path": "campaign/mass/result.json",
+      "size": 453,
+      "inode": 433010,
+      "symlink": null
+    },
+    {
+      "path": "campaign/mass/run.log",
+      "size": 8652,
+      "inode": 433000,
+      "symlink": null
+    },
+    {
+      "path": "campaign/mass/materials.xml",
+      "size": 11400,
+      "inode": 433003,
+      "symlink": null
+    },
+    {
+      "path": "campaign/mass/breakdown.csv",
+      "size": 592,
+      "inode": 433009,
+      "symlink": null
+    },
+    {
+      "path": "campaign/mass/manifest.json",
+      "size": 742,
+      "inode": 433004,
+      "symlink": null
+    },
+    {
+      "path": "campaign/mass/settings.xml",
+      "size": 1365,
+      "inode": 433001,
+      "symlink": null
+    },
+    {
+      "path": "campaign/data/chain_endfb80_thermal.xml",
+      "size": 118,
+      "inode": 432984,
+      "symlink": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations_failed/campaign/data/chain_endfb80_thermal.xml"
+    },
+    {
+      "path": "campaign/data/endfb-viii.0-hdf5",
+      "size": 110,
+      "inode": 432983,
+      "symlink": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations_failed/campaign/data/endfb-viii.0-hdf5"
+    },
+    {
+      "path": "campaign/logs/tb35_openmc_campaign.log",
+      "size": 0,
+      "inode": 432997,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/fuel_plus/geometry.xml",
+      "size": 1359120,
+      "inode": 433056,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/fuel_plus/statepoint.00180.h5",
+      "size": 1706240,
+      "inode": 433062,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/fuel_plus/cell_metadata.csv",
+      "size": 156111,
+      "inode": 433059,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/fuel_plus/summary.h5",
+      "size": 48078802,
+      "inode": 433061,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/fuel_plus/result.json",
+      "size": 1099,
+      "inode": 433064,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/fuel_plus/run.log",
+      "size": 282760,
+      "inode": 433018,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/fuel_plus/materials.xml",
+      "size": 11400,
+      "inode": 433057,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/fuel_plus/statepoint.04730.h5",
+      "size": 95784,
+      "inode": 433063,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/fuel_plus/manifest.json",
+      "size": 749,
+      "inode": 433058,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/fuel_plus/settings.xml",
+      "size": 1184,
+      "inode": 433055,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/moderator_minus/geometry.xml",
+      "size": 1359120,
+      "inode": 433068,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/moderator_minus/statepoint.00180.h5",
+      "size": 1706240,
+      "inode": 433074,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/moderator_minus/cell_metadata.csv",
+      "size": 156111,
+      "inode": 433071,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/moderator_minus/summary.h5",
+      "size": 48078802,
+      "inode": 433073,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/moderator_minus/result.json",
+      "size": 1114,
+      "inode": 433076,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/moderator_minus/run.log",
+      "size": 282772,
+      "inode": 433060,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/moderator_minus/materials.xml",
+      "size": 11400,
+      "inode": 433069,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/moderator_minus/statepoint.04730.h5",
+      "size": 95784,
+      "inode": 433075,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/moderator_minus/manifest.json",
+      "size": 749,
+      "inode": 433070,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/moderator_minus/settings.xml",
+      "size": 1184,
+      "inode": 433067,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/bol_0deg/geometry.xml",
+      "size": 1359120,
+      "inode": 433013,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/bol_0deg/statepoint.00180.h5",
+      "size": 1706240,
+      "inode": 433041,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/bol_0deg/cell_metadata.csv",
+      "size": 156111,
+      "inode": 433016,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/bol_0deg/summary.h5",
+      "size": 48078802,
+      "inode": 433040,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/bol_0deg/result.json",
+      "size": 1198,
+      "inode": 432681,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/bol_0deg/run.log",
+      "size": 273977,
+      "inode": 433006,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/bol_0deg/materials.xml",
+      "size": 11400,
+      "inode": 433014,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/bol_0deg/statepoint.04580.h5",
+      "size": 93384,
+      "inode": 432680,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/bol_0deg/manifest.json",
+      "size": 749,
+      "inode": 433015,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/bol_0deg/settings.xml",
+      "size": 1184,
+      "inode": 433012,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/fuel_minus/statepoint.04880.h5",
+      "size": 98184,
+      "inode": 433052,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/fuel_minus/geometry.xml",
+      "size": 1359120,
+      "inode": 432968,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/fuel_minus/statepoint.00180.h5",
+      "size": 1706240,
+      "inode": 433020,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/fuel_minus/cell_metadata.csv",
+      "size": 156111,
+      "inode": 433017,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/fuel_minus/summary.h5",
+      "size": 48078802,
+      "inode": 433019,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/fuel_minus/result.json",
+      "size": 1101,
+      "inode": 433053,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/fuel_minus/run.log",
+      "size": 291551,
+      "inode": 432964,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/fuel_minus/materials.xml",
+      "size": 11370,
+      "inode": 432969,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/fuel_minus/manifest.json",
+      "size": 748,
+      "inode": 433011,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/fuel_minus/settings.xml",
+      "size": 1184,
+      "inode": 432967,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/total_isothermal_plus/geometry.xml",
+      "size": 1359120,
+      "inode": 433101,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/total_isothermal_plus/statepoint.00180.h5",
+      "size": 1706240,
+      "inode": 433107,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/total_isothermal_plus/cell_metadata.csv",
+      "size": 156111,
+      "inode": 433104,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/total_isothermal_plus/summary.h5",
+      "size": 48078802,
+      "inode": 433106,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/total_isothermal_plus/result.json",
+      "size": 1226,
+      "inode": 433109,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/total_isothermal_plus/run.log",
+      "size": 279845,
+      "inode": 433094,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/total_isothermal_plus/materials.xml",
+      "size": 11401,
+      "inode": 433102,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/total_isothermal_plus/manifest.json",
+      "size": 750,
+      "inode": 433103,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/total_isothermal_plus/statepoint.04680.h5",
+      "size": 94984,
+      "inode": 433108,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/total_isothermal_plus/settings.xml",
+      "size": 1184,
+      "inode": 433100,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/total_isothermal_minus/geometry.xml",
+      "size": 1359120,
+      "inode": 433090,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/total_isothermal_minus/statepoint.00180.h5",
+      "size": 1706240,
+      "inode": 433098,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/total_isothermal_minus/cell_metadata.csv",
+      "size": 156111,
+      "inode": 433093,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/total_isothermal_minus/summary.h5",
+      "size": 48078802,
+      "inode": 433095,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/total_isothermal_minus/result.json",
+      "size": 1220,
+      "inode": 433097,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/total_isothermal_minus/run.log",
+      "size": 282763,
+      "inode": 433083,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/total_isothermal_minus/materials.xml",
+      "size": 11399,
+      "inode": 433091,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/total_isothermal_minus/statepoint.04730.h5",
+      "size": 95784,
+      "inode": 433096,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/total_isothermal_minus/manifest.json",
+      "size": 748,
+      "inode": 433092,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/total_isothermal_minus/settings.xml",
+      "size": 1184,
+      "inode": 433089,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/moderator_plus/geometry.xml",
+      "size": 1359120,
+      "inode": 433079,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/moderator_plus/statepoint.00180.h5",
+      "size": 1706240,
+      "inode": 433085,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/moderator_plus/cell_metadata.csv",
+      "size": 156111,
+      "inode": 433082,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/moderator_plus/summary.h5",
+      "size": 48078802,
+      "inode": 433084,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/moderator_plus/result.json",
+      "size": 1114,
+      "inode": 433087,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/moderator_plus/run.log",
+      "size": 285690,
+      "inode": 433072,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/moderator_plus/materials.xml",
+      "size": 11402,
+      "inode": 433080,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/moderator_plus/statepoint.04780.h5",
+      "size": 96584,
+      "inode": 433086,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/moderator_plus/manifest.json",
+      "size": 750,
+      "inode": 433081,
+      "symlink": null
+    },
+    {
+      "path": "campaign/neutronics/moderator_plus/settings.xml",
+      "size": 1184,
+      "inode": 433078,
+      "symlink": null
+    },
+    {
+      "path": "campaign/audit/model_export_check/geometry.xml",
+      "size": 1359120,
+      "inode": 432993,
+      "symlink": null
+    },
+    {
+      "path": "campaign/audit/model_export_check/cell_metadata.csv",
+      "size": 156111,
+      "inode": 432996,
+      "symlink": null
+    },
+    {
+      "path": "campaign/audit/model_export_check/materials.xml",
+      "size": 11400,
+      "inode": 432994,
+      "symlink": null
+    },
+    {
+      "path": "campaign/audit/model_export_check/manifest.json",
+      "size": 740,
+      "inode": 432995,
+      "symlink": null
+    },
+    {
+      "path": "campaign/audit/model_export_check/settings.xml",
+      "size": 955,
+      "inode": 432992,
+      "symlink": null
+    },
+    {
+      "path": "README.md",
+      "size": 1088,
+      "inode": 432987,
+      "symlink": null
+    },
+    {
+      "path": "scripts/run_tb35_study.py",
+      "size": 12482,
+      "inode": 432986,
+      "symlink": null
+    },
+    {
+      "path": "scripts/tb35_model.py",
+      "size": 11337,
+      "inode": 432982,
+      "symlink": null
+    },
+    {
+      "path": "scripts/__pycache__/tb35_model.cpython-313.pyc",
+      "size": 19882,
+      "inode": 432989,
+      "symlink": null
+    },
+    {
+      "path": "scripts/__pycache__/run_tb35_study.cpython-313.pyc",
+      "size": 19197,
+      "inode": 432990,
+      "symlink": null
+    },
+    {
+      "path": "configuration/TB35_REFERENCE/geometry.json",
+      "size": 7799,
+      "inode": 432980,
+      "symlink": null
+    },
+    {
+      "path": "configuration/TB35_REFERENCE/pins.csv",
+      "size": 16633,
+      "inode": 432981,
+      "symlink": null
+    },
+    {
+      "path": "results.txt",
+      "size": 1754,
+      "inode": 433105,
+      "symlink": null
+    }
+  ]
+}

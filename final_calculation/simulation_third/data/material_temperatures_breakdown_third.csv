@@ -1,0 +1,14 @@
+Parameter,Sim_1_950_1150,Sim_2_900_1100,Sim_3_900_1150,Unit,Physical_Evaluation
+Coolant Inlet Temperature,950.0,900.0,900.0,K,Enforced Boundary Condition
+Mixed Coolant Outlet Temperature,1150.0,1100.0,1149.942173359031,K,Enforced Energy Balance (<0.0001% err)
+Coolant Mass Flow Rate,0.38512,0.38512,0.3081,kg/s,Reduced by 20.0% due to Delta-T = 250 K
+Peak Cladding Temp (1D Annular),1273.0,1194.1,1228.5626662584434,K,Well Below Creep Limit (1350 K)
+Peak Cladding Temp (MOOSE 2D FEM),1248.8,1169.9,1204.3626662584434,K,Axial conduction smoothing confirms integrity
+Nb-1Zr Creep Margin (Limit 1350 K),101.20000000000005,180.0999999999999,145.63733374155663,K,Strong safety margin preserved
+Peak Fuel Centerline Temp (1D Annular),1304.9,1215.8,1256.3134114164695,K,Low thermal gradient in UN fuel pellet
+Peak Fuel Centerline Temp (MOOSE 2D),1272.1,1183.0,1223.5134114164696,K,Cool fuel operation
+UN Dissociation Margin (Limit 2073 K),800.9000000000001,890.0,849.4865885835304,K,Vast thermal margin (>800 K)
+YH2.0 Moderator Mean Temperature,965.0,915.0,940.0,K,Thermally decoupled by coolant & insulator
+YH2.0 H2 Dissociation Pressure,4.111561283308209,1.0056293125722033,2.0718337827941165,kPa,Significantly reduced H2 permeation driving head
+BeO Reflector Temperature,900.0,850.0,875.0,K,Stable reflector operation
+Core Total Pressure Drop,20.59,20.32,16.260965248731576,kPa,SUBSTANTIAL BENEFIT: ~20% drop due to lower m_dot

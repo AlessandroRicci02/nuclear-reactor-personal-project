@@ -1,0 +1,36 @@
+{
+  "candidate": "full_mid_be",
+  "spec": {
+    "r_fuel": 0.585,
+    "clad_th": 0.048,
+    "chan_gap": 0.084,
+    "al2o3_mod_th": 0.01,
+    "pitch": 2.24,
+    "core_h": 50,
+    "refl_ax_th": 9,
+    "refl_rad_th": 9.5,
+    "drum_r": 3.95,
+    "abs_th": 1.5,
+    "abs_angle": 148.0,
+    "drum_clearance": 0.18,
+    "r_add": 0.13,
+    "reflector_kind": "Be",
+    "matrix_kind": "YH2",
+    "peripheral_kind": "YH2"
+  },
+  "case": "moderator_plus",
+  "stage": "confirmation",
+  "fidelity": {
+    "particles": 20000,
+    "batches": 200,
+    "inactive": 50,
+    "n_axial_slices": 6,
+    "delta_K": 100.0,
+    "threads": 8,
+    "target_sigma_k": 0.00022,
+    "max_batches": 1600
+  },
+  "beta_min": 2.4e-05,
+  "builder_sha256": "9564b68a01b50d1a2d26729b4497167764a47dcf6191c161bafc4a41bcc2bd26",
+  "xs": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations_failed/campaign/data/endfb-viii.0-hdf5/cross_sections.xml"
+}

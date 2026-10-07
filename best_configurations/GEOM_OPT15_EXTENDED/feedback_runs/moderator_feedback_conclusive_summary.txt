@@ -1,0 +1,17 @@
+GEOM_OPT15_EXTENDED CONCLUSIVE MODERATOR FEEDBACK ANALYSIS
+======================================================================
+T_mod_lower (K):                  840.0
+rho_mod_lower (g/cm3):            4.31935
+k_eff (840 K):                    1.021574 +/- 0.000282
+T_mod_upper (K):                  1040.0
+rho_mod_upper (g/cm3):            4.28065
+k_eff (1040 K):                   1.017986 +/- 0.000348
+Delta T (K):                      200.0
+Delta rho (pcm):                  -345.02
+alpha_mod (pcm/K):                -1.7251 +/- 0.2239
+Statistical Significance:         7.7-sigma negative
+1-sigma Bound (pcm/K):            -1.5012
+2-sigma Bound (pcm/K):            -1.2773
+3-sigma Bound (pcm/K):            -1.0534
+5-sigma Bound (pcm/K):            -0.6056
+Status:                           CONFORMING NEGATIVE (< 0 AT >5-SIGMA)

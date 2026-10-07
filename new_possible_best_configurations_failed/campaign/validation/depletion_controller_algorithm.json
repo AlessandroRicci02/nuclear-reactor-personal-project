@@ -1,0 +1,15 @@
+{
+  "validation_only": true,
+  "cases": [
+    {
+      "case": "bracketed",
+      "passed": true,
+      "transport_calls": 6
+    },
+    {
+      "case": "unavailable",
+      "passed": true,
+      "transport_calls": 3
+    }
+  ]
+}

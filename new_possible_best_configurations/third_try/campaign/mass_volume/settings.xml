@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<settings>
+  <run_mode>eigenvalue</run_mode>
+  <particles>15000</particles>
+  <batches>170</batches>
+  <inactive>50</inactive>
+  <source type="independent" strength="1.0" particle="neutron">
+    <space type="box">
+      <parameters>-11.824229074889866 -11.824229074889866 -14.1 11.824229074889866 11.824229074889866 14.1</parameters>
+    </space>
+  </source>
+  <source_point>
+    <separate>false</separate>
+    <write>true</write>
+    <overwrite_latest>false</overwrite_latest>
+    <mcpl>false</mcpl>
+  </source_point>
+  <seed>1010</seed>
+  <entropy_mesh>1</entropy_mesh>
+  <mesh id="1">
+    <dimension>10 10 6</dimension>
+    <lower_left>-19.707048458149778 -19.707048458149778 -23.5</lower_left>
+    <upper_right>19.707048458149778 19.707048458149778 23.5</upper_right>
+  </mesh>
+  <temperature_method>nearest</temperature_method>
+  <temperature_multipole>true</temperature_multipole>
+  <temperature_tolerance>1500.0</temperature_tolerance>
+  <volume_calc>
+    <domain_type>material</domain_type>
+    <domain_ids>1 2 3 4 5 6 7 8 20 21 22 23 24 25</domain_ids>
+    <samples>5000000</samples>
+    <lower_left>-28.50704845814978 -28.50704845814978 -32.0</lower_left>
+    <upper_right>28.50704845814978 28.50704845814978 32.0</upper_right>
+  </volume_calc>
+</settings>

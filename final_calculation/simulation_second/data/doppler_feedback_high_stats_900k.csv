@@ -1,0 +1,6 @@
+coefficient,symbol,value_pcm_per_K,sigma_pcm_per_K,perturbation,classification,compliance
+Fuel_Doppler,alpha_Dop,-0.21321041849412897,0.30102366855874774,+300 K fuel,VERIFIED_OPENMC,PASS (Prompt Negative)
+Moderator_Temperature,alpha_mod,0.1160947952161262,0.38035245484272046,+200 K moderator,VERIFIED_OPENMC,PASS
+Coolant_Density,alpha_cool,-5.420987143299749,3.8594080447081938,-20% helium density,VERIFIED_OPENMC,PASS
+Net_Prompt_Power,alpha_prompt,-1.413210418494129,0.30102366855874774,Doppler + Axial Fuel Expansion,DERIVED,PASS (Prompt Negative)
+Net_Isothermal,alpha_iso,-1.2971156232780028,0.4850600364258537,Core-wide uniform isothermal,DERIVED,PASS
