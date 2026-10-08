@@ -1,0 +1,363 @@
+{
+  "candidate": "matrix_short_strong_be",
+  "index": 22,
+  "spec": {
+    "r_fuel": 0.585,
+    "clad_th": 0.048,
+    "chan_gap": 0.084,
+    "al2o3_mod_th": 0.01,
+    "pitch": 2.16,
+    "core_h": 47,
+    "refl_ax_th": 9.5,
+    "refl_rad_th": 10,
+    "drum_r": 3.95,
+    "abs_th": 1.8,
+    "abs_angle": 172.0,
+    "drum_clearance": 0.18,
+    "r_add": 0.1,
+    "reflector_kind": "Be",
+    "matrix_kind": "YH2",
+    "peripheral_kind": "Be"
+  },
+  "pilot": {
+    "pass_all": false,
+    "reason": "pilot promising: proceed to confirmation",
+    "results": {
+      "out": {
+        "candidate": "matrix_short_strong_be",
+        "stage": "pilot",
+        "case": "out",
+        "request_sha256": "f40283a7e8c6bae8a0f3279f97e98656be6df8cb43a2705be707bed69303ec9f",
+        "k_eff": 1.0510410051772698,
+        "sigma_k": 0.0016807463238726573,
+        "rho_pcm": 4856.233479554983,
+        "sigma_rho_pcm": 152.14680971620638,
+        "batches": 100,
+        "particles": 4000,
+        "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/campaign/matrix_short_strong_be/pilot/out/statepoint.100.h5"
+      },
+      "in": {
+        "candidate": "matrix_short_strong_be",
+        "stage": "pilot",
+        "case": "in",
+        "request_sha256": "7105e4a8bd9f3b30741e2a91c337e52421ebe4507d9220b4478115d5c1eb68eb",
+        "k_eff": 0.984235252288942,
+        "sigma_k": 0.001732941629714456,
+        "rho_pcm": -1601.72557062912,
+        "sigma_rho_pcm": 178.89001586023062,
+        "batches": 100,
+        "particles": 4000,
+        "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/campaign/matrix_short_strong_be/pilot/in/statepoint.100.h5"
+      },
+      "moderator_minus": {
+        "candidate": "matrix_short_strong_be",
+        "stage": "pilot",
+        "case": "moderator_minus",
+        "request_sha256": "0ad9a99c659e80b4c4e5f9c95557125060911e2d49c322647c4959c4bcc01151",
+        "k_eff": 1.0512629522518806,
+        "sigma_k": 0.0017261799788099962,
+        "rho_pcm": 4876.3206333935495,
+        "sigma_rho_pcm": 156.1936435424155,
+        "batches": 100,
+        "particles": 4000,
+        "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/campaign/matrix_short_strong_be/pilot/moderator_minus/statepoint.100.h5"
+      },
+      "moderator_plus": {
+        "candidate": "matrix_short_strong_be",
+        "stage": "pilot",
+        "case": "moderator_plus",
+        "request_sha256": "45d8b711259e27b77971f079ddfff65042862864924323f9c61fbb7d8058d651",
+        "k_eff": 1.0448067612273741,
+        "sigma_k": 0.0018444816506122796,
+        "rho_pcm": 4288.521369706488,
+        "sigma_rho_pcm": 168.96719339675766,
+        "batches": 100,
+        "particles": 4000,
+        "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/campaign/matrix_short_strong_be/pilot/moderator_plus/statepoint.100.h5"
+      },
+      "total_minus": {
+        "candidate": "matrix_short_strong_be",
+        "stage": "pilot",
+        "case": "total_minus",
+        "request_sha256": "3a7ff30caa7ce9abde774e6f8ef2bc3e2e26384f7d0ea2b8e141de78ff9e5db4",
+        "k_eff": 1.0549424426986553,
+        "sigma_k": 0.0017314647456715103,
+        "rho_pcm": 5208.098610394963,
+        "sigma_rho_pcm": 155.5808438339179,
+        "batches": 100,
+        "particles": 4000,
+        "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/campaign/matrix_short_strong_be/pilot/total_minus/statepoint.100.h5"
+      },
+      "total_plus": {
+        "candidate": "matrix_short_strong_be",
+        "stage": "pilot",
+        "case": "total_plus",
+        "request_sha256": "e51a36fc002931f58c7ce19b87c3c86bec23f1c51f30a140c39d5a8953c4efb3",
+        "k_eff": 1.0495752497753932,
+        "sigma_k": 0.0018898998822913097,
+        "rho_pcm": 4723.363073395848,
+        "sigma_rho_pcm": 171.55826125971836,
+        "batches": 100,
+        "particles": 4000,
+        "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/campaign/matrix_short_strong_be/pilot/total_plus/statepoint.100.h5"
+      },
+      "fuel_minus": {
+        "candidate": "matrix_short_strong_be",
+        "stage": "pilot",
+        "case": "fuel_minus",
+        "request_sha256": "e585387095502e2c901486aac75d8d2e01c05e8c310955c380ffd5f674e8a0f6",
+        "k_eff": 1.0530749834937612,
+        "sigma_k": 0.0019289938235203825,
+        "rho_pcm": 5040.000410766154,
+        "sigma_rho_pcm": 173.94511840116783,
+        "batches": 100,
+        "particles": 4000,
+        "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/campaign/matrix_short_strong_be/pilot/fuel_minus/statepoint.100.h5"
+      },
+      "fuel_plus": {
+        "candidate": "matrix_short_strong_be",
+        "stage": "pilot",
+        "case": "fuel_plus",
+        "request_sha256": "f57c2276ad797191a9346d96debe37fd840451ef6ef8025f35a5165992a17603",
+        "k_eff": 1.0496968428924127,
+        "sigma_k": 0.0019545961178746318,
+        "rho_pcm": 4734.399577260262,
+        "sigma_rho_pcm": 177.39004743521735,
+        "batches": 100,
+        "particles": 4000,
+        "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/campaign/matrix_short_strong_be/pilot/fuel_plus/statepoint.100.h5"
+      }
+    },
+    "coefficients": {
+      "moderator": {
+        "alpha_pcm_K": -1.9593308789568709,
+        "sigma_pcm_K": 0.7670025838536259,
+        "upper_95_pcm_K": -0.6976116285176563,
+        "lower_95_pcm_K": -3.2210501293960854
+      },
+      "total": {
+        "alpha_pcm_K": -1.6157851233303822,
+        "sigma_pcm_K": 0.7719933503925747,
+        "upper_95_pcm_K": -0.3458560619345967,
+        "lower_95_pcm_K": -2.885714184726168
+      },
+      "fuel": {
+        "alpha_pcm_K": -1.018669445019641,
+        "sigma_pcm_K": 0.8281447346976182,
+        "upper_95_pcm_K": 0.343628643557941,
+        "lower_95_pcm_K": -2.380967533597223
+      }
+    },
+    "promote": true
+  },
+  "confirmation": {
+    "pass_all": true,
+    "reason": "all five criteria pass",
+    "conditions": {
+      "out": true,
+      "inside": true,
+      "fuel": true,
+      "moderator": true,
+      "total": true
+    },
+    "results": {
+      "out": {
+        "candidate": "matrix_short_strong_be",
+        "stage": "confirmation",
+        "case": "out",
+        "request_sha256": "8758da03201b86d917caea1c9dce5b386d7c1fe995961e228e648e12d458a3fe",
+        "k_eff": 1.0509386589137337,
+        "sigma_k": 0.00021891360428293982,
+        "rho_pcm": 4846.967849330496,
+        "sigma_rho_pcm": 19.8206556109412,
+        "batches": 980,
+        "particles": 20000,
+        "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/campaign/matrix_short_strong_be/confirmation/out/statepoint.0980.h5"
+      },
+      "in": {
+        "candidate": "matrix_short_strong_be",
+        "stage": "confirmation",
+        "case": "in",
+        "request_sha256": "66b9500cb5aa8982d2b4aab943b2cd828551019048aba63262718e75778927c6",
+        "k_eff": 0.9827500233004742,
+        "sigma_k": 0.00021819509091577027,
+        "rho_pcm": -1755.276142512141,
+        "sigma_rho_pcm": 22.59221694496604,
+        "batches": 1000,
+        "particles": 20000,
+        "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/campaign/matrix_short_strong_be/confirmation/in/statepoint.1000.h5"
+      },
+      "moderator_minus": {
+        "candidate": "matrix_short_strong_be",
+        "stage": "confirmation",
+        "case": "moderator_minus",
+        "request_sha256": "b5e1996f27657d986a74065d1c772947c690e2d7e5cd012cbc80ee9bb78dfe48",
+        "k_eff": 1.0523183639962788,
+        "sigma_k": 0.00021853652664999393,
+        "rho_pcm": 4971.723937002759,
+        "sigma_rho_pcm": 19.73466404736962,
+        "batches": 1080,
+        "particles": 20000,
+        "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/campaign/matrix_short_strong_be/confirmation/moderator_minus/statepoint.1080.h5"
+      },
+      "moderator_plus": {
+        "candidate": "matrix_short_strong_be",
+        "stage": "confirmation",
+        "case": "moderator_plus",
+        "request_sha256": "56bd8dea8c757ad64179cf864b092db4dbd9438f661563f715cb1d6a0325aacb",
+        "k_eff": 1.050464083778358,
+        "sigma_k": 0.00021721898911614203,
+        "rho_pcm": 4803.979932074076,
+        "sigma_rho_pcm": 19.68499786556992,
+        "batches": 1080,
+        "particles": 20000,
+        "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/campaign/matrix_short_strong_be/confirmation/moderator_plus/statepoint.1080.h5"
+      },
+      "total_minus": {
+        "candidate": "matrix_short_strong_be",
+        "stage": "confirmation",
+        "case": "total_minus",
+        "request_sha256": "4337062d27c35e53522d574433bb609de4b713fb239379079591f3b45a3c620b",
+        "k_eff": 1.0532765602454022,
+        "sigma_k": 0.00021998755705290502,
+        "rho_pcm": 5058.173917113407,
+        "sigma_rho_pcm": 19.82956914682482,
+        "batches": 980,
+        "particles": 20000,
+        "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/campaign/matrix_short_strong_be/confirmation/total_minus/statepoint.0980.h5"
+      },
+      "total_plus": {
+        "candidate": "matrix_short_strong_be",
+        "stage": "confirmation",
+        "case": "total_plus",
+        "request_sha256": "4d7196a0c5842e00d9e6d022b9c986ca64ab46476d797c5fd0ae4cfc24d8fdb2",
+        "k_eff": 1.0490456170042821,
+        "sigma_k": 0.0002187527957251863,
+        "rho_pcm": 4675.260656856828,
+        "sigma_rho_pcm": 19.877642015830574,
+        "batches": 1040,
+        "particles": 20000,
+        "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/campaign/matrix_short_strong_be/confirmation/total_plus/statepoint.1040.h5"
+      },
+      "fuel_minus": {
+        "candidate": "matrix_short_strong_be",
+        "stage": "confirmation",
+        "case": "fuel_minus",
+        "request_sha256": "d796234776a828853359e16a41fe58433fed51a94b7a14387846b6ac3a17699d",
+        "k_eff": 1.0518405984610502,
+        "sigma_k": 0.00021705884214474555,
+        "rho_pcm": 4928.560329093423,
+        "sigma_rho_pcm": 19.619034144711392,
+        "batches": 1020,
+        "particles": 20000,
+        "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/campaign/matrix_short_strong_be/confirmation/fuel_minus/statepoint.1020.h5"
+      },
+      "fuel_plus": {
+        "candidate": "matrix_short_strong_be",
+        "stage": "confirmation",
+        "case": "fuel_plus",
+        "request_sha256": "646c8d09a72426efb07c08e9baa5007aad7bf1681328a1a40ef4f9e61caaed01",
+        "k_eff": 1.050007007356161,
+        "sigma_k": 0.0002192003923382948,
+        "rho_pcm": 4762.540345523492,
+        "sigma_rho_pcm": 19.8818563831571,
+        "batches": 1020,
+        "particles": 20000,
+        "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/campaign/matrix_short_strong_be/confirmation/fuel_plus/statepoint.1020.h5"
+      }
+    },
+    "coefficients": {
+      "moderator": {
+        "alpha_pcm_K": -0.8387200246434168,
+        "sigma_pcm_K": 0.13936966187356156,
+        "upper_95_pcm_K": -0.609456930861408,
+        "lower_95_pcm_K": -1.0679831184254256
+      },
+      "total": {
+        "alpha_pcm_K": -1.9145663012828935,
+        "sigma_pcm_K": 0.1403862942614253,
+        "upper_95_pcm_K": -1.683630847222849,
+        "lower_95_pcm_K": -2.1455017553429383
+      },
+      "fuel": {
+        "alpha_pcm_K": -0.8300999178496568,
+        "sigma_pcm_K": 0.13965982905007404,
+        "upper_95_pcm_K": -0.6003594990622849,
+        "lower_95_pcm_K": -1.0598403366370286
+      }
+    }
+  },
+  "beta_max": {
+    "pass_all": true,
+    "reason": "moderator and total negative at beta_max",
+    "results": {
+      "moderator_minus": {
+        "candidate": "matrix_short_strong_be",
+        "stage": "beta_max",
+        "case": "moderator_minus",
+        "request_sha256": "51968873180e2f332c51e0a77b57bdaeeee870f709a051f19145c32837ffaec0",
+        "k_eff": 1.0527317213722103,
+        "sigma_k": 0.0002181055305322182,
+        "rho_pcm": 5009.036994104798,
+        "sigma_rho_pcm": 19.680279373705588,
+        "batches": 1020,
+        "particles": 20000,
+        "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/campaign/matrix_short_strong_be/beta_max/moderator_minus/statepoint.1020.h5"
+      },
+      "moderator_plus": {
+        "candidate": "matrix_short_strong_be",
+        "stage": "beta_max",
+        "case": "moderator_plus",
+        "request_sha256": "d1f88aba3638fb8226698c123a5f22bded8272fae1ac10244459b1b423433005",
+        "k_eff": 1.0495097494035808,
+        "sigma_k": 0.00021973604224318895,
+        "rho_pcm": 4717.416815967302,
+        "sigma_rho_pcm": 19.94933132871318,
+        "batches": 1060,
+        "particles": 20000,
+        "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/campaign/matrix_short_strong_be/beta_max/moderator_plus/statepoint.1060.h5"
+      },
+      "total_minus": {
+        "candidate": "matrix_short_strong_be",
+        "stage": "beta_max",
+        "case": "total_minus",
+        "request_sha256": "c2f3a365d1bac6d1012647bf69a965d7e570e6181328bcde2f5d6da9826faac4",
+        "k_eff": 1.0539761294822745,
+        "sigma_k": 0.00021746208807719997,
+        "rho_pcm": 5121.190885868376,
+        "sigma_rho_pcm": 19.575911984242076,
+        "batches": 1000,
+        "particles": 20000,
+        "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/campaign/matrix_short_strong_be/beta_max/total_minus/statepoint.1000.h5"
+      },
+      "total_plus": {
+        "candidate": "matrix_short_strong_be",
+        "stage": "beta_max",
+        "case": "total_plus",
+        "request_sha256": "91dcb7cc4cd0da2bd6d47e9fe8a894828de4695e310896679d9d9c26dd6cad0c",
+        "k_eff": 1.0482724495674312,
+        "sigma_k": 0.00021968271697833368,
+        "rho_pcm": 4604.952613926916,
+        "sigma_rho_pcm": 19.99159970740161,
+        "batches": 1040,
+        "particles": 20000,
+        "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/campaign/matrix_short_strong_be/beta_max/total_plus/statepoint.1040.h5"
+      }
+    },
+    "coefficients": {
+      "moderator": {
+        "alpha_pcm_K": -1.458100890687483,
+        "sigma_pcm_K": 0.14011506135047355,
+        "upper_95_pcm_K": -1.2276116147659542,
+        "lower_95_pcm_K": -1.688590166609012
+      },
+      "total": {
+        "alpha_pcm_K": -2.5811913597073044,
+        "sigma_pcm_K": 0.13989999900605546,
+        "upper_95_pcm_K": -2.3510558613423433,
+        "lower_95_pcm_K": -2.8113268580722655
+      }
+    }
+  },
+  "status": "qualified"
+}

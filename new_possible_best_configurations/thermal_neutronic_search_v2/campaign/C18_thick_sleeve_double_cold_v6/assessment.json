@@ -1,0 +1,9 @@
+{
+  "status": "rejected",
+  "failed_metric": "T_moderator_upper",
+  "detail": {
+    "upper_K": 993.8788150310799,
+    "result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/thermal_neutronic_search_v2/campaign/C18_thick_sleeve_double_cold_v6/operating_state_0/thermal_result.json"
+  },
+  "completed_unix": 1791462958.1955907
+}

@@ -1,0 +1,16 @@
+{
+  "status": "rejected",
+  "failed_metric": "k_out",
+  "detail": {
+    "request_sha256": "7510e507ae3d765e7a9954deb28800295fedaa8a921b03bcc1010bdd8689826b",
+    "keff": 0.9317482036182679,
+    "sigma_k": 0.0009627236713634589,
+    "batches": 180,
+    "particles": 8000,
+    "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/thermal_neutronic_search_v2/campaign/C11_thin_sleeve_fuel_rich_v5/pilot/out/sigma_0.001000/statepoint.0180.h5",
+    "theta": 0.0,
+    "lower_bound": 0.9278973089328141,
+    "upper_bound": 0.9355990983037218
+  },
+  "completed_unix": 1791457638.5119295
+}

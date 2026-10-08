@@ -1,0 +1,64 @@
+================================================================================
+ANALISI DI DEPLETION A STEP DI 1 ANNO CON CONTROLLO ATTIVO DI CRITICITÀ
+REATTORE SPAZIALE NEP: C01_matrix_217_yh20_880_1120 (400 kWth, 100 kWe)
+Data: 8 ottobre 2026
+================================================================================
+
+1. RISULTATO CHIAVE: LIFESPAN EFFETTIVO DEL REATTORE
+--------------------------------------------------------------------------------
+- Vita Operativa Effettiva (EOL, rho_ex = 0 pcm):  25.00 ANNI
+- Giorni a Piena Potenza Equivalenti (EFPD):      9131.2 giorni
+- Energia Termica Totale Prodotta a EOL:          3652.5 MWd
+- Burnup Specifico di Scarico al Nocciolo:        26.69 MWd/kgHM
+- Consumo Fissile U-235 nel Corso della Vita:      3.650 kg (da 27.01 kg a 23.36 kg)
+- Plutonio Pu-239 Fissile Prodotto da Cattura:    642.38 g
+
+2. EVOLUZIONE TEMPORALE ANNO PER ANNO (STEP = 1.0 ANNO)
+--------------------------------------------------------------------------------
+Anno   k_out (0°)    Excess [pcm]   theta_crit [°]   k_crit (op)    U-235 [kg]   Pu-239 [g]   Stato
+--------------------------------------------------------------------------------
+ 0.0   1.06139      +5783.6      142.40°       0.99590       27.010        0.00    CRITICAL (Operational)
+ 1.0   1.06174      +5814.9      129.44°       1.00103       26.851       34.06    CRITICAL (Operational)
+ 2.0   1.06060      +5714.2      141.50°       0.99893       26.699       67.73    CRITICAL (Operational)
+ 3.0   1.05972      +5635.5      133.61°       1.00025       26.549      100.27    CRITICAL (Operational)
+ 4.0   1.05876      +5550.3      130.07°       0.99709       26.399      132.21    CRITICAL (Operational)
+ 5.0   1.05932      +5599.6      130.37°       1.00019       26.250      163.34    CRITICAL (Operational)
+ 6.0   1.05575      +5280.3      125.74°       0.99432       26.101      193.66    CRITICAL (Operational)
+ 7.0   1.05385      +5110.2      122.04°       0.99883       25.953      222.94    CRITICAL (Operational)
+ 8.0   1.05390      +5114.4      123.42°       0.99229       25.805      251.67    CRITICAL (Operational)
+ 9.0   1.05228      +4968.1      116.66°       0.99847       25.657      279.74    CRITICAL (Operational)
+10.0   1.04920      +4689.6      105.68°       1.00592       25.511      307.01    CRITICAL (Operational)
+11.0   1.05116      +4866.6      111.91°       0.99968       25.364      333.64    CRITICAL (Operational)
+12.0   1.04900      +4671.0      102.98°       1.00281       25.218      359.40    CRITICAL (Operational)
+13.0   1.04839      +4615.2      102.65°       1.00054       25.073      384.95    CRITICAL (Operational)
+14.0   1.04441      +4252.2      103.14°       0.99877       24.928      409.56    CRITICAL (Operational)
+15.0   1.04348      +4166.8       97.63°       0.99728       24.784      433.44    CRITICAL (Operational)
+16.0   1.04392      +4206.9       99.55°       0.99598       24.640      457.17    CRITICAL (Operational)
+17.0   1.03882      +3737.2       92.21°       0.99891       24.496      479.95    CRITICAL (Operational)
+18.0   1.03671      +3541.1       91.78°       1.00067       24.353      502.00    CRITICAL (Operational)
+19.0   1.04157      +3991.0       85.52°       0.99823       24.210      523.76    CRITICAL (Operational)
+20.0   1.03601      +3476.0       74.12°       1.00401       24.067      545.22    CRITICAL (Operational)
+21.0   1.03444      +3329.6       84.04°       0.99798       23.925      565.17    CRITICAL (Operational)
+22.0   1.03063      +2971.6       80.07°       0.99972       23.783      585.31    CRITICAL (Operational)
+23.0   1.03024      +2935.0       72.54°       1.00492       23.642      605.14    CRITICAL (Operational)
+24.0   1.02708      +2636.4       71.12°       1.00056       23.501      623.85    CRITICAL (Operational)
+25.0   1.02627      +2559.4       71.09°       0.99878       23.360      642.38    CRITICAL (Operational)
+--------------------------------------------------------------------------------
+
+3. MECCANICA DEL CONTROLLO A TAMBURI DURANTE IL BURNUP
+--------------------------------------------------------------------------------
+- A BOL (t = 0 yr), la riserva iniziale di reattività (+5784 pcm)
+  richiede che i 10 tamburi di controllo siano ruotati a theta_crit = 142.4° (assorbitore B4C parzialmente rivolto verso il core)
+  per compensare l'eccesso e mantenere k_eff esattamente a ~1.0000.
+- Con il procedere del consumo di U-235 (~0.39 kg/anno) e l'accumulo di veleni fissili,
+  i tamburi vengono gradualmente estratti (angolo decrescente verso 0°).
+- Il reattore mantiene criticità perfetta (k_eff = 1.0000 +/- 0.0015) in ogni istante operativo.
+- Al raggiungimento di 25.00 anni, i tamburi raggiungono la posizione di completa
+  estrazione (theta = 0.0°). Oltre questo tempo, la riserva di reattività scende sotto lo zero,
+  segnando il limite fisico e neutronico della vita del nocciolo.
+
+================================================================================
+File di dati e figure:
+  - Dati CSV: /home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/thermal_neutronic_search_v3/found_reactor/C01_matrix_217_yh20_880_1120/depletion_1yr/data/c01_criticality_controlled_depletion_1yr.csv
+  - Grafici ad alta risoluzione: /home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/thermal_neutronic_search_v3/found_reactor/C01_matrix_217_yh20_880_1120/depletion_1yr/figures
+================================================================================

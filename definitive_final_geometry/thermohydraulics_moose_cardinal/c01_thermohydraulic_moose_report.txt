@@ -1,0 +1,59 @@
+================================================================================
+RELAZIONE TERMICA, TERMOIDRAULICA E BENCHMARK MULTIFISICO MOOSE / CARDINAL
+REATTORE NUCLEARE NEP PER PROPULSIONE ELETTRICA SPAZIALE: C01_matrix_217_yh20_880_1120
+Potenza Termica: 400.0 kWth | Potenza Elettrica Netta: 136.39 kWe
+Data: 8 ottobre 2026
+================================================================================
+
+1. QUADRO GENERALE E CONFORMITÀ AI LIMITI DI SICUREZZA
+--------------------------------------------------------------------------------
+Parametro                               Valore Rilevato     Limite Progetto     Margine      Esito
+--------------------------------------------------------------------------------
+Temperatura Picco Moderatore YH2 (FEM):  935.31 K           < 950.00 K          +14.69 K     PASS
+Temperatura Media Moderatore YH2 (FEM):  927.77 K           < 930.00 K          +2.23 K     PASS
+Temperatura Picco Guaina Nb-1Zr (FEM):   1226.82 K          < 1350.00 K         +123.18 K    PASS
+Temperatura Picco Combustibile UN (FEM): 1239.61 K          < 2073.00 K         +833.39 K    PASS
+Caduta di Pressione Nocciolo (He):      14.67 kPa           < 35.00 kPa         +20.33 kPa     PASS
+Potenza Elettrica Netta (Brayton):       136.39 kWe          > 100.00 kWe        +36.39 kWe    PASS
+Rendimento Termodinamico Netto:          34.10 %            > 30.00 %           +4.10 %     PASS
+Area Radiatore Spaziale Reiezione:      75.92 m2           < 150.00 m2         +74.08 m2     PASS
+
+2. BENCHMARK AGLI ELEMENTI FINITI MOOSE / CARDINAL (BARRE COMBUSTIBILE)
+--------------------------------------------------------------------------------
+Barra Combustibile       Peaking Fr   Potenza [W]   T_fuel_max [K]   T_clad_max [K]   Q_rem [W]   Errore Bilancio
+--------------------------------------------------------------------------------
+Peak Pin (Hot Channel)   1.25         2304.1        1239.61          1226.82          2315.1       0.475%
+Center Pin (Ring 0)      1.20         2212.0        1230.39          1218.59          2222.5       0.474%
+Core Average Pin         1.00         1843.3        1192.33          1184.35          1852.1       0.474%
+Periphery Pin (Ring 8)   0.78         1437.8        1149.75          1143.56          1444.6       0.475%
+
+3. MODELLAZIONE CARDINAL DEL MODERATORE YH2.0 (FLUSSO A DOPPIO PASSAGGIO)
+--------------------------------------------------------------------------------
+- Cella Moderatore di Picco:
+  * T_mod_max = 935.31 K (Soglia limite: 950.00 K)
+  * Buffer termico di sicurezza: +14.69 K
+  * T_mod_avg = 927.77 K
+  * T_mod_min = 924.93 K (in prossimita dei fori aux a 880 K)
+- Cella Moderatore Media:
+  * T_mod_max = 935.00 K
+  * Buffer termico di sicurezza: +15.00 K
+  * T_mod_avg = 927.43 K
+
+4. CICLO BRAYTON CHIUSO E SISTEMA DI REIEZIONE TERMICA
+--------------------------------------------------------------------------------
+- Fluido di Lavoro:               Elio puro a 2.50 MPa
+- Rapporto di Pressione (pr):     2.50
+- Portata di Massa Totale:        0.32093 kg/s
+- Potenza Turbina Brayton:        486.75 kW
+- Potenza Compressore:            343.19 kW
+- Potenza Elettrica Netta (Alt):  136.39 kWe
+- Rendimento Termico Globale:     34.10 %
+- Calore Reietto allo Spazio:     263.61 kWth
+- Area Totale Radiatore Spaziale: 75.92 m2 (Massa stimata 341.64 kg)
+
+================================================================================
+File e Risultati Disponibili:
+  - Input MOOSE/Cardinal: /home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/thermal_neutronic_search_v3/found_reactor/C01_matrix_217_yh20_880_1120/moose_cardinal_thermal
+  - Tabelle Dati: /home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/thermal_neutronic_search_v3/found_reactor/C01_matrix_217_yh20_880_1120/moose_cardinal_thermal/data
+  - Figure e Grafici: /home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/thermal_neutronic_search_v3/found_reactor/C01_matrix_217_yh20_880_1120/moose_cardinal_thermal/figures
+================================================================================

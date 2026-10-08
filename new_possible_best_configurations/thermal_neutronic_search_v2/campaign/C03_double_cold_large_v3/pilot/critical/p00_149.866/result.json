@@ -1,0 +1,11 @@
+{
+  "request_sha256": "61d4a0c3fbafd72efa601e978af3072d8519041d7fb7a0dad5c0f433b5a4df2f",
+  "keff": 0.9911165690674171,
+  "sigma_k": 0.0005829974733021884,
+  "batches": 260,
+  "particles": 12000,
+  "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/thermal_neutronic_search_v2/campaign/C03_double_cold_large_v3/pilot/critical/p00_149.866/statepoint.0260.h5",
+  "theta": 149.866,
+  "lower_bound": 0.9887845791742084,
+  "upper_bound": 0.9934485589606258
+}

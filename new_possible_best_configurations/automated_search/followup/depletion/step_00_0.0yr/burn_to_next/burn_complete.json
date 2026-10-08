@@ -1,0 +1,8 @@
+{
+  "depletion_results": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/depletion/step_00_0.0yr/burn_to_next/depletion_results.h5",
+  "power_W": 400000.0,
+  "interval_years": 2.5,
+  "angle_deg": 102.737,
+  "chain": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations_failed/campaign/data/chain_endfb80_thermal.xml",
+  "completed_unix": 1791396388.206984
+}

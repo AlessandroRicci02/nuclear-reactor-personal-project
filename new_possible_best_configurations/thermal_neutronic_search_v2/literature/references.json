@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-08",
+  "sources": [
+    {
+      "title": "NASA/Sandia DDG, 2003",
+      "url": "https://ntrs.nasa.gov/citations/20030061231",
+      "design_implication": "Insulating cavities separate 1144 K gas and colder structures"
+    },
+    {
+      "title": "Peakman and Gregg JANUS, 2020",
+      "url": "https://arxiv.org/abs/2004.12116",
+      "design_implication": "Gas-cooled NEP and direct Brayton tradeoffs"
+    },
+    {
+      "title": "Ade et al., 2022",
+      "url": "https://doi.org/10.1080/00295639.2022.2035157",
+      "design_implication": "Risk of positive YHx moderator temperature coefficient"
+    },
+    {
+      "title": "Chapman et al., 2021",
+      "url": "https://www.osti.gov/biblio/1775234",
+      "design_implication": "Temperature-dependent hydride thermal scattering and anharmonicity"
+    },
+    {
+      "title": "ORNL YH handbook, 2021",
+      "url": "https://info.ornl.gov/sites/publications/Files/Pub160401.pdf",
+      "design_implication": "Thermophysical properties and limited irradiation evidence"
+    },
+    {
+      "title": "NASA/DOE MTAS, 2021",
+      "url": "https://ntrs.nasa.gov/citations/20210016968",
+      "design_implication": "NEP mass includes shielding, conversion and heat rejection"
+    },
+    {
+      "title": "KTH UN research",
+      "url": "https://www.reactor.sci.kth.se/une/about-the-project-1.793757",
+      "design_implication": "N14 absorption motivates N15-enriched nitrogen"
+    }
+  ]
+}

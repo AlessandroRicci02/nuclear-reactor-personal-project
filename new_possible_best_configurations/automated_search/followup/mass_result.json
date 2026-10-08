@@ -1,0 +1,12 @@
+{
+  "method": "OpenMC stochastic material-volume calculation",
+  "samples": 5000000,
+  "modeled_dry_mass_kg": 484.2187595228432,
+  "sampling_sigma_kg": 0.28456211782718904,
+  "helium_inventory_kg": 0.01922557607945282,
+  "core_plus_helium_kg": 484.23798509892265,
+  "optional_unmodeled_hardware_allowance_kg": 65.0,
+  "optional_contingency_allowance_kg": 15.0,
+  "screening_mass_with_allowances_kg": 564.2187595228431,
+  "excluded": "unmodeled shielding, controls/drive hardware, power conversion, radiators, external piping and vehicle structure"
+}

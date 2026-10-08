@@ -1,0 +1,9 @@
+{
+  "status": "rejected",
+  "failed_metric": "T_moderator_upper",
+  "detail": {
+    "upper_K": 1017.4593652791002,
+    "result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/thermal_neutronic_search_v2/campaign/C09_thin_sleeve_fuel_rich_v3/operating_state_0/thermal_result.json"
+  },
+  "completed_unix": 1791456328.1910644
+}

@@ -1,0 +1,16 @@
+{
+  "status": "rejected",
+  "failed_metric": "k_out",
+  "detail": {
+    "request_sha256": "abe735fd6ea5fa8353aec874aaca47e86c59a9596afd85a896130fb39f560710",
+    "keff": 0.9775378673328691,
+    "sigma_k": 0.0009598307298345621,
+    "batches": 160,
+    "particles": 8000,
+    "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/thermal_neutronic_search_v2/campaign/C30_beo_double_cold_v6/pilot/out/sigma_0.001000/statepoint.0160.h5",
+    "theta": 0.0,
+    "lower_bound": 0.9736985444135309,
+    "upper_bound": 0.9813771902522073
+  },
+  "completed_unix": 1791472412.8792696
+}

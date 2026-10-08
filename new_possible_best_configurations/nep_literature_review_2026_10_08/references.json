@@ -1,0 +1,45 @@
+{
+  "accessed_on": "2026-10-08",
+  "scope": "Bibliographic review only; no reactor configurations or simulation campaign.",
+  "sources": [
+    {
+      "id": 1,
+      "institution": "NASA",
+      "title": "Space Nuclear Propulsion",
+      "url": "https://www.nasa.gov/space-technology-mission-directorate/tdm/space-nuclear-propulsion/",
+      "consulted": "Institutional web page"
+    },
+    {
+      "id": 2,
+      "institution": "ORNL",
+      "title": "Handbook on the Material Properties of Yttrium Hydride for High Temperature Moderator Applications",
+      "year": 2021,
+      "doi": "10.2172/1808171",
+      "url": "https://impact.ornl.gov/en/publications/handbook-on-the-material-properties-of-yttrium-hydride-for-high-t-3/",
+      "consulted": "Bibliographic record and abstract; full report not reviewed"
+    },
+    {
+      "id": 3,
+      "institution": "ORNL",
+      "title": "Considerations for Hydride Moderator Readiness in Microreactors",
+      "year": 2023,
+      "doi": "10.1080/00295450.2022.2121583",
+      "url": "https://impact.ornl.gov/en/publications/considerations-for-hydride-moderator-readiness-in-microreactors/",
+      "consulted": "Bibliographic record and abstract; full article not reviewed"
+    },
+    {
+      "id": 4,
+      "institution": "NIST",
+      "title": "Expanded uncertainty and coverage factors",
+      "url": "https://pml.nist.gov/cuu/Uncertainty/coverage.html",
+      "consulted": "Methodological web page"
+    },
+    {
+      "id": 5,
+      "institution": "NIST",
+      "title": "Combining uncertainty components",
+      "url": "https://pml.nist.gov/cuu/Uncertainty/combination.html",
+      "consulted": "Methodological web page"
+    }
+  ]
+}

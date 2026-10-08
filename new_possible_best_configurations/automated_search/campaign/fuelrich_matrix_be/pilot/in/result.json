@@ -1,0 +1,13 @@
+{
+  "candidate": "fuelrich_matrix_be",
+  "stage": "pilot",
+  "case": "in",
+  "request_sha256": "e359dd4b42994b863536636a68f4b59b8e7a92a90c2d3e7f9bc6bcc556fd8891",
+  "k_eff": 1.0560403390037278,
+  "sigma_k": 0.0017711969535470602,
+  "rho_pcm": 5306.647571493007,
+  "sigma_rho_pcm": 158.8202373980883,
+  "batches": 100,
+  "particles": 4000,
+  "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/campaign/fuelrich_matrix_be/pilot/in/statepoint.100.h5"
+}

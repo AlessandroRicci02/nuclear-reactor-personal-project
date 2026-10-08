@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='utf-8'?>
+<materials>
+  <material id="1" name="UN_Inner" depletable="true" volume="939.6649710945461" temperature="1250.0">
+    <density units="sum"/>
+    <nuclide name="N14" ao="0.03221204914646044"/>
+    <nuclide name="N15" ao="0.00011842653241170868"/>
+    <nuclide name="Cs135" ao="3.503809153817516e-05"/>
+    <nuclide name="Gd156" ao="1.9945667918003337e-07"/>
+    <nuclide name="Gd157" ao="6.808769638656132e-09"/>
+    <nuclide name="I135" ao="1.3409443249045192e-09"/>
+    <nuclide name="Np239" ao="1.014653364475886e-07"/>
+    <nuclide name="Pu239" ao="0.00019222122842581373"/>
+    <nuclide name="Pu240" ao="3.177986352438675e-05"/>
+    <nuclide name="U235" ao="0.005352741530539558"/>
+    <nuclide name="U238" ao="0.025598701408176824"/>
+    <nuclide name="Xe135" ao="1.9823118246944595e-09"/>
+    <nuclide name="Xe136" ao="2.5067118268307154e-05"/>
+  </material>
+  <material id="2" name="UN_Outer" depletable="true" volume="9792.298119827377" temperature="1250.0">
+    <density units="sum"/>
+    <nuclide name="N14" ao="0.03221263137713729"/>
+    <nuclide name="N15" ao="0.00011842867296351927"/>
+    <nuclide name="Cs135" ao="2.817849377128006e-05"/>
+    <nuclide name="Gd156" ao="1.5835133598093926e-07"/>
+    <nuclide name="Gd157" ao="5.875450484258638e-09"/>
+    <nuclide name="I135" ao="1.1465947169840263e-09"/>
+    <nuclide name="Np239" ao="7.588209373236428e-08"/>
+    <nuclide name="Pu239" ao="0.00014681460482580082"/>
+    <nuclide name="Pu240" ao="2.0134012660332283e-05"/>
+    <nuclide name="U235" ao="0.005598575674934104"/>
+    <nuclide name="U238" ao="0.025641280312178993"/>
+    <nuclide name="Xe135" ao="1.6967360721260423e-09"/>
+    <nuclide name="Xe136" ao="2.005995766594965e-05"/>
+  </material>
+  <material id="3" name="Nb1Zr" temperature="1125.0">
+    <density value="8.57" units="g/cm3"/>
+    <nuclide name="Nb93" wo="0.99"/>
+    <nuclide name="Zr90" wo="0.005070611750923317"/>
+    <nuclide name="Zr91" wo="0.0011180887453100783"/>
+    <nuclide name="Zr92" wo="0.001727810146362816"/>
+    <nuclide name="Zr94" wo="0.0017891104342343414"/>
+    <nuclide name="Zr96" wo="0.00029437892316944896"/>
+  </material>
+  <material id="4" name="Helium" temperature="1000.0">
+    <density value="0.0012035056997087004" units="g/cm3"/>
+    <nuclide name="He3" ao="2e-06"/>
+    <nuclide name="He4" ao="0.999998"/>
+  </material>
+  <material id="5" name="Al2O3" temperature="900.0">
+    <density value="3.95" units="g/cm3"/>
+    <nuclide name="Al27" ao="2.0"/>
+    <nuclide name="O16" ao="2.9928618"/>
+    <nuclide name="O17" ao="0.001137"/>
+    <nuclide name="O18" ao="0.0060012"/>
+  </material>
+  <material id="6" name="YH_2.0" temperature="900.0">
+    <density value="4.3" units="g/cm3"/>
+    <nuclide name="Y89" ao="1.0"/>
+    <nuclide name="H1" ao="2.0"/>
+    <sab name="c_H_in_YH2"/>
+    <sab name="c_Y_in_YH2"/>
+  </material>
+  <material id="7" name="BeO" temperature="900.0">
+    <density value="2.9" units="g/cm3"/>
+    <nuclide name="Be9" ao="1.0"/>
+    <nuclide name="O16" ao="0.9976206"/>
+    <nuclide name="O17" ao="0.000379"/>
+    <nuclide name="O18" ao="0.0020004"/>
+    <sab name="c_Be"/>
+  </material>
+  <material id="8" name="B4C_Absorber" temperature="900.0">
+    <density value="2.52" units="g/cm3"/>
+    <nuclide name="B10" ao="3.632879484786877"/>
+    <nuclide name="B11" ao="0.36712051521312317"/>
+    <nuclide name="C12" ao="0.988922"/>
+    <nuclide name="C13" ao="0.011078"/>
+  </material>
+</materials>

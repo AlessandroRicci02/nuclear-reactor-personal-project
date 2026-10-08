@@ -1,5 +1,21 @@
 # Conceptual HALEU Space Nuclear Electric Propulsion (NEP) Reactor Model
 
+> [!IMPORTANT]
+> ### 🏆 RISULTATO FINALE DEFINITIVO DEL PROGETTO (FINAL DEFINITIVE REACTOR)
+> L'architettura nucleare ottimale, consolidata e validata per la missione **NEP da 400 kWth / 136.39 kWe** (configurazione **`C01_matrix_217_yh20_880_1120`**) si trova nella cartella dedicata:
+> 
+> 📁 **[`definitive_final_geometry/`](file:///home/aleri/OpenMC_projects/first_test/definitive_final_geometry)**
+> 
+> * 📄 **Relazione Tecnica Ufficiale Consolidata**: [`definitive_final_geometry/report.txt`](file:///home/aleri/OpenMC_projects/first_test/definitive_final_geometry/report.txt)
+> * 📄 **Guida Tecnica di Dettaglio del Reattore**: [`definitive_final_geometry/README.md`](file:///home/aleri/OpenMC_projects/first_test/definitive_final_geometry/README.md)
+> * 📊 **Dati Numerici, Tabelle CSV e Benchmark**: [`definitive_final_geometry/data/`](file:///home/aleri/OpenMC_projects/first_test/definitive_final_geometry/data/)
+> * 🖼️ **Galleria di 13 Figure ad ALTA RISOLUZIONE (300 DPI)**: [`definitive_final_geometry/figures/`](file:///home/aleri/OpenMC_projects/first_test/definitive_final_geometry/figures/)
+> * ⚛️ **Modello OpenMC CSG Geometrico**: [`definitive_final_geometry/neutronics_openmc/`](file:///home/aleri/OpenMC_projects/first_test/definitive_final_geometry/neutronics_openmc/)
+> * ⏳ **Simulazione di Depletion 26 Step (0-25 anni, controllo critico)**: [`definitive_final_geometry/depletion_analysis/`](file:///home/aleri/OpenMC_projects/first_test/definitive_final_geometry/depletion_analysis/)
+> * 🔥 **Multifisica Termoidraulica FEM MOOSE / Cardinal & Ciclo Brayton**: [`definitive_final_geometry/thermohydraulics_moose_cardinal/`](file:///home/aleri/OpenMC_projects/first_test/definitive_final_geometry/thermohydraulics_moose_cardinal/)
+> 
+> *(Vedere la Sezione 8 in fondo a questo documento per la sintesi completa dei parametri del reattore finale).*
+
 An open-source, research and educational computational neutronics model of a **High-Assay Low-Enriched Uranium (HALEU)** space reactor for megawatt- and hundred-kilowatt-class **Nuclear Electric Propulsion (NEP)**, modeled using the **OpenMC Monte Carlo Code** (v0.16.0).
 
 ---
@@ -11,7 +27,7 @@ The objective of this project is to develop, verify, and progressively optimize 
 Key functional characteristics:
 * **Reactor Concept**: Epithermal/intermediate space core fueled with Uranium Mononitride (**UN**, $19.75\text{ wt\%}$ $^{235}\text{U}$ HALEU), moderated with high-temperature Yttrium Hydride (**$\text{YH}_2$**), cooled by an inert binary Helium-Xenon gas mixture (**$\text{He-Xe}$**, $M = 40.0\text{ g/mol}$), and reflected by Beryllium Oxide (**BeO**).
 * **Reactivity Control**: External rotating BeO control drums with $90\%$ $^{10}\text{B}$-enriched Boron Carbide ($\text{B}_4\text{C}$) sectors embedded in the radial reflector, providing full operational reactivity control and shutdown margin without in-core control rod penetrations.
-* **Current Reference Design**: **Opt-6** (Buckling-Optimal & Under-Moderated Epithermal Core: **$514.21\text{ kg}$**, **$118.79\text{ L}$**, $H/R = 1.955$, $\ge 10\text{ years}$ operational life, **$25.0\text{ years}$** theoretical neutronic lifetime, Total TMC: **$-3.01 \pm 0.57\text{ pcm/K}$** with $3\sigma$ bound **$-1.30\text{ pcm/K} < 0$**).
+* **Historical Reference Design**: **Opt-6** (Buckling-Optimal & Under-Moderated Epithermal Core: **$514.21\text{ kg}$**, **$118.79\text{ L}$**, $H/R = 1.955$, $\ge 10\text{ years}$ operational life, **$25.0\text{ years}$** theoretical neutronic lifetime, Total TMC: **$-3.01 \pm 0.57\text{ pcm/K}$** with $3\sigma$ bound **$-1.30\text{ pcm/K} < 0$**).
 
 ---
 
@@ -46,6 +62,15 @@ The design explicitly differentiates between reactor-level neutronic heat genera
 
 ```
 /home/aleri/OpenMC_projects/first_test/
+├── definitive_final_geometry/    # 🏆 RISULTATO FINALE DEFINITIVO CONSOLIDATO (C01 NEP 400 kWth, 100+ kWe)
+│   ├── README.md                 # Documentazione tecnica completa del reattore finale
+│   ├── report.txt                # Relazione tecnica esaustiva (Neutronica, Depletion, MOOSE, Brayton)
+│   ├── results.json              # Specifiche e parametri scalari validati
+│   ├── figures/                  # 13 Figure ad ALTA RISOLUZIONE (300 DPI)
+│   ├── data/                     # Tabelle dati CSV (burnup a step di 1 anno, FEM, ciclo Brayton)
+│   ├── neutronics_openmc/        # Script e modelli CSG OpenMC
+│   ├── depletion_analysis/       # Script burnup 26 step (0-25 anni) con controllo criticità attivo
+│   └── thermohydraulics_moose_cardinal/ # Benchmark FEM e simulatore termoidraulico MOOSE / Cardinal
 ├── README.md                     # Main project guide, specifications, and execution instructions
 ├── PROJECT_STATUS.md             # Live tracking of current reference design, metrics, and open items
 ├── ITERATION_LOG.md              # Chronological engineering log of all design iterations
@@ -151,3 +176,22 @@ python src/model.py
 * **Coolant Void Reactivity**: $\Delta\rho_\text{void} = +292.6 \pm 152.8\text{ pcm}$ (He-Xe 72/28 baseline; negative $\approx -125\text{ to } -150\text{ pcm}$ with lighter Brayton mixtures).
 
 See `PROJECT_STATUS.md` for live progress tracking and `ITERATION_LOG.md` for detailed evolutionary history.
+ 
+---
+
+## 8. Posizione e Dettagli del Risultato Finale: `definitive_final_geometry/`
+
+Tutte le simulazioni più recenti e l'architettura definitiva del reattore, che incorpora la tecnologia a **matrice continua di $\text{YH}_{2.0}$ con raffreddamento a doppio passaggio (Dual-Pass)**, barriera in $\text{Al}_2\text{O}_3$ ($100\ \mu\text{m}$), combustibile $\text{UN}$ ($19.75\text{ wt\%}$), ciclo Brayton chiuso da **$136.39\text{ kWe}$** ($\eta = 34.10\%$) e vita operativa verificata a **$25.0\text{ anni}$** (estrapolata a **$44.8\text{ anni}$**), si trovano in:
+
+📁 **[`definitive_final_geometry/`](file:///home/aleri/OpenMC_projects/first_test/definitive_final_geometry)**
+
+### Documenti e File Salienti:
+1. **Relazione Tecnica Ufficiale**: [`definitive_final_geometry/report.txt`](file:///home/aleri/OpenMC_projects/first_test/definitive_final_geometry/report.txt)
+2. **Documentazione Tecnica e Guida Completa**: [`definitive_final_geometry/README.md`](file:///home/aleri/OpenMC_projects/first_test/definitive_final_geometry/README.md)
+3. **Parametri Macchina Strutturati**: [`definitive_final_geometry/results.json`](file:///home/aleri/OpenMC_projects/first_test/definitive_final_geometry/results.json)
+4. **Galleria delle 13 Figure a 300 DPI**: [`definitive_final_geometry/figures/`](file:///home/aleri/OpenMC_projects/first_test/definitive_final_geometry/figures/)
+   * Sezioni geometriche: [`01_reactor_radial_xy.png`](file:///home/aleri/OpenMC_projects/first_test/definitive_final_geometry/figures/01_reactor_radial_xy.png), [`02_reactor_axial_xz.png`](file:///home/aleri/OpenMC_projects/first_test/definitive_final_geometry/figures/02_reactor_axial_xz.png), [`03_unit_cell_5layer_detailed.png`](file:///home/aleri/OpenMC_projects/first_test/definitive_final_geometry/figures/03_unit_cell_5layer_detailed.png), [`04_control_drum_mechanism.png`](file:///home/aleri/OpenMC_projects/first_test/definitive_final_geometry/figures/04_control_drum_mechanism.png).
+   * Rendering CSG: [`05_openmc_csg_slice_xy.png`](file:///home/aleri/OpenMC_projects/first_test/definitive_final_geometry/figures/05_openmc_csg_slice_xy.png), [`06_openmc_csg_slice_xz.png`](file:///home/aleri/OpenMC_projects/first_test/definitive_final_geometry/figures/06_openmc_csg_slice_xz.png).
+   * Depletion (0-25 anni): [`07_depletion_keff_and_excess_reactivity.png`](file:///home/aleri/OpenMC_projects/first_test/definitive_final_geometry/figures/07_depletion_keff_and_excess_reactivity.png), [`08_depletion_control_drum_critical_angle.png`](file:///home/aleri/OpenMC_projects/first_test/definitive_final_geometry/figures/08_depletion_control_drum_critical_angle.png), [`09_depletion_isotopic_inventory_evolution.png`](file:///home/aleri/OpenMC_projects/first_test/definitive_final_geometry/figures/09_depletion_isotopic_inventory_evolution.png), [`10_depletion_burnup_and_fima.png`](file:///home/aleri/OpenMC_projects/first_test/definitive_final_geometry/figures/10_depletion_burnup_and_fima.png).
+   * Termica FEM e Brayton: [`11_moose_cardinal_temperature_profiles_pins.png`](file:///home/aleri/OpenMC_projects/first_test/definitive_final_geometry/figures/11_moose_cardinal_temperature_profiles_pins.png), [`12_moose_cardinal_moderator_thermal_field.png`](file:///home/aleri/OpenMC_projects/first_test/definitive_final_geometry/figures/12_moose_cardinal_moderator_thermal_field.png), [`13_closed_brayton_cycle_ts_diagram.png`](file:///home/aleri/OpenMC_projects/first_test/definitive_final_geometry/figures/13_closed_brayton_cycle_ts_diagram.png).
+5. **Dati Numerici di Burnup e Termica**: [`definitive_final_geometry/data/`](file:///home/aleri/OpenMC_projects/first_test/definitive_final_geometry/data/)

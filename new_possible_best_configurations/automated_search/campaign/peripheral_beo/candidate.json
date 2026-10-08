@@ -1,0 +1,23 @@
+{
+  "index": 15,
+  "name": "peripheral_beo",
+  "parameters": {
+    "r_fuel": 0.585,
+    "clad_th": 0.048,
+    "chan_gap": 0.084,
+    "al2o3_mod_th": 0.01,
+    "pitch": 2.32,
+    "core_h": 68,
+    "refl_ax_th": 11,
+    "refl_rad_th": 12,
+    "drum_r": 3.95,
+    "abs_th": 1.5,
+    "abs_angle": 170.0,
+    "drum_clearance": 0.18,
+    "r_add": 0.15,
+    "reflector_kind": "BeO",
+    "matrix_kind": "Be",
+    "peripheral_kind": "YH2"
+  },
+  "geometry_check": "passed"
+}

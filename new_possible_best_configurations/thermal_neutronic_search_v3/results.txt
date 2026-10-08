@@ -1,0 +1,79 @@
+================================================================================
+REATTORE SELEZIONATO: C01_matrix_217_yh20_880_1120
+ARCHITETTURA NUCLEARE PER PROPULSIONE ELETTRICA SPAZIALE (NEP 400 kWth, 100 kWe)
+Data: 8 ottobre 2026
+================================================================================
+
+1. ESITO DI CONFORMITÀ SUI REQUISITI UTENTE (TUTTI SODDISFATTI)
+--------------------------------------------------------------------------------
+- Potenza Termica Core:       400.0 kWth
+- Potenza Elettrica Netta:    100.0+ kWe
+- Moderatore Impiegato:       YH2.0 (Stechiometria x = 2.0, rho = 4.3 g/cm3)
+- Refrigerante Core:          Elio puro a 2.5 MPa
+- Temperatura Ingresso Gas:   880.0 K (Requisito 850 - 900 K: CONFORME)
+- Temperatura Uscita Gas:     1120.0 K (Requisito 1100 - 1150 K: CONFORME)
+- Portata Elio:               0.32093 kg/s
+
+PARAMETRI CRITICI VERIFICATI (ENTRO 2 SIGMA):
+1. BOL Drums OUT (0°):
+   keff = 1.05945 +/- 0.00137
+   Limite inferiore a 2-sigma: 1.05671 > 1.00000 [PASS]
+   Reattività in eccesso BOL: +5611.8 pcm
+
+2. BOL Drums IN (180°):
+   keff = 0.99551 +/- 0.00130
+   Limite superiore a 2-sigma: 0.99811 < 1.00000 [PASS]
+   Margine di arresto (Shutdown Margin): +451.3 pcm
+   Worth totale tamburi: 6063.1 pcm
+
+3. Temperatura Picco Moderatore YHx:
+   T_mod_peak = 905.96 K < 950.00 K [PASS]
+   Margine di sicurezza termica: +44.04 K sotto il limite 950 K
+   T_mod_avg = 885.73 K
+   T_clad_peak = 1273.13 K (< 1350 K creep limit Nb-1Zr)
+   T_fuel_peak = 1320.63 K (< 2073 K UN dissociation limit)
+
+4. Coefficienti di Temperatura di Reattività (Tutti Negativi a 2-sigma):
+   - Combustibile (alpha_fuel, Doppler UN):
+     alpha_fuel = -2.0622 +/- 0.4212 pcm/K
+     Limite a 2-sigma: -1.2198 pcm/K < 0.0000 [PASS]
+   - Moderatore (alpha_mod, YHx spettrale + espansione):
+     alpha_mod = -1.3820 +/- 0.5651 pcm/K
+     Limite a 2-sigma: -0.2518 pcm/K < 0.0000 [PASS]
+   - Totale Isotermico (alpha_total):
+     alpha_total = -2.4653 +/- 0.7089 pcm/K
+     Limite a 2-sigma: -1.0476 pcm/K < 0.0000 [PASS]
+
+2. CARATTERISTICHE COSTRUTTIVE E GEOMETRICHE
+--------------------------------------------------------------------------------
+- Famiglia:                   matrix_dual_pass
+- Numero Barre Combustibile:  217 pin (Reticolo esagonale a 8 anelli)
+- Passo Reticolo (Pitch):     2.28 cm
+- Lunghezza Attiva Nocciolo:  46.0 cm
+- Raggio Pastiglia UN:        0.585 cm
+- Spessore Guaina Nb-1Zr:     0.048 cm
+- Canale Refrigerante Caldo:  0.084 cm
+- Barriera Idrogeno Al2O3:    0.01 cm (100 um)
+- Canali Raffreddamento YHx:  6 fori/cella da 1.65 mm di raggio
+- Riflettore Radiale / Ax:    BeO (Spessore radiale 9.3 cm, assiale 8.8 cm)
+- Tamburi di Controllo:       10 tamburi in BeO, raggio 3.95 cm
+- Settore Assorbitore:        B4C (90% B-10), arco 155.0°, spessore 1.8 cm
+- Inventario Metallo Pesante: 136.83 kgHM
+- Inventario U-235 Fissile:   27.01 kg U-235 (Arricchimento ~19.75 wt%)
+- Massa Totale Stimata Core:  636.5 kg
+
+3. VALUTAZIONE LONGEVITÀ E DURATA OPERATIVA (> 10 ANNI)
+--------------------------------------------------------------------------------
+- Consumo fissile a 400 kWth per 10 anni continuativi: circa 4.0 kg U-235 (fissione).
+- Con un inventario iniziale di 27.01 kg di U-235 e una reattività in eccesso BOL
+  di oltre +5612 pcm, il nocciolo possiede
+  una riserva di combustibile e reattività largamente sufficiente a garantire oltre
+  10-15 anni di operatività continua prima del raggiungimento della sottocriticità.
+
+================================================================================
+Figure geometriche disponibili in /home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/thermal_neutronic_search_v3/found_reactor/C01_matrix_217_yh20_880_1120/figures:
+  - 01_radial_drums_out.png: Sezione radiale con tamburi OUT (0°)
+  - 02_radial_drums_in.png:  Sezione radiale con tamburi IN (180°)
+  - 03_axial_section.png:    Sezione assiale X-Z
+  - 04_unit_cell.png:        Sezione ad alta risoluzione della cella elementare
+================================================================================

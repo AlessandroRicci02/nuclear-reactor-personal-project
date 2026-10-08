@@ -1,0 +1,13 @@
+{
+  "candidate": "peripheral_be",
+  "stage": "pilot",
+  "case": "out",
+  "request_sha256": "af157584cd6e8a9f0024c3e962728560b85717c8741e4ded7c0d4cce7d4f6f05",
+  "k_eff": 0.8314714244783379,
+  "sigma_k": 0.0016586151690148455,
+  "rho_pcm": -20268.71526311278,
+  "sigma_rho_pcm": 239.91145049690533,
+  "batches": 100,
+  "particles": 4000,
+  "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/campaign/peripheral_be/pilot/out/statepoint.100.h5"
+}

@@ -1,0 +1,29 @@
+{
+  "theta_deg": 102.737,
+  "power_W": 400000.0,
+  "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/heating_transport/statepoint.180.h5",
+  "k_eff": 0.9996048812385883,
+  "sigma_k": 0.0007230061218934667,
+  "normalization_W_per_eV_source": 0.0049776578144302315,
+  "material_power_W": {
+    "UN Fuel Inner (19.60%)": 43827.24742732192,
+    "UN Fuel Outer (19.75%)": 337503.1213055116,
+    "Nb-1Zr Cladding": 1369.846424050706,
+    "Al2O3 Liner": 150.97707018690429,
+    "He Coolant Plenum": 1.7121160074928738,
+    "Canned YH2.0": 11448.190383086421,
+    "Be Reflector": 3344.724061829011,
+    "B4C Absorber": 2352.5163332756533,
+    "He Coolant S0": 0.15698156206884234,
+    "He Coolant S1": 0.363819411551947,
+    "He Coolant S2": 0.3849345426720766,
+    "He Coolant S3": 0.309853650392877,
+    "He Coolant S4": 0.2967838829770483,
+    "He Coolant S5": 0.15250568066123024
+  },
+  "fuel_power_W": 381330.3687328395,
+  "moderator_power_W": 11448.190383086434,
+  "other_power_W": 7221.4408840740925,
+  "moderator_relative_sigma_max": 0.035206377267734235,
+  "fuel_relative_sigma_max": 0.0624926834973767
+}

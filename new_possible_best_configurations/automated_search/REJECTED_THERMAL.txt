@@ -1,0 +1,14 @@
+REJECTED / NON UTILIZZABILE NELLE CONDIZIONI RICHIESTE
+2026-10-08
+
+matrix_short_strong_be e' SCARTATO. Il precedente stato "qualified" in
+solution.json riguardava soltanto il filtro neutronico BOL e non costituisce
+qualifica del reattore. OpenMC + il modello termico ridotto Cardinal hanno
+stimato Tmax(YH2)=1255.7 K nello scenario di riferimento e 1242.6--1334.5 K
+nelle 13 sensibilita', contro il requisito Tmax<950 K.
+
+Questo progetto non puo' essere usato come soluzione dei requisiti dell'utente.
+Risultati neutronici e file originali restano conservati per tracciabilita'.
+La depletion precedente NON sta girando: e' terminata con errore nell'export
+dei materiali dopo il primo intervallo. Non esiste un lifespan verificato.
+La nuova campagna non esegue depletion, come richiesto dall'utente.

@@ -1,0 +1,13 @@
+{
+  "candidate": "long_sparse_be",
+  "stage": "pilot",
+  "case": "out",
+  "request_sha256": "c957bce79732aef125ff21ca72ba6487464759953336883c2c7e6cd2d6a7c054",
+  "k_eff": 1.0983163785683263,
+  "sigma_k": 0.001820949737083593,
+  "rho_pcm": 8951.553531094869,
+  "sigma_rho_pcm": 150.95344829104567,
+  "batches": 100,
+  "particles": 4000,
+  "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/campaign/long_sparse_be/pilot/out/statepoint.100.h5"
+}

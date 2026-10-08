@@ -1,0 +1,7 @@
+{
+  "angle_deg": 103.947,
+  "k_eff": 0.9994028012215694,
+  "sigma_k": 0.00033190437966453955,
+  "batches": 540,
+  "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/depletion/step_00_0.0yr/critical_02_103.947deg/statepoint.0540.h5"
+}

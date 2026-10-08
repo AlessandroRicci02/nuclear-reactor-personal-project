@@ -1,0 +1,55 @@
+{
+  "candidate": "fuelrich_full_beo",
+  "index": 13,
+  "spec": {
+    "r_fuel": 0.6,
+    "clad_th": 0.048,
+    "chan_gap": 0.084,
+    "al2o3_mod_th": 0.01,
+    "pitch": 2.3,
+    "core_h": 53,
+    "refl_ax_th": 10,
+    "refl_rad_th": 10.5,
+    "drum_r": 3.95,
+    "abs_th": 1.5,
+    "abs_angle": 148.0,
+    "drum_clearance": 0.18,
+    "r_add": 0.12,
+    "reflector_kind": "BeO",
+    "matrix_kind": "YH2",
+    "peripheral_kind": "YH2"
+  },
+  "pilot": {
+    "pass_all": false,
+    "reason": "IN clearly supercritical",
+    "results": {
+      "out": {
+        "candidate": "fuelrich_full_beo",
+        "stage": "pilot",
+        "case": "out",
+        "request_sha256": "0603850cc5c6fc00558f4bb0714912d2a2f623f836ed675f3160b6c081f00ed6",
+        "k_eff": 1.093124662592861,
+        "sigma_k": 0.001883465402269954,
+        "rho_pcm": 8519.125565420138,
+        "sigma_rho_pcm": 157.62251814741774,
+        "batches": 100,
+        "particles": 4000,
+        "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/campaign/fuelrich_full_beo/pilot/out/statepoint.100.h5"
+      },
+      "in": {
+        "candidate": "fuelrich_full_beo",
+        "stage": "pilot",
+        "case": "in",
+        "request_sha256": "9c98b2cf3131134f71e11a6473ab354c22e13c613dd43b1d0847e51d61c19866",
+        "k_eff": 1.0293052229605462,
+        "sigma_k": 0.001719497316634168,
+        "rho_pcm": 2847.087754617317,
+        "sigma_rho_pcm": 162.29799303712812,
+        "batches": 100,
+        "particles": 4000,
+        "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/campaign/fuelrich_full_beo/pilot/in/statepoint.100.h5"
+      }
+    }
+  },
+  "status": "rejected"
+}

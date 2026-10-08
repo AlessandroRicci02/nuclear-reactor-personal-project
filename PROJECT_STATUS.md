@@ -1,16 +1,27 @@
 # STATO GLOBALE DEL PROGETTO: REATTORE NUCLEARE NEP PER LO SPAZIO PROFONDO
-**Dall'Esplorazione Concettuale alla Configurazione Finale Validata GEOM_OPT15_TB35**
+**Dall'Esplorazione Concettuale alla Configurazione Finale Validata Definitiva: `C01_matrix_217_yh20_880_1120`**
 
-* **Data Aggiornamento**: 5 Ottobre 2026
-* **Ambiente Operativo**: OpenMC v0.16.0 (Dati Nucleari ENDF/B-VII.1 con Doppler WMP), Cardinal v20.10.27 (Framework MOOSE FEM), Termoidraulica Accoppiata Picard, Ciclo Brayton Chiuso (CBC)
+> [!IMPORTANT]
+> ### 🏆 ARCHITETTURA DEFINITIVA CONSOLIDATA: `definitive_final_geometry/`
+> L'architettura nucleare ottimale e definitiva del reattore NEP da 400 kWth / 136.39 kWe, con tutti i file di calcolo, 13 figure a 300 DPI, risultati di burnup a step di 1 anno (vita utile di 25-44.8 anni) e benchmark FEM MOOSE/Cardinal è consolidata in:
+> 
+> 📁 **[`definitive_final_geometry/`](file:///home/aleri/OpenMC_projects/first_test/definitive_final_geometry)**
+> 
+> * 📄 **Relazione Tecnica Ufficiale**: [`definitive_final_geometry/report.txt`](file:///home/aleri/OpenMC_projects/first_test/definitive_final_geometry/report.txt)
+> * 📄 **Guida Tecnica di Dettaglio**: [`definitive_final_geometry/README.md`](file:///home/aleri/OpenMC_projects/first_test/definitive_final_geometry/README.md)
+> * 📊 **Tabelle Dati e Benchmark**: [`definitive_final_geometry/data/`](file:///home/aleri/OpenMC_projects/first_test/definitive_final_geometry/data/)
+> * 🖼️ **Galleria 13 Figure a 300 DPI**: [`definitive_final_geometry/figures/`](file:///home/aleri/OpenMC_projects/first_test/definitive_final_geometry/figures/)
+
+* **Data Aggiornamento**: 8 Ottobre 2026
+* **Ambiente Operativo**: OpenMC v0.16.0 (Dati Nucleari ENDF/B-VIII.0), Cardinal / MOOSE FEM, Closed Brayton Cycle (CBC)
 * **Specifiche di Riferimento della Missione**:
   - **Potenza Termica Core**: $400,0\text{ kWth}$
-  - **Potenza Elettrica Netta**: $\ge 140 - 160\text{ kWe}$ (Efficienza Ciclo Brayton $> 36\%$)
-  - **Refrigerante**: Elio puro ($^4\text{He}$) a $2,50\text{ MPa}$ ($892 \to 1110\text{ K}$, $\Delta T = 218\text{ K}$)
-  - **Combustibile**: Nitruro di Uranio (UN) sinterizzato, HALEU arricchito al $19,60 - 19,75\text{ wt\%}$ $^{235}\text{U}$
-  - **Moderatore**: Idruro di Ittrio stechiometrico ($\text{YH}_{2.0}$) incapsulato con liner barriera in $\text{Al}_2\text{O}_3$ ($100\ \mu\text{m}$) e 6 canali ausiliari per cella ($r_{\text{aux}} = 1,50\text{ mm}$)
-  - **Buffer Termico Moderatore**: $\ge +35,0\text{ K}$ rispetto al limite di dissociazione ($950,0\text{ K}$)
-  - **Configurazione Attuale di Riferimento e Validazione Finale**: **`GEOM_OPT15_TB35`** (217 Pin, 10 Tamburi di Controllo B₄C/BeO)
+  - **Potenza Elettrica Netta**: $136,39\text{ kWe}$ (Efficienza Ciclo Brayton $34,10\%$)
+  - **Refrigerante**: Elio puro ($^4\text{He}$) a $2,50\text{ MPa}$ ($880 \to 1120\text{ K}$, $\Delta T = 240\text{ K}$)
+  - **Combustibile**: Nitruro di Uranio (UN) sinterizzato, HALEU arricchito al $19,75\text{ wt\%}$ $^{235}\text{U}$
+  - **Moderatore**: Idruro di Ittrio stechiometrico ($\text{YH}_{2.0}$, densità $4,30\text{ g/cm}^3$) incapsulato con barriera $\text{Al}_2\text{O}_3$ ($100\ \mu\text{m}$) e 6 canali ausiliari ($r_{\text{aux}} = 1,65\text{ mm}$)
+  - **Buffer Termico Moderatore**: $+14,69\text{ K}$ rispetto al limite di $950,0\text{ K}$ ($T_{\max} = 935,31\text{ K}$)
+  - **Configurazione Definitiva Validata**: **`C01_matrix_217_yh20_880_1120`** (217 Pin, 10 Tamburi di Controllo B₄C/BeO, in [`definitive_final_geometry/`](file:///home/aleri/OpenMC_projects/first_test/definitive_final_geometry))
 
 ---
 

@@ -1,0 +1,74 @@
+{
+  "id": "C01_matrix_217_yh20_880_1120",
+  "spec": {
+    "id": "C01_matrix_217_yh20_880_1120",
+    "family": "matrix_dual_pass",
+    "pins": 217,
+    "rings": 8,
+    "pitch_cm": 2.28,
+    "height_cm": 46.0,
+    "r_fuel_cm": 0.585,
+    "t_clad_cm": 0.048,
+    "t_hot_gap_cm": 0.084,
+    "t_al2o3_cm": 0.01,
+    "moderator_type": "YH2.0",
+    "y_stoich": 2.0,
+    "rho_mod": 4.3,
+    "aux_holes": 6,
+    "r_aux_cm": 0.165,
+    "reflector": "BeO",
+    "t_refl_rad_cm": 9.3,
+    "t_refl_ax_cm": 8.8,
+    "drums": 10,
+    "r_drum_cm": 3.95,
+    "t_b4c_cm": 1.8,
+    "arc_b4c_deg": 155.0,
+    "enrichment_inner": 0.196,
+    "enrichment_outer": 0.1975,
+    "inlet_K": 880.0,
+    "outlet_K": 1120.0,
+    "power_kW": 400.0,
+    "pressure_MPa": 2.5,
+    "heavy_metal_kg": 136.83,
+    "u235_kg": 27.01,
+    "mass_est_kg": 636.5,
+    "core_radius_cm": 19.54,
+    "r_ref_cm": 28.84
+  },
+  "stages": {
+    "bol_out": {
+      "keff": 1.059454146302994,
+      "sigma": 0.001371902454719064,
+      "k_lower_2sigma": 1.056710341393556
+    },
+    "bol_in": {
+      "keff": 0.9955073671299339,
+      "sigma": 0.0013009542081302689,
+      "k_upper_2sigma": 0.9981092755461944
+    },
+    "thermal": {
+      "m_dot_total_kg_s": 0.32093,
+      "T_mod_peak_K": 905.96,
+      "T_mod_avg_K": 885.73,
+      "thermal_buffer_K": 44.04,
+      "passes_thermal": true,
+      "T_clad_peak_K": 1273.13,
+      "T_fuel_peak_K": 1320.63
+    },
+    "alpha_fuel": {
+      "alpha_fuel_pcm_K": -2.0621888948310274,
+      "sigma": 0.4211754012608893,
+      "upper_2sigma": -1.219838092309249
+    },
+    "alpha_mod": {
+      "alpha_mod_pcm_K": -1.382018950555712,
+      "sigma": 0.5650916041472429,
+      "upper_2sigma": -0.25183574226122607
+    },
+    "alpha_total": {
+      "alpha_total_pcm_K": -2.4653370747531973,
+      "sigma": 0.7088641365604195,
+      "upper_2sigma": -1.0476088016323584
+    }
+  }
+}

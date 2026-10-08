@@ -1,0 +1,43 @@
+SCARTATO / NON UTILIZZABILE PER I REQUISITI RICHIESTI — vedere ../REJECTED_THERMAL.txt o REJECTED_THERMAL.txt
+
+CANDIDATA CHE SUPERA IL FILTRO NEUTRONICO BOL — 7 ottobre 2026
+
+Nome: matrix_short_strong_be (candidata 23 di 24 nel catalogo esplicito).
+La ricerca automatica si e' fermata; tutti i file statepoint richiesti sono
+presenti. Dati completi: solution.json e campaign/matrix_short_strong_be/.
+
+GEOMETRIA MODELLATA
+217 pin UN/He, raggio combustibile 0.585 cm, passo 2.16 cm, altezza attiva
+47 cm. YH2 nella matrice attorno ai pin; Be nel buffer periferico e nel
+riflettore. Riflettore radiale 10 cm, assiale 9.5 cm. Dieci tamburi di raggio
+3.95 cm, assorbitore B4C spesso 1.8 cm su un settore di 172 gradi.
+
+RISULTATI AD ALTA STATISTICA, BOL
+k_eff, tamburi OUT (0 gradi): 1.050939 +/- 0.000219 (1 sigma).
+Limite inferiore al 95%: 1.050510 > 1.
+k_eff, tamburi IN (180 gradi): 0.982750 +/- 0.000218 (1 sigma).
+Limite superiore al 95%: 0.983178 < 1.
+
+Coefficienti di reattivita' con differenze centrali +/-100 K, in pcm/K.
+Le incertezze indicate sono 1 sigma Monte Carlo; tutti i limiti superiori
+unilaterali al 95% sono negativi.
+
+                               valore       sigma       limite superiore 95%
+Combustibile                  -0.830       0.140             -0.600
+Moderatore, beta_min          -0.839       0.139             -0.609
+Totale, beta_min              -1.915       0.140             -1.684
+Moderatore, beta_max          -1.458       0.140             -1.228
+Totale, beta_max              -2.581       0.140             -2.351
+
+beta_min = 2.4e-5/K e beta_max = 4.95e-5/K sono stime della dilatazione
+volumetrica YHx basate su dati sperimentali per composizioni prossime a YH2.
+La temperatura nominale dello YH2 (875 K) e il profilo He da 800 K in
+ingresso a 1150 K in uscita sono condizioni imposte nel modello neutronico.
+
+LIMITI DEL RISULTATO
+Questo e' un superamento del filtro neutronico condizionato alle ipotesi
+del modello, non una qualifica del reattore. Non sono ancora verificate la
+temperatura reale dello YH2 (<950 K), la massa, la durata (>15 anni), la
+termoidraulica, la dilatazione geometrica completa, la ritenzione H e le
+incertezze dei dati nucleari/scattering legato. Tali verifiche possono
+modificare i coefficienti e la criticita'.

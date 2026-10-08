@@ -1,0 +1,9 @@
+{
+  "status": "rejected",
+  "failed_metric": "T_moderator_upper",
+  "detail": {
+    "upper_K": 1032.3003975137842,
+    "result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/thermal_neutronic_search_v2/campaign/C27_beo_double_cold_v3/operating_state_0/thermal_result.json"
+  },
+  "completed_unix": 1791470897.6058304
+}

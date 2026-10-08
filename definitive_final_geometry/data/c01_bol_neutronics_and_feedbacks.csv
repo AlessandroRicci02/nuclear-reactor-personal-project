@@ -1,0 +1,13 @@
+Parameter,Nominal_Value,Std_Dev,Lower_Bound_2sigma,Upper_Bound_2sigma,Project_Limit,Status,Unit
+k_eff_BOL_drums_out,1.05945,0.00137,1.05671,1.06219,> 1.00000,PASS,dimensionless
+excess_reactivity_BOL,5611.8,122.1,5367.6,5856.0,> 0,PASS,pcm
+k_eff_BOL_drums_in,0.99551,0.00130,0.99291,0.99811,< 1.00000,PASS,dimensionless
+shutdown_margin_BOL,451.3,130.6,190.1,712.5,> 0,PASS,pcm
+total_drum_worth,6063.1,178.7,5705.7,6420.5,N/A,INFO,pcm
+alpha_fuel_Doppler,-2.0622,0.4212,-2.9046,-1.2198,< 0.0000 (2-sigma),PASS,pcm/K
+alpha_moderator_spectral,-1.3820,0.5651,-2.5122,-0.2518,< 0.0000 (2-sigma),PASS,pcm/K
+alpha_total_isothermal,-2.4653,0.7089,-3.8831,-1.0476,< 0.0000 (2-sigma),PASS,pcm/K
+T_mod_peak_BOL,905.96,N/A,N/A,905.96,< 950.00,PASS,K
+T_mod_avg_BOL,885.73,N/A,N/A,885.73,< 930.00,PASS,K
+T_clad_peak_BOL,1273.13,N/A,N/A,1273.13,< 1350.00,PASS,K
+T_fuel_peak_BOL,1320.63,N/A,N/A,1320.63,< 2073.00,PASS,K

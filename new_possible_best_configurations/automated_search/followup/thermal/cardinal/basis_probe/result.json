@@ -1,0 +1,14 @@
+{
+  "time": 1.0,
+  "Q_aux_W_per_m": 1053.4149761745,
+  "Q_main_W_per_m": -1053.4149761745,
+  "T_YH2_max_K": 1068.3775377823,
+  "T_YH2_min_K": 1060.0193474373,
+  "label": "basis_probe",
+  "t_main_K": 1100,
+  "t_aux_K": 1000,
+  "qvol_W_m3": 0,
+  "h_main_W_m2K": 700.0,
+  "h_aux_W_m2K": 450.0,
+  "k_YH2_W_mK": 10.0
+}

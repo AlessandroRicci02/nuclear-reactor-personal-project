@@ -1,0 +1,13 @@
+{
+  "candidate": "fuelrich_full_beo",
+  "stage": "pilot",
+  "case": "out",
+  "request_sha256": "0603850cc5c6fc00558f4bb0714912d2a2f623f836ed675f3160b6c081f00ed6",
+  "k_eff": 1.093124662592861,
+  "sigma_k": 0.001883465402269954,
+  "rho_pcm": 8519.125565420138,
+  "sigma_rho_pcm": 157.62251814741774,
+  "batches": 100,
+  "particles": 4000,
+  "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/campaign/fuelrich_full_beo/pilot/out/statepoint.100.h5"
+}

@@ -1,0 +1,42 @@
+{
+  "candidate": "peripheral_beo",
+  "index": 15,
+  "spec": {
+    "r_fuel": 0.585,
+    "clad_th": 0.048,
+    "chan_gap": 0.084,
+    "al2o3_mod_th": 0.01,
+    "pitch": 2.32,
+    "core_h": 68,
+    "refl_ax_th": 11,
+    "refl_rad_th": 12,
+    "drum_r": 3.95,
+    "abs_th": 1.5,
+    "abs_angle": 170.0,
+    "drum_clearance": 0.18,
+    "r_add": 0.15,
+    "reflector_kind": "BeO",
+    "matrix_kind": "Be",
+    "peripheral_kind": "YH2"
+  },
+  "pilot": {
+    "pass_all": false,
+    "reason": "OUT clearly subcritical",
+    "results": {
+      "out": {
+        "candidate": "peripheral_beo",
+        "stage": "pilot",
+        "case": "out",
+        "request_sha256": "77cf81005faa7b465e860ffac0594da027a88dbe8cb8f546b2430ef7f6d454c8",
+        "k_eff": 0.8024341906759607,
+        "sigma_k": 0.0020464406609413954,
+        "rho_pcm": -24620.81147833597,
+        "sigma_rho_pcm": 317.8193287027632,
+        "batches": 100,
+        "particles": 4000,
+        "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/campaign/peripheral_beo/pilot/out/statepoint.100.h5"
+      }
+    }
+  },
+  "status": "rejected"
+}

@@ -1,0 +1,5 @@
+{
+  "status": "failed",
+  "error": "Error reading file '/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/depletion/step_00_0.0yr/burn_to_next/burned_materials.xml': failed to load \"/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/depletion/step_00_0.0yr/burn_to_next/burned_materials.xml\": No such file or directory",
+  "failed_unix": 1791396388.5762951
+}

@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<geometry>
+  <cell id="1" material="1" region="-7" universe="1"/>
+  <cell id="2" material="3" region="7 -8" universe="1"/>
+  <cell id="3" material="4" region="8 -9" universe="1"/>
+  <cell id="4" material="5" region="9 -10" universe="1"/>
+  <cell id="5" material="4" region="-11" universe="1"/>
+  <cell id="6" material="4" region="-12" universe="1"/>
+  <cell id="7" material="4" region="-13" universe="1"/>
+  <cell id="8" material="4" region="-14" universe="1"/>
+  <cell id="9" material="4" region="-15" universe="1"/>
+  <cell id="10" material="4" region="-16" universe="1"/>
+  <cell id="11" material="6" region="10 11 12 13 14 15 16" universe="1"/>
+  <cell id="12" material="2" region="-7" universe="2"/>
+  <cell id="13" material="3" region="7 -8" universe="2"/>
+  <cell id="14" material="4" region="8 -9" universe="2"/>
+  <cell id="15" material="5" region="9 -10" universe="2"/>
+  <cell id="16" material="4" region="-11" universe="2"/>
+  <cell id="17" material="4" region="-12" universe="2"/>
+  <cell id="18" material="4" region="-13" universe="2"/>
+  <cell id="19" material="4" region="-14" universe="2"/>
+  <cell id="20" material="4" region="-15" universe="2"/>
+  <cell id="21" material="4" region="-16" universe="2"/>
+  <cell id="22" material="6" region="10 11 12 13 14 15 16" universe="2"/>
+  <cell id="23" material="6" universe="4"/>
+  <cell id="24" name="Active_Core" fill="3" region="-5 2 -3" universe="6"/>
+  <cell id="25" material="8" region="-17 18 19 20 21" universe="5"/>
+  <cell id="26" material="7" region="-17 (17 | -18 | -19 | -20 | -21)" universe="5"/>
+  <cell id="27" fill="5" region="-22 2 -3" translation="23.6696 0.0 0.0" rotation="0.0 0.0 99.48937329497967" universe="6"/>
+  <cell id="28" fill="5" region="-23 2 -3" translation="19.149108650057254 13.912641807661922 0.0" rotation="0.0 0.0 135.48937329497966" universe="6"/>
+  <cell id="29" fill="5" region="-24 2 -3" translation="7.314308650057256 22.511127318099764 0.0" rotation="0.0 0.0 171.48937329497966" universe="6"/>
+  <cell id="30" fill="5" region="-25 2 -3" translation="-7.314308650057253 22.511127318099767 0.0" rotation="0.0 0.0 207.48937329497966" universe="6"/>
+  <cell id="31" fill="5" region="-26 2 -3" translation="-19.149108650057254 13.912641807661924 0.0" rotation="0.0 0.0 243.48937329497966" universe="6"/>
+  <cell id="32" fill="5" region="-27 2 -3" translation="-23.6696 2.898689987709819e-15 0.0" rotation="0.0 0.0 279.48937329497966" universe="6"/>
+  <cell id="33" fill="5" region="-28 2 -3" translation="-19.149108650057258 -13.912641807661918 0.0" rotation="0.0 0.0 315.48937329497966" universe="6"/>
+  <cell id="34" fill="5" region="-29 2 -3" translation="-7.314308650057258 -22.511127318099764 0.0" rotation="0.0 0.0 351.48937329497966" universe="6"/>
+  <cell id="35" fill="5" region="-30 2 -3" translation="7.31430865005725 -22.511127318099767 0.0" rotation="0.0 0.0 387.48937329497966" universe="6"/>
+  <cell id="36" fill="5" region="-31 2 -3" translation="19.149108650057254 -13.912641807661927 0.0" rotation="0.0 0.0 423.48937329497966" universe="6"/>
+  <cell id="37" name="Radial_Reflector" material="7" region="5 -6 2 -3 22 23 24 25 26 27 28 29 30 31" universe="6"/>
+  <cell id="38" name="Bottom_Axial_Reflector" material="7" region="-6 1 -2" universe="6"/>
+  <cell id="39" name="Top_Axial_Reflector" material="7" region="-6 3 -4" universe="6"/>
+  <hex_lattice id="3" name="Core_Hex_Lattice" n_rings="9">
+    <pitch>2.28</pitch>
+    <outer>4</outer>
+    <center>0.0 0.0</center>
+    <universes>
+        2
+       2 2
+      2 2 2
+     2 2 2 2
+    2 2 2 2 2
+   2 2 2 2 2 2
+  2 2 2 2 2 2 2
+ 2 2 2 2 2 2 2 2
+2 2 2 2 2 2 2 2 2
+ 2 2 2 2 2 2 2 2
+2 2 2 2 2 2 2 2 2
+ 2 2 2 2 2 2 2 2
+2 2 2 2 1 2 2 2 2
+ 2 2 2 1 1 2 2 2
+2 2 2 1 1 1 2 2 2
+ 2 2 2 1 1 2 2 2
+2 2 2 1 1 1 2 2 2
+ 2 2 2 1 1 2 2 2
+2 2 2 1 1 1 2 2 2
+ 2 2 2 1 1 2 2 2
+2 2 2 2 1 2 2 2 2
+ 2 2 2 2 2 2 2 2
+2 2 2 2 2 2 2 2 2
+ 2 2 2 2 2 2 2 2
+2 2 2 2 2 2 2 2 2
+ 2 2 2 2 2 2 2 2
+  2 2 2 2 2 2 2
+   2 2 2 2 2 2
+    2 2 2 2 2
+     2 2 2 2
+      2 2 2
+       2 2
+        2</universes>
+  </hex_lattice>
+  <surface id="1" type="z-plane" boundary="vacuum" coeffs="-31.8"/>
+  <surface id="2" type="z-plane" coeffs="-23.0"/>
+  <surface id="3" type="z-plane" coeffs="23.0"/>
+  <surface id="4" type="z-plane" boundary="vacuum" coeffs="31.8"/>
+  <surface id="5" type="z-cylinder" coeffs="0.0 0.0 19.5396"/>
+  <surface id="6" type="z-cylinder" boundary="vacuum" coeffs="0.0 0.0 28.8396"/>
+  <surface id="7" type="z-cylinder" coeffs="0.0 0.0 0.585"/>
+  <surface id="8" type="z-cylinder" coeffs="0.0 0.0 0.633"/>
+  <surface id="9" type="z-cylinder" coeffs="0.0 0.0 0.717"/>
+  <surface id="10" type="z-cylinder" coeffs="0.0 0.0 0.727"/>
+  <surface id="11" type="z-cylinder" coeffs="0.9119999999999999 0.0 0.165"/>
+  <surface id="12" type="z-cylinder" coeffs="0.45600000000000007 0.789815168251408 0.165"/>
+  <surface id="13" type="z-cylinder" coeffs="-0.45599999999999974 0.7898151682514081 0.165"/>
+  <surface id="14" type="z-cylinder" coeffs="-0.9119999999999999 1.116877880822386e-16 0.165"/>
+  <surface id="15" type="z-cylinder" coeffs="-0.45600000000000035 -0.7898151682514077 0.165"/>
+  <surface id="16" type="z-cylinder" coeffs="0.45599999999999935 -0.7898151682514083 0.165"/>
+  <surface id="17" type="z-cylinder" coeffs="0.0 0.0 3.95"/>
+  <surface id="18" type="z-cylinder" coeffs="0.0 0.0 2.1500000000000004"/>
+  <surface id="19" type="plane" coeffs="0.9762960071199334 -0.2164396139381029 0.0 0.0"/>
+  <surface id="20" type="plane" coeffs="0.9762960071199334 0.2164396139381029 0.0 0.0"/>
+  <surface id="21" type="x-plane" coeffs="0.0"/>
+  <surface id="22" type="z-cylinder" coeffs="23.6696 0.0 3.95"/>
+  <surface id="23" type="z-cylinder" coeffs="19.149108650057254 13.912641807661922 3.95"/>
+  <surface id="24" type="z-cylinder" coeffs="7.314308650057256 22.511127318099764 3.95"/>
+  <surface id="25" type="z-cylinder" coeffs="-7.314308650057253 22.511127318099767 3.95"/>
+  <surface id="26" type="z-cylinder" coeffs="-19.149108650057254 13.912641807661924 3.95"/>
+  <surface id="27" type="z-cylinder" coeffs="-23.6696 2.898689987709819e-15 3.95"/>
+  <surface id="28" type="z-cylinder" coeffs="-19.149108650057258 -13.912641807661918 3.95"/>
+  <surface id="29" type="z-cylinder" coeffs="-7.314308650057258 -22.511127318099764 3.95"/>
+  <surface id="30" type="z-cylinder" coeffs="7.31430865005725 -22.511127318099767 3.95"/>
+  <surface id="31" type="z-cylinder" coeffs="19.149108650057254 -13.912641807661927 3.95"/>
+</geometry>

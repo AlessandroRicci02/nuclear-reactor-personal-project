@@ -1,0 +1,34 @@
+SCARTATO / NON UTILIZZABILE PER I REQUISITI RICHIESTI — vedere ../REJECTED_THERMAL.txt o REJECTED_THERMAL.txt
+
+FOLLOW-UP DEL CANDIDATO matrix_short_strong_be
+Materiale moderatore: YH2.0 (idruro di ittrio, Y:H = 1:2); riflettore: Be.
+Potenza termica assunta: 400 kW. Elio: 800 K ingresso, 1150 K uscita miscelata.
+
+MASSA
+Solidi esplicitamente modellati: 484.22 +/- 0.28 kg (1 sigma campionamento geometrico).
+Con inventario di elio: 484.24 kg.
+Stima preliminare con margini hardware (+65 kg) e contingenza (+15 kg): 564.22 kg.
+Non e' la massa completa del sistema: schermatura, attuatori, conversione elettrica, radiatori, tubazioni esterne e struttura non sono progettati/contabilizzati.
+
+DEPOSIZIONE DI CALORE OPENMC
+Angolo BOL di mappa: 102.737 gradi; k_eff = 0.999605 +/- 0.000723.
+Deposizione normalizzata: fuel 381330 W, YH2 11448 W, altri materiali 7221 W.
+
+TEMPERATURA DEL MODERATORE (OpenMC + Cardinal, steady state)
+Scenario di riferimento: 35% portata He ai 6 canali ausiliari, h e conducibilita' nominali.
+T massima YH2 = 1255.7 K; T He miscelato = 1150.0 K.
+Nei 13 scenari espliciti: 1242.6--1334.5 K.
+Il limite richiesto <950 K NON e' soddisfatto negli scenari analizzati.
+Il valore e' condizionato alla ripartizione della portata, a coefficienti di scambio e conduzione assunti, e al modello 2D adiabatico della cella; mancano collettori e CFD di sistema.
+Il modello neutronico BOL assumeva 875 K per YH2. Poiche' la stima termica e' assai piu' alta, la criticita' e la durata neutronica devono essere ricalcolate con temperature coerenti prima di usarle per un giudizio di progetto.
+
+DEPLETION NEUTRONICA OPENMC, PASSO 2.5 ANNI
+0 gradi = assorbitore verso spazio; 180 gradi = verso nocciolo.
+Anni   k(0 gradi) +/-sigma  k(180 gradi) +/-sigma  angolo critico  k(angle) +/-sigma  stato
+ 0.0   1.050722 +/-0.000335   0.983264 +/-0.000339   102.737000   1.000071 +/-0.000335   critical_at_sample
+Ogni intervallo usa 400 kW e l'angolo critico trovato all'inizio; il modello termico neutronico e' tenuto al profilo BOL.
+
+Durata: calcolo in corso; ultimo stato = failed, fase = --, passo = --.
+Errore: Error reading file '/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/depletion/step_00_0.0yr/burn_to_next/burned_materials.xml': failed to load "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/depletion/step_00_0.0yr/burn_to_next/burned_materials.xml": No such file or directory
+
+Fonti numeriche: mass_result.json, heating_result.json, thermal_results.json, depletion_2p5yr.csv, lifespan_result.json.

@@ -1,0 +1,11 @@
+{
+  "request_sha256": "cc8ddad9d63d09ac9b82923242861e400e66d010de0e9f1faa1397a38354e803",
+  "keff": 0.9651258877557206,
+  "sigma_k": 0.000996656753489392,
+  "batches": 160,
+  "particles": 8000,
+  "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/thermal_neutronic_search_v2/campaign/C29_beo_double_cold_v5/pilot/out/sigma_0.001000/statepoint.0160.h5",
+  "theta": 0.0,
+  "lower_bound": 0.961139260741763,
+  "upper_bound": 0.9691125147696782
+}

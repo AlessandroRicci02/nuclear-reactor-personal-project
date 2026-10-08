@@ -1,0 +1,41 @@
+{
+  "candidate_count": 30,
+  "checks": [
+    "All 30: pin/drum separation, containment, cycle bounds, fuel mass conservation",
+    "Two-sided cylindrical conduction: heat removal equals source",
+    {
+      "candidate": "C01_double_cold_large_v1",
+      "synthetic_load": true,
+      "worst": false,
+      "source_W": 400000,
+      "analytic_peak_K": 876.5192792811215,
+      "mixed_outlet_K": 1149.999999999999
+    },
+    {
+      "candidate": "C01_double_cold_large_v1",
+      "synthetic_load": true,
+      "worst": true,
+      "source_W": 400000,
+      "analytic_peak_K": 915.4443321596337,
+      "mixed_outlet_K": 1149.999999999999
+    },
+    {
+      "candidate": "C07_thin_sleeve_fuel_rich_v1",
+      "synthetic_load": true,
+      "worst": false,
+      "source_W": 400000,
+      "analytic_peak_K": 881.605735817455,
+      "mixed_outlet_K": 1150.0000000000002
+    },
+    {
+      "candidate": "C07_thin_sleeve_fuel_rich_v1",
+      "synthetic_load": true,
+      "worst": true,
+      "source_W": 400000,
+      "analytic_peak_K": 931.2809597589315,
+      "mixed_outlet_K": 1150.0000000000002
+    },
+    "Absorber orientation at OUT/IN and UN atomic stoichiometry verified"
+  ],
+  "geometry_debug_run": true
+}

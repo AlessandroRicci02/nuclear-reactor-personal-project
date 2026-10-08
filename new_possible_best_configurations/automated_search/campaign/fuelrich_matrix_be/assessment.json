@@ -1,0 +1,55 @@
+{
+  "candidate": "fuelrich_matrix_be",
+  "index": 12,
+  "spec": {
+    "r_fuel": 0.6,
+    "clad_th": 0.048,
+    "chan_gap": 0.084,
+    "al2o3_mod_th": 0.01,
+    "pitch": 2.3,
+    "core_h": 58,
+    "refl_ax_th": 10.5,
+    "refl_rad_th": 11.5,
+    "drum_r": 3.95,
+    "abs_th": 1.5,
+    "abs_angle": 148.0,
+    "drum_clearance": 0.18,
+    "r_add": 0.12,
+    "reflector_kind": "Be",
+    "matrix_kind": "YH2",
+    "peripheral_kind": "Be"
+  },
+  "pilot": {
+    "pass_all": false,
+    "reason": "IN clearly supercritical",
+    "results": {
+      "out": {
+        "candidate": "fuelrich_matrix_be",
+        "stage": "pilot",
+        "case": "out",
+        "request_sha256": "732b341016181da6306357019e2405ab7fefc5c46b7e670adb1645429b8e63ab",
+        "k_eff": 1.1252501832373403,
+        "sigma_k": 0.002028166306087715,
+        "rho_pcm": 11130.87428050854,
+        "sigma_rho_pcm": 160.1789265363122,
+        "batches": 100,
+        "particles": 4000,
+        "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/campaign/fuelrich_matrix_be/pilot/out/statepoint.100.h5"
+      },
+      "in": {
+        "candidate": "fuelrich_matrix_be",
+        "stage": "pilot",
+        "case": "in",
+        "request_sha256": "e359dd4b42994b863536636a68f4b59b8e7a92a90c2d3e7f9bc6bcc556fd8891",
+        "k_eff": 1.0560403390037278,
+        "sigma_k": 0.0017711969535470602,
+        "rho_pcm": 5306.647571493007,
+        "sigma_rho_pcm": 158.8202373980883,
+        "batches": 100,
+        "particles": 4000,
+        "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/campaign/fuelrich_matrix_be/pilot/in/statepoint.100.h5"
+      }
+    }
+  },
+  "status": "rejected"
+}

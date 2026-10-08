@@ -1,0 +1,996 @@
+{
+  "status": "complete",
+  "power_W": 400000.0,
+  "inlet_K": 800.0,
+  "target_mixed_outlet_K": 1150.0,
+  "cases": [
+    {
+      "label": "a0.20_o0.00_f1.00_k10",
+      "aux_flow_fraction": 0.2,
+      "other_heat_to_moderator_fraction": 0.0,
+      "k_YH2_W_mK": 10.0,
+      "film_multiplier": 1.0,
+      "h_main_effective_W_m2K": 1141.221622267483,
+      "h_aux_W_m2K": 664.1782685134593,
+      "calibration": {
+        "fraction_moderator_heat_to_main": 0.6614105763865067,
+        "conductance_main_to_aux_W_mK": 15.685857046121,
+        "calibration_energy_error": 0.0012607969307931726,
+        "source_exodus": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.20_o0.00_f1.00_k10_source/case_out.e",
+        "delta_exodus": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.20_o0.00_f1.00_k10_delta/case_out.e"
+      },
+      "mixed_outlet_K": 1150.0000000000002,
+      "mean_main_outlet_K": 1157.1068796015015,
+      "max_main_outlet_K": 1282.3545234836363,
+      "mean_aux_outlet_K": 1121.5724815939936,
+      "max_aux_outlet_K": 1235.2252766078354,
+      "max_moderator_K": 1243.2842708225,
+      "max_moderator_location": {
+        "pin": 216,
+        "slice": 5,
+        "moderator_max_K": 1243.2842708225,
+        "superposition_max_K": 1243.2842708224819,
+        "moderator_min_K": 1236.1959224945,
+        "main_bulk_mid_K": 1258.5163870719684,
+        "aux_bulk_mid_K": 1199.5334144552555,
+        "moderator_source_W": 8.022545374328688,
+        "cardinal_result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.20_o0.00_f1.00_k10_pin216_s5/result.json"
+      },
+      "evaluated_pin_slices": [
+        {
+          "pin": 216,
+          "slice": 5,
+          "moderator_max_K": 1243.2842708225,
+          "superposition_max_K": 1243.2842708224819,
+          "moderator_min_K": 1236.1959224945,
+          "main_bulk_mid_K": 1258.5163870719684,
+          "aux_bulk_mid_K": 1199.5334144552555,
+          "moderator_source_W": 8.022545374328688,
+          "cardinal_result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.20_o0.00_f1.00_k10_pin216_s5/result.json"
+        },
+        {
+          "pin": 213,
+          "slice": 5,
+          "moderator_max_K": 1241.2870853944,
+          "superposition_max_K": 1241.2870853943798,
+          "moderator_min_K": 1234.2839250504,
+          "main_bulk_mid_K": 1256.3433667719664,
+          "aux_bulk_mid_K": 1198.0770284241667,
+          "moderator_source_W": 7.872296276336265,
+          "cardinal_result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.20_o0.00_f1.00_k10_pin213_s5/result.json"
+        },
+        {
+          "pin": 211,
+          "slice": 5,
+          "moderator_max_K": 1240.5523427175,
+          "superposition_max_K": 1240.5523427174708,
+          "moderator_min_K": 1233.5879733508,
+          "main_bulk_mid_K": 1255.5092459470366,
+          "aux_bulk_mid_K": 1197.5484519915988,
+          "moderator_source_W": 7.9477592897252,
+          "cardinal_result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.20_o0.00_f1.00_k10_pin211_s5/result.json"
+        }
+      ],
+      "model_limitations": [
+        "Prescribed 400 kW and parallel 800 K He feeds",
+        "Auxiliary flow fraction is a sensitivity parameter; manifolds absent",
+        "Heat not in fuel/YH2 allocated by fuel map; see scenario fraction",
+        "Outer hex adiabatic; Be conduction not coupled",
+        "Constant YH2 conductivity, He cp and representative film coefficients",
+        "No pressure-drop, orifice or structural-can/contact solution"
+      ]
+    },
+    {
+      "label": "a0.35_o0.00_f1.00_k10",
+      "aux_flow_fraction": 0.35,
+      "other_heat_to_moderator_fraction": 0.0,
+      "k_YH2_W_mK": 10.0,
+      "film_multiplier": 1.0,
+      "h_main_effective_W_m2K": 1141.221622267483,
+      "h_aux_W_m2K": 664.1782685134593,
+      "calibration": {
+        "fraction_moderator_heat_to_main": 0.6614105763865067,
+        "conductance_main_to_aux_W_mK": 15.685857046121,
+        "calibration_energy_error": 0.0012607969307931726,
+        "source_exodus": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.35_o0.00_f1.00_k10_source/case_out.e",
+        "delta_exodus": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.35_o0.00_f1.00_k10_delta/case_out.e"
+      },
+      "mixed_outlet_K": 1150.0000000000002,
+      "mean_main_outlet_K": 1174.44098288601,
+      "max_main_outlet_K": 1305.6495327759008,
+      "mean_aux_outlet_K": 1104.6096032116957,
+      "max_aux_outlet_K": 1212.161365154686,
+      "max_moderator_K": 1255.6969011344,
+      "max_moderator_location": {
+        "pin": 216,
+        "slice": 5,
+        "moderator_max_K": 1255.6969011344,
+        "superposition_max_K": 1255.696901134358,
+        "moderator_min_K": 1242.1776538125,
+        "main_bulk_mid_K": 1285.7251998080928,
+        "aux_bulk_mid_K": 1174.2811790667574,
+        "moderator_source_W": 8.022545374328688,
+        "cardinal_result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.35_o0.00_f1.00_k10_pin216_s5/result.json"
+      },
+      "evaluated_pin_slices": [
+        {
+          "pin": 216,
+          "slice": 5,
+          "moderator_max_K": 1255.6969011344,
+          "superposition_max_K": 1255.696901134358,
+          "moderator_min_K": 1242.1776538125,
+          "main_bulk_mid_K": 1285.7251998080928,
+          "aux_bulk_mid_K": 1174.2811790667574,
+          "moderator_source_W": 8.022545374328688,
+          "cardinal_result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.35_o0.00_f1.00_k10_pin216_s5/result.json"
+        },
+        {
+          "pin": 213,
+          "slice": 5,
+          "moderator_max_K": 1253.5626376956,
+          "superposition_max_K": 1253.562637695642,
+          "moderator_min_K": 1240.1819400997,
+          "main_bulk_mid_K": 1283.2923270505557,
+          "aux_bulk_mid_K": 1173.0002471987002,
+          "moderator_source_W": 7.872296276336265,
+          "cardinal_result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.35_o0.00_f1.00_k10_pin213_s5/result.json"
+        },
+        {
+          "pin": 211,
+          "slice": 5,
+          "moderator_max_K": 1252.7561051656,
+          "superposition_max_K": 1252.7561051656114,
+          "moderator_min_K": 1239.4610220785,
+          "main_bulk_mid_K": 1282.2786850092423,
+          "aux_bulk_mid_K": 1172.6741197141182,
+          "moderator_source_W": 7.9477592897252,
+          "cardinal_result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.35_o0.00_f1.00_k10_pin211_s5/result.json"
+        }
+      ],
+      "model_limitations": [
+        "Prescribed 400 kW and parallel 800 K He feeds",
+        "Auxiliary flow fraction is a sensitivity parameter; manifolds absent",
+        "Heat not in fuel/YH2 allocated by fuel map; see scenario fraction",
+        "Outer hex adiabatic; Be conduction not coupled",
+        "Constant YH2 conductivity, He cp and representative film coefficients",
+        "No pressure-drop, orifice or structural-can/contact solution"
+      ]
+    },
+    {
+      "label": "a0.55_o0.00_f1.00_k10",
+      "aux_flow_fraction": 0.55,
+      "other_heat_to_moderator_fraction": 0.0,
+      "k_YH2_W_mK": 10.0,
+      "film_multiplier": 1.0,
+      "h_main_effective_W_m2K": 1141.221622267483,
+      "h_aux_W_m2K": 664.1782685134593,
+      "calibration": {
+        "fraction_moderator_heat_to_main": 0.6614105763865067,
+        "conductance_main_to_aux_W_mK": 15.685857046121,
+        "calibration_energy_error": 0.0012607969307931726,
+        "source_exodus": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.55_o0.00_f1.00_k10_source/case_out.e",
+        "delta_exodus": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.55_o0.00_f1.00_k10_delta/case_out.e"
+      },
+      "mixed_outlet_K": 1150.0,
+      "mean_main_outlet_K": 1212.1819872652068,
+      "max_main_outlet_K": 1356.3474367055555,
+      "mean_aux_outlet_K": 1099.1238286011946,
+      "max_aux_outlet_K": 1204.6769592563198,
+      "max_moderator_K": 1296.0053309591,
+      "max_moderator_location": {
+        "pin": 216,
+        "slice": 5,
+        "moderator_max_K": 1296.0053309591,
+        "superposition_max_K": 1296.00533095911,
+        "moderator_min_K": 1274.2425647981,
+        "main_bulk_mid_K": 1345.0002793465694,
+        "aux_bulk_mid_K": 1166.3084851684898,
+        "moderator_source_W": 8.022545374328688,
+        "cardinal_result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.55_o0.00_f1.00_k10_pin216_s5/result.json"
+      },
+      "evaluated_pin_slices": [
+        {
+          "pin": 216,
+          "slice": 5,
+          "moderator_max_K": 1296.0053309591,
+          "superposition_max_K": 1296.00533095911,
+          "moderator_min_K": 1274.2425647981,
+          "main_bulk_mid_K": 1345.0002793465694,
+          "aux_bulk_mid_K": 1166.3084851684898,
+          "moderator_source_W": 8.022545374328688,
+          "cardinal_result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.55_o0.00_f1.00_k10_pin216_s5/result.json"
+        },
+        {
+          "pin": 213,
+          "slice": 5,
+          "moderator_max_K": 1293.4728920842,
+          "superposition_max_K": 1293.4728920841587,
+          "moderator_min_K": 1271.9254340374,
+          "main_bulk_mid_K": 1341.9926258107955,
+          "aux_bulk_mid_K": 1165.0789408864516,
+          "moderator_source_W": 7.872296276336265,
+          "cardinal_result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.55_o0.00_f1.00_k10_pin213_s5/result.json"
+        },
+        {
+          "pin": 211,
+          "slice": 5,
+          "moderator_max_K": 1292.4181747249,
+          "superposition_max_K": 1292.4181747248617,
+          "moderator_min_K": 1271.0069653395,
+          "main_bulk_mid_K": 1340.6143001180685,
+          "aux_bulk_mid_K": 1164.8011856414873,
+          "moderator_source_W": 7.9477592897252,
+          "cardinal_result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.55_o0.00_f1.00_k10_pin211_s5/result.json"
+        }
+      ],
+      "model_limitations": [
+        "Prescribed 400 kW and parallel 800 K He feeds",
+        "Auxiliary flow fraction is a sensitivity parameter; manifolds absent",
+        "Heat not in fuel/YH2 allocated by fuel map; see scenario fraction",
+        "Outer hex adiabatic; Be conduction not coupled",
+        "Constant YH2 conductivity, He cp and representative film coefficients",
+        "No pressure-drop, orifice or structural-can/contact solution"
+      ]
+    },
+    {
+      "label": "a0.35_o0.50_f1.00_k10",
+      "aux_flow_fraction": 0.35,
+      "other_heat_to_moderator_fraction": 0.5,
+      "k_YH2_W_mK": 10.0,
+      "film_multiplier": 1.0,
+      "h_main_effective_W_m2K": 1141.221622267483,
+      "h_aux_W_m2K": 664.1782685134593,
+      "calibration": {
+        "fraction_moderator_heat_to_main": 0.6614105763865067,
+        "conductance_main_to_aux_W_mK": 15.685857046121,
+        "calibration_energy_error": 0.0012607969307931726,
+        "source_exodus": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.35_o0.50_f1.00_k10_source/case_out.e",
+        "delta_exodus": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.35_o0.50_f1.00_k10_delta/case_out.e"
+      },
+      "mixed_outlet_K": 1150.0,
+      "mean_main_outlet_K": 1174.2214703174188,
+      "max_main_outlet_K": 1305.3556696884311,
+      "mean_aux_outlet_K": 1105.0172694105079,
+      "max_aux_outlet_K": 1212.707110888559,
+      "max_moderator_K": 1256.0646505087,
+      "max_moderator_location": {
+        "pin": 216,
+        "slice": 5,
+        "moderator_max_K": 1256.0646505087,
+        "superposition_max_K": 1256.0646505087134,
+        "moderator_min_K": 1242.712192184,
+        "main_bulk_mid_K": 1285.3748994581185,
+        "aux_bulk_mid_K": 1174.9317368595675,
+        "moderator_source_W": 10.513396912429386,
+        "cardinal_result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.35_o0.50_f1.00_k10_pin216_s5/result.json"
+      },
+      "evaluated_pin_slices": [
+        {
+          "pin": 216,
+          "slice": 5,
+          "moderator_max_K": 1256.0646505087,
+          "superposition_max_K": 1256.0646505087134,
+          "moderator_min_K": 1242.712192184,
+          "main_bulk_mid_K": 1285.3748994581185,
+          "aux_bulk_mid_K": 1174.9317368595675,
+          "moderator_source_W": 10.513396912429386,
+          "cardinal_result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.35_o0.50_f1.00_k10_pin216_s5/result.json"
+        },
+        {
+          "pin": 213,
+          "slice": 5,
+          "moderator_max_K": 1253.9244106132,
+          "superposition_max_K": 1253.9244106131757,
+          "moderator_min_K": 1240.7085576091,
+          "main_bulk_mid_K": 1282.9456482806459,
+          "aux_bulk_mid_K": 1173.6440791999612,
+          "moderator_source_W": 10.324966764537098,
+          "cardinal_result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.35_o0.50_f1.00_k10_pin213_s5/result.json"
+        },
+        {
+          "pin": 211,
+          "slice": 5,
+          "moderator_max_K": 1253.1446556766,
+          "superposition_max_K": 1253.1446556766484,
+          "moderator_min_K": 1240.0163261776,
+          "main_bulk_mid_K": 1281.9341714615039,
+          "aux_bulk_mid_K": 1173.3139305884888,
+          "moderator_source_W": 10.551088060229416,
+          "cardinal_result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.35_o0.50_f1.00_k10_pin211_s5/result.json"
+        }
+      ],
+      "model_limitations": [
+        "Prescribed 400 kW and parallel 800 K He feeds",
+        "Auxiliary flow fraction is a sensitivity parameter; manifolds absent",
+        "Heat not in fuel/YH2 allocated by fuel map; see scenario fraction",
+        "Outer hex adiabatic; Be conduction not coupled",
+        "Constant YH2 conductivity, He cp and representative film coefficients",
+        "No pressure-drop, orifice or structural-can/contact solution"
+      ]
+    },
+    {
+      "label": "a0.55_o0.50_f1.00_k10",
+      "aux_flow_fraction": 0.55,
+      "other_heat_to_moderator_fraction": 0.5,
+      "k_YH2_W_mK": 10.0,
+      "film_multiplier": 1.0,
+      "h_main_effective_W_m2K": 1141.221622267483,
+      "h_aux_W_m2K": 664.1782685134593,
+      "calibration": {
+        "fraction_moderator_heat_to_main": 0.6614105763865067,
+        "conductance_main_to_aux_W_mK": 15.685857046121,
+        "calibration_energy_error": 0.0012607969307931726,
+        "source_exodus": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.55_o0.50_f1.00_k10_source/case_out.e",
+        "delta_exodus": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.55_o0.50_f1.00_k10_delta/case_out.e"
+      },
+      "mixed_outlet_K": 1150.0,
+      "mean_main_outlet_K": 1211.83017914307,
+      "max_main_outlet_K": 1355.875731808485,
+      "mean_aux_outlet_K": 1099.4116716102158,
+      "max_aux_outlet_K": 1205.0628996266505,
+      "max_moderator_K": 1296.1703713315,
+      "max_moderator_location": {
+        "pin": 216,
+        "slice": 5,
+        "moderator_max_K": 1296.1703713315,
+        "superposition_max_K": 1296.170371331451,
+        "moderator_min_K": 1274.5755549512,
+        "main_bulk_mid_K": 1344.4445992690944,
+        "aux_bulk_mid_K": 1166.763132504606,
+        "moderator_source_W": 10.513396912429386,
+        "cardinal_result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.55_o0.50_f1.00_k10_pin216_s5/result.json"
+      },
+      "evaluated_pin_slices": [
+        {
+          "pin": 216,
+          "slice": 5,
+          "moderator_max_K": 1296.1703713315,
+          "superposition_max_K": 1296.170371331451,
+          "moderator_min_K": 1274.5755549512,
+          "main_bulk_mid_K": 1344.4445992690944,
+          "aux_bulk_mid_K": 1166.763132504606,
+          "moderator_source_W": 10.513396912429386,
+          "cardinal_result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.55_o0.50_f1.00_k10_pin216_s5/result.json"
+        },
+        {
+          "pin": 213,
+          "slice": 5,
+          "moderator_max_K": 1293.6339531391,
+          "superposition_max_K": 1293.6339531390838,
+          "moderator_min_K": 1272.2525335592,
+          "main_bulk_mid_K": 1341.4424883163006,
+          "aux_bulk_mid_K": 1165.5290533819475,
+          "moderator_source_W": 10.324966764537098,
+          "cardinal_result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.55_o0.50_f1.00_k10_pin213_s5/result.json"
+        },
+        {
+          "pin": 211,
+          "slice": 5,
+          "moderator_max_K": 1292.6072975449,
+          "superposition_max_K": 1292.6072975449135,
+          "moderator_min_K": 1271.3640141662,
+          "main_bulk_mid_K": 1340.0676613841117,
+          "aux_bulk_mid_K": 1165.2484355147244,
+          "moderator_source_W": 10.551088060229416,
+          "cardinal_result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.55_o0.50_f1.00_k10_pin211_s5/result.json"
+        }
+      ],
+      "model_limitations": [
+        "Prescribed 400 kW and parallel 800 K He feeds",
+        "Auxiliary flow fraction is a sensitivity parameter; manifolds absent",
+        "Heat not in fuel/YH2 allocated by fuel map; see scenario fraction",
+        "Outer hex adiabatic; Be conduction not coupled",
+        "Constant YH2 conductivity, He cp and representative film coefficients",
+        "No pressure-drop, orifice or structural-can/contact solution"
+      ]
+    },
+    {
+      "label": "a0.35_o0.00_f0.50_k10",
+      "aux_flow_fraction": 0.35,
+      "other_heat_to_moderator_fraction": 0.0,
+      "k_YH2_W_mK": 10.0,
+      "film_multiplier": 0.5,
+      "h_main_effective_W_m2K": 576.0895263321759,
+      "h_aux_W_m2K": 332.08913425672966,
+      "calibration": {
+        "fraction_moderator_heat_to_main": 0.6707956968244355,
+        "conductance_main_to_aux_W_mK": 8.1535708569428,
+        "calibration_energy_error": 0.0012607969308113284,
+        "source_exodus": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.35_o0.00_f0.50_k10_source/case_out.e",
+        "delta_exodus": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.35_o0.00_f0.50_k10_delta/case_out.e"
+      },
+      "mixed_outlet_K": 1150.0,
+      "mean_main_outlet_K": 1201.34370489581,
+      "max_main_outlet_K": 1342.2205561495746,
+      "mean_aux_outlet_K": 1054.6474051934956,
+      "max_aux_outlet_K": 1144.243750317864,
+      "max_moderator_K": 1260.3712836218,
+      "max_moderator_location": {
+        "pin": 216,
+        "slice": 5,
+        "moderator_max_K": 1260.3712836218,
+        "superposition_max_K": 1260.371283621832,
+        "moderator_min_K": 1246.4300416402,
+        "main_bulk_mid_K": 1322.4766397580615,
+        "aux_bulk_mid_K": 1106.028504873959,
+        "moderator_source_W": 8.022545374328688,
+        "cardinal_result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.35_o0.00_f0.50_k10_pin216_s5/result.json"
+      },
+      "evaluated_pin_slices": [
+        {
+          "pin": 216,
+          "slice": 5,
+          "moderator_max_K": 1260.3712836218,
+          "superposition_max_K": 1260.371283621832,
+          "moderator_min_K": 1246.4300416402,
+          "main_bulk_mid_K": 1322.4766397580615,
+          "aux_bulk_mid_K": 1106.028504873959,
+          "moderator_source_W": 8.022545374328688,
+          "cardinal_result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.35_o0.00_f0.50_k10_pin216_s5/result.json"
+        },
+        {
+          "pin": 213,
+          "slice": 5,
+          "moderator_max_K": 1258.2024439761,
+          "superposition_max_K": 1258.2024439761014,
+          "moderator_min_K": 1244.37203668,
+          "main_bulk_mid_K": 1319.836015050249,
+          "aux_bulk_mid_K": 1105.1333980564132,
+          "moderator_source_W": 7.872296276336265,
+          "cardinal_result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.35_o0.00_f0.50_k10_pin213_s5/result.json"
+        },
+        {
+          "pin": 211,
+          "slice": 5,
+          "moderator_max_K": 1257.3910555322,
+          "superposition_max_K": 1257.391055532205,
+          "moderator_min_K": 1243.6445905373,
+          "main_bulk_mid_K": 1318.6192474796903,
+          "aux_bulk_mid_K": 1105.1845036975715,
+          "moderator_source_W": 7.9477592897252,
+          "cardinal_result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.35_o0.00_f0.50_k10_pin211_s5/result.json"
+        }
+      ],
+      "model_limitations": [
+        "Prescribed 400 kW and parallel 800 K He feeds",
+        "Auxiliary flow fraction is a sensitivity parameter; manifolds absent",
+        "Heat not in fuel/YH2 allocated by fuel map; see scenario fraction",
+        "Outer hex adiabatic; Be conduction not coupled",
+        "Constant YH2 conductivity, He cp and representative film coefficients",
+        "No pressure-drop, orifice or structural-can/contact solution"
+      ]
+    },
+    {
+      "label": "a0.55_o0.00_f0.50_k10",
+      "aux_flow_fraction": 0.55,
+      "other_heat_to_moderator_fraction": 0.0,
+      "k_YH2_W_mK": 10.0,
+      "film_multiplier": 0.5,
+      "h_main_effective_W_m2K": 576.0895263321759,
+      "h_aux_W_m2K": 332.08913425672966,
+      "calibration": {
+        "fraction_moderator_heat_to_main": 0.6707956968244355,
+        "conductance_main_to_aux_W_mK": 8.1535708569428,
+        "calibration_energy_error": 0.0012607969308113284,
+        "source_exodus": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.55_o0.00_f0.50_k10_source/case_out.e",
+        "delta_exodus": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.55_o0.00_f0.50_k10_delta/case_out.e"
+      },
+      "mixed_outlet_K": 1150.0,
+      "mean_main_outlet_K": 1277.7171732451009,
+      "max_main_outlet_K": 1445.4473330669512,
+      "mean_aux_outlet_K": 1045.5041309812814,
+      "max_aux_outlet_K": 1131.7770440515412,
+      "max_moderator_K": 1334.5221271362,
+      "max_moderator_location": {
+        "pin": 216,
+        "slice": 5,
+        "moderator_max_K": 1334.5221271362,
+        "superposition_max_K": 1334.5221271361827,
+        "moderator_min_K": 1312.5602099381,
+        "main_bulk_mid_K": 1433.5301481176907,
+        "aux_bulk_mid_K": 1093.874956173936,
+        "moderator_source_W": 8.022545374328688,
+        "cardinal_result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.55_o0.00_f0.50_k10_pin216_s5/result.json"
+      },
+      "evaluated_pin_slices": [
+        {
+          "pin": 216,
+          "slice": 5,
+          "moderator_max_K": 1334.5221271362,
+          "superposition_max_K": 1334.5221271361827,
+          "moderator_min_K": 1312.5602099381,
+          "main_bulk_mid_K": 1433.5301481176907,
+          "aux_bulk_mid_K": 1093.874956173936,
+          "moderator_source_W": 8.022545374328688,
+          "cardinal_result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.55_o0.00_f0.50_k10_pin216_s5/result.json"
+        },
+        {
+          "pin": 213,
+          "slice": 5,
+          "moderator_max_K": 1331.7759060541,
+          "superposition_max_K": 1331.7759060540966,
+          "moderator_min_K": 1309.9841518106,
+          "main_bulk_mid_K": 1430.0391760233215,
+          "aux_bulk_mid_K": 1093.0408543489305,
+          "moderator_source_W": 7.872296276336265,
+          "cardinal_result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.55_o0.00_f0.50_k10_pin213_s5/result.json"
+        },
+        {
+          "pin": 211,
+          "slice": 5,
+          "moderator_max_K": 1330.5516632269,
+          "superposition_max_K": 1330.5516632268366,
+          "moderator_min_K": 1308.8852472895,
+          "main_bulk_mid_K": 1428.2190934343703,
+          "aux_bulk_mid_K": 1093.1245365645132,
+          "moderator_source_W": 7.9477592897252,
+          "cardinal_result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.55_o0.00_f0.50_k10_pin211_s5/result.json"
+        }
+      ],
+      "model_limitations": [
+        "Prescribed 400 kW and parallel 800 K He feeds",
+        "Auxiliary flow fraction is a sensitivity parameter; manifolds absent",
+        "Heat not in fuel/YH2 allocated by fuel map; see scenario fraction",
+        "Outer hex adiabatic; Be conduction not coupled",
+        "Constant YH2 conductivity, He cp and representative film coefficients",
+        "No pressure-drop, orifice or structural-can/contact solution"
+      ]
+    },
+    {
+      "label": "a0.35_o0.00_f1.00_k5",
+      "aux_flow_fraction": 0.35,
+      "other_heat_to_moderator_fraction": 0.0,
+      "k_YH2_W_mK": 5.0,
+      "film_multiplier": 1.0,
+      "h_main_effective_W_m2K": 1141.221622267483,
+      "h_aux_W_m2K": 664.1782685134593,
+      "calibration": {
+        "fraction_moderator_heat_to_main": 0.6482139812610207,
+        "conductance_main_to_aux_W_mK": 14.682254049318999,
+        "calibration_energy_error": 0.0012607969308297434,
+        "source_exodus": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.35_o0.00_f1.00_k5_source/case_out.e",
+        "delta_exodus": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.35_o0.00_f1.00_k5_delta/case_out.e"
+      },
+      "mixed_outlet_K": 1150.0000000000002,
+      "mean_main_outlet_K": 1176.4932637908337,
+      "max_main_outlet_K": 1308.4391801566085,
+      "mean_aux_outlet_K": 1100.7982243884514,
+      "max_aux_outlet_K": 1206.980591447658,
+      "max_moderator_K": 1260.1935849562,
+      "max_moderator_location": {
+        "pin": 216,
+        "slice": 5,
+        "moderator_max_K": 1260.1935849562,
+        "superposition_max_K": 1260.1935849562078,
+        "moderator_min_K": 1234.0356324509,
+        "main_bulk_mid_K": 1288.6585022386275,
+        "aux_bulk_mid_K": 1168.8336174100502,
+        "moderator_source_W": 8.022545374328688,
+        "cardinal_result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.35_o0.00_f1.00_k5_pin216_s5/result.json"
+      },
+      "evaluated_pin_slices": [
+        {
+          "pin": 216,
+          "slice": 5,
+          "moderator_max_K": 1260.1935849562,
+          "superposition_max_K": 1260.1935849562078,
+          "moderator_min_K": 1234.0356324509,
+          "main_bulk_mid_K": 1288.6585022386275,
+          "aux_bulk_mid_K": 1168.8336174100502,
+          "moderator_source_W": 8.022545374328688,
+          "cardinal_result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.35_o0.00_f1.00_k5_pin216_s5/result.json"
+        },
+        {
+          "pin": 213,
+          "slice": 5,
+          "moderator_max_K": 1258.0158802293,
+          "superposition_max_K": 1258.0158802292615,
+          "moderator_min_K": 1232.1185632666,
+          "main_bulk_mid_K": 1286.2072807101495,
+          "aux_bulk_mid_K": 1167.5867618308832,
+          "moderator_source_W": 7.872296276336265,
+          "cardinal_result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.35_o0.00_f1.00_k5_pin213_s5/result.json"
+        },
+        {
+          "pin": 211,
+          "slice": 5,
+          "moderator_max_K": 1257.1810216754,
+          "superposition_max_K": 1257.1810216753681,
+          "moderator_min_K": 1231.4520589274,
+          "main_bulk_mid_K": 1285.1709543376678,
+          "aux_bulk_mid_K": 1167.3027623898988,
+          "moderator_source_W": 7.9477592897252,
+          "cardinal_result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.35_o0.00_f1.00_k5_pin211_s5/result.json"
+        }
+      ],
+      "model_limitations": [
+        "Prescribed 400 kW and parallel 800 K He feeds",
+        "Auxiliary flow fraction is a sensitivity parameter; manifolds absent",
+        "Heat not in fuel/YH2 allocated by fuel map; see scenario fraction",
+        "Outer hex adiabatic; Be conduction not coupled",
+        "Constant YH2 conductivity, He cp and representative film coefficients",
+        "No pressure-drop, orifice or structural-can/contact solution"
+      ]
+    },
+    {
+      "label": "a0.55_o0.00_f1.00_k5",
+      "aux_flow_fraction": 0.55,
+      "other_heat_to_moderator_fraction": 0.0,
+      "k_YH2_W_mK": 5.0,
+      "film_multiplier": 1.0,
+      "h_main_effective_W_m2K": 1141.221622267483,
+      "h_aux_W_m2K": 664.1782685134593,
+      "calibration": {
+        "fraction_moderator_heat_to_main": 0.6482139812610207,
+        "conductance_main_to_aux_W_mK": 14.682254049318999,
+        "calibration_energy_error": 0.0012607969308297434,
+        "source_exodus": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.55_o0.00_f1.00_k5_source/case_out.e",
+        "delta_exodus": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.55_o0.00_f1.00_k5_delta/case_out.e"
+      },
+      "mixed_outlet_K": 1150.0,
+      "mean_main_outlet_K": 1217.3331890695804,
+      "max_main_outlet_K": 1363.354629085215,
+      "mean_aux_outlet_K": 1094.9092089430708,
+      "max_aux_outlet_K": 1198.9438018547803,
+      "max_moderator_K": 1305.8117053144,
+      "max_moderator_location": {
+        "pin": 216,
+        "slice": 5,
+        "moderator_max_K": 1305.8117053144,
+        "superposition_max_K": 1305.811705314366,
+        "moderator_min_K": 1263.7572379308,
+        "main_bulk_mid_K": 1352.2757826404054,
+        "aux_bulk_mid_K": 1160.3558006553512,
+        "moderator_source_W": 8.022545374328688,
+        "cardinal_result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.55_o0.00_f1.00_k5_pin216_s5/result.json"
+      },
+      "evaluated_pin_slices": [
+        {
+          "pin": 216,
+          "slice": 5,
+          "moderator_max_K": 1305.8117053144,
+          "superposition_max_K": 1305.811705314366,
+          "moderator_min_K": 1263.7572379308,
+          "main_bulk_mid_K": 1352.2757826404054,
+          "aux_bulk_mid_K": 1160.3558006553512,
+          "moderator_source_W": 8.022545374328688,
+          "cardinal_result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.55_o0.00_f1.00_k5_pin216_s5/result.json"
+        },
+        {
+          "pin": 213,
+          "slice": 5,
+          "moderator_max_K": 1303.1966995705,
+          "superposition_max_K": 1303.1966995705443,
+          "moderator_min_K": 1261.5470739457,
+          "main_bulk_mid_K": 1349.223979603562,
+          "aux_bulk_mid_K": 1159.1623786923697,
+          "moderator_source_W": 7.872296276336265,
+          "cardinal_result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.55_o0.00_f1.00_k5_pin213_s5/result.json"
+        },
+        {
+          "pin": 211,
+          "slice": 5,
+          "moderator_max_K": 1302.0788850394,
+          "superposition_max_K": 1302.0788850393549,
+          "moderator_min_K": 1260.6948807379,
+          "main_bulk_mid_K": 1347.794564544255,
+          "aux_bulk_mid_K": 1158.9264238382436,
+          "moderator_source_W": 7.9477592897252,
+          "cardinal_result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.55_o0.00_f1.00_k5_pin211_s5/result.json"
+        }
+      ],
+      "model_limitations": [
+        "Prescribed 400 kW and parallel 800 K He feeds",
+        "Auxiliary flow fraction is a sensitivity parameter; manifolds absent",
+        "Heat not in fuel/YH2 allocated by fuel map; see scenario fraction",
+        "Outer hex adiabatic; Be conduction not coupled",
+        "Constant YH2 conductivity, He cp and representative film coefficients",
+        "No pressure-drop, orifice or structural-can/contact solution"
+      ]
+    },
+    {
+      "label": "a0.05_o0.00_f1.00_k10",
+      "aux_flow_fraction": 0.05,
+      "other_heat_to_moderator_fraction": 0.0,
+      "k_YH2_W_mK": 10.0,
+      "film_multiplier": 1.0,
+      "h_main_effective_W_m2K": 1141.221622267483,
+      "h_aux_W_m2K": 664.1782685134593,
+      "calibration": {
+        "fraction_moderator_heat_to_main": 0.6614105763865067,
+        "conductance_main_to_aux_W_mK": 15.685857046121,
+        "calibration_energy_error": 0.0012607969307931726,
+        "source_exodus": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.05_o0.00_f1.00_k10_source/case_out.e",
+        "delta_exodus": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.05_o0.00_f1.00_k10_delta/case_out.e"
+      },
+      "mixed_outlet_K": 1150.0,
+      "mean_main_outlet_K": 1150.2854551421544,
+      "max_main_outlet_K": 1273.2936543376882,
+      "mean_aux_outlet_K": 1144.5763522990683,
+      "max_aux_outlet_K": 1265.9940497534394,
+      "max_moderator_K": 1245.754886213,
+      "max_moderator_location": {
+        "pin": 216,
+        "slice": 5,
+        "moderator_max_K": 1245.754886213,
+        "superposition_max_K": 1245.7548862129988,
+        "moderator_min_K": 1244.6457156979,
+        "main_bulk_mid_K": 1247.2301380254353,
+        "aux_bulk_mid_K": 1237.0232284892418,
+        "moderator_source_W": 8.022545374328688,
+        "cardinal_result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.05_o0.00_f1.00_k10_pin216_s5/result.json"
+      },
+      "evaluated_pin_slices": [
+        {
+          "pin": 216,
+          "slice": 5,
+          "moderator_max_K": 1245.754886213,
+          "superposition_max_K": 1245.7548862129988,
+          "moderator_min_K": 1244.6457156979,
+          "main_bulk_mid_K": 1247.2301380254353,
+          "aux_bulk_mid_K": 1237.0232284892418,
+          "moderator_source_W": 8.022545374328688,
+          "cardinal_result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.05_o0.00_f1.00_k10_pin216_s5/result.json"
+        },
+        {
+          "pin": 213,
+          "slice": 5,
+          "moderator_max_K": 1243.7306240442,
+          "superposition_max_K": 1243.7306240441555,
+          "moderator_min_K": 1242.635549019,
+          "main_bulk_mid_K": 1245.1936102638065,
+          "aux_bulk_mid_K": 1235.1233870358094,
+          "moderator_source_W": 7.872296276336265,
+          "cardinal_result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.05_o0.00_f1.00_k10_pin213_s5/result.json"
+        },
+        {
+          "pin": 211,
+          "slice": 5,
+          "moderator_max_K": 1242.9414128538,
+          "superposition_max_K": 1242.9414128537705,
+          "moderator_min_K": 1241.8321415892,
+          "main_bulk_mid_K": 1244.426933666395,
+          "aux_bulk_mid_K": 1234.2300034574719,
+          "moderator_source_W": 7.9477592897252,
+          "cardinal_result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.05_o0.00_f1.00_k10_pin211_s5/result.json"
+        }
+      ],
+      "model_limitations": [
+        "Prescribed 400 kW and parallel 800 K He feeds",
+        "Auxiliary flow fraction is a sensitivity parameter; manifolds absent",
+        "Heat not in fuel/YH2 allocated by fuel map; see scenario fraction",
+        "Outer hex adiabatic; Be conduction not coupled",
+        "Constant YH2 conductivity, He cp and representative film coefficients",
+        "No pressure-drop, orifice or structural-can/contact solution"
+      ]
+    },
+    {
+      "label": "a0.10_o0.00_f1.00_k10",
+      "aux_flow_fraction": 0.1,
+      "other_heat_to_moderator_fraction": 0.0,
+      "k_YH2_W_mK": 10.0,
+      "film_multiplier": 1.0,
+      "h_main_effective_W_m2K": 1141.221622267483,
+      "h_aux_W_m2K": 664.1782685134593,
+      "calibration": {
+        "fraction_moderator_heat_to_main": 0.6614105763865067,
+        "conductance_main_to_aux_W_mK": 15.685857046121,
+        "calibration_energy_error": 0.0012607969307931726,
+        "source_exodus": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.10_o0.00_f1.00_k10_source/case_out.e",
+        "delta_exodus": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.10_o0.00_f1.00_k10_delta/case_out.e"
+      },
+      "mixed_outlet_K": 1150.0000000000002,
+      "mean_main_outlet_K": 1151.4453280285013,
+      "max_main_outlet_K": 1274.808354130337,
+      "mean_aux_outlet_K": 1136.9920477434869,
+      "max_aux_outlet_K": 1256.0115539117237,
+      "max_moderator_K": 1243.5381975536,
+      "max_moderator_location": {
+        "pin": 216,
+        "slice": 5,
+        "moderator_max_K": 1243.5381975536,
+        "superposition_max_K": 1243.5381975536468,
+        "moderator_min_K": 1240.5926774511,
+        "main_bulk_mid_K": 1249.2385139358207,
+        "aux_bulk_mid_K": 1224.051300063869,
+        "moderator_source_W": 8.022545374328688,
+        "cardinal_result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.10_o0.00_f1.00_k10_pin216_s5/result.json"
+      },
+      "evaluated_pin_slices": [
+        {
+          "pin": 216,
+          "slice": 5,
+          "moderator_max_K": 1243.5381975536,
+          "superposition_max_K": 1243.5381975536468,
+          "moderator_min_K": 1240.5926774511,
+          "main_bulk_mid_K": 1249.2385139358207,
+          "aux_bulk_mid_K": 1224.051300063869,
+          "moderator_source_W": 8.022545374328688,
+          "cardinal_result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.10_o0.00_f1.00_k10_pin216_s5/result.json"
+        },
+        {
+          "pin": 213,
+          "slice": 5,
+          "moderator_max_K": 1241.5510497472,
+          "superposition_max_K": 1241.5510497471778,
+          "moderator_min_K": 1238.6492196069,
+          "main_bulk_mid_K": 1247.1710097125715,
+          "aux_bulk_mid_K": 1222.3619036109208,
+          "moderator_source_W": 7.872296276336265,
+          "cardinal_result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.10_o0.00_f1.00_k10_pin213_s5/result.json"
+        },
+        {
+          "pin": 211,
+          "slice": 5,
+          "moderator_max_K": 1240.7919674987,
+          "superposition_max_K": 1240.7919674987363,
+          "moderator_min_K": 1237.8919634174,
+          "main_bulk_mid_K": 1246.3975980277894,
+          "aux_bulk_mid_K": 1221.592489309383,
+          "moderator_source_W": 7.9477592897252,
+          "cardinal_result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.10_o0.00_f1.00_k10_pin211_s5/result.json"
+        }
+      ],
+      "model_limitations": [
+        "Prescribed 400 kW and parallel 800 K He feeds",
+        "Auxiliary flow fraction is a sensitivity parameter; manifolds absent",
+        "Heat not in fuel/YH2 allocated by fuel map; see scenario fraction",
+        "Outer hex adiabatic; Be conduction not coupled",
+        "Constant YH2 conductivity, He cp and representative film coefficients",
+        "No pressure-drop, orifice or structural-can/contact solution"
+      ]
+    },
+    {
+      "label": "a0.15_o0.00_f1.00_k10",
+      "aux_flow_fraction": 0.15,
+      "other_heat_to_moderator_fraction": 0.0,
+      "k_YH2_W_mK": 10.0,
+      "film_multiplier": 1.0,
+      "h_main_effective_W_m2K": 1141.221622267483,
+      "h_aux_W_m2K": 664.1782685134593,
+      "calibration": {
+        "fraction_moderator_heat_to_main": 0.6614105763865067,
+        "conductance_main_to_aux_W_mK": 15.685857046121,
+        "calibration_energy_error": 0.0012607969307931726,
+        "source_exodus": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.15_o0.00_f1.00_k10_source/case_out.e",
+        "delta_exodus": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.15_o0.00_f1.00_k10_delta/case_out.e"
+      },
+      "mixed_outlet_K": 1150.0,
+      "mean_main_outlet_K": 1153.6868922086176,
+      "max_main_outlet_K": 1277.7826419567846,
+      "mean_aux_outlet_K": 1129.107610817835,
+      "max_aux_outlet_K": 1245.4228563013935,
+      "max_moderator_K": 1242.6163680375,
+      "max_moderator_location": {
+        "pin": 216,
+        "slice": 5,
+        "moderator_max_K": 1242.6163680375,
+        "superposition_max_K": 1242.6163680375414,
+        "moderator_min_K": 1237.6458785566,
+        "main_bulk_mid_K": 1252.975724525253,
+        "aux_bulk_mid_K": 1211.2695113477362,
+        "moderator_source_W": 8.022545374328688,
+        "cardinal_result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.15_o0.00_f1.00_k10_pin216_s5/result.json"
+      },
+      "evaluated_pin_slices": [
+        {
+          "pin": 216,
+          "slice": 5,
+          "moderator_max_K": 1242.6163680375,
+          "superposition_max_K": 1242.6163680375414,
+          "moderator_min_K": 1237.6458785566,
+          "main_bulk_mid_K": 1252.975724525253,
+          "aux_bulk_mid_K": 1211.2695113477362,
+          "moderator_source_W": 8.022545374328688,
+          "cardinal_result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.15_o0.00_f1.00_k10_pin216_s5/result.json"
+        },
+        {
+          "pin": 213,
+          "slice": 5,
+          "moderator_max_K": 1240.6343683939,
+          "superposition_max_K": 1240.6343683938999,
+          "moderator_min_K": 1235.7298996672,
+          "main_bulk_mid_K": 1250.8619898826755,
+          "aux_bulk_mid_K": 1209.7160513475465,
+          "moderator_source_W": 7.872296276336265,
+          "cardinal_result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.15_o0.00_f1.00_k10_pin213_s5/result.json"
+        },
+        {
+          "pin": 211,
+          "slice": 5,
+          "moderator_max_K": 1239.8952911201,
+          "superposition_max_K": 1239.8952911200588,
+          "moderator_min_K": 1235.0114061882,
+          "main_bulk_mid_K": 1250.0654254611688,
+          "aux_bulk_mid_K": 1209.0765034263684,
+          "moderator_source_W": 7.9477592897252,
+          "cardinal_result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.15_o0.00_f1.00_k10_pin211_s5/result.json"
+        }
+      ],
+      "model_limitations": [
+        "Prescribed 400 kW and parallel 800 K He feeds",
+        "Auxiliary flow fraction is a sensitivity parameter; manifolds absent",
+        "Heat not in fuel/YH2 allocated by fuel map; see scenario fraction",
+        "Outer hex adiabatic; Be conduction not coupled",
+        "Constant YH2 conductivity, He cp and representative film coefficients",
+        "No pressure-drop, orifice or structural-can/contact solution"
+      ]
+    },
+    {
+      "label": "a0.25_o0.00_f1.00_k10",
+      "aux_flow_fraction": 0.25,
+      "other_heat_to_moderator_fraction": 0.0,
+      "k_YH2_W_mK": 10.0,
+      "film_multiplier": 1.0,
+      "h_main_effective_W_m2K": 1141.221622267483,
+      "h_aux_W_m2K": 664.1782685134593,
+      "calibration": {
+        "fraction_moderator_heat_to_main": 0.6614105763865067,
+        "conductance_main_to_aux_W_mK": 15.685857046121,
+        "calibration_energy_error": 0.0012607969307931726,
+        "source_exodus": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.25_o0.00_f1.00_k10_source/case_out.e",
+        "delta_exodus": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.25_o0.00_f1.00_k10_delta/case_out.e"
+      },
+      "mixed_outlet_K": 1149.9999999999998,
+      "mean_main_outlet_K": 1161.7244476511285,
+      "max_main_outlet_K": 1288.5500624837282,
+      "mean_aux_outlet_K": 1114.8266570466146,
+      "max_aux_outlet_K": 1226.0645089827187,
+      "max_moderator_K": 1245.671318101,
+      "max_moderator_location": {
+        "pin": 216,
+        "slice": 5,
+        "moderator_max_K": 1245.671318101,
+        "superposition_max_K": 1245.6713181009643,
+        "moderator_min_K": 1236.4324711318,
+        "main_bulk_mid_K": 1265.8512915984857,
+        "aux_bulk_mid_K": 1189.3252953990457,
+        "moderator_source_W": 8.022545374328688,
+        "cardinal_result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.25_o0.00_f1.00_k10_pin216_s5/result.json"
+      },
+      "evaluated_pin_slices": [
+        {
+          "pin": 216,
+          "slice": 5,
+          "moderator_max_K": 1245.671318101,
+          "superposition_max_K": 1245.6713181009643,
+          "moderator_min_K": 1236.4324711318,
+          "main_bulk_mid_K": 1265.8512915984857,
+          "aux_bulk_mid_K": 1189.3252953990457,
+          "moderator_source_W": 8.022545374328688,
+          "cardinal_result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.25_o0.00_f1.00_k10_pin216_s5/result.json"
+        },
+        {
+          "pin": 213,
+          "slice": 5,
+          "moderator_max_K": 1243.643015221,
+          "superposition_max_K": 1243.6430152210264,
+          "moderator_min_K": 1234.5073921526,
+          "main_bulk_mid_K": 1263.6056568935123,
+          "aux_bulk_mid_K": 1187.9434257290877,
+          "moderator_source_W": 7.872296276336265,
+          "cardinal_result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.25_o0.00_f1.00_k10_pin213_s5/result.json"
+        },
+        {
+          "pin": 211,
+          "slice": 5,
+          "moderator_max_K": 1242.8974057429,
+          "superposition_max_K": 1242.8974057428509,
+          "moderator_min_K": 1233.8174471188,
+          "main_bulk_mid_K": 1262.7218468728925,
+          "aux_bulk_mid_K": 1187.5028080051181,
+          "moderator_source_W": 7.9477592897252,
+          "cardinal_result": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/followup/thermal/cardinal/a0.25_o0.00_f1.00_k10_pin211_s5/result.json"
+        }
+      ],
+      "model_limitations": [
+        "Prescribed 400 kW and parallel 800 K He feeds",
+        "Auxiliary flow fraction is a sensitivity parameter; manifolds absent",
+        "Heat not in fuel/YH2 allocated by fuel map; see scenario fraction",
+        "Outer hex adiabatic; Be conduction not coupled",
+        "Constant YH2 conductivity, He cp and representative film coefficients",
+        "No pressure-drop, orifice or structural-can/contact solution"
+      ]
+    }
+  ]
+}

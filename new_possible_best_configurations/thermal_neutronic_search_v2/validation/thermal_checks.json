@@ -1,0 +1,42 @@
+[
+  {
+    "candidate": "C01_double_cold_large_v1",
+    "worst": false,
+    "analytic_K": 872.6227869950883,
+    "cardinal": {
+      "max_moderator_K": 872.54661486557,
+      "input": "new_possible_best_configurations/thermal_neutronic_search_v2/validation/cardinal/C01_double_cold_large_v1/case.i",
+      "bound_K": 872.6227869950883
+    },
+    "Mach": 0.007303525507344352,
+    "pressure_drop_fraction": 0.0037525345886574935
+  },
+  {
+    "candidate": "C01_double_cold_large_v1",
+    "worst": true,
+    "analytic_K": 895.1355943173219,
+    "cardinal": {},
+    "Mach": 0.007303525507344352,
+    "pressure_drop_fraction": 0.0031033537747078106
+  },
+  {
+    "candidate": "C07_thin_sleeve_fuel_rich_v1",
+    "worst": false,
+    "analytic_K": 876.5385646675982,
+    "cardinal": {
+      "max_moderator_K": 876.45961270408,
+      "input": "new_possible_best_configurations/thermal_neutronic_search_v2/validation/cardinal/C07_thin_sleeve_fuel_rich_v1/case.i",
+      "bound_K": 876.5385646675982
+    },
+    "Mach": 0.005676474117128831,
+    "pressure_drop_fraction": 0.002742232814639255
+  },
+  {
+    "candidate": "C07_thin_sleeve_fuel_rich_v1",
+    "worst": true,
+    "analytic_K": 906.4900467682096,
+    "cardinal": {},
+    "Mach": 0.005676474117128828,
+    "pressure_drop_fraction": 0.0028270944725020068
+  }
+]

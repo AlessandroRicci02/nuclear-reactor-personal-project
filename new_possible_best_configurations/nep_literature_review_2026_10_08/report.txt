@@ -1,0 +1,96 @@
+REVISIONE BIBLIOGRAFICA: NEP, IDRURI E INCERTEZZE
+Data di consultazione: 8 ottobre 2026
+
+Questo documento completa una parte bibliografica della richiesta. Non è
+una campagna di simulazione: non contiene nuove configurazioni del nocciolo,
+dimensionamenti, codice di ricerca neutronica o risultati di trasporto.
+Non sono state avviate simulazioni per questa revisione.
+
+CONTESTO NEP E OBIETTIVO ENERGETICO
+
+NASA descrive la propulsione nucleare elettrica come una catena in cui il
+calore di fissione viene convertito in elettricità che alimenta propulsori
+elettrici. La conversione energetica è quindi un sottosistema distinto
+dalla sorgente di calore [1].
+
+L'obiettivo dichiarato dall'utente, 400 kW termici e 100 kW elettrici,
+corrisponde aritmeticamente a un rendimento del 25%. Questo rapporto è
+un requisito assegnato, non una previsione di prestazione. Occorre indicare
+se la potenza elettrica è lorda al generatore oppure netta al bus di bordo:
+consumi ausiliari e perdite elettriche cambiano il bilancio. Le temperature
+di ingresso e uscita della sorgente termica, da sole, non determinano il
+rendimento di conversione. Questa è un'osservazione generale di bilancio
+energetico; la fonte [1] non dimostra il rendimento di questo progetto.
+
+PROPRIETÀ E LIMITI DEGLI IDRURI
+
+Il handbook ORNL del 2021 raccoglie proprietà di idruro di ittrio non
+irradiato, dipendenti dalla concentrazione di idrogeno. Include proprietà
+termiche e meccaniche e discute questioni ancora da investigare: ritenzione
+dell'idrogeno, migrazione termica e risposta all'irraggiamento [2]. La
+scheda bibliografica riferisce anche osservazioni preliminari a bassa dose.
+Queste informazioni non equivalgono a una dimostrazione di servizio
+pluriennale per un particolare componente.
+
+Cinbiz e collaboratori identificano lacune di conoscenza sul trasporto
+dell'idrogeno e sulla prestazione sotto irraggiamento. La qualificazione
+richiede evidenze sui fenomeni fisici, sugli effetti dell'irraggiamento e
+sul comportamento del sistema [3].
+
+Da queste fonti non si può concludere che un rivestimento scelto a priori
+annulli la migrazione dell'idrogeno. Una dichiarazione su una barriera deve
+avere evidenze sperimentali pertinenti a materiale, interfacce, difetti,
+temperatura, ambiente, irraggiamento e durata. Non viene qui proposta una
+selezione di rivestimenti, né una geometria del componente. Il limite
+termico richiesto dall'utente resta un requisito di progetto, non una
+soglia universale di qualificazione stabilita dalle fonti consultate.
+
+SIGNIFICATO DI 2 SIGMA
+
+NIST spiega che un intervallo costruito con fattore di copertura 2 ha
+copertura approssimativamente del 95% quando si applica una distribuzione
+normale e l'incertezza standard è una stima affidabile [4]. Non è una
+garanzia assoluta e non implica automaticamente una copertura congiunta
+del 95% per molte grandezze o per una selezione fra numerosi casi.
+
+Il fattore di copertura e la precisione del calcolo sono concetti distinti:
+scegliere 2 invece di 4 non rende più preciso il risultato. Cambia
+l'ampiezza dell'intervallo riportato e il livello di copertura associato.
+
+NIST distingue le componenti di incertezza e include le covarianze nella
+loro propagazione [5]. Per un rapporto di simulazione va chiarito se il
+sigma riportato descrive soltanto il campionamento statistico. Incertezze
+dei dati di ingresso e limiti del modello non sono automaticamente
+compresi in quel numero. Un intervallo privo di componenti rilevanti non
+può essere presentato come una misura completa dell'incertezza fisica.
+
+PORTATA DELLA REVISIONE
+
+Sono state consultate la pagina istituzionale NASA, le schede e gli
+abstract istituzionali ORNL e le pagine metodologiche NIST indicate sotto.
+Non è stata svolta una lettura integrale del handbook o dell'articolo
+Cinbiz, né una revisione sistematica dell'intera letteratura. Le
+osservazioni interpretative sono distinte dai risultati descritti nelle
+fonti. Nessuna configurazione viene dichiarata idonea o sicura.
+
+FONTI
+
+[1] NASA, Space Nuclear Propulsion, pagina istituzionale.
+https://www.nasa.gov/space-technology-mission-directorate/tdm/space-nuclear-propulsion/
+
+[2] Hu, Wang, Linton, Le Coq, Terrani (2021), Handbook on the Material
+Properties of Yttrium Hydride for High Temperature Moderator Applications.
+DOI: 10.2172/1808171. Scheda e abstract ORNL:
+https://impact.ornl.gov/en/publications/handbook-on-the-material-properties-of-yttrium-hydride-for-high-t-3/
+
+[3] Cinbiz, Taylor, Luther, Trellue, Jackson (2023), Considerations for
+Hydride Moderator Readiness in Microreactors, Nuclear Technology 209,
+supplemento 1, S136-S145. DOI: 10.1080/00295450.2022.2121583.
+Scheda e abstract ORNL:
+https://impact.ornl.gov/en/publications/considerations-for-hydride-moderator-readiness-in-microreactors/
+
+[4] NIST, Expanded uncertainty and coverage factors.
+https://pml.nist.gov/cuu/Uncertainty/coverage.html
+
+[5] NIST, Combining uncertainty components.
+https://pml.nist.gov/cuu/Uncertainty/combination.html

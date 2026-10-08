@@ -1,0 +1,7 @@
+state,T_K,P_MPa,description
+1 (Compressor Inlet),400.0,1.0,Helium returning from space radiator
+2 (Compressor Outlet),605.9143111013009,2.5,Pressurized helium flowing to recuperator
+3 (Recuperator High-P Out),812.4051324192195,2.48,Pre-heated helium entering reactor core
+4 (Reactor Core Outlet),1120.0,2.45,High-temperature gas feeding Brayton turbine
+5 (Turbine Outlet),827.9474523033639,1.04,Expanded helium entering recuperator hot side
+6 (Recuperator Low-P Out),621.4566309854453,1.02,Cooled helium entering space radiator

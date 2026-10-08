@@ -1,0 +1,297 @@
+<?xml version='1.0' encoding='utf-8'?>
+<materials>
+  <cross_sections>/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations_failed/campaign/data/endfb-viii.0-hdf5/cross_sections.xml</cross_sections>
+  <material id="1" name="UN_inner" depletable="true" temperature="1350.0">
+    <density value="13.1" units="g/cm3"/>
+    <nuclide name="U235" wo="0.18439071009747848"/>
+    <nuclide name="U238" wo="0.7563782189712893"/>
+    <nuclide name="N14" wo="0.002773922399727585"/>
+    <nuclide name="N15" wo="0.05645714853150464"/>
+  </material>
+  <material id="2" name="UN_outer" depletable="true" temperature="1350.0">
+    <density value="13.1" units="g/cm3"/>
+    <nuclide name="U235" wo="0.18580165283849792"/>
+    <nuclide name="U238" wo="0.7549662096349092"/>
+    <nuclide name="N14" wo="0.0027739723507535573"/>
+    <nuclide name="N15" wo="0.05645816517583935"/>
+  </material>
+  <material id="3" name="YH2" temperature="885.0">
+    <density value="4.2" units="g/cm3"/>
+    <nuclide name="Y89" ao="1.0"/>
+    <nuclide name="H1" ao="2.0"/>
+    <sab name="c_H_in_YH2"/>
+    <sab name="c_Y_in_YH2"/>
+  </material>
+  <material id="4" name="reflector" temperature="875.0">
+    <density value="2.9" units="g/cm3"/>
+    <nuclide name="Be9" ao="1.0"/>
+    <nuclide name="O16" ao="1.0"/>
+    <sab name="c_Be_in_BeO"/>
+    <sab name="c_O_in_BeO"/>
+  </material>
+  <material id="5" name="B4C" temperature="875.0">
+    <density value="2.52" units="g/cm3"/>
+    <nuclide name="B10" ao="3.8"/>
+    <nuclide name="B11" ao="0.20000000000000018"/>
+    <nuclide name="C12" ao="0.988922"/>
+    <nuclide name="C13" ao="0.011078"/>
+  </material>
+  <material id="6" name="fuel_gap" temperature="1017.5">
+    <density value="0.0014193681636784211" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="7" name="fuel_gap_z0" temperature="895.0">
+    <density value="0.001613639225187479" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="8" name="fuel_gap_z1" temperature="930.0">
+    <density value="0.0015529108672503156" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="9" name="fuel_gap_z2" temperature="965.0">
+    <density value="0.0014965876751738794" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="10" name="fuel_gap_z3" temperature="1000.0">
+    <density value="0.0014442071065427938" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="11" name="fuel_gap_z4" temperature="1035.0">
+    <density value="0.001395369185065501" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="12" name="fuel_gap_z5" temperature="1070.0">
+    <density value="0.0013497262677970034" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="13" name="fuel_gap_z6" temperature="1105.0">
+    <density value="0.0013069747570523017" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="14" name="fuel_gap_z7" temperature="1140.0">
+    <density value="0.001266848339072626" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="15" name="clad" temperature="1250.0">
+    <density value="8.57" units="g/cm3"/>
+    <nuclide name="Nb93" wo="0.99"/>
+    <nuclide name="Zr90" wo="0.005070611750923317"/>
+    <nuclide name="Zr91" wo="0.0011180887453100783"/>
+    <nuclide name="Zr92" wo="0.001727810146362816"/>
+    <nuclide name="Zr94" wo="0.0017891104342343414"/>
+    <nuclide name="Zr96" wo="0.00029437892316944896"/>
+  </material>
+  <material id="16" name="hot_He" temperature="1017.5">
+    <density value="0.0014193681636784211" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="17" name="hot_He_z0" temperature="895.0">
+    <density value="0.001613639225187479" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="18" name="hot_He_z1" temperature="930.0">
+    <density value="0.0015529108672503156" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="19" name="hot_He_z2" temperature="965.0">
+    <density value="0.0014965876751738794" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="20" name="hot_He_z3" temperature="1000.0">
+    <density value="0.0014442071065427938" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="21" name="hot_He_z4" temperature="1035.0">
+    <density value="0.001395369185065501" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="22" name="hot_He_z5" temperature="1070.0">
+    <density value="0.0013497262677970034" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="23" name="hot_He_z6" temperature="1105.0">
+    <density value="0.0013069747570523017" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="24" name="hot_He_z7" temperature="1140.0">
+    <density value="0.001266848339072626" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="25" name="hot_wall" temperature="1100.0">
+    <density value="8.57" units="g/cm3"/>
+    <nuclide name="Nb93" wo="0.99"/>
+    <nuclide name="Zr90" wo="0.005070611750923317"/>
+    <nuclide name="Zr91" wo="0.0011180887453100783"/>
+    <nuclide name="Zr92" wo="0.001727810146362816"/>
+    <nuclide name="Zr94" wo="0.0017891104342343414"/>
+    <nuclide name="Zr96" wo="0.00029437892316944896"/>
+  </material>
+  <material id="26" name="Mo_shield" temperature="1000.0">
+    <density value="10.28" units="g/cm3"/>
+    <nuclide name="Mo92" ao="0.14649"/>
+    <nuclide name="Mo94" ao="0.09187"/>
+    <nuclide name="Mo95" ao="0.15873"/>
+    <nuclide name="Mo96" ao="0.16673"/>
+    <nuclide name="Mo97" ao="0.09582"/>
+    <nuclide name="Mo98" ao="0.24292"/>
+    <nuclide name="Mo100" ao="0.09744"/>
+  </material>
+  <material id="27" name="cold_wall" temperature="870.0">
+    <density value="8.57" units="g/cm3"/>
+    <nuclide name="Nb93" wo="0.99"/>
+    <nuclide name="Zr90" wo="0.005070611750923317"/>
+    <nuclide name="Zr91" wo="0.0011180887453100783"/>
+    <nuclide name="Zr92" wo="0.001727810146362816"/>
+    <nuclide name="Zr94" wo="0.0017891104342343414"/>
+    <nuclide name="Zr96" wo="0.00029437892316944896"/>
+  </material>
+  <material id="28" name="cold_He" temperature="865.0">
+    <density value="0.001669603591378952" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="29" name="cold_He_z0" temperature="865.0">
+    <density value="0.001669603591378952" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="30" name="cold_He_z1" temperature="865.0">
+    <density value="0.001669603591378952" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="31" name="cold_He_z2" temperature="865.0">
+    <density value="0.001669603591378952" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="32" name="cold_He_z3" temperature="865.0">
+    <density value="0.001669603591378952" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="33" name="cold_He_z4" temperature="865.0">
+    <density value="0.001669603591378952" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="34" name="cold_He_z5" temperature="865.0">
+    <density value="0.001669603591378952" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="35" name="cold_He_z6" temperature="865.0">
+    <density value="0.001669603591378952" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="36" name="cold_He_z7" temperature="865.0">
+    <density value="0.001669603591378952" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="37" name="inner_can" temperature="880.0">
+    <density value="8.57" units="g/cm3"/>
+    <nuclide name="Nb93" wo="0.99"/>
+    <nuclide name="Zr90" wo="0.005070611750923317"/>
+    <nuclide name="Zr91" wo="0.0011180887453100783"/>
+    <nuclide name="Zr92" wo="0.001727810146362816"/>
+    <nuclide name="Zr94" wo="0.0017891104342343414"/>
+    <nuclide name="Zr96" wo="0.00029437892316944896"/>
+  </material>
+  <material id="38" name="inner_barrier" temperature="880.0">
+    <density value="3.95" units="g/cm3"/>
+    <nuclide name="Al27" ao="2.0"/>
+    <nuclide name="O16" ao="2.9928618"/>
+    <nuclide name="O17" ao="0.001137"/>
+    <nuclide name="O18" ao="0.0060012"/>
+  </material>
+  <material id="39" name="expansion_clearance" temperature="865.0">
+    <density value="0.001669603591378952" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="40" name="expansion_clearance_z0" temperature="865.0">
+    <density value="0.001669603591378952" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="41" name="expansion_clearance_z1" temperature="865.0">
+    <density value="0.001669603591378952" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="42" name="expansion_clearance_z2" temperature="865.0">
+    <density value="0.001669603591378952" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="43" name="expansion_clearance_z3" temperature="865.0">
+    <density value="0.001669603591378952" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="44" name="expansion_clearance_z4" temperature="865.0">
+    <density value="0.001669603591378952" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="45" name="expansion_clearance_z5" temperature="865.0">
+    <density value="0.001669603591378952" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="46" name="expansion_clearance_z6" temperature="865.0">
+    <density value="0.001669603591378952" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="47" name="expansion_clearance_z7" temperature="865.0">
+    <density value="0.001669603591378952" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="48" name="outer_barrier" temperature="880.0">
+    <density value="3.95" units="g/cm3"/>
+    <nuclide name="Al27" ao="2.0"/>
+    <nuclide name="O16" ao="2.9928618"/>
+    <nuclide name="O17" ao="0.001137"/>
+    <nuclide name="O18" ao="0.0060012"/>
+  </material>
+  <material id="49" name="outer_can" temperature="880.0">
+    <density value="8.57" units="g/cm3"/>
+    <nuclide name="Nb93" wo="0.99"/>
+    <nuclide name="Zr90" wo="0.005070611750923317"/>
+    <nuclide name="Zr91" wo="0.0011180887453100783"/>
+    <nuclide name="Zr92" wo="0.001727810146362816"/>
+    <nuclide name="Zr94" wo="0.0017891104342343414"/>
+    <nuclide name="Zr96" wo="0.00029437892316944896"/>
+  </material>
+  <material id="50" name="outer_cold_He" temperature="865.0">
+    <density value="0.001669603591378952" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="51" name="outer_cold_He_z0" temperature="865.0">
+    <density value="0.001669603591378952" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="52" name="outer_cold_He_z1" temperature="865.0">
+    <density value="0.001669603591378952" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="53" name="outer_cold_He_z2" temperature="865.0">
+    <density value="0.001669603591378952" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="54" name="outer_cold_He_z3" temperature="865.0">
+    <density value="0.001669603591378952" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="55" name="outer_cold_He_z4" temperature="865.0">
+    <density value="0.001669603591378952" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="56" name="outer_cold_He_z5" temperature="865.0">
+    <density value="0.001669603591378952" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="57" name="outer_cold_He_z6" temperature="865.0">
+    <density value="0.001669603591378952" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="58" name="outer_cold_He_z7" temperature="865.0">
+    <density value="0.001669603591378952" units="g/cm3"/>
+    <nuclide name="He4" ao="1.0"/>
+  </material>
+  <material id="59" name="outer_jacket" temperature="880.0">
+    <density value="8.57" units="g/cm3"/>
+    <nuclide name="Nb93" wo="0.99"/>
+    <nuclide name="Zr90" wo="0.005070611750923317"/>
+    <nuclide name="Zr91" wo="0.0011180887453100783"/>
+    <nuclide name="Zr92" wo="0.001727810146362816"/>
+    <nuclide name="Zr94" wo="0.0017891104342343414"/>
+    <nuclide name="Zr96" wo="0.00029437892316944896"/>
+  </material>
+</materials>

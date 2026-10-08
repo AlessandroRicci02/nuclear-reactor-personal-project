@@ -1,0 +1,11 @@
+{
+  "request_sha256": "31f961ee2d44536f52b21e0a7a9473cf149c8a2f52942f2de0000742fe6561e7",
+  "keff": 0.9985987857028593,
+  "sigma_k": 0.0006540587238658428,
+  "batches": 200,
+  "particles": 15000,
+  "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/thermal_neutronic_search_v2/campaign/C13_thick_sleeve_double_cold_v1/operating_state_0/heating/statepoint.200.h5",
+  "theta": 48.133,
+  "lower_bound": 0.995982550807396,
+  "upper_bound": 1.0012150205983228
+}

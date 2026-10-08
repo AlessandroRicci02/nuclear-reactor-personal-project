@@ -1,0 +1,11 @@
+{
+  "request_sha256": "d022149aaaf7a1b9137a8024ac9e96262e9fed86a755dfecf0b983aaf8d69c39",
+  "keff": 0.919175657653919,
+  "sigma_k": 0.000878878845527416,
+  "batches": 160,
+  "particles": 8000,
+  "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/thermal_neutronic_search_v2/campaign/C07_thin_sleeve_fuel_rich_v1/pilot/out/sigma_0.001000/statepoint.0160.h5",
+  "theta": 0.0,
+  "lower_bound": 0.9156601422718093,
+  "upper_bound": 0.9226911730360287
+}

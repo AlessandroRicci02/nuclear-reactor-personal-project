@@ -1,0 +1,55 @@
+{
+  "candidate": "full_open_beo",
+  "index": 11,
+  "spec": {
+    "r_fuel": 0.585,
+    "clad_th": 0.048,
+    "chan_gap": 0.084,
+    "al2o3_mod_th": 0.01,
+    "pitch": 2.45,
+    "core_h": 47,
+    "refl_ax_th": 9,
+    "refl_rad_th": 9.5,
+    "drum_r": 3.95,
+    "abs_th": 1.5,
+    "abs_angle": 148.0,
+    "drum_clearance": 0.18,
+    "r_add": 0.16,
+    "reflector_kind": "BeO",
+    "matrix_kind": "YH2",
+    "peripheral_kind": "YH2"
+  },
+  "pilot": {
+    "pass_all": false,
+    "reason": "IN clearly supercritical",
+    "results": {
+      "out": {
+        "candidate": "full_open_beo",
+        "stage": "pilot",
+        "case": "out",
+        "request_sha256": "0822104b52189c49cf512c510cedeada76522a5d6a16125a64f0aa59cc02da8b",
+        "k_eff": 1.0910662656098002,
+        "sigma_k": 0.0020100140525291244,
+        "rho_pcm": 8346.538471602638,
+        "sigma_rho_pcm": 168.84835636637743,
+        "batches": 100,
+        "particles": 4000,
+        "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/campaign/full_open_beo/pilot/out/statepoint.100.h5"
+      },
+      "in": {
+        "candidate": "full_open_beo",
+        "stage": "pilot",
+        "case": "in",
+        "request_sha256": "3b6de0ef6ca263d5390f615dfec5a7bf8ac858af8f6e0bb6eb3c3fd9d6b1e12d",
+        "k_eff": 1.0394962661656266,
+        "sigma_k": 0.0019697128375193943,
+        "rho_pcm": 3799.5582525097384,
+        "sigma_rho_pcm": 182.28756682698517,
+        "batches": 100,
+        "particles": 4000,
+        "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/campaign/full_open_beo/pilot/in/statepoint.100.h5"
+      }
+    }
+  },
+  "status": "rejected"
+}

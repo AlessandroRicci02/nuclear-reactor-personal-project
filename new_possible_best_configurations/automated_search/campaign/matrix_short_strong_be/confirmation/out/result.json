@@ -1,0 +1,13 @@
+{
+  "candidate": "matrix_short_strong_be",
+  "stage": "confirmation",
+  "case": "out",
+  "request_sha256": "8758da03201b86d917caea1c9dce5b386d7c1fe995961e228e648e12d458a3fe",
+  "k_eff": 1.0509386589137337,
+  "sigma_k": 0.00021891360428293982,
+  "rho_pcm": 4846.967849330496,
+  "sigma_rho_pcm": 19.8206556109412,
+  "batches": 980,
+  "particles": 20000,
+  "statepoint": "/home/aleri/OpenMC_projects/first_test/new_possible_best_configurations/automated_search/campaign/matrix_short_strong_be/confirmation/out/statepoint.0980.h5"
+}
